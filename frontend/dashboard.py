@@ -322,7 +322,7 @@ _BACKEND_ERROR = False
 _EMBEDDED_CLIENT = None
 
 def _get_client():
-    """Returns in-process FastAPI TestClient adapter if live HTTP is not available."""
+    """Returns in-process FastAPI TestClient adapter when running without external Uvicorn."""
     global _EMBEDDED_CLIENT
     if _EMBEDDED_CLIENT is None:
         try:
@@ -335,9 +335,9 @@ def _get_client():
 
 
 def _get(endpoint: str, params: dict = None):
-    """GET from FastAPI with graceful error handling and embedded adapter fallback."""
+    """GET from FastAPI (via live HTTP or in-process ASGI adapter)."""
     global _BACKEND_ERROR
-    # 1. Attempt live HTTP request if server is running
+    # 1. Attempt live HTTP request if external server is reachable
     try:
         r = requests.get(f"{API_BASE}{endpoint}", params=params, timeout=2)
         r.raise_for_status()
@@ -353,7 +353,7 @@ def _get(endpoint: str, params: dict = None):
     except Exception:
         pass
 
-    # 2. In-process FastAPI TestClient adapter (for Streamlit Community Cloud)
+    # 2. In-process FastAPI ASGI adapter for Streamlit Community Cloud
     client = _get_client()
     if client is not None:
         try:
@@ -374,9 +374,9 @@ def _get(endpoint: str, params: dict = None):
 
 
 def _post(endpoint: str, json_data: dict = None):
-    """POST to FastAPI with graceful error handling and embedded adapter fallback."""
+    """POST to FastAPI (via live HTTP or in-process ASGI adapter)."""
     global _BACKEND_ERROR
-    # 1. Attempt live HTTP request if server is running
+    # 1. Attempt live HTTP request if external server is reachable
     try:
         r = requests.post(f"{API_BASE}{endpoint}", json=json_data, timeout=30)
         r.raise_for_status()
@@ -395,7 +395,7 @@ def _post(endpoint: str, json_data: dict = None):
     except Exception:
         pass
 
-    # 2. In-process FastAPI TestClient adapter (for Streamlit Community Cloud)
+    # 2. In-process FastAPI ASGI adapter for Streamlit Community Cloud
     client = _get_client()
     if client is not None:
         try:
@@ -412,7 +412,7 @@ def _post(endpoint: str, json_data: dict = None):
         except Exception as e:
             return {"__error": str(e)}
 
-    return {"__error": "Connection error"}
+    return {"__error": "In-process backend unavailable"}
 
 
 def _severity_color(sev: str) -> str:

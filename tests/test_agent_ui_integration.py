@@ -178,22 +178,40 @@ def test_agent_ui_example_button_dispatch():
         assert at.session_state["agent_last_result"]["agent_routed"] == "career_agent"
 
 
-def test_in_process_embedded_adapter_fallback():
+def test_streamlit_cloud_in_process_fastapi_adapter_without_uvicorn():
     """
-    Verify that when no external server is running (ConnectionError),
-    _get and _post transparently fallback to in-process FastAPI TestClient adapter.
+    Regression test proving:
+    Streamlit Cloud mode -> dashboard -> in-process FastAPI app -> POST /agents/ask
+    works WITHOUT external Uvicorn server running.
     """
     import requests
     from frontend.dashboard import _get, _post
 
-    with patch("requests.get", side_effect=requests.exceptions.ConnectionError("Offline")):
-        res = _get("/dashboard/summary")
-        assert res is not None, "In-process fallback failed for /dashboard/summary!"
-        assert "total_employees" in res
-        assert res["total_employees"] == 1470
+    # Simulate external Uvicorn being offline (ConnectionError on requests.get/post)
+    with patch("requests.get", side_effect=requests.exceptions.ConnectionError("Connection refused: 127.0.0.1:8000")), \
+         patch("requests.post", side_effect=requests.exceptions.ConnectionError("Connection refused: 127.0.0.1:8000")):
 
-    with patch("requests.post", side_effect=requests.exceptions.ConnectionError("Offline")):
-        res = _post("/agents/ask", json_data={"question": "What is the weather today?"})
-        assert res is not None, "In-process fallback failed for /agents/ask!"
-        assert res["agent_routed"] == "fallback_handler"
-        assert res["refusal_status"] is True
+        # 1. Test GET /dashboard/summary in-process
+        summary = _get("/dashboard/summary")
+        assert summary is not None, "In-process summary retrieval failed without Uvicorn!"
+        assert "total_employees" in summary
+        assert summary["total_employees"] == 1470
+
+        # 2. Test POST /agents/ask in-process (Policy Agent)
+        res_policy = _post(
+            "/agents/ask",
+            json_data={"question": "What does POL-CAREER-001 say about career stagnation?"}
+        )
+        assert res_policy is not None
+        assert res_policy.get("agent_routed") == "policy_agent"
+        assert res_policy.get("refusal_status") is False
+        assert len(res_policy.get("answer", "")) > 10
+
+        # 3. Test POST /agents/ask in-process (Fallback Handler)
+        res_fallback = _post(
+            "/agents/ask",
+            json_data={"question": "What is the weather today?"}
+        )
+        assert res_fallback is not None
+        assert res_fallback.get("agent_routed") == "fallback_handler"
+        assert res_fallback.get("refusal_status") is True
