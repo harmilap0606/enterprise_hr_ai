@@ -1,0 +1,1370 @@
+# SYNTHETIC DATA — employee current-skill possession was not present in any source file and has been simulated using a tenure/training-based heuristic for MVP demonstration purposes only. This must NOT be presented to stakeholders as real observed skill data. Real deployment requires an actual skills inventory (HRIS export, LMS completion records, or self-assessment survey).
+EmployeeNumber,JobRole,missing_skills,gap_count,total_required,gap_percentage,severity
+1,Sales Executive,Speaking; Reading Comprehension; Bentley MicroStation; Eclipse IDE; Facebook,5,10,0.5,MEDIUM
+2,Research Scientist,Reading Comprehension,1,10,0.1,LOW
+4,Laboratory Technician,Reading Comprehension; Science; Google Docs; Microsoft Excel; Microsoft Office software,5,10,0.5,MEDIUM
+5,Research Scientist,Speaking; Active Learning,2,10,0.2,LOW
+7,Laboratory Technician,Speaking; Google Docs,2,10,0.2,LOW
+8,Laboratory Technician,Reading Comprehension; Active Listening; Critical Thinking; Speaking; Google Docs,5,10,0.5,MEDIUM
+10,Laboratory Technician,Critical Thinking; Google Docs; Microsoft Excel; Microsoft Outlook,4,10,0.4,MEDIUM
+11,Laboratory Technician,Reading Comprehension; Speaking; Science; Google Docs; MEDITECH software,5,10,0.5,MEDIUM
+12,Manufacturing Director,Critical Thinking; Adobe Photoshop,2,10,0.2,LOW
+13,Healthcare Representative,None,0,10,0.0,LOW
+14,Laboratory Technician,Science,1,10,0.1,LOW
+15,Laboratory Technician,Critical Thinking,1,10,0.1,LOW
+16,Research Scientist,Critical Thinking; Reading Comprehension; Amazon Elastic Compute Cloud EC2; Amazon Redshift,4,10,0.4,MEDIUM
+18,Laboratory Technician,Science; MEDITECH software; Microsoft Excel; Microsoft Outlook,4,10,0.4,MEDIUM
+19,Laboratory Technician,Reading Comprehension,1,10,0.1,LOW
+20,Manufacturing Director,Critical Thinking; Active Listening,2,10,0.2,LOW
+21,Research Scientist,None,0,10,0.0,LOW
+22,Laboratory Technician,Reading Comprehension; Critical Thinking; Science; MEDITECH software; Microsoft Office software,5,10,0.5,MEDIUM
+24,Research Scientist,Active Listening; Speaking; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2,4,10,0.4,MEDIUM
+26,Manufacturing Director,Speaking; Monitoring; Adobe InDesign; Adobe Photoshop; Autodesk AutoCAD,5,10,0.5,MEDIUM
+27,Sales Representative,Writing,1,10,0.1,LOW
+28,Research Director,None,0,10,0.0,LOW
+30,Research Scientist,Critical Thinking; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,4,10,0.4,MEDIUM
+31,Research Scientist,Critical Thinking; Amazon DynamoDB; Amazon Web Services AWS CloudFormation,3,10,0.3,LOW
+33,Research Scientist,Reading Comprehension; Amazon Redshift; Amazon Web Services AWS CloudFormation,3,10,0.3,LOW
+35,Sales Executive,Reading Comprehension; Adobe Creative Cloud software,2,10,0.2,LOW
+36,Healthcare Representative,Speaking,1,10,0.1,LOW
+39,Laboratory Technician,Reading Comprehension; Active Listening; Critical Thinking; Speaking; Science; Google Docs; MEDITECH software; Microsoft Excel; Microsoft Office software; Microsoft Outlook,10,10,1.0,HIGH
+40,Healthcare Representative,Active Listening,1,10,0.1,LOW
+41,Laboratory Technician,None,0,10,0.0,LOW
+42,Sales Representative,Active Learning; Apple macOS; Microsoft Excel,3,10,0.3,LOW
+45,Research Scientist,Speaking; Active Learning; Amazon DynamoDB,3,10,0.3,LOW
+46,Research Scientist,Reading Comprehension; Active Learning; Amazon DynamoDB,3,10,0.3,LOW
+47,Sales Representative,Speaking; HubSpot software; IBM SPSS Statistics,3,10,0.3,LOW
+49,Sales Representative,Apple macOS; HubSpot software; Microsoft Office software,3,10,0.3,LOW
+51,Research Scientist,Critical Thinking; Reading Comprehension; Active Listening; Amazon DynamoDB; Amazon Redshift; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,7,10,0.7,HIGH
+52,Sales Executive,Monitoring; Adobe Creative Cloud software; Bentley MicroStation,3,10,0.3,LOW
+53,Laboratory Technician,Speaking; MEDITECH software; Microsoft Office software,3,10,0.3,LOW
+54,Laboratory Technician,Active Listening; Speaking; Science; Google Docs; Microsoft Office software; Microsoft Outlook,6,10,0.6,MEDIUM
+55,Laboratory Technician,Reading Comprehension; Speaking; Google Docs; MEDITECH software; Microsoft Office software; Microsoft Outlook,6,10,0.6,MEDIUM
+56,Sales Executive,Speaking; Critical Thinking; Adobe Acrobat; Eclipse IDE,4,10,0.4,MEDIUM
+57,Laboratory Technician,Active Listening; Critical Thinking,2,10,0.2,LOW
+58,Research Director,None,0,10,0.0,LOW
+60,Sales Executive,None,0,10,0.0,LOW
+61,Research Scientist,Reading Comprehension; Active Learning; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Redshift,5,10,0.5,MEDIUM
+62,Sales Executive,None,0,10,0.0,LOW
+63,Laboratory Technician,Active Listening; Critical Thinking; Speaking; Science; Microsoft Excel; Microsoft Outlook,6,10,0.6,MEDIUM
+64,Laboratory Technician,Active Listening; Speaking; Science; Google Docs; Microsoft Excel; Microsoft Office software; Microsoft Outlook,7,10,0.7,HIGH
+65,Laboratory Technician,Reading Comprehension; Active Listening; Speaking; Science; Google Docs; Microsoft Office software; Microsoft Outlook,7,10,0.7,HIGH
+68,Sales Executive,Speaking; Eclipse IDE; Facebook,3,10,0.3,LOW
+70,Healthcare Representative,Active Listening; Writing; Active Learning; HubSpot software; IBM SPSS Statistics; Microsoft Excel; Microsoft Office software,7,10,0.7,HIGH
+72,Sales Executive,Active Listening; Reading Comprehension; Critical Thinking; Bentley MicroStation; Eclipse IDE,5,10,0.5,MEDIUM
+73,Research Director,Active Listening,1,10,0.1,LOW
+74,Sales Executive,Speaking; Reading Comprehension; Adobe Acrobat,3,10,0.3,LOW
+75,Laboratory Technician,Reading Comprehension; Active Listening; Speaking; Science; Microsoft Excel; Microsoft Outlook,6,10,0.6,MEDIUM
+76,Laboratory Technician,Active Listening; Science,2,10,0.2,LOW
+77,Manufacturing Director,Adobe Photoshop,1,10,0.1,LOW
+78,Manufacturing Director,Adobe Acrobat; Adobe InDesign,2,10,0.2,LOW
+79,Laboratory Technician,Active Listening,1,10,0.1,LOW
+80,Research Director,None,0,10,0.0,LOW
+81,Sales Executive,None,0,10,0.0,LOW
+83,Healthcare Representative,None,0,10,0.0,LOW
+85,Manufacturing Director,None,0,10,0.0,LOW
+86,Research Scientist,Critical Thinking; Reading Comprehension; Active Listening; Speaking; Amazon Elastic Compute Cloud EC2,5,10,0.5,MEDIUM
+88,Research Scientist,Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Redshift; Amazon Web Services AWS CloudFormation,4,10,0.4,MEDIUM
+90,Research Scientist,Reading Comprehension; Active Listening; Speaking; Active Learning; Amazon Redshift; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,7,10,0.7,HIGH
+91,Sales Executive,Speaking; Reading Comprehension,2,10,0.2,LOW
+94,Research Scientist,Reading Comprehension; Amazon DynamoDB; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,4,10,0.4,MEDIUM
+95,Research Scientist,Critical Thinking; Speaking; Active Learning; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation,6,10,0.6,MEDIUM
+96,Research Scientist,None,0,10,0.0,LOW
+97,Laboratory Technician,Reading Comprehension; Google Docs; Microsoft Excel; Microsoft Outlook,4,10,0.4,MEDIUM
+98,Manufacturing Director,Adobe InDesign,1,10,0.1,LOW
+100,Sales Executive,None,0,10,0.0,LOW
+101,Research Director,Reading Comprehension; Active Listening; Critical Thinking; Adobe Acrobat; ESRI ArcGIS software,5,10,0.5,MEDIUM
+102,Research Director,Active Listening; Adobe Acrobat; IBM SPSS Statistics,3,10,0.3,LOW
+103,Human Resources,Reading Comprehension; Active Listening; Adobe Acrobat; Adobe Creative Cloud software; Adobe InDesign; Adobe Photoshop,6,10,0.6,MEDIUM
+104,Laboratory Technician,Microsoft Excel,1,10,0.1,LOW
+105,Research Scientist,Reading Comprehension; Active Learning,2,10,0.2,LOW
+106,Sales Executive,Active Listening; Adobe Acrobat; Adobe Creative Cloud software; Facebook,4,10,0.4,MEDIUM
+107,Research Scientist,None,0,10,0.0,LOW
+110,Manufacturing Director,Critical Thinking; Adobe Acrobat; Adobe After Effects; Adobe InDesign,4,10,0.4,MEDIUM
+112,Manufacturing Director,Critical Thinking; Speaking; Reading Comprehension; Active Listening,4,10,0.4,MEDIUM
+113,Sales Representative,Active Listening; Active Learning; Apple macOS; Microsoft Excel; Microsoft Office software,5,10,0.5,MEDIUM
+116,Laboratory Technician,MEDITECH software,1,10,0.1,LOW
+117,Healthcare Representative,Writing; IBM SPSS Statistics,2,10,0.2,LOW
+118,Sales Executive,None,0,10,0.0,LOW
+119,Healthcare Representative,None,0,10,0.0,LOW
+120,Sales Executive,None,0,10,0.0,LOW
+121,Sales Executive,None,0,10,0.0,LOW
+124,Healthcare Representative,None,0,10,0.0,LOW
+125,Sales Executive,Adobe Acrobat,1,10,0.1,LOW
+126,Research Director,ESRI ArcGIS software; IBM SPSS Statistics,2,10,0.2,LOW
+128,Sales Executive,Active Listening; Reading Comprehension; Critical Thinking; Eclipse IDE,4,10,0.4,MEDIUM
+129,Sales Executive,Speaking; Reading Comprehension; Bentley MicroStation,3,10,0.3,LOW
+131,Sales Executive,None,0,10,0.0,LOW
+132,Laboratory Technician,Reading Comprehension; Active Listening; Speaking; Microsoft Outlook,4,10,0.4,MEDIUM
+133,Human Resources,Reading Comprehension; Adobe Creative Cloud software,2,10,0.2,LOW
+134,Research Scientist,Critical Thinking; Reading Comprehension; Active Listening; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,6,10,0.6,MEDIUM
+137,Laboratory Technician,Active Listening; Science; MEDITECH software; Microsoft Outlook,4,10,0.4,MEDIUM
+138,Research Scientist,Amazon Web Services AWS CloudFormation,1,10,0.1,LOW
+139,Healthcare Representative,Speaking; Reading Comprehension; Writing; Active Learning; Apple macOS; HubSpot software; IBM SPSS Statistics; Microsoft Office software,8,10,0.8,HIGH
+141,Research Director,Reading Comprehension; Active Listening; Adobe Acrobat; IBM SPSS Statistics,4,10,0.4,MEDIUM
+142,Sales Executive,Active Listening; Reading Comprehension; Critical Thinking; Monitoring; Adobe Creative Cloud software; Bentley MicroStation; Facebook,7,10,0.7,HIGH
+143,Research Scientist,Reading Comprehension; Amazon DynamoDB; Amazon Redshift,3,10,0.3,LOW
+144,Laboratory Technician,Active Listening; Speaking; Science; Google Docs; Microsoft Office software,5,10,0.5,MEDIUM
+145,Healthcare Representative,Active Learning,1,10,0.1,LOW
+147,Laboratory Technician,Active Listening,1,10,0.1,LOW
+150,Laboratory Technician,Science; Microsoft Excel; Microsoft Outlook,3,10,0.3,LOW
+151,Research Scientist,Critical Thinking; Speaking; Active Learning; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation,5,10,0.5,MEDIUM
+152,Sales Executive,Active Listening; Eclipse IDE,2,10,0.2,LOW
+154,Sales Executive,Speaking; Monitoring,2,10,0.2,LOW
+155,Laboratory Technician,Reading Comprehension; Speaking; Science; Google Docs; Microsoft Excel,5,10,0.5,MEDIUM
+159,Research Scientist,Reading Comprehension,1,10,0.1,LOW
+160,Sales Executive,Adobe Creative Cloud software,1,10,0.1,LOW
+161,Research Scientist,Critical Thinking; Active Listening; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Redshift; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,7,10,0.7,HIGH
+162,Research Director,None,0,10,0.0,LOW
+163,Sales Executive,Active Listening; Adobe Acrobat; Adobe Creative Cloud software,3,10,0.3,LOW
+164,Research Scientist,Reading Comprehension; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation,3,10,0.3,LOW
+165,Healthcare Representative,Active Listening,1,10,0.1,LOW
+167,Sales Representative,Speaking; Writing; Apple macOS; HubSpot software; IBM SPSS Statistics; Microsoft Excel,6,10,0.6,MEDIUM
+169,Laboratory Technician,Reading Comprehension; Google Docs; MEDITECH software; Microsoft Outlook,4,10,0.4,MEDIUM
+170,Manufacturing Director,None,0,10,0.0,LOW
+171,Research Scientist,Critical Thinking; Speaking; Amazon DynamoDB; Amazon Web Services AWS CloudFormation,4,10,0.4,MEDIUM
+174,Sales Executive,Active Listening; Monitoring; Adobe Creative Cloud software; Eclipse IDE,4,10,0.4,MEDIUM
+175,Sales Executive,Active Listening; Speaking; Reading Comprehension; Critical Thinking; Monitoring; Adobe Acrobat; Eclipse IDE; Facebook,8,10,0.8,HIGH
+176,Sales Executive,None,0,10,0.0,LOW
+177,Human Resources,None,0,10,0.0,LOW
+178,Manufacturing Director,Critical Thinking; Speaking; Monitoring; Active Listening; Adobe InDesign; Autodesk AutoCAD,6,10,0.6,MEDIUM
+179,Manufacturing Director,Critical Thinking; Speaking,2,10,0.2,LOW
+182,Sales Executive,None,0,10,0.0,LOW
+183,Sales Executive,Speaking; Monitoring; Adobe Acrobat; Adobe Creative Cloud software; Bentley MicroStation; Facebook,6,10,0.6,MEDIUM
+184,Human Resources,None,0,10,0.0,LOW
+190,Laboratory Technician,Critical Thinking; Science; Microsoft Excel; Microsoft Office software,4,10,0.4,MEDIUM
+192,Research Scientist,Reading Comprehension; Speaking; Active Learning,3,10,0.3,LOW
+193,Research Scientist,Active Listening; Speaking; Active Learning; Amazon Web Services AWS CloudFormation,4,10,0.4,MEDIUM
+194,Research Scientist,Critical Thinking; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2,3,10,0.3,LOW
+195,Sales Executive,Active Listening; Bentley MicroStation,2,10,0.2,LOW
+197,Research Scientist,Critical Thinking; Active Listening; Amazon DynamoDB,3,10,0.3,LOW
+198,Laboratory Technician,Critical Thinking; MEDITECH software; Microsoft Office software,3,10,0.3,LOW
+200,Laboratory Technician,Google Docs; Microsoft Outlook,2,10,0.2,LOW
+201,Laboratory Technician,Speaking; Science; MEDITECH software; Microsoft Excel; Microsoft Office software; Microsoft Outlook,6,10,0.6,MEDIUM
+202,Research Scientist,None,0,10,0.0,LOW
+204,Sales Executive,Monitoring; Adobe Acrobat; Bentley MicroStation,3,10,0.3,LOW
+205,Sales Representative,None,0,10,0.0,LOW
+206,Laboratory Technician,Reading Comprehension,1,10,0.1,LOW
+207,Sales Executive,Reading Comprehension; Adobe Acrobat,2,10,0.2,LOW
+208,Manufacturing Director,Active Listening; Adobe After Effects; Adobe Photoshop,3,10,0.3,LOW
+211,Manufacturing Director,Critical Thinking; Speaking; Monitoring; Adobe Acrobat; Adobe After Effects; Adobe InDesign; Adobe Photoshop,7,10,0.7,HIGH
+214,Research Scientist,Critical Thinking; Active Listening; Amazon Redshift,3,10,0.3,LOW
+215,Sales Executive,None,0,10,0.0,LOW
+216,Sales Representative,Microsoft Office software,1,10,0.1,LOW
+217,Research Scientist,Critical Thinking; Reading Comprehension; Active Listening; Amazon Redshift; Amazon Web Services AWS software,5,10,0.5,MEDIUM
+218,Research Scientist,Reading Comprehension; Active Learning; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,4,10,0.4,MEDIUM
+221,Research Scientist,Active Listening; Amazon Redshift,2,10,0.2,LOW
+223,Healthcare Representative,Active Listening; Active Learning; HubSpot software,3,10,0.3,LOW
+224,Research Scientist,Critical Thinking; Reading Comprehension; Active Listening; Speaking; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,7,10,0.7,HIGH
+227,Research Scientist,None,0,10,0.0,LOW
+228,Sales Executive,None,0,10,0.0,LOW
+230,Sales Executive,Monitoring,1,10,0.1,LOW
+231,Research Scientist,Critical Thinking; Reading Comprehension; Active Learning; Amazon Web Services AWS software,4,10,0.4,MEDIUM
+233,Research Scientist,Amazon Redshift,1,10,0.1,LOW
+235,Sales Representative,Active Listening; Speaking; Apple macOS; HubSpot software; IBM SPSS Statistics; Microsoft Excel; Microsoft Office software,7,10,0.7,HIGH
+238,Laboratory Technician,Speaking,1,10,0.1,LOW
+239,Laboratory Technician,Microsoft Office software,1,10,0.1,LOW
+240,Sales Executive,Speaking; Adobe Acrobat; Bentley MicroStation; Eclipse IDE; Facebook,5,10,0.5,MEDIUM
+241,Research Scientist,Amazon DynamoDB; Amazon Elastic Compute Cloud EC2,2,10,0.2,LOW
+242,Research Scientist,Critical Thinking; Active Listening; Active Learning; Amazon DynamoDB; Amazon Redshift; Amazon Web Services AWS software,6,10,0.6,MEDIUM
+243,Laboratory Technician,Active Listening; Critical Thinking; Speaking; Science; Microsoft Outlook,5,10,0.5,MEDIUM
+244,Sales Executive,Speaking,1,10,0.1,LOW
+245,Laboratory Technician,Microsoft Office software,1,10,0.1,LOW
+246,Research Scientist,Critical Thinking; Speaking; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,5,10,0.5,MEDIUM
+247,Research Scientist,Active Listening; Amazon DynamoDB; Amazon Redshift; Amazon Web Services AWS CloudFormation,4,10,0.4,MEDIUM
+248,Sales Representative,IBM SPSS Statistics; Microsoft Excel,2,10,0.2,LOW
+249,Laboratory Technician,Active Listening; Google Docs,2,10,0.2,LOW
+250,Manufacturing Director,Critical Thinking; Speaking; Monitoring; Adobe Photoshop,4,10,0.4,MEDIUM
+252,Research Scientist,Active Learning; Amazon Elastic Compute Cloud EC2,2,10,0.2,LOW
+254,Research Director,None,0,10,0.0,LOW
+256,Manufacturing Director,Reading Comprehension,1,10,0.1,LOW
+258,Healthcare Representative,None,0,10,0.0,LOW
+260,Research Scientist,None,0,10,0.0,LOW
+261,Manufacturing Director,Critical Thinking; Speaking; Adobe Acrobat; Adobe After Effects,4,10,0.4,MEDIUM
+262,Research Scientist,Reading Comprehension; Amazon DynamoDB; Amazon Redshift,3,10,0.3,LOW
+267,Research Scientist,Amazon Redshift,1,10,0.1,LOW
+269,Laboratory Technician,Reading Comprehension; Microsoft Office software,2,10,0.2,LOW
+270,Manufacturing Director,Active Listening; Adobe Photoshop,2,10,0.2,LOW
+271,Manufacturing Director,Speaking; Monitoring; Reading Comprehension; Active Listening; Adobe After Effects; Adobe Photoshop; Autodesk AutoCAD,7,10,0.7,HIGH
+273,Manufacturing Director,Active Listening; Adobe Acrobat,2,10,0.2,LOW
+274,Manufacturing Director,Critical Thinking; Monitoring; Reading Comprehension; Active Listening; Adobe Acrobat; Adobe After Effects; Adobe InDesign; Autodesk AutoCAD,8,10,0.8,HIGH
+275,Manufacturing Director,Critical Thinking; Speaking; Reading Comprehension; Adobe Photoshop; Autodesk AutoCAD,5,10,0.5,MEDIUM
+277,Research Scientist,Active Listening; Amazon Web Services AWS software,2,10,0.2,LOW
+281,Laboratory Technician,Critical Thinking; MEDITECH software,2,10,0.2,LOW
+282,Healthcare Representative,Speaking; Reading Comprehension; Apple macOS; HubSpot software; IBM SPSS Statistics,5,10,0.5,MEDIUM
+283,Sales Executive,None,0,10,0.0,LOW
+284,Research Scientist,Speaking; Active Learning; Amazon DynamoDB; Amazon Redshift,4,10,0.4,MEDIUM
+286,Laboratory Technician,None,0,10,0.0,LOW
+287,Healthcare Representative,Writing; Active Learning; Apple macOS; Microsoft Office software,4,10,0.4,MEDIUM
+288,Healthcare Representative,Reading Comprehension,1,10,0.1,LOW
+291,Sales Executive,None,0,10,0.0,LOW
+292,Manufacturing Director,None,0,10,0.0,LOW
+293,Sales Executive,Active Listening; Monitoring; Adobe Creative Cloud software,3,10,0.3,LOW
+296,Research Director,None,0,10,0.0,LOW
+297,Research Scientist,Active Listening; Amazon Redshift,2,10,0.2,LOW
+299,Sales Executive,Active Listening; Reading Comprehension; Bentley MicroStation,3,10,0.3,LOW
+300,Research Scientist,Speaking,1,10,0.1,LOW
+302,Sales Executive,None,0,10,0.0,LOW
+303,Sales Executive,Critical Thinking; Monitoring,2,10,0.2,LOW
+304,Laboratory Technician,None,0,10,0.0,LOW
+305,Research Scientist,Critical Thinking; Speaking; Active Learning; Amazon DynamoDB; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,6,10,0.6,MEDIUM
+306,Research Director,Critical Thinking,1,10,0.1,LOW
+307,Sales Executive,Speaking,1,10,0.1,LOW
+308,Manufacturing Director,Critical Thinking; Reading Comprehension; Active Listening; Adobe After Effects; Adobe InDesign; Autodesk AutoCAD,6,10,0.6,MEDIUM
+309,Research Scientist,Speaking; Active Learning; Amazon Web Services AWS software,3,10,0.3,LOW
+311,Sales Representative,Reading Comprehension; Active Learning; Microsoft Excel,3,10,0.3,LOW
+312,Sales Executive,None,0,10,0.0,LOW
+314,Sales Executive,None,0,10,0.0,LOW
+315,Research Scientist,Active Listening; Speaking; Amazon Web Services AWS software,3,10,0.3,LOW
+316,Laboratory Technician,Reading Comprehension; Active Listening; Speaking; Google Docs; MEDITECH software; Microsoft Office software,6,10,0.6,MEDIUM
+321,Human Resources,Speaking; Writing; Adobe Acrobat; Adobe Illustrator; Adobe InDesign; Adobe Photoshop,6,10,0.6,MEDIUM
+325,Laboratory Technician,Science; Google Docs; MEDITECH software; Microsoft Excel; Microsoft Office software; Microsoft Outlook,6,10,0.6,MEDIUM
+328,Laboratory Technician,Active Listening,1,10,0.1,LOW
+330,Sales Representative,Active Listening; Apple macOS; IBM SPSS Statistics; Microsoft Office software,4,10,0.4,MEDIUM
+331,Laboratory Technician,Reading Comprehension; Active Listening; Speaking; Science; MEDITECH software; Microsoft Office software,6,10,0.6,MEDIUM
+332,Laboratory Technician,Reading Comprehension; Active Listening; Microsoft Excel,3,10,0.3,LOW
+333,Sales Executive,Active Listening; Reading Comprehension; Critical Thinking; Monitoring; Adobe Acrobat; Adobe Creative Cloud software,6,10,0.6,MEDIUM
+334,Research Scientist,Critical Thinking; Active Listening; Speaking; Active Learning; Amazon DynamoDB; Amazon Redshift; Amazon Web Services AWS CloudFormation,7,10,0.7,HIGH
+335,Research Scientist,Reading Comprehension,1,10,0.1,LOW
+337,Research Director,Science; Reading Comprehension; Active Listening; Monitoring; Adobe Acrobat; Adobe Photoshop; ESRI ArcGIS software,7,10,0.7,HIGH
+338,Research Scientist,Speaking; Active Learning; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Redshift; Amazon Web Services AWS CloudFormation,6,10,0.6,MEDIUM
+339,Manufacturing Director,Adobe After Effects,1,10,0.1,LOW
+340,Research Scientist,Critical Thinking,1,10,0.1,LOW
+341,Manufacturing Director,Critical Thinking; Speaking; Monitoring; Active Listening; Adobe InDesign,5,10,0.5,MEDIUM
+342,Manufacturing Director,Speaking; Reading Comprehension; Active Listening,3,10,0.3,LOW
+343,Healthcare Representative,Apple macOS,1,10,0.1,LOW
+346,Research Scientist,Speaking,1,10,0.1,LOW
+347,Research Scientist,Critical Thinking; Active Learning; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation,5,10,0.5,MEDIUM
+349,Sales Executive,Active Listening; Speaking; Reading Comprehension; Critical Thinking; Monitoring; Adobe Creative Cloud software,6,10,0.6,MEDIUM
+350,Manufacturing Director,Autodesk AutoCAD,1,10,0.1,LOW
+351,Laboratory Technician,None,0,10,0.0,LOW
+352,Research Director,None,0,10,0.0,LOW
+353,Research Scientist,Critical Thinking; Active Listening; Active Learning; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,5,10,0.5,MEDIUM
+355,Laboratory Technician,Science; Microsoft Office software,2,10,0.2,LOW
+359,Laboratory Technician,Google Docs,1,10,0.1,LOW
+361,Sales Executive,Reading Comprehension; Adobe Acrobat; Bentley MicroStation; Facebook,4,10,0.4,MEDIUM
+362,Laboratory Technician,Critical Thinking; Science,2,10,0.2,LOW
+364,Laboratory Technician,Reading Comprehension; Critical Thinking; Speaking,3,10,0.3,LOW
+366,Sales Executive,Speaking; Reading Comprehension; Monitoring; Adobe Creative Cloud software; Bentley MicroStation; Eclipse IDE; Facebook,7,10,0.7,HIGH
+367,Healthcare Representative,Active Listening; Speaking,2,10,0.2,LOW
+369,Healthcare Representative,Speaking; Reading Comprehension; Writing; Apple macOS; IBM SPSS Statistics; Microsoft Office software,6,10,0.6,MEDIUM
+372,Healthcare Representative,Apple macOS,1,10,0.1,LOW
+373,Laboratory Technician,Microsoft Office software,1,10,0.1,LOW
+377,Research Scientist,Critical Thinking; Reading Comprehension; Speaking; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,6,10,0.6,MEDIUM
+378,Sales Executive,Speaking; Adobe Acrobat,2,10,0.2,LOW
+379,Research Scientist,Critical Thinking; Active Learning; Amazon Redshift; Amazon Web Services AWS software,4,10,0.4,MEDIUM
+380,Research Director,Science; Reading Comprehension; Monitoring; Adobe Acrobat; Adobe Photoshop; IBM SPSS Statistics; Microsoft Access,7,10,0.7,HIGH
+382,Sales Executive,None,0,10,0.0,LOW
+384,Manufacturing Director,Reading Comprehension; Adobe Acrobat,2,10,0.2,LOW
+385,Research Director,None,0,10,0.0,LOW
+386,Research Director,Reading Comprehension; Adobe Photoshop,2,10,0.2,LOW
+387,Sales Executive,None,0,10,0.0,LOW
+388,Sales Executive,None,0,10,0.0,LOW
+389,Laboratory Technician,None,0,10,0.0,LOW
+390,Healthcare Representative,Active Listening; Writing; Microsoft Excel,3,10,0.3,LOW
+391,Research Scientist,Amazon DynamoDB,1,10,0.1,LOW
+392,Laboratory Technician,Reading Comprehension; Active Listening; Science; Google Docs; MEDITECH software; Microsoft Excel; Microsoft Office software; Microsoft Outlook,8,10,0.8,HIGH
+393,Healthcare Representative,Reading Comprehension; Writing; HubSpot software; IBM SPSS Statistics,4,10,0.4,MEDIUM
+394,Laboratory Technician,Science; MEDITECH software; Microsoft Excel; Microsoft Outlook,4,10,0.4,MEDIUM
+395,Research Scientist,Reading Comprehension; Amazon Web Services AWS CloudFormation,2,10,0.2,LOW
+396,Research Director,Active Listening; Monitoring,2,10,0.2,LOW
+397,Research Scientist,Reading Comprehension,1,10,0.1,LOW
+399,Sales Representative,Active Learning; HubSpot software; Microsoft Excel; Microsoft Office software,4,10,0.4,MEDIUM
+401,Sales Executive,Speaking; Monitoring; Adobe Acrobat,3,10,0.3,LOW
+403,Research Scientist,Critical Thinking; Amazon Redshift; Amazon Web Services AWS CloudFormation,3,10,0.3,LOW
+404,Sales Executive,None,0,10,0.0,LOW
+405,Laboratory Technician,Reading Comprehension; Active Listening; Speaking; Science; Google Docs; MEDITECH software; Microsoft Excel; Microsoft Office software,8,10,0.8,HIGH
+406,Sales Executive,None,0,10,0.0,LOW
+407,Laboratory Technician,Active Listening; Science; MEDITECH software; Microsoft Excel; Microsoft Office software,5,10,0.5,MEDIUM
+408,Manufacturing Director,Adobe Acrobat; Autodesk AutoCAD,2,10,0.2,LOW
+411,Sales Representative,Reading Comprehension; Writing; Active Learning; Apple macOS; Microsoft Excel,5,10,0.5,MEDIUM
+412,Healthcare Representative,Speaking; Reading Comprehension; Active Learning; HubSpot software; Microsoft Excel; Microsoft Office software,6,10,0.6,MEDIUM
+416,Sales Executive,Speaking; Eclipse IDE,2,10,0.2,LOW
+417,Healthcare Representative,Writing; Apple macOS,2,10,0.2,LOW
+419,Laboratory Technician,None,0,10,0.0,LOW
+420,Sales Executive,None,0,10,0.0,LOW
+421,Research Director,Adobe Acrobat; Adobe Photoshop,2,10,0.2,LOW
+422,Healthcare Representative,Speaking; Reading Comprehension; Writing; HubSpot software,4,10,0.4,MEDIUM
+423,Research Scientist,Speaking,1,10,0.1,LOW
+424,Human Resources,Speaking; Active Listening; Writing; Adobe Acrobat; Adobe Creative Cloud software; Adobe Illustrator,6,10,0.6,MEDIUM
+425,Laboratory Technician,None,0,10,0.0,LOW
+426,Research Scientist,Reading Comprehension; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,5,10,0.5,MEDIUM
+430,Laboratory Technician,None,0,10,0.0,LOW
+431,Healthcare Representative,Speaking; HubSpot software,2,10,0.2,LOW
+433,Research Scientist,Speaking,1,10,0.1,LOW
+434,Research Scientist,Reading Comprehension; Active Listening; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Redshift; Amazon Web Services AWS CloudFormation,6,10,0.6,MEDIUM
+436,Sales Executive,Eclipse IDE,1,10,0.1,LOW
+437,Sales Executive,Critical Thinking; Monitoring; Facebook,3,10,0.3,LOW
+438,Sales Executive,Active Listening; Monitoring; Bentley MicroStation; Facebook,4,10,0.4,MEDIUM
+439,Research Scientist,Speaking; Active Learning; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation,5,10,0.5,MEDIUM
+440,Research Scientist,Active Listening; Speaking; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,5,10,0.5,MEDIUM
+441,Research Scientist,Amazon DynamoDB,1,10,0.1,LOW
+442,Manufacturing Director,None,0,10,0.0,LOW
+445,Sales Executive,Active Listening; Speaking; Critical Thinking; Monitoring; Adobe Acrobat; Adobe Creative Cloud software; Eclipse IDE,7,10,0.7,HIGH
+446,Sales Executive,None,0,10,0.0,LOW
+447,Research Director,Active Listening; Adobe Photoshop; ESRI ArcGIS software; IBM SPSS Statistics; Microsoft Access,5,10,0.5,MEDIUM
+448,Laboratory Technician,Microsoft Excel,1,10,0.1,LOW
+449,Sales Executive,Speaking; Monitoring; Adobe Acrobat,3,10,0.3,LOW
+450,Research Scientist,Amazon DynamoDB; Amazon Web Services AWS software,2,10,0.2,LOW
+451,Healthcare Representative,Reading Comprehension; Writing; Active Learning; IBM SPSS Statistics; Microsoft Office software,5,10,0.5,MEDIUM
+452,Research Scientist,None,0,10,0.0,LOW
+453,Sales Executive,Active Listening; Speaking; Monitoring; Adobe Acrobat,4,10,0.4,MEDIUM
+454,Laboratory Technician,Active Listening; MEDITECH software,2,10,0.2,LOW
+455,Laboratory Technician,Active Listening; Critical Thinking; MEDITECH software; Microsoft Office software; Microsoft Outlook,5,10,0.5,MEDIUM
+456,Sales Executive,None,0,10,0.0,LOW
+458,Sales Executive,Eclipse IDE,1,10,0.1,LOW
+460,Manufacturing Director,Critical Thinking; Speaking; Monitoring; Adobe After Effects; Adobe InDesign,5,10,0.5,MEDIUM
+461,Research Director,None,0,10,0.0,LOW
+462,Manufacturing Director,None,0,10,0.0,LOW
+463,Sales Executive,Adobe Creative Cloud software; Eclipse IDE,2,10,0.2,LOW
+464,Manufacturing Director,None,0,10,0.0,LOW
+465,Research Scientist,Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,2,10,0.2,LOW
+466,Manufacturing Director,Speaking; Monitoring; Adobe After Effects; Adobe InDesign,4,10,0.4,MEDIUM
+467,Sales Representative,Active Listening; Speaking; Writing; Active Learning; Apple macOS; HubSpot software; IBM SPSS Statistics; Microsoft Office software,8,10,0.8,HIGH
+468,Research Director,Reading Comprehension; Critical Thinking; IBM SPSS Statistics; Microsoft Access,4,10,0.4,MEDIUM
+469,Sales Executive,Adobe Acrobat,1,10,0.1,LOW
+470,Human Resources,Adobe Illustrator,1,10,0.1,LOW
+471,Laboratory Technician,None,0,10,0.0,LOW
+474,Research Scientist,Amazon Web Services AWS software,1,10,0.1,LOW
+475,Sales Executive,Speaking; Monitoring; Bentley MicroStation; Eclipse IDE; Facebook,5,10,0.5,MEDIUM
+476,Sales Executive,None,0,10,0.0,LOW
+477,Healthcare Representative,Reading Comprehension; Writing; IBM SPSS Statistics; Microsoft Excel,4,10,0.4,MEDIUM
+478,Sales Representative,Speaking; Active Learning; HubSpot software; Microsoft Office software,4,10,0.4,MEDIUM
+479,Sales Executive,Speaking,1,10,0.1,LOW
+481,Sales Executive,None,0,10,0.0,LOW
+482,Healthcare Representative,Reading Comprehension; Writing; Active Learning; Apple macOS; HubSpot software; Microsoft Office software,6,10,0.6,MEDIUM
+483,Laboratory Technician,Science; MEDITECH software,2,10,0.2,LOW
+484,Sales Representative,Active Listening; Reading Comprehension; Apple macOS,3,10,0.3,LOW
+485,Sales Representative,Reading Comprehension; Writing; HubSpot software; Microsoft Excel; Microsoft Office software,5,10,0.5,MEDIUM
+486,Laboratory Technician,Reading Comprehension; Science,2,10,0.2,LOW
+487,Manufacturing Director,Speaking; Reading Comprehension; Active Listening; Adobe Acrobat; Adobe After Effects; Autodesk AutoCAD,6,10,0.6,MEDIUM
+488,Sales Executive,None,0,10,0.0,LOW
+491,Healthcare Representative,Speaking; Reading Comprehension; Active Learning; Apple macOS; HubSpot software; IBM SPSS Statistics,6,10,0.6,MEDIUM
+492,Sales Executive,Reading Comprehension; Bentley MicroStation,2,10,0.2,LOW
+493,Research Scientist,Active Learning; Amazon Redshift,2,10,0.2,LOW
+494,Sales Representative,Active Listening; Speaking; Reading Comprehension; Active Learning; Apple macOS; HubSpot software; IBM SPSS Statistics; Microsoft Excel; Microsoft Office software,9,10,0.9,HIGH
+495,Research Scientist,Reading Comprehension; Active Listening; Active Learning; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,5,10,0.5,MEDIUM
+496,Healthcare Representative,Writing; Active Learning; Apple macOS; HubSpot software; IBM SPSS Statistics,5,10,0.5,MEDIUM
+497,Laboratory Technician,Active Listening; Critical Thinking; Science; Microsoft Excel; Microsoft Office software,5,10,0.5,MEDIUM
+498,Sales Executive,Adobe Acrobat; Eclipse IDE,2,10,0.2,LOW
+499,Healthcare Representative,Speaking; Writing; Active Learning; Apple macOS; HubSpot software,5,10,0.5,MEDIUM
+500,Sales Executive,Critical Thinking,1,10,0.1,LOW
+501,Research Scientist,Reading Comprehension; Active Listening; Speaking; Active Learning; Amazon Elastic Compute Cloud EC2; Amazon Redshift; Amazon Web Services AWS software,7,10,0.7,HIGH
+502,Sales Executive,Speaking; Reading Comprehension; Monitoring; Adobe Creative Cloud software; Eclipse IDE,5,10,0.5,MEDIUM
+507,Sales Executive,Reading Comprehension; Critical Thinking; Monitoring; Adobe Acrobat,4,10,0.4,MEDIUM
+508,Sales Representative,HubSpot software; IBM SPSS Statistics; Microsoft Excel,3,10,0.3,LOW
+510,Research Scientist,Reading Comprehension,1,10,0.1,LOW
+511,Research Scientist,Reading Comprehension; Active Learning; Amazon Redshift; Amazon Web Services AWS software,4,10,0.4,MEDIUM
+513,Sales Executive,None,0,10,0.0,LOW
+514,Research Scientist,Reading Comprehension; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Redshift; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,6,10,0.6,MEDIUM
+515,Laboratory Technician,Speaking,1,10,0.1,LOW
+516,Sales Executive,Speaking; Critical Thinking,2,10,0.2,LOW
+517,Laboratory Technician,Reading Comprehension,1,10,0.1,LOW
+518,Manufacturing Director,Speaking; Adobe After Effects; Adobe Photoshop; Autodesk AutoCAD,4,10,0.4,MEDIUM
+520,Research Director,None,0,10,0.0,LOW
+521,Laboratory Technician,Reading Comprehension; Speaking; Microsoft Excel; Microsoft Office software; Microsoft Outlook,5,10,0.5,MEDIUM
+522,Research Director,Science; Adobe Photoshop,2,10,0.2,LOW
+523,Sales Executive,Speaking; Monitoring; Facebook,3,10,0.3,LOW
+524,Manufacturing Director,None,0,10,0.0,LOW
+525,Laboratory Technician,Reading Comprehension; Active Listening; Science; MEDITECH software,4,10,0.4,MEDIUM
+526,Healthcare Representative,Reading Comprehension; Microsoft Excel,2,10,0.2,LOW
+527,Sales Executive,Active Listening; Reading Comprehension; Adobe Creative Cloud software,3,10,0.3,LOW
+529,Research Scientist,Amazon Elastic Compute Cloud EC2,1,10,0.1,LOW
+530,Laboratory Technician,Active Listening; Speaking; Science; Google Docs; MEDITECH software; Microsoft Outlook,6,10,0.6,MEDIUM
+532,Sales Executive,Speaking; Reading Comprehension; Monitoring,3,10,0.3,LOW
+533,Sales Executive,Reading Comprehension; Adobe Acrobat,2,10,0.2,LOW
+534,Sales Executive,Speaking,1,10,0.1,LOW
+536,Laboratory Technician,Reading Comprehension,1,10,0.1,LOW
+538,Laboratory Technician,Reading Comprehension; Active Listening; Speaking; Microsoft Outlook,4,10,0.4,MEDIUM
+543,Manufacturing Director,None,0,10,0.0,LOW
+544,Research Scientist,Reading Comprehension; Speaking; Active Learning; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Redshift; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,8,10,0.8,HIGH
+547,Research Scientist,Speaking; Active Learning; Amazon Web Services AWS software,3,10,0.3,LOW
+548,Manufacturing Director,Reading Comprehension; Adobe Acrobat,2,10,0.2,LOW
+550,Manufacturing Director,Reading Comprehension; Adobe Acrobat,2,10,0.2,LOW
+551,Healthcare Representative,IBM SPSS Statistics; Microsoft Excel,2,10,0.2,LOW
+554,Sales Representative,Reading Comprehension; Microsoft Excel,2,10,0.2,LOW
+555,Sales Representative,Speaking; Reading Comprehension; HubSpot software; Microsoft Excel; Microsoft Office software,5,10,0.5,MEDIUM
+556,Laboratory Technician,Reading Comprehension; Google Docs; MEDITECH software; Microsoft Excel; Microsoft Office software,5,10,0.5,MEDIUM
+560,Research Scientist,Active Listening; Speaking; Active Learning; Amazon Web Services AWS software,4,10,0.4,MEDIUM
+562,Laboratory Technician,Reading Comprehension,1,10,0.1,LOW
+564,Research Director,None,0,10,0.0,LOW
+565,Research Scientist,Critical Thinking; Reading Comprehension; Active Listening; Active Learning; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Redshift; Amazon Web Services AWS CloudFormation,8,10,0.8,HIGH
+566,Human Resources,Speaking; Reading Comprehension; Active Listening; Critical Thinking; Adobe Acrobat; Adobe Illustrator; Adobe InDesign; Adobe Photoshop,8,10,0.8,HIGH
+567,Sales Executive,Reading Comprehension,1,10,0.1,LOW
+571,Laboratory Technician,Speaking; Science,2,10,0.2,LOW
+573,Sales Executive,Monitoring,1,10,0.1,LOW
+574,Manufacturing Director,Critical Thinking,1,10,0.1,LOW
+575,Research Director,Science; Reading Comprehension; Adobe Photoshop; ESRI ArcGIS software,4,10,0.4,MEDIUM
+577,Laboratory Technician,Active Listening; Critical Thinking; Google Docs; MEDITECH software,4,10,0.4,MEDIUM
+578,Laboratory Technician,Reading Comprehension; Speaking; Google Docs; Microsoft Office software,4,10,0.4,MEDIUM
+579,Research Scientist,Critical Thinking; Amazon DynamoDB,2,10,0.2,LOW
+580,Sales Executive,Active Listening; Speaking; Monitoring; Adobe Acrobat; Facebook,5,10,0.5,MEDIUM
+581,Manufacturing Director,None,0,10,0.0,LOW
+584,Laboratory Technician,Active Listening; Critical Thinking; Microsoft Office software,3,10,0.3,LOW
+585,Sales Representative,Reading Comprehension; Active Learning; HubSpot software; IBM SPSS Statistics,4,10,0.4,MEDIUM
+586,Healthcare Representative,Writing; Apple macOS,2,10,0.2,LOW
+587,Healthcare Representative,Active Listening; Writing; Apple macOS; HubSpot software; IBM SPSS Statistics; Microsoft Excel; Microsoft Office software,7,10,0.7,HIGH
+590,Human Resources,Speaking; Writing; Adobe Illustrator; Adobe InDesign,4,10,0.4,MEDIUM
+591,Laboratory Technician,Reading Comprehension; Active Listening; Critical Thinking; Science; MEDITECH software; Microsoft Office software; Microsoft Outlook,7,10,0.7,HIGH
+592,Sales Executive,Bentley MicroStation,1,10,0.1,LOW
+593,Laboratory Technician,Active Listening; Critical Thinking; Speaking; Science; Google Docs; Microsoft Office software,6,10,0.6,MEDIUM
+595,Sales Executive,None,0,10,0.0,LOW
+599,Sales Executive,None,0,10,0.0,LOW
+600,Sales Executive,Adobe Creative Cloud software,1,10,0.1,LOW
+601,Manufacturing Director,None,0,10,0.0,LOW
+602,Laboratory Technician,Speaking; Microsoft Excel,2,10,0.2,LOW
+604,Sales Executive,Adobe Creative Cloud software,1,10,0.1,LOW
+605,Manufacturing Director,None,0,10,0.0,LOW
+606,Sales Executive,Bentley MicroStation; Eclipse IDE,2,10,0.2,LOW
+608,Human Resources,None,0,10,0.0,LOW
+611,Manufacturing Director,Speaking; Active Listening; Adobe Acrobat; Adobe After Effects; Adobe InDesign,5,10,0.5,MEDIUM
+612,Research Director,Microsoft Access,1,10,0.1,LOW
+614,Sales Representative,Active Listening; Speaking; Reading Comprehension; Writing; Active Learning; Microsoft Office software,6,10,0.6,MEDIUM
+615,Sales Executive,Active Listening; Critical Thinking; Adobe Acrobat; Adobe Creative Cloud software; Bentley MicroStation,5,10,0.5,MEDIUM
+616,Healthcare Representative,None,0,10,0.0,LOW
+618,Sales Executive,Speaking; Reading Comprehension; Critical Thinking; Monitoring; Adobe Acrobat; Bentley MicroStation,6,10,0.6,MEDIUM
+620,Sales Executive,Active Listening; Critical Thinking; Bentley MicroStation; Eclipse IDE,4,10,0.4,MEDIUM
+621,Sales Executive,Facebook,1,10,0.1,LOW
+622,Laboratory Technician,Speaking; Google Docs; MEDITECH software,3,10,0.3,LOW
+623,Manufacturing Director,Speaking; Adobe Photoshop; Autodesk AutoCAD,3,10,0.3,LOW
+624,Healthcare Representative,Active Listening; Speaking; Active Learning; Apple macOS,4,10,0.4,MEDIUM
+626,Sales Executive,None,0,10,0.0,LOW
+630,Research Scientist,None,0,10,0.0,LOW
+631,Sales Executive,Speaking; Reading Comprehension; Monitoring; Bentley MicroStation; Eclipse IDE; Facebook,6,10,0.6,MEDIUM
+632,Sales Representative,Speaking; Writing; Active Learning; HubSpot software,4,10,0.4,MEDIUM
+634,Healthcare Representative,Active Listening; Speaking; Reading Comprehension; Active Learning; Apple macOS; IBM SPSS Statistics; Microsoft Office software,7,10,0.7,HIGH
+635,Manufacturing Director,Adobe InDesign,1,10,0.1,LOW
+638,Research Director,None,0,10,0.0,LOW
+639,Research Scientist,Critical Thinking; Speaking,2,10,0.2,LOW
+641,Sales Executive,None,0,10,0.0,LOW
+643,Laboratory Technician,Science; Google Docs; Microsoft Excel; Microsoft Outlook,4,10,0.4,MEDIUM
+645,Sales Representative,Active Learning; HubSpot software,2,10,0.2,LOW
+647,Laboratory Technician,Science; Google Docs,2,10,0.2,LOW
+648,Sales Representative,Speaking; Active Learning; Apple macOS; HubSpot software; Microsoft Office software,5,10,0.5,MEDIUM
+649,Research Scientist,None,0,10,0.0,LOW
+650,Sales Executive,Speaking; Reading Comprehension; Critical Thinking; Facebook,4,10,0.4,MEDIUM
+652,Laboratory Technician,Reading Comprehension; Speaking; Microsoft Excel; Microsoft Office software,4,10,0.4,MEDIUM
+653,Sales Executive,Active Listening; Adobe Acrobat,2,10,0.2,LOW
+655,Research Scientist,Active Listening; Speaking; Active Learning,3,10,0.3,LOW
+656,Sales Executive,Reading Comprehension; Monitoring; Eclipse IDE; Facebook,4,10,0.4,MEDIUM
+657,Research Scientist,Critical Thinking; Reading Comprehension; Speaking; Active Learning; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Redshift; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,9,10,0.9,HIGH
+659,Healthcare Representative,None,0,10,0.0,LOW
+661,Research Director,Reading Comprehension; Active Listening; Critical Thinking; Monitoring; Adobe Acrobat,5,10,0.5,MEDIUM
+662,Research Scientist,Critical Thinking; Reading Comprehension; Active Learning; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,6,10,0.6,MEDIUM
+663,Laboratory Technician,Microsoft Excel,1,10,0.1,LOW
+665,Human Resources,Speaking; Reading Comprehension; Active Listening; Writing; Critical Thinking; Adobe Creative Cloud software; Adobe Illustrator; Adobe InDesign,8,10,0.8,HIGH
+666,Sales Representative,None,0,10,0.0,LOW
+667,Sales Representative,Apple macOS; Microsoft Excel; Microsoft Office software,3,10,0.3,LOW
+669,Sales Representative,Active Listening; Writing; Apple macOS; HubSpot software; IBM SPSS Statistics; Microsoft Excel; Microsoft Office software,7,10,0.7,HIGH
+675,Research Scientist,Critical Thinking; Active Listening; Amazon DynamoDB; Amazon Web Services AWS software,4,10,0.4,MEDIUM
+677,Sales Executive,Critical Thinking; Monitoring; Eclipse IDE,3,10,0.3,LOW
+679,Research Scientist,Critical Thinking; Active Listening; Speaking; Amazon DynamoDB; Amazon Web Services AWS software,5,10,0.5,MEDIUM
+680,Research Scientist,Critical Thinking; Active Listening; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2,4,10,0.4,MEDIUM
+682,Sales Executive,Eclipse IDE,1,10,0.1,LOW
+683,Research Scientist,None,0,10,0.0,LOW
+684,Sales Executive,Active Listening; Speaking; Critical Thinking; Monitoring; Adobe Acrobat; Eclipse IDE,6,10,0.6,MEDIUM
+686,Laboratory Technician,Critical Thinking; Speaking; Google Docs; Microsoft Excel; Microsoft Office software; Microsoft Outlook,6,10,0.6,MEDIUM
+689,Manufacturing Director,Critical Thinking,1,10,0.1,LOW
+690,Sales Executive,None,0,10,0.0,LOW
+691,Research Scientist,None,0,10,0.0,LOW
+692,Healthcare Representative,IBM SPSS Statistics,1,10,0.1,LOW
+698,Human Resources,Active Listening; Adobe Photoshop,2,10,0.2,LOW
+699,Manufacturing Director,Adobe Acrobat; Autodesk AutoCAD,2,10,0.2,LOW
+700,Research Scientist,Active Listening; Speaking; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,5,10,0.5,MEDIUM
+701,Research Scientist,Speaking; Amazon Redshift; Amazon Web Services AWS software,3,10,0.3,LOW
+702,Research Scientist,None,0,10,0.0,LOW
+704,Laboratory Technician,Critical Thinking; Speaking; MEDITECH software; Microsoft Outlook,4,10,0.4,MEDIUM
+705,Research Scientist,Critical Thinking; Speaking; Amazon Web Services AWS software,3,10,0.3,LOW
+707,Sales Executive,Reading Comprehension; Monitoring; Adobe Acrobat; Bentley MicroStation; Facebook,5,10,0.5,MEDIUM
+709,Sales Executive,Speaking; Reading Comprehension; Adobe Acrobat; Adobe Creative Cloud software,4,10,0.4,MEDIUM
+710,Research Scientist,None,0,10,0.0,LOW
+712,Sales Executive,Reading Comprehension; Adobe Creative Cloud software; Bentley MicroStation,3,10,0.3,LOW
+714,Sales Executive,Speaking; Bentley MicroStation,2,10,0.2,LOW
+715,Research Scientist,Active Listening; Active Learning; Amazon DynamoDB; Amazon Redshift; Amazon Web Services AWS software,5,10,0.5,MEDIUM
+716,Laboratory Technician,None,0,10,0.0,LOW
+717,Healthcare Representative,None,0,10,0.0,LOW
+720,Sales Executive,Active Listening; Speaking; Reading Comprehension,3,10,0.3,LOW
+721,Healthcare Representative,Active Listening; Speaking,2,10,0.2,LOW
+722,Sales Executive,Active Listening; Bentley MicroStation; Eclipse IDE,3,10,0.3,LOW
+723,Sales Executive,Speaking; Facebook,2,10,0.2,LOW
+724,Healthcare Representative,None,0,10,0.0,LOW
+725,Manufacturing Director,None,0,10,0.0,LOW
+727,Research Director,None,0,10,0.0,LOW
+728,Sales Executive,Monitoring; Adobe Creative Cloud software,2,10,0.2,LOW
+729,Sales Executive,None,0,10,0.0,LOW
+730,Research Director,Science; Reading Comprehension; Critical Thinking; IBM SPSS Statistics; Microsoft Access,5,10,0.5,MEDIUM
+732,Sales Executive,Reading Comprehension; Monitoring; Adobe Creative Cloud software; Bentley MicroStation; Eclipse IDE; Facebook,6,10,0.6,MEDIUM
+733,Manufacturing Director,None,0,10,0.0,LOW
+738,Sales Representative,Writing; Apple macOS; IBM SPSS Statistics; Microsoft Office software,4,10,0.4,MEDIUM
+741,Research Scientist,Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation,2,10,0.2,LOW
+742,Research Director,Reading Comprehension,1,10,0.1,LOW
+743,Manufacturing Director,Critical Thinking; Monitoring; Reading Comprehension; Active Listening; Adobe After Effects; Adobe InDesign; Adobe Photoshop; Autodesk AutoCAD,8,10,0.8,HIGH
+744,Laboratory Technician,Reading Comprehension; Google Docs; Microsoft Office software,3,10,0.3,LOW
+746,Sales Executive,None,0,10,0.0,LOW
+747,Sales Executive,Facebook,1,10,0.1,LOW
+749,Sales Representative,Active Listening; Reading Comprehension; Writing; Active Learning; Microsoft Excel,5,10,0.5,MEDIUM
+752,Research Scientist,Reading Comprehension; Active Listening; Speaking; Amazon Elastic Compute Cloud EC2; Amazon Redshift; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,7,10,0.7,HIGH
+754,Sales Executive,Active Listening; Critical Thinking,2,10,0.2,LOW
+757,Healthcare Representative,Speaking; Apple macOS,2,10,0.2,LOW
+758,Laboratory Technician,Reading Comprehension; Active Listening; Science; Microsoft Office software,4,10,0.4,MEDIUM
+760,Human Resources,Critical Thinking,1,10,0.1,LOW
+762,Healthcare Representative,None,0,10,0.0,LOW
+763,Research Scientist,Active Listening; Amazon Elastic Compute Cloud EC2,2,10,0.2,LOW
+764,Healthcare Representative,Microsoft Excel; Microsoft Office software,2,10,0.2,LOW
+766,Sales Representative,Active Listening; Speaking; Reading Comprehension; Writing; Apple macOS; Microsoft Excel,6,10,0.6,MEDIUM
+769,Laboratory Technician,Active Listening; Science; Google Docs; Microsoft Outlook,4,10,0.4,MEDIUM
+771,Healthcare Representative,Active Listening; Speaking; Active Learning; HubSpot software; Microsoft Excel; Microsoft Office software,6,10,0.6,MEDIUM
+772,Laboratory Technician,None,0,10,0.0,LOW
+773,Research Scientist,Active Listening; Speaking; Active Learning; Amazon Redshift; Amazon Web Services AWS CloudFormation,5,10,0.5,MEDIUM
+775,Manufacturing Director,Critical Thinking; Reading Comprehension; Adobe Acrobat; Autodesk AutoCAD,4,10,0.4,MEDIUM
+780,Research Scientist,Amazon Web Services AWS software,1,10,0.1,LOW
+781,Sales Executive,Critical Thinking; Adobe Acrobat; Eclipse IDE,3,10,0.3,LOW
+783,Sales Representative,Writing,1,10,0.1,LOW
+784,Research Scientist,Reading Comprehension; Active Listening; Speaking; Active Learning; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation,6,10,0.6,MEDIUM
+785,Sales Executive,Active Listening; Critical Thinking; Bentley MicroStation,3,10,0.3,LOW
+786,Sales Executive,Bentley MicroStation,1,10,0.1,LOW
+789,Sales Executive,None,0,10,0.0,LOW
+791,Research Scientist,Critical Thinking; Speaking; Active Learning; Amazon Elastic Compute Cloud EC2; Amazon Redshift,5,10,0.5,MEDIUM
+792,Laboratory Technician,Active Listening; Critical Thinking; Science; Microsoft Excel; Microsoft Outlook,5,10,0.5,MEDIUM
+793,Healthcare Representative,Active Learning; Microsoft Excel,2,10,0.2,LOW
+796,Sales Executive,Critical Thinking; Eclipse IDE,2,10,0.2,LOW
+797,Research Scientist,Critical Thinking; Speaking; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS software,5,10,0.5,MEDIUM
+799,Manufacturing Director,Active Listening,1,10,0.1,LOW
+800,Sales Executive,Active Listening; Reading Comprehension; Critical Thinking; Eclipse IDE; Facebook,5,10,0.5,MEDIUM
+802,Research Scientist,Active Listening; Speaking; Amazon Redshift,3,10,0.3,LOW
+803,Manufacturing Director,Reading Comprehension,1,10,0.1,LOW
+804,Research Scientist,Active Learning; Amazon DynamoDB; Amazon Web Services AWS CloudFormation,3,10,0.3,LOW
+805,Sales Representative,Active Listening; Speaking; Active Learning; Apple macOS; Microsoft Office software,5,10,0.5,MEDIUM
+806,Laboratory Technician,Reading Comprehension; Active Listening; Speaking; Science; Microsoft Excel; Microsoft Office software,6,10,0.6,MEDIUM
+807,Healthcare Representative,Apple macOS,1,10,0.1,LOW
+808,Sales Executive,Critical Thinking; Adobe Acrobat; Adobe Creative Cloud software; Eclipse IDE,4,10,0.4,MEDIUM
+811,Laboratory Technician,Active Listening; Science; Google Docs; MEDITECH software; Microsoft Excel; Microsoft Office software; Microsoft Outlook,7,10,0.7,HIGH
+812,Laboratory Technician,Active Listening; Critical Thinking; Speaking; Science; Microsoft Outlook,5,10,0.5,MEDIUM
+813,Laboratory Technician,Active Listening; Critical Thinking; Google Docs; MEDITECH software,4,10,0.4,MEDIUM
+815,Research Director,Science; Active Listening,2,10,0.2,LOW
+816,Laboratory Technician,Critical Thinking; Speaking; Science; Google Docs; MEDITECH software; Microsoft Office software; Microsoft Outlook,7,10,0.7,HIGH
+817,Research Director,None,0,10,0.0,LOW
+819,Sales Executive,Critical Thinking; Bentley MicroStation,2,10,0.2,LOW
+823,Manufacturing Director,Adobe Photoshop; Autodesk AutoCAD,2,10,0.2,LOW
+824,Research Scientist,None,0,10,0.0,LOW
+825,Research Director,None,0,10,0.0,LOW
+826,Research Scientist,Critical Thinking; Active Listening; Speaking; Active Learning; Amazon DynamoDB; Amazon Redshift; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,8,10,0.8,HIGH
+827,Manufacturing Director,Speaking; Adobe InDesign,2,10,0.2,LOW
+828,Research Scientist,None,0,10,0.0,LOW
+829,Human Resources,Reading Comprehension; Active Listening; Writing; Adobe Acrobat; Adobe Creative Cloud software; Adobe Illustrator,6,10,0.6,MEDIUM
+830,Manufacturing Director,None,0,10,0.0,LOW
+832,Laboratory Technician,Critical Thinking; Speaking; Microsoft Excel,3,10,0.3,LOW
+833,Manufacturing Director,Speaking; Monitoring; Reading Comprehension; Active Listening,4,10,0.4,MEDIUM
+834,Research Scientist,Active Listening; Speaking; Active Learning; Amazon DynamoDB; Amazon Redshift; Amazon Web Services AWS software,6,10,0.6,MEDIUM
+836,Manufacturing Director,Speaking; Active Listening; Autodesk AutoCAD,3,10,0.3,LOW
+837,Healthcare Representative,Active Listening; Reading Comprehension; HubSpot software; IBM SPSS Statistics; Microsoft Excel,5,10,0.5,MEDIUM
+838,Research Scientist,Active Listening; Speaking; Amazon Web Services AWS CloudFormation,3,10,0.3,LOW
+840,Sales Executive,Critical Thinking,1,10,0.1,LOW
+842,Sales Executive,None,0,10,0.0,LOW
+843,Research Director,Reading Comprehension; Active Listening; Adobe Acrobat; Adobe Photoshop,4,10,0.4,MEDIUM
+844,Research Director,Reading Comprehension,1,10,0.1,LOW
+845,Manufacturing Director,None,0,10,0.0,LOW
+846,Sales Executive,Speaking,1,10,0.1,LOW
+847,Human Resources,Speaking; Reading Comprehension; Adobe Creative Cloud software; Adobe Illustrator; Adobe InDesign; Adobe Photoshop,6,10,0.6,MEDIUM
+848,Research Scientist,Active Listening; Amazon Redshift,2,10,0.2,LOW
+850,Research Scientist,Critical Thinking; Active Listening; Active Learning; Amazon Web Services AWS CloudFormation,4,10,0.4,MEDIUM
+852,Healthcare Representative,Reading Comprehension; Apple macOS; IBM SPSS Statistics,3,10,0.3,LOW
+854,Research Scientist,Active Listening; Active Learning; Amazon Web Services AWS CloudFormation,3,10,0.3,LOW
+855,Sales Executive,None,0,10,0.0,LOW
+856,Research Scientist,Reading Comprehension; Speaking,2,10,0.2,LOW
+857,Sales Executive,None,0,10,0.0,LOW
+859,Sales Executive,Active Listening,1,10,0.1,LOW
+861,Research Scientist,Critical Thinking; Active Listening; Speaking; Amazon Redshift; Amazon Web Services AWS CloudFormation,5,10,0.5,MEDIUM
+862,Sales Executive,Speaking; Critical Thinking; Monitoring,3,10,0.3,LOW
+864,Sales Executive,Active Listening; Speaking; Reading Comprehension; Monitoring; Adobe Acrobat; Facebook,6,10,0.6,MEDIUM
+865,Research Scientist,Reading Comprehension; Speaking; Amazon Web Services AWS CloudFormation,3,10,0.3,LOW
+867,Manufacturing Director,Adobe Acrobat; Adobe Photoshop,2,10,0.2,LOW
+868,Sales Executive,Speaking; Reading Comprehension; Critical Thinking; Monitoring; Adobe Acrobat; Bentley MicroStation; Eclipse IDE,7,10,0.7,HIGH
+869,Human Resources,Adobe Illustrator,1,10,0.1,LOW
+872,Manufacturing Director,Speaking; Monitoring; Adobe InDesign; Adobe Photoshop,4,10,0.4,MEDIUM
+874,Laboratory Technician,Reading Comprehension; Critical Thinking; Speaking; MEDITECH software,4,10,0.4,MEDIUM
+875,Research Scientist,Critical Thinking; Active Listening; Active Learning; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,7,10,0.7,HIGH
+878,Human Resources,Critical Thinking; Adobe Illustrator,2,10,0.2,LOW
+879,Sales Executive,Speaking; Reading Comprehension; Critical Thinking; Adobe Acrobat,4,10,0.4,MEDIUM
+880,Manufacturing Director,None,0,10,0.0,LOW
+881,Research Scientist,None,0,10,0.0,LOW
+882,Laboratory Technician,Active Listening; Speaking; MEDITECH software; Microsoft Excel; Microsoft Office software,5,10,0.5,MEDIUM
+885,Sales Executive,Active Listening; Adobe Creative Cloud software; Eclipse IDE,3,10,0.3,LOW
+887,Research Scientist,Critical Thinking; Amazon DynamoDB; Amazon Redshift,3,10,0.3,LOW
+888,Laboratory Technician,Active Listening; Critical Thinking; MEDITECH software; Microsoft Excel,4,10,0.4,MEDIUM
+889,Sales Executive,Speaking,1,10,0.1,LOW
+893,Sales Representative,Writing; Apple macOS; HubSpot software,3,10,0.3,LOW
+894,Laboratory Technician,Speaking; Science; Microsoft Office software; Microsoft Outlook,4,10,0.4,MEDIUM
+895,Research Scientist,Active Listening; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,3,10,0.3,LOW
+896,Sales Representative,Speaking; Writing; Apple macOS; HubSpot software; Microsoft Excel; Microsoft Office software,6,10,0.6,MEDIUM
+897,Sales Executive,Active Listening; Reading Comprehension; Critical Thinking; Adobe Acrobat; Facebook,5,10,0.5,MEDIUM
+899,Manufacturing Director,Monitoring,1,10,0.1,LOW
+900,Sales Representative,IBM SPSS Statistics,1,10,0.1,LOW
+901,Research Director,Adobe Acrobat,1,10,0.1,LOW
+902,Healthcare Representative,Active Listening; Speaking; Reading Comprehension; Apple macOS,4,10,0.4,MEDIUM
+903,Sales Executive,Speaking; Reading Comprehension; Adobe Creative Cloud software,3,10,0.3,LOW
+904,Sales Executive,None,0,10,0.0,LOW
+909,Human Resources,Critical Thinking; Adobe Acrobat; Adobe InDesign; Adobe Photoshop,4,10,0.4,MEDIUM
+910,Human Resources,Reading Comprehension; Critical Thinking; Adobe InDesign; Adobe Photoshop,4,10,0.4,MEDIUM
+911,Laboratory Technician,Critical Thinking; Speaking; Google Docs; MEDITECH software,4,10,0.4,MEDIUM
+912,Laboratory Technician,Reading Comprehension,1,10,0.1,LOW
+913,Research Scientist,Reading Comprehension; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation,3,10,0.3,LOW
+916,Sales Executive,Speaking; Adobe Acrobat; Bentley MicroStation; Facebook,4,10,0.4,MEDIUM
+918,Laboratory Technician,Active Listening; Speaking; Microsoft Outlook,3,10,0.3,LOW
+920,Manufacturing Director,Critical Thinking; Monitoring; Reading Comprehension; Adobe Acrobat; Adobe After Effects; Adobe InDesign; Autodesk AutoCAD,7,10,0.7,HIGH
+922,Sales Representative,Writing; Active Learning; Apple macOS,3,10,0.3,LOW
+923,Research Scientist,Reading Comprehension; Active Listening; Amazon Redshift; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,5,10,0.5,MEDIUM
+924,Healthcare Representative,None,0,10,0.0,LOW
+925,Sales Representative,HubSpot software; IBM SPSS Statistics; Microsoft Office software,3,10,0.3,LOW
+926,Manufacturing Director,Adobe InDesign,1,10,0.1,LOW
+927,Laboratory Technician,Speaking,1,10,0.1,LOW
+930,Research Scientist,Critical Thinking; Speaking; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2,4,10,0.4,MEDIUM
+932,Laboratory Technician,Reading Comprehension; Active Listening; Critical Thinking; Speaking; Science; Microsoft Excel,6,10,0.6,MEDIUM
+933,Research Scientist,Critical Thinking; Active Listening; Speaking; Amazon DynamoDB,4,10,0.4,MEDIUM
+934,Laboratory Technician,Science; Google Docs,2,10,0.2,LOW
+936,Sales Executive,Bentley MicroStation,1,10,0.1,LOW
+939,Research Scientist,Critical Thinking; Reading Comprehension; Active Listening; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Redshift; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,8,10,0.8,HIGH
+940,Healthcare Representative,Active Listening; Active Learning; IBM SPSS Statistics,3,10,0.3,LOW
+941,Sales Representative,Microsoft Excel,1,10,0.1,LOW
+942,Healthcare Representative,Writing; HubSpot software,2,10,0.2,LOW
+944,Laboratory Technician,None,0,10,0.0,LOW
+945,Research Scientist,Critical Thinking; Reading Comprehension; Active Listening; Speaking; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Redshift; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,9,10,0.9,HIGH
+947,Sales Executive,Reading Comprehension; Monitoring; Adobe Acrobat,3,10,0.3,LOW
+949,Research Scientist,None,0,10,0.0,LOW
+950,Research Director,None,0,10,0.0,LOW
+951,Laboratory Technician,Reading Comprehension; MEDITECH software,2,10,0.2,LOW
+952,Sales Representative,Speaking; Reading Comprehension; Writing; Apple macOS; Microsoft Excel,5,10,0.5,MEDIUM
+954,Sales Executive,Speaking; Reading Comprehension; Critical Thinking; Bentley MicroStation; Eclipse IDE; Facebook,6,10,0.6,MEDIUM
+956,Sales Executive,Monitoring; Adobe Acrobat; Eclipse IDE,3,10,0.3,LOW
+957,Laboratory Technician,None,0,10,0.0,LOW
+958,Laboratory Technician,Microsoft Office software,1,10,0.1,LOW
+959,Sales Representative,Active Listening; Speaking; Apple macOS; HubSpot software; IBM SPSS Statistics; Microsoft Office software,6,10,0.6,MEDIUM
+960,Laboratory Technician,Critical Thinking; Speaking; Science; MEDITECH software; Microsoft Outlook,5,10,0.5,MEDIUM
+961,Healthcare Representative,Speaking; Writing; Apple macOS; Microsoft Office software,4,10,0.4,MEDIUM
+964,Research Scientist,Active Listening; Amazon Redshift; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,4,10,0.4,MEDIUM
+966,Manufacturing Director,Critical Thinking; Adobe After Effects,2,10,0.2,LOW
+967,Sales Executive,None,0,10,0.0,LOW
+969,Healthcare Representative,Reading Comprehension; HubSpot software,2,10,0.2,LOW
+970,Sales Executive,Speaking,1,10,0.1,LOW
+972,Laboratory Technician,None,0,10,0.0,LOW
+974,Sales Representative,Speaking; Writing; Active Learning; Apple macOS,4,10,0.4,MEDIUM
+975,Sales Executive,Adobe Creative Cloud software; Facebook,2,10,0.2,LOW
+977,Research Scientist,Critical Thinking; Active Learning; Amazon Web Services AWS software,3,10,0.3,LOW
+982,Sales Executive,Adobe Acrobat; Bentley MicroStation; Eclipse IDE,3,10,0.3,LOW
+983,Sales Executive,Speaking; Reading Comprehension; Critical Thinking; Adobe Creative Cloud software; Bentley MicroStation; Eclipse IDE,6,10,0.6,MEDIUM
+984,Sales Executive,Adobe Acrobat,1,10,0.1,LOW
+985,Sales Executive,Speaking; Reading Comprehension; Bentley MicroStation,3,10,0.3,LOW
+986,Sales Executive,Speaking; Reading Comprehension; Monitoring; Adobe Creative Cloud software; Bentley MicroStation,5,10,0.5,MEDIUM
+987,Manufacturing Director,Autodesk AutoCAD,1,10,0.1,LOW
+990,Sales Executive,None,0,10,0.0,LOW
+991,Research Scientist,Critical Thinking; Speaking; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS software,5,10,0.5,MEDIUM
+994,Research Scientist,Critical Thinking; Reading Comprehension; Active Listening; Active Learning; Amazon Web Services AWS software,5,10,0.5,MEDIUM
+995,Research Scientist,Speaking; Active Learning; Amazon Web Services AWS CloudFormation,3,10,0.3,LOW
+996,Laboratory Technician,Speaking; Microsoft Office software,2,10,0.2,LOW
+997,Research Director,Science; Reading Comprehension; Adobe Acrobat; Microsoft Access,4,10,0.4,MEDIUM
+998,Healthcare Representative,Active Learning; HubSpot software,2,10,0.2,LOW
+999,Research Director,None,0,10,0.0,LOW
+1001,Laboratory Technician,Reading Comprehension; Active Listening; Speaking; MEDITECH software; Microsoft Excel; Microsoft Office software; Microsoft Outlook,7,10,0.7,HIGH
+1002,Laboratory Technician,Active Listening,1,10,0.1,LOW
+1003,Sales Executive,Monitoring; Adobe Acrobat,2,10,0.2,LOW
+1004,Research Scientist,Reading Comprehension; Amazon DynamoDB,2,10,0.2,LOW
+1005,Manufacturing Director,None,0,10,0.0,LOW
+1006,Research Scientist,Critical Thinking; Active Listening; Speaking; Active Learning; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation,7,10,0.7,HIGH
+1007,Manufacturing Director,Adobe After Effects; Autodesk AutoCAD,2,10,0.2,LOW
+1009,Manufacturing Director,Reading Comprehension; Active Listening,2,10,0.2,LOW
+1010,Laboratory Technician,Reading Comprehension; Critical Thinking; Microsoft Office software; Microsoft Outlook,4,10,0.4,MEDIUM
+1011,Manufacturing Director,Monitoring; Adobe Acrobat; Adobe After Effects; Autodesk AutoCAD,4,10,0.4,MEDIUM
+1012,Research Scientist,Active Listening; Speaking; Active Learning; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,7,10,0.7,HIGH
+1013,Manufacturing Director,Adobe Photoshop,1,10,0.1,LOW
+1014,Healthcare Representative,HubSpot software,1,10,0.1,LOW
+1015,Research Director,IBM SPSS Statistics,1,10,0.1,LOW
+1016,Research Scientist,Reading Comprehension; Active Listening; Active Learning; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Redshift; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,8,10,0.8,HIGH
+1017,Laboratory Technician,Reading Comprehension; MEDITECH software,2,10,0.2,LOW
+1018,Manufacturing Director,None,0,10,0.0,LOW
+1019,Laboratory Technician,Reading Comprehension; Speaking; Microsoft Excel; Microsoft Office software; Microsoft Outlook,5,10,0.5,MEDIUM
+1022,Healthcare Representative,Active Listening; Speaking; Reading Comprehension; Writing; Apple macOS; Microsoft Excel; Microsoft Office software,7,10,0.7,HIGH
+1024,Healthcare Representative,Microsoft Office software,1,10,0.1,LOW
+1025,Manufacturing Director,Critical Thinking; Active Listening,2,10,0.2,LOW
+1026,Manufacturing Director,None,0,10,0.0,LOW
+1027,Manufacturing Director,Speaking; Monitoring; Adobe Photoshop; Autodesk AutoCAD,4,10,0.4,MEDIUM
+1028,Laboratory Technician,Science; Microsoft Office software,2,10,0.2,LOW
+1030,Laboratory Technician,Reading Comprehension; Science; Google Docs,3,10,0.3,LOW
+1032,Manufacturing Director,Speaking; Monitoring; Adobe Acrobat; Adobe After Effects,4,10,0.4,MEDIUM
+1033,Healthcare Representative,Writing; IBM SPSS Statistics; Microsoft Excel; Microsoft Office software,4,10,0.4,MEDIUM
+1034,Healthcare Representative,Speaking; IBM SPSS Statistics,2,10,0.2,LOW
+1035,Research Director,None,0,10,0.0,LOW
+1036,Sales Executive,Reading Comprehension; Monitoring; Adobe Acrobat; Bentley MicroStation; Eclipse IDE,5,10,0.5,MEDIUM
+1037,Sales Executive,Active Listening; Speaking; Adobe Acrobat; Eclipse IDE,4,10,0.4,MEDIUM
+1039,Sales Executive,Facebook,1,10,0.1,LOW
+1040,Sales Executive,Reading Comprehension,1,10,0.1,LOW
+1042,Laboratory Technician,None,0,10,0.0,LOW
+1043,Manufacturing Director,None,0,10,0.0,LOW
+1044,Sales Representative,Active Listening; Active Learning; Apple macOS; HubSpot software; IBM SPSS Statistics; Microsoft Office software,6,10,0.6,MEDIUM
+1046,Laboratory Technician,Critical Thinking,1,10,0.1,LOW
+1047,Sales Executive,None,0,10,0.0,LOW
+1049,Human Resources,Reading Comprehension; Active Listening; Writing; Adobe Illustrator,4,10,0.4,MEDIUM
+1050,Sales Executive,None,0,10,0.0,LOW
+1052,Laboratory Technician,Reading Comprehension; Critical Thinking; Science; MEDITECH software,4,10,0.4,MEDIUM
+1053,Research Scientist,Critical Thinking; Active Listening; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,5,10,0.5,MEDIUM
+1055,Sales Representative,Active Listening; Speaking; Reading Comprehension; Writing; Apple macOS; IBM SPSS Statistics,6,10,0.6,MEDIUM
+1056,Sales Representative,Reading Comprehension; IBM SPSS Statistics; Microsoft Office software,3,10,0.3,LOW
+1060,Research Scientist,Reading Comprehension; Active Learning; Amazon Elastic Compute Cloud EC2; Amazon Redshift,4,10,0.4,MEDIUM
+1061,Research Director,Reading Comprehension; Adobe Photoshop; Microsoft Access,3,10,0.3,LOW
+1062,Healthcare Representative,Reading Comprehension; Microsoft Excel,2,10,0.2,LOW
+1066,Sales Executive,Speaking; Adobe Acrobat; Adobe Creative Cloud software,3,10,0.3,LOW
+1068,Research Scientist,Critical Thinking; Speaking; Amazon Web Services AWS software,3,10,0.3,LOW
+1069,Research Director,Reading Comprehension; Active Listening; Monitoring; Adobe Acrobat; Adobe Photoshop; ESRI ArcGIS software; IBM SPSS Statistics,7,10,0.7,HIGH
+1070,Sales Executive,None,0,10,0.0,LOW
+1071,Research Scientist,Critical Thinking; Active Listening; Speaking; Amazon DynamoDB,4,10,0.4,MEDIUM
+1073,Manufacturing Director,None,0,10,0.0,LOW
+1076,Sales Executive,Speaking; Critical Thinking; Adobe Creative Cloud software; Bentley MicroStation,4,10,0.4,MEDIUM
+1077,Sales Representative,Reading Comprehension; Writing; Apple macOS; HubSpot software; Microsoft Office software,5,10,0.5,MEDIUM
+1079,Laboratory Technician,Science; Microsoft Excel; Microsoft Office software; Microsoft Outlook,4,10,0.4,MEDIUM
+1080,Research Scientist,None,0,10,0.0,LOW
+1081,Research Scientist,Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,2,10,0.2,LOW
+1082,Healthcare Representative,Active Listening; Apple macOS; Microsoft Excel,3,10,0.3,LOW
+1083,Laboratory Technician,Microsoft Excel; Microsoft Office software,2,10,0.2,LOW
+1084,Manufacturing Director,Critical Thinking; Speaking; Adobe After Effects; Adobe InDesign; Autodesk AutoCAD,5,10,0.5,MEDIUM
+1085,Research Scientist,None,0,10,0.0,LOW
+1088,Healthcare Representative,None,0,10,0.0,LOW
+1092,Healthcare Representative,Speaking,1,10,0.1,LOW
+1094,Laboratory Technician,Microsoft Office software; Microsoft Outlook,2,10,0.2,LOW
+1096,Manufacturing Director,Critical Thinking; Adobe Acrobat,2,10,0.2,LOW
+1097,Research Scientist,Amazon DynamoDB,1,10,0.1,LOW
+1098,Human Resources,Speaking; Adobe Acrobat,2,10,0.2,LOW
+1099,Healthcare Representative,Writing; IBM SPSS Statistics; Microsoft Office software,3,10,0.3,LOW
+1100,Sales Executive,Speaking; Reading Comprehension,2,10,0.2,LOW
+1101,Research Scientist,None,0,10,0.0,LOW
+1102,Laboratory Technician,Google Docs; MEDITECH software; Microsoft Excel; Microsoft Outlook,4,10,0.4,MEDIUM
+1103,Healthcare Representative,Active Listening; Writing; Microsoft Office software,3,10,0.3,LOW
+1105,Sales Executive,Active Listening; Speaking; Critical Thinking,3,10,0.3,LOW
+1106,Laboratory Technician,Critical Thinking; Microsoft Excel,2,10,0.2,LOW
+1107,Laboratory Technician,Reading Comprehension; Critical Thinking; Speaking; Microsoft Excel; Microsoft Office software,5,10,0.5,MEDIUM
+1108,Research Scientist,Reading Comprehension; Active Listening; Speaking; Amazon Elastic Compute Cloud EC2; Amazon Redshift; Amazon Web Services AWS software,6,10,0.6,MEDIUM
+1111,Laboratory Technician,Speaking; Science; Google Docs; Microsoft Outlook,4,10,0.4,MEDIUM
+1113,Sales Executive,Speaking; Eclipse IDE; Facebook,3,10,0.3,LOW
+1114,Sales Executive,Adobe Acrobat,1,10,0.1,LOW
+1115,Research Scientist,Critical Thinking; Speaking; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation,5,10,0.5,MEDIUM
+1117,Sales Executive,Adobe Acrobat,1,10,0.1,LOW
+1118,Healthcare Representative,Reading Comprehension,1,10,0.1,LOW
+1119,Sales Executive,Active Listening; Reading Comprehension; Eclipse IDE,3,10,0.3,LOW
+1120,Research Scientist,Amazon Redshift; Amazon Web Services AWS software,2,10,0.2,LOW
+1121,Manufacturing Director,None,0,10,0.0,LOW
+1125,Sales Executive,Active Listening; Speaking; Monitoring; Adobe Acrobat; Eclipse IDE; Facebook,6,10,0.6,MEDIUM
+1126,Manufacturing Director,Critical Thinking; Speaking; Adobe Acrobat; Adobe Photoshop,4,10,0.4,MEDIUM
+1127,Healthcare Representative,None,0,10,0.0,LOW
+1128,Research Director,None,0,10,0.0,LOW
+1131,Research Scientist,Speaking; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,4,10,0.4,MEDIUM
+1132,Laboratory Technician,Reading Comprehension; Critical Thinking; Microsoft Outlook,3,10,0.3,LOW
+1133,Manufacturing Director,Adobe Acrobat; Adobe After Effects,2,10,0.2,LOW
+1135,Sales Representative,Writing; IBM SPSS Statistics; Microsoft Excel; Microsoft Office software,4,10,0.4,MEDIUM
+1136,Research Scientist,Critical Thinking; Amazon DynamoDB; Amazon Redshift,3,10,0.3,LOW
+1137,Sales Executive,Speaking; Reading Comprehension; Critical Thinking; Adobe Acrobat; Eclipse IDE,5,10,0.5,MEDIUM
+1138,Sales Executive,Critical Thinking,1,10,0.1,LOW
+1140,Manufacturing Director,Monitoring; Adobe InDesign; Adobe Photoshop,3,10,0.3,LOW
+1143,Research Scientist,Critical Thinking; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,4,10,0.4,MEDIUM
+1148,Laboratory Technician,Active Listening; Speaking; Science; Microsoft Excel,4,10,0.4,MEDIUM
+1150,Manufacturing Director,None,0,10,0.0,LOW
+1152,Human Resources,Writing; Critical Thinking; Adobe Acrobat,3,10,0.3,LOW
+1154,Research Scientist,Reading Comprehension; Active Listening; Amazon Elastic Compute Cloud EC2; Amazon Redshift; Amazon Web Services AWS CloudFormation,5,10,0.5,MEDIUM
+1156,Laboratory Technician,Reading Comprehension; Active Listening; Critical Thinking; Speaking; Science; Google Docs; MEDITECH software; Microsoft Excel,8,10,0.8,HIGH
+1157,Sales Executive,Active Listening; Adobe Acrobat; Adobe Creative Cloud software; Facebook,4,10,0.4,MEDIUM
+1158,Laboratory Technician,Active Listening; Speaking; Science; Google Docs; Microsoft Excel,5,10,0.5,MEDIUM
+1160,Laboratory Technician,Reading Comprehension; Active Listening; Microsoft Excel; Microsoft Outlook,4,10,0.4,MEDIUM
+1161,Healthcare Representative,Apple macOS; IBM SPSS Statistics; Microsoft Office software,3,10,0.3,LOW
+1162,Research Scientist,Critical Thinking; Reading Comprehension; Speaking; Active Learning; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,6,10,0.6,MEDIUM
+1163,Sales Executive,Critical Thinking; Adobe Creative Cloud software,2,10,0.2,LOW
+1164,Human Resources,Active Listening; Adobe Illustrator; Adobe Photoshop,3,10,0.3,LOW
+1165,Sales Executive,None,0,10,0.0,LOW
+1166,Research Director,None,0,10,0.0,LOW
+1167,Sales Executive,None,0,10,0.0,LOW
+1171,Sales Executive,Reading Comprehension; Monitoring; Bentley MicroStation,3,10,0.3,LOW
+1172,Laboratory Technician,MEDITECH software,1,10,0.1,LOW
+1173,Laboratory Technician,Critical Thinking; MEDITECH software; Microsoft Excel,3,10,0.3,LOW
+1175,Laboratory Technician,Microsoft Excel; Microsoft Office software; Microsoft Outlook,3,10,0.3,LOW
+1177,Laboratory Technician,Google Docs; MEDITECH software,2,10,0.2,LOW
+1179,Sales Executive,None,0,10,0.0,LOW
+1180,Research Scientist,Critical Thinking; Active Learning; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2,4,10,0.4,MEDIUM
+1182,Manufacturing Director,Monitoring,1,10,0.1,LOW
+1184,Healthcare Representative,Apple macOS,1,10,0.1,LOW
+1185,Laboratory Technician,Reading Comprehension; Critical Thinking; Speaking; Science; Google Docs; MEDITECH software; Microsoft Office software,7,10,0.7,HIGH
+1188,Sales Executive,Critical Thinking; Adobe Acrobat,2,10,0.2,LOW
+1190,Sales Representative,Speaking; Reading Comprehension; Apple macOS; HubSpot software; Microsoft Office software,5,10,0.5,MEDIUM
+1192,Laboratory Technician,Google Docs,1,10,0.1,LOW
+1193,Research Scientist,Critical Thinking; Amazon Elastic Compute Cloud EC2,2,10,0.2,LOW
+1195,Research Scientist,Critical Thinking; Reading Comprehension; Active Learning; Amazon Elastic Compute Cloud EC2; Amazon Redshift; Amazon Web Services AWS CloudFormation,6,10,0.6,MEDIUM
+1196,Manufacturing Director,None,0,10,0.0,LOW
+1198,Laboratory Technician,Active Listening; Critical Thinking; MEDITECH software; Microsoft Excel; Microsoft Office software,5,10,0.5,MEDIUM
+1200,Research Scientist,Critical Thinking; Active Learning; Amazon Redshift,3,10,0.3,LOW
+1202,Research Scientist,Critical Thinking; Amazon Web Services AWS software,2,10,0.2,LOW
+1203,Research Scientist,Critical Thinking; Reading Comprehension; Speaking; Amazon Elastic Compute Cloud EC2; Amazon Redshift; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,7,10,0.7,HIGH
+1206,Research Scientist,Active Listening; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Redshift; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,6,10,0.6,MEDIUM
+1207,Human Resources,Speaking; Adobe InDesign,2,10,0.2,LOW
+1210,Research Scientist,Critical Thinking; Reading Comprehension; Speaking; Active Learning; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation,6,10,0.6,MEDIUM
+1211,Sales Executive,Active Listening; Monitoring; Adobe Acrobat; Facebook,4,10,0.4,MEDIUM
+1212,Sales Executive,Active Listening; Speaking; Reading Comprehension; Critical Thinking; Adobe Acrobat; Adobe Creative Cloud software; Eclipse IDE; Facebook,8,10,0.8,HIGH
+1216,Laboratory Technician,Science; Microsoft Excel; Microsoft Outlook,3,10,0.3,LOW
+1217,Research Director,Science; Critical Thinking; Adobe Photoshop; IBM SPSS Statistics,4,10,0.4,MEDIUM
+1218,Sales Executive,Reading Comprehension; Monitoring,2,10,0.2,LOW
+1219,Laboratory Technician,Reading Comprehension; Critical Thinking; Science; Microsoft Outlook,4,10,0.4,MEDIUM
+1220,Sales Executive,None,0,10,0.0,LOW
+1221,Laboratory Technician,MEDITECH software; Microsoft Outlook,2,10,0.2,LOW
+1224,Laboratory Technician,Speaking,1,10,0.1,LOW
+1225,Research Scientist,Reading Comprehension,1,10,0.1,LOW
+1226,Sales Representative,Reading Comprehension; Writing; HubSpot software; Microsoft Office software,4,10,0.4,MEDIUM
+1228,Manufacturing Director,Adobe InDesign; Adobe Photoshop,2,10,0.2,LOW
+1231,Human Resources,Speaking; Active Listening; Critical Thinking; Adobe Illustrator,4,10,0.4,MEDIUM
+1233,Sales Executive,Monitoring,1,10,0.1,LOW
+1234,Laboratory Technician,Reading Comprehension; Active Listening; Speaking; Science; MEDITECH software; Microsoft Outlook,6,10,0.6,MEDIUM
+1235,Research Scientist,Critical Thinking,1,10,0.1,LOW
+1237,Manufacturing Director,Critical Thinking; Speaking,2,10,0.2,LOW
+1238,Research Scientist,Speaking,1,10,0.1,LOW
+1239,Sales Executive,Active Listening; Adobe Creative Cloud software,2,10,0.2,LOW
+1240,Sales Executive,Reading Comprehension,1,10,0.1,LOW
+1241,Research Scientist,None,0,10,0.0,LOW
+1242,Research Director,Science; Critical Thinking,2,10,0.2,LOW
+1243,Sales Executive,None,0,10,0.0,LOW
+1244,Research Scientist,Amazon Web Services AWS CloudFormation,1,10,0.1,LOW
+1245,Manufacturing Director,Critical Thinking; Speaking; Adobe Acrobat; Adobe InDesign; Autodesk AutoCAD,5,10,0.5,MEDIUM
+1246,Research Scientist,None,0,10,0.0,LOW
+1248,Research Scientist,Speaking; Active Learning; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2,4,10,0.4,MEDIUM
+1249,Research Scientist,Reading Comprehension; Active Listening; Amazon DynamoDB,3,10,0.3,LOW
+1250,Research Director,Science,1,10,0.1,LOW
+1251,Healthcare Representative,Active Listening; Reading Comprehension,2,10,0.2,LOW
+1252,Healthcare Representative,None,0,10,0.0,LOW
+1254,Sales Executive,Adobe Acrobat; Bentley MicroStation; Eclipse IDE,3,10,0.3,LOW
+1255,Research Director,Active Listening; Adobe Photoshop,2,10,0.2,LOW
+1257,Research Scientist,Active Learning,1,10,0.1,LOW
+1258,Laboratory Technician,Reading Comprehension; Critical Thinking,2,10,0.2,LOW
+1259,Research Scientist,Critical Thinking; Amazon DynamoDB; Amazon Redshift,3,10,0.3,LOW
+1260,Healthcare Representative,Writing,1,10,0.1,LOW
+1263,Research Director,Science; Active Listening; Critical Thinking; Adobe Photoshop; IBM SPSS Statistics,5,10,0.5,MEDIUM
+1264,Research Director,Active Listening; Monitoring; IBM SPSS Statistics; Microsoft Access,4,10,0.4,MEDIUM
+1265,Research Scientist,Reading Comprehension,1,10,0.1,LOW
+1268,Sales Executive,Speaking,1,10,0.1,LOW
+1269,Research Scientist,Critical Thinking; Amazon Redshift,2,10,0.2,LOW
+1270,Research Scientist,Reading Comprehension; Speaking; Active Learning; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation,5,10,0.5,MEDIUM
+1273,Sales Representative,Reading Comprehension; Apple macOS; HubSpot software; IBM SPSS Statistics; Microsoft Office software,5,10,0.5,MEDIUM
+1275,Research Scientist,Active Learning; Amazon Web Services AWS CloudFormation,2,10,0.2,LOW
+1278,Healthcare Representative,Active Listening; Active Learning,2,10,0.2,LOW
+1279,Laboratory Technician,Science; Google Docs; Microsoft Excel; Microsoft Office software; Microsoft Outlook,5,10,0.5,MEDIUM
+1281,Sales Executive,Reading Comprehension; Critical Thinking; Monitoring; Adobe Acrobat,4,10,0.4,MEDIUM
+1283,Manufacturing Director,Adobe Acrobat; Adobe After Effects,2,10,0.2,LOW
+1285,Laboratory Technician,Speaking,1,10,0.1,LOW
+1286,Laboratory Technician,Active Listening; Critical Thinking; Speaking; MEDITECH software; Microsoft Excel; Microsoft Outlook,6,10,0.6,MEDIUM
+1289,Human Resources,None,0,10,0.0,LOW
+1291,Research Scientist,Critical Thinking; Speaking; Amazon Redshift; Amazon Web Services AWS software,4,10,0.4,MEDIUM
+1292,Research Scientist,Critical Thinking; Reading Comprehension; Active Listening; Speaking; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2,6,10,0.6,MEDIUM
+1293,Sales Executive,None,0,10,0.0,LOW
+1294,Manufacturing Director,None,0,10,0.0,LOW
+1295,Healthcare Representative,None,0,10,0.0,LOW
+1296,Laboratory Technician,Active Listening; Critical Thinking; MEDITECH software; Microsoft Excel; Microsoft Office software; Microsoft Outlook,6,10,0.6,MEDIUM
+1297,Laboratory Technician,None,0,10,0.0,LOW
+1298,Manufacturing Director,Monitoring; Autodesk AutoCAD,2,10,0.2,LOW
+1299,Laboratory Technician,Active Listening; Critical Thinking; Google Docs; MEDITECH software,4,10,0.4,MEDIUM
+1301,Research Scientist,Critical Thinking; Speaking; Amazon DynamoDB; Amazon Redshift; Amazon Web Services AWS software,5,10,0.5,MEDIUM
+1303,Research Scientist,Critical Thinking; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,5,10,0.5,MEDIUM
+1304,Sales Executive,None,0,10,0.0,LOW
+1308,Research Scientist,Speaking; Amazon Web Services AWS software,2,10,0.2,LOW
+1309,Laboratory Technician,None,0,10,0.0,LOW
+1310,Research Scientist,Critical Thinking; Amazon Redshift,2,10,0.2,LOW
+1311,Laboratory Technician,None,0,10,0.0,LOW
+1312,Healthcare Representative,Speaking; HubSpot software,2,10,0.2,LOW
+1314,Human Resources,Speaking; Reading Comprehension,2,10,0.2,LOW
+1315,Laboratory Technician,None,0,10,0.0,LOW
+1317,Research Director,Reading Comprehension; Monitoring; Adobe Acrobat,3,10,0.3,LOW
+1318,Sales Executive,Speaking; Adobe Acrobat,2,10,0.2,LOW
+1319,Sales Executive,None,0,10,0.0,LOW
+1322,Manufacturing Director,Active Listening,1,10,0.1,LOW
+1324,Sales Executive,None,0,10,0.0,LOW
+1329,Sales Executive,Adobe Creative Cloud software,1,10,0.1,LOW
+1331,Sales Representative,Speaking; Writing; Active Learning; IBM SPSS Statistics; Microsoft Office software,5,10,0.5,MEDIUM
+1333,Laboratory Technician,Reading Comprehension; Speaking,2,10,0.2,LOW
+1340,Research Scientist,Critical Thinking; Speaking; Active Learning; Amazon DynamoDB; Amazon Redshift,5,10,0.5,MEDIUM
+1344,Healthcare Representative,Reading Comprehension,1,10,0.1,LOW
+1346,Research Scientist,Reading Comprehension,1,10,0.1,LOW
+1349,Sales Executive,Monitoring; Eclipse IDE,2,10,0.2,LOW
+1350,Research Scientist,Amazon Elastic Compute Cloud EC2,1,10,0.1,LOW
+1355,Sales Executive,Active Listening,1,10,0.1,LOW
+1356,Sales Executive,None,0,10,0.0,LOW
+1358,Laboratory Technician,Reading Comprehension; Science,2,10,0.2,LOW
+1360,Manufacturing Director,Active Listening,1,10,0.1,LOW
+1361,Laboratory Technician,Active Listening; Critical Thinking; Microsoft Outlook,3,10,0.3,LOW
+1362,Sales Executive,Facebook,1,10,0.1,LOW
+1363,Manufacturing Director,None,0,10,0.0,LOW
+1364,Sales Representative,Reading Comprehension; Writing; Apple macOS; HubSpot software; Microsoft Office software,5,10,0.5,MEDIUM
+1367,Manufacturing Director,Reading Comprehension; Active Listening; Adobe Acrobat; Adobe InDesign,4,10,0.4,MEDIUM
+1368,Laboratory Technician,Critical Thinking; Speaking; Google Docs; MEDITECH software; Microsoft Excel; Microsoft Outlook,6,10,0.6,MEDIUM
+1369,Laboratory Technician,Active Listening; Microsoft Excel; Microsoft Outlook,3,10,0.3,LOW
+1371,Sales Executive,None,0,10,0.0,LOW
+1372,Sales Executive,None,0,10,0.0,LOW
+1373,Manufacturing Director,None,0,10,0.0,LOW
+1374,Research Scientist,Amazon Redshift; Amazon Web Services AWS software,2,10,0.2,LOW
+1375,Healthcare Representative,Active Listening,1,10,0.1,LOW
+1377,Laboratory Technician,Microsoft Excel,1,10,0.1,LOW
+1379,Sales Representative,Speaking; Active Learning; HubSpot software; Microsoft Excel,4,10,0.4,MEDIUM
+1380,Sales Executive,Speaking; Critical Thinking; Adobe Acrobat; Bentley MicroStation; Eclipse IDE,5,10,0.5,MEDIUM
+1382,Research Scientist,Active Listening; Amazon Web Services AWS CloudFormation,2,10,0.2,LOW
+1383,Healthcare Representative,Apple macOS,1,10,0.1,LOW
+1387,Sales Executive,Active Listening; Speaking; Reading Comprehension,3,10,0.3,LOW
+1389,Manufacturing Director,None,0,10,0.0,LOW
+1390,Sales Executive,Critical Thinking; Bentley MicroStation,2,10,0.2,LOW
+1391,Sales Executive,Adobe Acrobat; Eclipse IDE,2,10,0.2,LOW
+1392,Research Scientist,Amazon Redshift,1,10,0.1,LOW
+1394,Research Scientist,Critical Thinking; Amazon Redshift; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,4,10,0.4,MEDIUM
+1395,Sales Executive,Active Listening; Reading Comprehension; Critical Thinking; Adobe Acrobat; Eclipse IDE; Facebook,6,10,0.6,MEDIUM
+1396,Sales Executive,Speaking; Monitoring; Adobe Creative Cloud software; Facebook,4,10,0.4,MEDIUM
+1397,Healthcare Representative,Reading Comprehension; Active Learning,2,10,0.2,LOW
+1399,Sales Executive,Adobe Creative Cloud software; Bentley MicroStation; Eclipse IDE,3,10,0.3,LOW
+1401,Manufacturing Director,Critical Thinking; Monitoring; Active Listening; Adobe Acrobat; Adobe After Effects,5,10,0.5,MEDIUM
+1402,Research Scientist,None,0,10,0.0,LOW
+1403,Sales Executive,Eclipse IDE; Facebook,2,10,0.2,LOW
+1405,Research Scientist,Critical Thinking; Active Listening; Speaking; Active Learning; Amazon Redshift,5,10,0.5,MEDIUM
+1407,Research Scientist,Critical Thinking; Active Learning; Amazon Redshift; Amazon Web Services AWS CloudFormation,4,10,0.4,MEDIUM
+1409,Laboratory Technician,Reading Comprehension; Active Listening; Microsoft Excel; Microsoft Office software,4,10,0.4,MEDIUM
+1411,Laboratory Technician,Science; Google Docs; Microsoft Excel,3,10,0.3,LOW
+1412,Manufacturing Director,Monitoring; Active Listening; Autodesk AutoCAD,3,10,0.3,LOW
+1415,Laboratory Technician,Active Listening; Critical Thinking; Speaking; Google Docs,4,10,0.4,MEDIUM
+1417,Laboratory Technician,Science; Microsoft Office software,2,10,0.2,LOW
+1419,Human Resources,None,0,10,0.0,LOW
+1420,Laboratory Technician,Critical Thinking; Science,2,10,0.2,LOW
+1421,Healthcare Representative,Speaking; Active Learning; IBM SPSS Statistics,3,10,0.3,LOW
+1422,Research Director,None,0,10,0.0,LOW
+1423,Research Director,None,0,10,0.0,LOW
+1424,Research Director,None,0,10,0.0,LOW
+1425,Sales Executive,Speaking; Adobe Acrobat; Adobe Creative Cloud software; Facebook,4,10,0.4,MEDIUM
+1427,Sales Representative,Active Listening; Speaking; Writing; HubSpot software; IBM SPSS Statistics,5,10,0.5,MEDIUM
+1428,Sales Executive,Active Listening; Reading Comprehension; Critical Thinking; Adobe Acrobat; Adobe Creative Cloud software; Bentley MicroStation; Eclipse IDE; Facebook,8,10,0.8,HIGH
+1430,Research Director,Active Listening; Adobe Acrobat; Adobe Photoshop; IBM SPSS Statistics; Microsoft Access,5,10,0.5,MEDIUM
+1431,Research Scientist,Reading Comprehension; Amazon Redshift; Amazon Web Services AWS CloudFormation,3,10,0.3,LOW
+1433,Research Scientist,Critical Thinking; Speaking; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation,4,10,0.4,MEDIUM
+1434,Laboratory Technician,Google Docs; MEDITECH software,2,10,0.2,LOW
+1435,Laboratory Technician,Reading Comprehension; Active Listening,2,10,0.2,LOW
+1436,Sales Executive,Active Listening,1,10,0.1,LOW
+1438,Research Scientist,Active Listening,1,10,0.1,LOW
+1439,Sales Representative,Active Listening; Reading Comprehension; Active Learning; Apple macOS; IBM SPSS Statistics; Microsoft Office software,6,10,0.6,MEDIUM
+1440,Laboratory Technician,Reading Comprehension; Critical Thinking; MEDITECH software; Microsoft Outlook,4,10,0.4,MEDIUM
+1441,Research Scientist,Amazon Elastic Compute Cloud EC2; Amazon Redshift,2,10,0.2,LOW
+1443,Research Director,None,0,10,0.0,LOW
+1445,Sales Executive,Reading Comprehension; Monitoring; Adobe Acrobat; Adobe Creative Cloud software; Bentley MicroStation,5,10,0.5,MEDIUM
+1446,Sales Executive,Speaking; Reading Comprehension; Monitoring; Adobe Acrobat; Adobe Creative Cloud software; Bentley MicroStation,6,10,0.6,MEDIUM
+1447,Laboratory Technician,Speaking; Science,2,10,0.2,LOW
+1448,Research Scientist,Amazon Web Services AWS CloudFormation,1,10,0.1,LOW
+1449,Laboratory Technician,Speaking,1,10,0.1,LOW
+1453,Sales Executive,None,0,10,0.0,LOW
+1457,Sales Executive,Reading Comprehension; Adobe Creative Cloud software; Eclipse IDE; Facebook,4,10,0.4,MEDIUM
+1458,Laboratory Technician,Active Listening; Speaking; MEDITECH software; Microsoft Excel; Microsoft Outlook,5,10,0.5,MEDIUM
+1459,Manufacturing Director,Autodesk AutoCAD,1,10,0.1,LOW
+1460,Healthcare Representative,Speaking; Apple macOS,2,10,0.2,LOW
+1461,Human Resources,Speaking; Active Listening; Adobe Creative Cloud software; Adobe Illustrator; Adobe Photoshop,5,10,0.5,MEDIUM
+1464,Laboratory Technician,MEDITECH software; Microsoft Excel,2,10,0.2,LOW
+1465,Manufacturing Director,Active Listening; Adobe Acrobat; Autodesk AutoCAD,3,10,0.3,LOW
+1466,Sales Executive,Reading Comprehension,1,10,0.1,LOW
+1467,Human Resources,Reading Comprehension; Critical Thinking; Adobe Acrobat; Adobe Creative Cloud software; Adobe Illustrator; Adobe Photoshop,6,10,0.6,MEDIUM
+1468,Research Director,Monitoring,1,10,0.1,LOW
+1469,Sales Executive,Bentley MicroStation,1,10,0.1,LOW
+1471,Laboratory Technician,MEDITECH software,1,10,0.1,LOW
+1472,Research Director,None,0,10,0.0,LOW
+1473,Healthcare Representative,Active Learning; Apple macOS; HubSpot software; Microsoft Excel; Microsoft Office software,5,10,0.5,MEDIUM
+1474,Research Scientist,Amazon DynamoDB; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,3,10,0.3,LOW
+1475,Research Scientist,Amazon Elastic Compute Cloud EC2,1,10,0.1,LOW
+1477,Sales Executive,Critical Thinking; Facebook,2,10,0.2,LOW
+1478,Sales Executive,Active Listening,1,10,0.1,LOW
+1479,Sales Executive,Active Listening; Reading Comprehension; Critical Thinking; Facebook,4,10,0.4,MEDIUM
+1480,Laboratory Technician,None,0,10,0.0,LOW
+1481,Sales Executive,Active Listening; Reading Comprehension; Critical Thinking; Adobe Acrobat; Adobe Creative Cloud software,5,10,0.5,MEDIUM
+1482,Research Scientist,Reading Comprehension; Active Listening; Speaking; Active Learning; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS software,7,10,0.7,HIGH
+1483,Research Scientist,None,0,10,0.0,LOW
+1484,Healthcare Representative,IBM SPSS Statistics,1,10,0.1,LOW
+1485,Research Director,Active Listening; IBM SPSS Statistics,2,10,0.2,LOW
+1486,Sales Representative,Active Listening; Active Learning; IBM SPSS Statistics; Microsoft Office software,4,10,0.4,MEDIUM
+1487,Sales Executive,Critical Thinking; Adobe Acrobat,2,10,0.2,LOW
+1489,Sales Executive,None,0,10,0.0,LOW
+1492,Sales Representative,Active Listening; Writing; Active Learning; Apple macOS; HubSpot software; IBM SPSS Statistics; Microsoft Excel; Microsoft Office software,8,10,0.8,HIGH
+1494,Laboratory Technician,Active Listening; Speaking; Science; Google Docs; MEDITECH software; Microsoft Excel,6,10,0.6,MEDIUM
+1495,Sales Representative,Active Listening; Speaking; Reading Comprehension; Active Learning; Apple macOS; HubSpot software; IBM SPSS Statistics; Microsoft Excel; Microsoft Office software,9,10,0.9,HIGH
+1496,Manufacturing Director,Speaking; Reading Comprehension; Adobe After Effects; Adobe Photoshop; Autodesk AutoCAD,5,10,0.5,MEDIUM
+1497,Sales Executive,Speaking,1,10,0.1,LOW
+1499,Human Resources,Reading Comprehension; Critical Thinking,2,10,0.2,LOW
+1501,Healthcare Representative,Active Listening; Reading Comprehension; Writing; Active Learning; Microsoft Excel,5,10,0.5,MEDIUM
+1502,Laboratory Technician,None,0,10,0.0,LOW
+1503,Sales Executive,Critical Thinking; Adobe Creative Cloud software; Bentley MicroStation,3,10,0.3,LOW
+1504,Laboratory Technician,Reading Comprehension; Critical Thinking; Speaking; Science; MEDITECH software; Microsoft Excel; Microsoft Office software,7,10,0.7,HIGH
+1506,Research Scientist,Speaking; Active Learning; Amazon Elastic Compute Cloud EC2,3,10,0.3,LOW
+1507,Sales Executive,Speaking; Adobe Acrobat,2,10,0.2,LOW
+1509,Laboratory Technician,Active Listening; Critical Thinking; Speaking; Microsoft Excel; Microsoft Office software; Microsoft Outlook,6,10,0.6,MEDIUM
+1513,Laboratory Technician,Reading Comprehension; Microsoft Excel; Microsoft Office software; Microsoft Outlook,4,10,0.4,MEDIUM
+1514,Manufacturing Director,Critical Thinking,1,10,0.1,LOW
+1515,Healthcare Representative,Speaking; HubSpot software; IBM SPSS Statistics; Microsoft Excel,4,10,0.4,MEDIUM
+1522,Research Scientist,None,0,10,0.0,LOW
+1523,Research Director,Reading Comprehension; Active Listening; IBM SPSS Statistics,3,10,0.3,LOW
+1525,Manufacturing Director,Speaking; Reading Comprehension; Active Listening; Adobe Acrobat; Autodesk AutoCAD,5,10,0.5,MEDIUM
+1529,Healthcare Representative,None,0,10,0.0,LOW
+1533,Laboratory Technician,Speaking; Google Docs; Microsoft Excel; Microsoft Office software; Microsoft Outlook,5,10,0.5,MEDIUM
+1534,Laboratory Technician,Reading Comprehension; Active Listening; Critical Thinking,3,10,0.3,LOW
+1535,Sales Executive,None,0,10,0.0,LOW
+1537,Research Scientist,Reading Comprehension; Active Listening; Speaking; Amazon Elastic Compute Cloud EC2,4,10,0.4,MEDIUM
+1539,Research Director,Microsoft Access,1,10,0.1,LOW
+1541,Sales Representative,None,0,10,0.0,LOW
+1542,Laboratory Technician,Critical Thinking; Google Docs; MEDITECH software; Microsoft Excel; Microsoft Office software; Microsoft Outlook,6,10,0.6,MEDIUM
+1543,Research Scientist,Critical Thinking; Active Learning; Amazon Web Services AWS software,3,10,0.3,LOW
+1544,Healthcare Representative,None,0,10,0.0,LOW
+1545,Manufacturing Director,Reading Comprehension; Active Listening; Adobe InDesign,3,10,0.3,LOW
+1546,Research Scientist,Critical Thinking; Active Listening; Active Learning,3,10,0.3,LOW
+1547,Healthcare Representative,None,0,10,0.0,LOW
+1548,Sales Executive,None,0,10,0.0,LOW
+1549,Laboratory Technician,Reading Comprehension,1,10,0.1,LOW
+1551,Laboratory Technician,Critical Thinking; Science; Google Docs; MEDITECH software; Microsoft Excel; Microsoft Office software,6,10,0.6,MEDIUM
+1552,Healthcare Representative,Active Listening; Active Learning; Microsoft Excel; Microsoft Office software,4,10,0.4,MEDIUM
+1553,Healthcare Representative,None,0,10,0.0,LOW
+1554,Sales Representative,None,0,10,0.0,LOW
+1555,Research Scientist,Amazon Elastic Compute Cloud EC2; Amazon Redshift,2,10,0.2,LOW
+1556,Sales Representative,Active Listening; Writing; Apple macOS; HubSpot software; IBM SPSS Statistics,5,10,0.5,MEDIUM
+1557,Sales Executive,None,0,10,0.0,LOW
+1558,Research Scientist,Critical Thinking; Speaking; Active Learning; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation,6,10,0.6,MEDIUM
+1560,Sales Executive,Speaking; Reading Comprehension; Adobe Creative Cloud software; Bentley MicroStation,4,10,0.4,MEDIUM
+1562,Sales Executive,None,0,10,0.0,LOW
+1563,Human Resources,Adobe Acrobat; Adobe Illustrator; Adobe InDesign,3,10,0.3,LOW
+1564,Laboratory Technician,Reading Comprehension; Science; Microsoft Office software,3,10,0.3,LOW
+1568,Sales Executive,Active Listening; Speaking; Reading Comprehension; Critical Thinking; Monitoring,5,10,0.5,MEDIUM
+1569,Laboratory Technician,Critical Thinking; Science; Google Docs; MEDITECH software; Microsoft Excel,5,10,0.5,MEDIUM
+1572,Manufacturing Director,None,0,10,0.0,LOW
+1573,Manufacturing Director,Reading Comprehension; Adobe Acrobat; Adobe After Effects; Autodesk AutoCAD,4,10,0.4,MEDIUM
+1574,Research Scientist,Critical Thinking; Reading Comprehension; Speaking; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation,5,10,0.5,MEDIUM
+1576,Research Scientist,Critical Thinking; Active Listening,2,10,0.2,LOW
+1577,Research Scientist,Critical Thinking; Active Listening; Amazon Web Services AWS software,3,10,0.3,LOW
+1580,Research Scientist,Critical Thinking; Reading Comprehension; Speaking; Amazon DynamoDB; Amazon Web Services AWS software,5,10,0.5,MEDIUM
+1581,Research Scientist,Speaking; Active Learning; Amazon Redshift,3,10,0.3,LOW
+1582,Sales Executive,None,0,10,0.0,LOW
+1583,Sales Executive,Active Listening; Speaking; Reading Comprehension; Critical Thinking; Adobe Creative Cloud software,5,10,0.5,MEDIUM
+1585,Sales Executive,Speaking; Monitoring; Eclipse IDE; Facebook,4,10,0.4,MEDIUM
+1586,Laboratory Technician,Microsoft Excel,1,10,0.1,LOW
+1587,Healthcare Representative,Active Listening,1,10,0.1,LOW
+1588,Sales Executive,Monitoring,1,10,0.1,LOW
+1590,Healthcare Representative,Active Listening; Speaking; Active Learning; Apple macOS; HubSpot software,5,10,0.5,MEDIUM
+1592,Research Scientist,Active Listening; Active Learning; Amazon DynamoDB; Amazon Redshift; Amazon Web Services AWS software,5,10,0.5,MEDIUM
+1594,Laboratory Technician,Critical Thinking; Science,2,10,0.2,LOW
+1596,Laboratory Technician,Speaking; Microsoft Outlook,2,10,0.2,LOW
+1597,Healthcare Representative,Speaking; Writing,2,10,0.2,LOW
+1598,Sales Executive,Reading Comprehension; Critical Thinking; Eclipse IDE,3,10,0.3,LOW
+1599,Laboratory Technician,Active Listening; Critical Thinking; Science,3,10,0.3,LOW
+1601,Laboratory Technician,Active Listening; Critical Thinking; Google Docs; Microsoft Excel; Microsoft Office software,5,10,0.5,MEDIUM
+1604,Laboratory Technician,Science; MEDITECH software; Microsoft Excel,3,10,0.3,LOW
+1605,Research Scientist,Active Listening; Active Learning; Amazon Web Services AWS CloudFormation,3,10,0.3,LOW
+1606,Healthcare Representative,None,0,10,0.0,LOW
+1607,Research Scientist,Reading Comprehension; Active Listening; Amazon DynamoDB; Amazon Web Services AWS CloudFormation,4,10,0.4,MEDIUM
+1608,Research Director,Active Listening,1,10,0.1,LOW
+1609,Research Scientist,Speaking; Active Learning; Amazon Elastic Compute Cloud EC2; Amazon Redshift,4,10,0.4,MEDIUM
+1611,Laboratory Technician,Microsoft Outlook,1,10,0.1,LOW
+1612,Sales Executive,Speaking; Eclipse IDE,2,10,0.2,LOW
+1613,Sales Executive,Speaking; Monitoring; Adobe Acrobat; Adobe Creative Cloud software; Bentley MicroStation; Facebook,6,10,0.6,MEDIUM
+1614,Manufacturing Director,Speaking; Reading Comprehension; Adobe InDesign; Adobe Photoshop,4,10,0.4,MEDIUM
+1615,Manufacturing Director,None,0,10,0.0,LOW
+1617,Laboratory Technician,Speaking,1,10,0.1,LOW
+1618,Manufacturing Director,Adobe After Effects; Adobe InDesign,2,10,0.2,LOW
+1619,Laboratory Technician,Speaking; Science; MEDITECH software,3,10,0.3,LOW
+1621,Research Scientist,Amazon DynamoDB,1,10,0.1,LOW
+1622,Manufacturing Director,Speaking; Reading Comprehension; Adobe After Effects; Adobe InDesign; Adobe Photoshop,5,10,0.5,MEDIUM
+1623,Research Scientist,Critical Thinking; Reading Comprehension; Active Listening; Speaking; Amazon DynamoDB; Amazon Redshift; Amazon Web Services AWS software,7,10,0.7,HIGH
+1624,Sales Representative,Active Listening; Reading Comprehension; Writing; Active Learning; Microsoft Excel,5,10,0.5,MEDIUM
+1627,Laboratory Technician,None,0,10,0.0,LOW
+1628,Manufacturing Director,Speaking,1,10,0.1,LOW
+1630,Healthcare Representative,Reading Comprehension; HubSpot software,2,10,0.2,LOW
+1631,Manufacturing Director,Reading Comprehension; Adobe After Effects; Adobe Photoshop,3,10,0.3,LOW
+1633,Manufacturing Director,Monitoring; Active Listening,2,10,0.2,LOW
+1635,Manufacturing Director,None,0,10,0.0,LOW
+1638,Manufacturing Director,Speaking,1,10,0.1,LOW
+1639,Sales Executive,None,0,10,0.0,LOW
+1640,Research Scientist,None,0,10,0.0,LOW
+1641,Manufacturing Director,Monitoring; Active Listening; Adobe Acrobat,3,10,0.3,LOW
+1642,Human Resources,None,0,10,0.0,LOW
+1645,Sales Executive,Active Listening; Speaking; Reading Comprehension; Critical Thinking; Monitoring; Eclipse IDE,6,10,0.6,MEDIUM
+1646,Research Scientist,Critical Thinking; Active Listening; Amazon Web Services AWS CloudFormation,3,10,0.3,LOW
+1647,Research Scientist,Reading Comprehension; Speaking; Active Learning; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,5,10,0.5,MEDIUM
+1648,Research Scientist,Critical Thinking; Reading Comprehension; Speaking; Active Learning; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Redshift,7,10,0.7,HIGH
+1649,Laboratory Technician,Critical Thinking; Science; Microsoft Excel; Microsoft Office software,4,10,0.4,MEDIUM
+1650,Sales Executive,Adobe Acrobat; Bentley MicroStation; Eclipse IDE,3,10,0.3,LOW
+1651,Healthcare Representative,Active Listening; Reading Comprehension; Apple macOS; IBM SPSS Statistics; Microsoft Excel,5,10,0.5,MEDIUM
+1653,Manufacturing Director,None,0,10,0.0,LOW
+1654,Manufacturing Director,Critical Thinking; Adobe Acrobat; Adobe InDesign,3,10,0.3,LOW
+1655,Research Director,Reading Comprehension; Monitoring; Microsoft Access,3,10,0.3,LOW
+1656,Research Director,None,0,10,0.0,LOW
+1657,Sales Representative,Active Listening; Reading Comprehension; Active Learning,3,10,0.3,LOW
+1658,Research Scientist,None,0,10,0.0,LOW
+1659,Laboratory Technician,Speaking; Science,2,10,0.2,LOW
+1661,Healthcare Representative,None,0,10,0.0,LOW
+1662,Manufacturing Director,Critical Thinking; Reading Comprehension; Adobe After Effects,3,10,0.3,LOW
+1664,Healthcare Representative,IBM SPSS Statistics; Microsoft Office software,2,10,0.2,LOW
+1666,Research Director,None,0,10,0.0,LOW
+1667,Sales Executive,None,0,10,0.0,LOW
+1668,Research Scientist,None,0,10,0.0,LOW
+1669,Sales Executive,None,0,10,0.0,LOW
+1670,Sales Executive,Monitoring; Adobe Creative Cloud software,2,10,0.2,LOW
+1671,Research Scientist,None,0,10,0.0,LOW
+1673,Sales Executive,Reading Comprehension; Adobe Acrobat; Bentley MicroStation; Facebook,4,10,0.4,MEDIUM
+1674,Laboratory Technician,Reading Comprehension; Critical Thinking; Google Docs; Microsoft Office software,4,10,0.4,MEDIUM
+1675,Laboratory Technician,Speaking; Science; Google Docs; Microsoft Office software; Microsoft Outlook,5,10,0.5,MEDIUM
+1678,Sales Executive,Active Listening; Speaking; Reading Comprehension; Critical Thinking; Adobe Acrobat,5,10,0.5,MEDIUM
+1680,Sales Representative,Reading Comprehension; Writing; Active Learning; HubSpot software; IBM SPSS Statistics; Microsoft Office software,6,10,0.6,MEDIUM
+1681,Sales Executive,Active Listening; Reading Comprehension; Critical Thinking,3,10,0.3,LOW
+1682,Healthcare Representative,Speaking; Microsoft Office software,2,10,0.2,LOW
+1683,Human Resources,Speaking; Writing; Critical Thinking; Adobe Creative Cloud software; Adobe Illustrator; Adobe Photoshop,6,10,0.6,MEDIUM
+1684,Laboratory Technician,Reading Comprehension; Active Listening; MEDITECH software; Microsoft Excel; Microsoft Office software; Microsoft Outlook,6,10,0.6,MEDIUM
+1687,Laboratory Technician,Active Listening; Critical Thinking; Science; MEDITECH software; Microsoft Outlook,5,10,0.5,MEDIUM
+1689,Healthcare Representative,Active Listening; Apple macOS; HubSpot software; Microsoft Excel,4,10,0.4,MEDIUM
+1691,Sales Representative,None,0,10,0.0,LOW
+1692,Laboratory Technician,Reading Comprehension; Speaking; Science; Microsoft Excel; Microsoft Office software; Microsoft Outlook,6,10,0.6,MEDIUM
+1693,Laboratory Technician,Active Listening,1,10,0.1,LOW
+1694,Research Scientist,Reading Comprehension; Active Learning; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,5,10,0.5,MEDIUM
+1696,Laboratory Technician,None,0,10,0.0,LOW
+1697,Healthcare Representative,Active Listening; Speaking; Reading Comprehension; Writing; Active Learning; Apple macOS; HubSpot software; IBM SPSS Statistics; Microsoft Excel,9,10,0.9,HIGH
+1698,Laboratory Technician,Google Docs,1,10,0.1,LOW
+1700,Sales Executive,Adobe Creative Cloud software; Facebook,2,10,0.2,LOW
+1701,Research Scientist,None,0,10,0.0,LOW
+1702,Sales Representative,Speaking; Reading Comprehension; Active Learning; IBM SPSS Statistics,4,10,0.4,MEDIUM
+1703,Healthcare Representative,Writing; IBM SPSS Statistics,2,10,0.2,LOW
+1704,Research Scientist,Critical Thinking; Amazon Redshift,2,10,0.2,LOW
+1706,Sales Executive,None,0,10,0.0,LOW
+1707,Research Scientist,Reading Comprehension; Active Listening; Speaking; Amazon DynamoDB; Amazon Web Services AWS CloudFormation,5,10,0.5,MEDIUM
+1708,Sales Executive,None,0,10,0.0,LOW
+1709,Laboratory Technician,Microsoft Office software; Microsoft Outlook,2,10,0.2,LOW
+1710,Sales Representative,Reading Comprehension,1,10,0.1,LOW
+1712,Healthcare Representative,None,0,10,0.0,LOW
+1714,Human Resources,Active Listening; Adobe Creative Cloud software; Adobe InDesign,3,10,0.3,LOW
+1716,Sales Executive,Critical Thinking,1,10,0.1,LOW
+1718,Laboratory Technician,Reading Comprehension; Science; Microsoft Office software,3,10,0.3,LOW
+1719,Research Director,None,0,10,0.0,LOW
+1720,Research Scientist,Speaking; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS software,4,10,0.4,MEDIUM
+1721,Laboratory Technician,Science; Microsoft Excel; Microsoft Office software,3,10,0.3,LOW
+1722,Human Resources,Speaking; Active Listening; Adobe Acrobat; Adobe Illustrator; Adobe Photoshop,5,10,0.5,MEDIUM
+1724,Manufacturing Director,Critical Thinking; Monitoring; Active Listening; Adobe After Effects,4,10,0.4,MEDIUM
+1725,Laboratory Technician,Active Listening; Microsoft Excel; Microsoft Office software,3,10,0.3,LOW
+1727,Healthcare Representative,None,0,10,0.0,LOW
+1728,Manufacturing Director,Monitoring; Active Listening,2,10,0.2,LOW
+1729,Research Scientist,Amazon Elastic Compute Cloud EC2,1,10,0.1,LOW
+1731,Sales Executive,Active Listening; Reading Comprehension; Critical Thinking; Monitoring; Bentley MicroStation,5,10,0.5,MEDIUM
+1732,Sales Executive,Reading Comprehension,1,10,0.1,LOW
+1733,Sales Executive,Adobe Acrobat; Adobe Creative Cloud software; Facebook,3,10,0.3,LOW
+1734,Sales Executive,Speaking; Monitoring; Adobe Creative Cloud software; Eclipse IDE; Facebook,5,10,0.5,MEDIUM
+1735,Laboratory Technician,Critical Thinking; Science; Microsoft Excel; Microsoft Outlook,4,10,0.4,MEDIUM
+1736,Manufacturing Director,Monitoring; Active Listening; Adobe InDesign; Autodesk AutoCAD,4,10,0.4,MEDIUM
+1737,Laboratory Technician,None,0,10,0.0,LOW
+1739,Sales Executive,Active Listening; Critical Thinking; Facebook,3,10,0.3,LOW
+1744,Human Resources,Reading Comprehension; Active Listening; Adobe Acrobat; Adobe Creative Cloud software,4,10,0.4,MEDIUM
+1745,Research Scientist,Active Listening; Amazon Web Services AWS software,2,10,0.2,LOW
+1746,Human Resources,Speaking; Critical Thinking; Adobe Acrobat; Adobe Illustrator; Adobe InDesign; Adobe Photoshop,6,10,0.6,MEDIUM
+1747,Human Resources,Speaking; Active Listening; Adobe Acrobat; Adobe Creative Cloud software; Adobe Illustrator; Adobe InDesign; Adobe Photoshop,7,10,0.7,HIGH
+1749,Sales Executive,Active Listening; Reading Comprehension; Bentley MicroStation; Facebook,4,10,0.4,MEDIUM
+1751,Research Scientist,Amazon Elastic Compute Cloud EC2,1,10,0.1,LOW
+1752,Sales Representative,Reading Comprehension; Active Learning; Microsoft Office software,3,10,0.3,LOW
+1753,Healthcare Representative,Active Learning; IBM SPSS Statistics; Microsoft Office software,3,10,0.3,LOW
+1754,Sales Executive,Reading Comprehension; Eclipse IDE,2,10,0.2,LOW
+1755,Research Scientist,Reading Comprehension; Active Learning; Amazon DynamoDB,3,10,0.3,LOW
+1756,Sales Executive,None,0,10,0.0,LOW
+1757,Sales Executive,Active Listening; Critical Thinking; Adobe Acrobat; Eclipse IDE,4,10,0.4,MEDIUM
+1758,Sales Executive,Active Listening; Adobe Creative Cloud software; Bentley MicroStation; Facebook,4,10,0.4,MEDIUM
+1760,Laboratory Technician,Reading Comprehension; Active Listening; Speaking,3,10,0.3,LOW
+1761,Sales Executive,Active Listening; Speaking; Critical Thinking; Facebook,4,10,0.4,MEDIUM
+1762,Research Scientist,Reading Comprehension; Active Learning; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Redshift,5,10,0.5,MEDIUM
+1763,Healthcare Representative,Active Listening; Speaking; IBM SPSS Statistics,3,10,0.3,LOW
+1764,Research Scientist,Speaking,1,10,0.1,LOW
+1766,Healthcare Representative,Reading Comprehension; Active Learning; Apple macOS; IBM SPSS Statistics; Microsoft Office software,5,10,0.5,MEDIUM
+1767,Research Scientist,Reading Comprehension; Active Listening; Speaking; Amazon Redshift; Amazon Web Services AWS CloudFormation,5,10,0.5,MEDIUM
+1768,Laboratory Technician,MEDITECH software; Microsoft Excel,2,10,0.2,LOW
+1770,Research Director,Science; Active Listening; ESRI ArcGIS software,3,10,0.3,LOW
+1771,Research Scientist,Reading Comprehension,1,10,0.1,LOW
+1772,Laboratory Technician,Reading Comprehension; Google Docs; Microsoft Office software,3,10,0.3,LOW
+1774,Sales Executive,Critical Thinking,1,10,0.1,LOW
+1775,Manufacturing Director,Speaking; Monitoring; Adobe After Effects; Adobe InDesign; Adobe Photoshop,5,10,0.5,MEDIUM
+1778,Human Resources,None,0,10,0.0,LOW
+1779,Sales Executive,Monitoring; Eclipse IDE; Facebook,3,10,0.3,LOW
+1780,Sales Representative,Speaking; Reading Comprehension; Writing; Active Learning; Apple macOS; HubSpot software; IBM SPSS Statistics; Microsoft Office software,8,10,0.8,HIGH
+1782,Laboratory Technician,Reading Comprehension; Critical Thinking; Google Docs,3,10,0.3,LOW
+1783,Laboratory Technician,Speaking; Science; MEDITECH software,3,10,0.3,LOW
+1784,Sales Executive,Active Listening,1,10,0.1,LOW
+1787,Sales Executive,Active Listening; Speaking; Critical Thinking; Monitoring; Bentley MicroStation,5,10,0.5,MEDIUM
+1789,Research Director,Reading Comprehension; Active Listening; Critical Thinking; Adobe Photoshop; ESRI ArcGIS software,5,10,0.5,MEDIUM
+1790,Healthcare Representative,Active Learning; Microsoft Office software,2,10,0.2,LOW
+1792,Research Scientist,Reading Comprehension; Active Listening; Speaking; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,5,10,0.5,MEDIUM
+1794,Human Resources,None,0,10,0.0,LOW
+1797,Sales Executive,Active Listening; Adobe Acrobat,2,10,0.2,LOW
+1798,Research Scientist,None,0,10,0.0,LOW
+1799,Research Scientist,Amazon Redshift,1,10,0.1,LOW
+1800,Research Director,Reading Comprehension; Active Listening; Monitoring; Adobe Acrobat; Adobe Photoshop,5,10,0.5,MEDIUM
+1801,Sales Executive,Active Listening; Speaking; Critical Thinking; Monitoring; Adobe Acrobat; Adobe Creative Cloud software; Bentley MicroStation; Facebook,8,10,0.8,HIGH
+1802,Laboratory Technician,Reading Comprehension; Speaking; Google Docs,3,10,0.3,LOW
+1803,Healthcare Representative,Active Listening; Speaking; HubSpot software; IBM SPSS Statistics; Microsoft Office software,5,10,0.5,MEDIUM
+1804,Manufacturing Director,None,0,10,0.0,LOW
+1805,Human Resources,Speaking; Adobe Illustrator,2,10,0.2,LOW
+1807,Laboratory Technician,Reading Comprehension; Active Listening; MEDITECH software,3,10,0.3,LOW
+1809,Manufacturing Director,None,0,10,0.0,LOW
+1812,Sales Executive,Eclipse IDE; Facebook,2,10,0.2,LOW
+1813,Research Scientist,Active Listening; Active Learning; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation,4,10,0.4,MEDIUM
+1814,Healthcare Representative,Active Listening; Writing; Apple macOS; IBM SPSS Statistics; Microsoft Office software,5,10,0.5,MEDIUM
+1815,Sales Executive,Active Listening,1,10,0.1,LOW
+1816,Manufacturing Director,Monitoring; Reading Comprehension,2,10,0.2,LOW
+1818,Human Resources,Active Listening; Critical Thinking; Adobe Illustrator,3,10,0.3,LOW
+1821,Healthcare Representative,IBM SPSS Statistics,1,10,0.1,LOW
+1822,Healthcare Representative,Writing; Active Learning; HubSpot software,3,10,0.3,LOW
+1823,Sales Executive,Active Listening; Bentley MicroStation,2,10,0.2,LOW
+1826,Laboratory Technician,Speaking; Google Docs; Microsoft Outlook,3,10,0.3,LOW
+1827,Manufacturing Director,None,0,10,0.0,LOW
+1829,Healthcare Representative,Writing; IBM SPSS Statistics,2,10,0.2,LOW
+1830,Research Scientist,Active Listening; Speaking; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2,4,10,0.4,MEDIUM
+1833,Sales Executive,Speaking; Critical Thinking; Monitoring; Bentley MicroStation; Eclipse IDE; Facebook,6,10,0.6,MEDIUM
+1834,Research Scientist,Speaking; Amazon DynamoDB; Amazon Redshift; Amazon Web Services AWS CloudFormation,4,10,0.4,MEDIUM
+1835,Sales Representative,HubSpot software; Microsoft Office software,2,10,0.2,LOW
+1836,Sales Executive,Speaking,1,10,0.1,LOW
+1837,Research Director,Critical Thinking; Monitoring,2,10,0.2,LOW
+1839,Research Scientist,Reading Comprehension; Active Listening; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2; Amazon Redshift; Amazon Web Services AWS CloudFormation,6,10,0.6,MEDIUM
+1842,Human Resources,Reading Comprehension; Writing; Critical Thinking; Adobe Acrobat; Adobe Illustrator,5,10,0.5,MEDIUM
+1844,Human Resources,Reading Comprehension; Adobe Acrobat; Adobe Creative Cloud software; Adobe Illustrator,4,10,0.4,MEDIUM
+1845,Sales Executive,Reading Comprehension,1,10,0.1,LOW
+1847,Research Scientist,Reading Comprehension; Speaking; Amazon Elastic Compute Cloud EC2; Amazon Redshift,4,10,0.4,MEDIUM
+1849,Sales Executive,Reading Comprehension; Critical Thinking,2,10,0.2,LOW
+1850,Laboratory Technician,Science,1,10,0.1,LOW
+1852,Laboratory Technician,Active Listening; Google Docs; Microsoft Outlook,3,10,0.3,LOW
+1853,Sales Executive,Reading Comprehension; Critical Thinking; Facebook,3,10,0.3,LOW
+1854,Research Scientist,Critical Thinking; Reading Comprehension; Active Listening; Active Learning; Amazon Web Services AWS software,5,10,0.5,MEDIUM
+1856,Laboratory Technician,Reading Comprehension; Critical Thinking; Science; Microsoft Office software,4,10,0.4,MEDIUM
+1857,Manufacturing Director,None,0,10,0.0,LOW
+1858,Human Resources,Reading Comprehension; Adobe Acrobat; Adobe Creative Cloud software,3,10,0.3,LOW
+1859,Healthcare Representative,Reading Comprehension; Apple macOS,2,10,0.2,LOW
+1860,Laboratory Technician,Reading Comprehension; Active Listening; Speaking; Science; MEDITECH software; Microsoft Excel; Microsoft Outlook,7,10,0.7,HIGH
+1862,Sales Executive,Active Listening; Speaking; Monitoring; Facebook,4,10,0.4,MEDIUM
+1863,Sales Executive,Speaking,1,10,0.1,LOW
+1864,Sales Representative,Speaking; Writing,2,10,0.2,LOW
+1865,Human Resources,Speaking; Writing; Adobe Acrobat; Adobe Illustrator,4,10,0.4,MEDIUM
+1867,Research Director,None,0,10,0.0,LOW
+1868,Research Scientist,Critical Thinking; Active Listening; Active Learning; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS software,5,10,0.5,MEDIUM
+1869,Sales Executive,Monitoring; Facebook,2,10,0.2,LOW
+1870,Research Scientist,Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation,2,10,0.2,LOW
+1871,Research Scientist,Critical Thinking; Reading Comprehension; Active Listening; Speaking; Active Learning; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation,7,10,0.7,HIGH
+1873,Research Scientist,Critical Thinking; Active Learning; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,4,10,0.4,MEDIUM
+1875,Sales Representative,Active Listening; Speaking; Writing; IBM SPSS Statistics; Microsoft Excel,5,10,0.5,MEDIUM
+1876,Sales Representative,Active Listening; Active Learning; Apple macOS; IBM SPSS Statistics; Microsoft Office software,5,10,0.5,MEDIUM
+1878,Research Scientist,Critical Thinking; Active Listening; Speaking; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2,5,10,0.5,MEDIUM
+1880,Sales Executive,Bentley MicroStation,1,10,0.1,LOW
+1881,Laboratory Technician,None,0,10,0.0,LOW
+1882,Sales Executive,Speaking; Reading Comprehension; Critical Thinking,3,10,0.3,LOW
+1883,Laboratory Technician,Reading Comprehension; Active Listening; Science,3,10,0.3,LOW
+1885,Research Scientist,Critical Thinking; Reading Comprehension; Active Learning; Amazon Web Services AWS software,4,10,0.4,MEDIUM
+1886,Manufacturing Director,Critical Thinking; Adobe Acrobat; Adobe After Effects; Adobe Photoshop; Autodesk AutoCAD,5,10,0.5,MEDIUM
+1888,Manufacturing Director,Adobe Acrobat; Adobe InDesign; Autodesk AutoCAD,3,10,0.3,LOW
+1890,Human Resources,Reading Comprehension; Adobe Illustrator,2,10,0.2,LOW
+1893,Research Scientist,Reading Comprehension; Active Listening; Amazon DynamoDB; Amazon Web Services AWS CloudFormation,4,10,0.4,MEDIUM
+1898,Sales Executive,None,0,10,0.0,LOW
+1903,Healthcare Representative,Reading Comprehension; IBM SPSS Statistics; Microsoft Office software,3,10,0.3,LOW
+1905,Research Scientist,Speaking; Amazon Elastic Compute Cloud EC2; Amazon Web Services AWS CloudFormation,3,10,0.3,LOW
+1907,Laboratory Technician,Reading Comprehension; Critical Thinking; Speaking; Google Docs; MEDITECH software,5,10,0.5,MEDIUM
+1908,Sales Executive,Active Listening; Speaking; Monitoring,3,10,0.3,LOW
+1909,Sales Executive,Active Listening; Speaking; Reading Comprehension; Critical Thinking; Bentley MicroStation; Eclipse IDE; Facebook,7,10,0.7,HIGH
+1911,Research Director,None,0,10,0.0,LOW
+1912,Sales Executive,Monitoring; Bentley MicroStation; Eclipse IDE; Facebook,4,10,0.4,MEDIUM
+1915,Sales Executive,Monitoring,1,10,0.1,LOW
+1916,Laboratory Technician,Reading Comprehension; Active Listening; Critical Thinking; Microsoft Excel; Microsoft Office software; Microsoft Outlook,6,10,0.6,MEDIUM
+1918,Laboratory Technician,Microsoft Excel,1,10,0.1,LOW
+1922,Healthcare Representative,Speaking; Reading Comprehension; Writing; Microsoft Excel; Microsoft Office software,5,10,0.5,MEDIUM
+1924,Sales Executive,None,0,10,0.0,LOW
+1927,Sales Executive,Adobe Creative Cloud software; Bentley MicroStation,2,10,0.2,LOW
+1928,Sales Representative,Reading Comprehension; Apple macOS; IBM SPSS Statistics; Microsoft Excel,4,10,0.4,MEDIUM
+1929,Sales Executive,Active Listening; Speaking; Monitoring; Adobe Acrobat; Adobe Creative Cloud software; Eclipse IDE,6,10,0.6,MEDIUM
+1931,Research Scientist,Reading Comprehension; Speaking; Active Learning; Amazon Redshift; Amazon Web Services AWS CloudFormation,5,10,0.5,MEDIUM
+1932,Research Scientist,None,0,10,0.0,LOW
+1933,Sales Executive,Reading Comprehension; Critical Thinking; Bentley MicroStation; Eclipse IDE,4,10,0.4,MEDIUM
+1934,Research Scientist,Active Listening; Speaking; Amazon DynamoDB,3,10,0.3,LOW
+1935,Sales Executive,Reading Comprehension; Adobe Acrobat; Bentley MicroStation; Eclipse IDE; Facebook,5,10,0.5,MEDIUM
+1936,Manufacturing Director,None,0,10,0.0,LOW
+1937,Research Scientist,None,0,10,0.0,LOW
+1939,Research Scientist,Reading Comprehension; Speaking; Active Learning; Amazon Elastic Compute Cloud EC2; Amazon Redshift,5,10,0.5,MEDIUM
+1940,Research Scientist,Critical Thinking; Reading Comprehension; Amazon Redshift; Amazon Web Services AWS CloudFormation,4,10,0.4,MEDIUM
+1941,Research Director,Reading Comprehension; Adobe Acrobat; ESRI ArcGIS software,3,10,0.3,LOW
+1943,Sales Executive,Reading Comprehension; Critical Thinking; Adobe Acrobat; Adobe Creative Cloud software; Eclipse IDE,5,10,0.5,MEDIUM
+1944,Human Resources,Speaking; Active Listening; Critical Thinking; Adobe Acrobat; Adobe InDesign; Adobe Photoshop,6,10,0.6,MEDIUM
+1945,Sales Executive,Adobe Creative Cloud software; Bentley MicroStation,2,10,0.2,LOW
+1947,Research Scientist,Active Learning; Amazon Elastic Compute Cloud EC2,2,10,0.2,LOW
+1948,Research Scientist,Amazon DynamoDB; Amazon Elastic Compute Cloud EC2,2,10,0.2,LOW
+1949,Laboratory Technician,Reading Comprehension; MEDITECH software; Microsoft Excel,3,10,0.3,LOW
+1950,Sales Executive,None,0,10,0.0,LOW
+1951,Sales Executive,Speaking,1,10,0.1,LOW
+1952,Laboratory Technician,Science,1,10,0.1,LOW
+1954,Healthcare Representative,Speaking; Microsoft Excel,2,10,0.2,LOW
+1955,Healthcare Representative,Writing; IBM SPSS Statistics; Microsoft Excel,3,10,0.3,LOW
+1956,Research Scientist,None,0,10,0.0,LOW
+1960,Laboratory Technician,Active Listening; Critical Thinking; Science; Microsoft Excel,4,10,0.4,MEDIUM
+1961,Sales Representative,Active Listening; Writing; IBM SPSS Statistics; Microsoft Excel; Microsoft Office software,5,10,0.5,MEDIUM
+1962,Sales Executive,None,0,10,0.0,LOW
+1965,Sales Executive,None,0,10,0.0,LOW
+1966,Manufacturing Director,Critical Thinking; Speaking; Monitoring; Active Listening; Adobe Acrobat; Adobe After Effects; Adobe InDesign; Autodesk AutoCAD,8,10,0.8,HIGH
+1967,Sales Executive,None,0,10,0.0,LOW
+1968,Sales Executive,Active Listening; Speaking; Reading Comprehension; Monitoring; Adobe Acrobat; Facebook,6,10,0.6,MEDIUM
+1969,Research Scientist,Speaking; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2,3,10,0.3,LOW
+1970,Healthcare Representative,Active Listening; Apple macOS; IBM SPSS Statistics,3,10,0.3,LOW
+1971,Healthcare Representative,Active Listening; Reading Comprehension; HubSpot software; IBM SPSS Statistics,4,10,0.4,MEDIUM
+1972,Human Resources,Active Listening; Critical Thinking; Adobe Creative Cloud software; Adobe Photoshop,4,10,0.4,MEDIUM
+1974,Laboratory Technician,Reading Comprehension; Active Listening; Critical Thinking; Speaking,4,10,0.4,MEDIUM
+1975,Sales Executive,None,0,10,0.0,LOW
+1976,Research Scientist,Active Listening; Amazon Web Services AWS CloudFormation,2,10,0.2,LOW
+1979,Research Director,Active Listening,1,10,0.1,LOW
+1980,Manufacturing Director,Critical Thinking; Reading Comprehension; Adobe Photoshop,3,10,0.3,LOW
+1981,Healthcare Representative,Speaking; Active Learning; Apple macOS; HubSpot software; IBM SPSS Statistics; Microsoft Excel; Microsoft Office software,7,10,0.7,HIGH
+1982,Laboratory Technician,Microsoft Excel,1,10,0.1,LOW
+1985,Laboratory Technician,Science; Google Docs,2,10,0.2,LOW
+1986,Sales Executive,Eclipse IDE,1,10,0.1,LOW
+1987,Human Resources,Critical Thinking; Adobe InDesign,2,10,0.2,LOW
+1989,Laboratory Technician,None,0,10,0.0,LOW
+1992,Laboratory Technician,Reading Comprehension; Critical Thinking; Science; Google Docs; MEDITECH software; Microsoft Office software,6,10,0.6,MEDIUM
+1993,Healthcare Representative,Active Listening,1,10,0.1,LOW
+1994,Laboratory Technician,Microsoft Office software,1,10,0.1,LOW
+1995,Sales Executive,None,0,10,0.0,LOW
+1996,Sales Representative,Active Listening; Writing; Apple macOS; HubSpot software; Microsoft Office software,5,10,0.5,MEDIUM
+1997,Manufacturing Director,Adobe Acrobat; Adobe InDesign; Adobe Photoshop; Autodesk AutoCAD,4,10,0.4,MEDIUM
+1998,Research Scientist,Critical Thinking; Amazon DynamoDB; Amazon Elastic Compute Cloud EC2,3,10,0.3,LOW
+1999,Research Scientist,Speaking; Amazon DynamoDB; Amazon Redshift; Amazon Web Services AWS software,4,10,0.4,MEDIUM
+2000,Research Director,None,0,10,0.0,LOW
+2003,Laboratory Technician,Active Listening; Critical Thinking; Speaking; Microsoft Excel,4,10,0.4,MEDIUM
+2007,Research Scientist,Active Listening; Active Learning; Amazon DynamoDB; Amazon Redshift; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,6,10,0.6,MEDIUM
+2008,Research Scientist,None,0,10,0.0,LOW
+2009,Healthcare Representative,None,0,10,0.0,LOW
+2010,Laboratory Technician,Google Docs; Microsoft Office software; Microsoft Outlook,3,10,0.3,LOW
+2012,Laboratory Technician,Speaking; Science; MEDITECH software; Microsoft Excel; Microsoft Outlook,5,10,0.5,MEDIUM
+2013,Sales Representative,Active Listening; Reading Comprehension; Active Learning; Apple macOS; HubSpot software,5,10,0.5,MEDIUM
+2014,Research Scientist,Amazon Elastic Compute Cloud EC2,1,10,0.1,LOW
+2015,Research Director,None,0,10,0.0,LOW
+2016,Sales Executive,None,0,10,0.0,LOW
+2017,Research Director,Microsoft Access,1,10,0.1,LOW
+2018,Sales Executive,Critical Thinking; Adobe Acrobat; Adobe Creative Cloud software,3,10,0.3,LOW
+2019,Sales Representative,None,0,10,0.0,LOW
+2020,Research Scientist,Critical Thinking; Active Listening; Speaking; Amazon DynamoDB; Amazon Redshift; Amazon Web Services AWS CloudFormation,6,10,0.6,MEDIUM
+2021,Sales Representative,IBM SPSS Statistics; Microsoft Excel,2,10,0.2,LOW
+2023,Sales Representative,Active Listening; Writing; Apple macOS; HubSpot software; IBM SPSS Statistics; Microsoft Excel; Microsoft Office software,7,10,0.7,HIGH
+2024,Sales Executive,None,0,10,0.0,LOW
+2025,Manufacturing Director,Reading Comprehension,1,10,0.1,LOW
+2026,Healthcare Representative,Active Listening,1,10,0.1,LOW
+2027,Research Scientist,Active Learning; Amazon Redshift; Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,4,10,0.4,MEDIUM
+2032,Laboratory Technician,None,0,10,0.0,LOW
+2034,Manufacturing Director,Adobe Acrobat,1,10,0.1,LOW
+2035,Sales Executive,Reading Comprehension; Adobe Acrobat; Eclipse IDE,3,10,0.3,LOW
+2036,Sales Executive,Eclipse IDE,1,10,0.1,LOW
+2037,Sales Executive,Active Listening; Bentley MicroStation,2,10,0.2,LOW
+2038,Research Scientist,Amazon Web Services AWS software,1,10,0.1,LOW
+2040,Human Resources,Adobe Acrobat,1,10,0.1,LOW
+2041,Sales Executive,Active Listening; Adobe Creative Cloud software,2,10,0.2,LOW
+2044,Sales Executive,Adobe Acrobat; Bentley MicroStation,2,10,0.2,LOW
+2045,Sales Executive,Speaking; Reading Comprehension; Critical Thinking; Bentley MicroStation,4,10,0.4,MEDIUM
+2046,Sales Executive,Critical Thinking; Adobe Acrobat; Adobe Creative Cloud software,3,10,0.3,LOW
+2048,Research Scientist,Critical Thinking; Amazon Redshift; Amazon Web Services AWS CloudFormation,3,10,0.3,LOW
+2049,Healthcare Representative,None,0,10,0.0,LOW
+2051,Research Scientist,Active Listening; Active Learning; Amazon Redshift,3,10,0.3,LOW
+2052,Research Scientist,Amazon Web Services AWS CloudFormation; Amazon Web Services AWS software,2,10,0.2,LOW
+2053,Laboratory Technician,Critical Thinking; Google Docs; Microsoft Office software; Microsoft Outlook,4,10,0.4,MEDIUM
+2054,Research Scientist,Speaking; Amazon Elastic Compute Cloud EC2,2,10,0.2,LOW
+2055,Sales Executive,Reading Comprehension; Critical Thinking; Facebook,3,10,0.3,LOW
+2056,Sales Executive,None,0,10,0.0,LOW
+2057,Manufacturing Director,Speaking,1,10,0.1,LOW
+2060,Sales Representative,Reading Comprehension; Writing; Microsoft Excel; Microsoft Office software,4,10,0.4,MEDIUM
+2061,Laboratory Technician,Google Docs; MEDITECH software,2,10,0.2,LOW
+2062,Healthcare Representative,None,0,10,0.0,LOW
+2064,Manufacturing Director,Adobe Acrobat,1,10,0.1,LOW
+2065,Sales Executive,None,0,10,0.0,LOW
+2068,Laboratory Technician,Science; Microsoft Excel,2,10,0.2,LOW

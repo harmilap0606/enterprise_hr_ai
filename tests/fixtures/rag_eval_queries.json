@@ -1,0 +1,200 @@
+[
+  {
+    "query_id": "eval_01",
+    "category": "occupation",
+    "query": "What are the core duties and responsibilities of Computer and Information Research Scientists?",
+    "expected_chunk_ids": ["occ_15-1221.00_c01"],
+    "expected_doc_ids": ["occ_15-1221.00"],
+    "notes": "O*NET occupation catalog entry for 15-1221.00"
+  },
+  {
+    "query_id": "eval_02",
+    "category": "occupation",
+    "query": "What are the occupational duties of Industrial Production Managers in manufacturing?",
+    "expected_chunk_ids": ["occ_11-3051.00_c01"],
+    "expected_doc_ids": ["occ_11-3051.00"],
+    "notes": "O*NET occupation catalog entry for 11-3051.00"
+  },
+  {
+    "query_id": "eval_03",
+    "category": "occupation",
+    "query": "What does a Human Resources Specialist do according to O*NET?",
+    "expected_chunk_ids": ["occ_13-1071.00_c01"],
+    "expected_doc_ids": ["occ_13-1071.00"],
+    "notes": "O*NET occupation catalog entry for 13-1071.00"
+  },
+  {
+    "query_id": "eval_04",
+    "category": "occupation",
+    "query": "What is the job description for Medical and Clinical Laboratory Technicians?",
+    "expected_chunk_ids": ["occ_29-2012.00_c01"],
+    "expected_doc_ids": ["occ_29-2012.00"],
+    "notes": "O*NET occupation catalog entry for 29-2012.00"
+  },
+  {
+    "query_id": "eval_05",
+    "category": "occupation",
+    "query": "What occupational responsibilities fall under Sales Representatives of Services code 41-3091.00?",
+    "expected_chunk_ids": ["occ_41-3091.00_c01"],
+    "expected_doc_ids": ["occ_41-3091.00"],
+    "notes": "O*NET occupation catalog entry for 41-3091.00"
+  },
+  {
+    "query_id": "eval_06",
+    "category": "occupation",
+    "query": "What are the typical duties of Natural Sciences Managers?",
+    "expected_chunk_ids": ["occ_11-9121.00_c01"],
+    "expected_doc_ids": ["occ_11-9121.00"],
+    "notes": "O*NET occupation catalog entry for 11-9121.00"
+  },
+  {
+    "query_id": "eval_07",
+    "category": "role_mapping",
+    "query": "Why was Healthcare Representative mapped to Sales Representatives of Services and why is confidence low?",
+    "expected_chunk_ids": ["map_healthcare_representative_c01"],
+    "expected_doc_ids": ["map_healthcare_representative"],
+    "notes": "Role mapping crosswalk note explaining absence of clinical context in service sales code"
+  },
+  {
+    "query_id": "eval_08",
+    "category": "role_mapping",
+    "query": "Why does the Manager role have very low match confidence mapped to Managers All Other?",
+    "expected_chunk_ids": ["map_manager_c01"],
+    "expected_doc_ids": ["map_manager"],
+    "notes": "Role mapping crosswalk note for Manager placeholder mapping"
+  },
+  {
+    "query_id": "eval_09",
+    "category": "role_mapping",
+    "query": "Why was Sales Managers selected for Sales Executive rather than individual territory sales?",
+    "expected_chunk_ids": ["map_sales_executive_c01"],
+    "expected_doc_ids": ["map_sales_executive"],
+    "notes": "Role mapping note on executive quota-ownership vs territory selling"
+  },
+  {
+    "query_id": "eval_10",
+    "category": "role_mapping",
+    "query": "What ambiguity exists when mapping Research Scientist to Computer and Information Research Scientists?",
+    "expected_chunk_ids": ["map_research_scientist_c01"],
+    "expected_doc_ids": ["map_research_scientist"],
+    "notes": "Role mapping note on EducationField ambiguity between computer science and medical science"
+  },
+  {
+    "query_id": "eval_11",
+    "category": "role_mapping",
+    "query": "Why is Industrial Production Managers used for Manufacturing Director instead of General Managers?",
+    "expected_chunk_ids": ["map_manufacturing_director_c01"],
+    "expected_doc_ids": ["map_manufacturing_director"],
+    "notes": "Role mapping rationale for Manufacturing Director"
+  },
+  {
+    "query_id": "eval_12",
+    "category": "role_mapping",
+    "query": "Why was Human Resources Specialists chosen over Human Resources Managers for the HR job role?",
+    "expected_chunk_ids": ["map_human_resources_c01"],
+    "expected_doc_ids": ["map_human_resources"],
+    "notes": "Role mapping rationale for HR Specialist individual contributor default"
+  },
+  {
+    "query_id": "eval_13",
+    "category": "governance",
+    "query": "What is the production model decision threshold and where is it stored?",
+    "expected_chunk_ids": ["model_card_performance_metrics_test_set_threshold_0_40_05_c01"],
+    "expected_doc_ids": ["model_card_performance_metrics_test_set_threshold_0_40_05"],
+    "notes": "Model card section defining decision threshold 0.40 in model_config.json"
+  },
+  {
+    "query_id": "eval_14",
+    "category": "governance",
+    "query": "What are the test set recall, precision, F1 score, and ROC-AUC for the production attrition model?",
+    "expected_chunk_ids": ["model_card_performance_metrics_test_set_threshold_0_40_05_c01"],
+    "expected_doc_ids": ["model_card_performance_metrics_test_set_threshold_0_40_05"],
+    "notes": "Model card performance metrics table"
+  },
+  {
+    "query_id": "eval_15",
+    "category": "governance",
+    "query": "What are the top 5 SHAP feature drivers computed using LinearExplainer?",
+    "expected_chunk_ids": ["model_card_top_5_shap_feature_drivers_06_c01"],
+    "expected_doc_ids": ["model_card_top_5_shap_feature_drivers_06"],
+    "notes": "Model card SHAP driver list (OverTime, MonthlyIncome, JobRole, YearsAtCompany, StockOptionLevel)"
+  },
+  {
+    "query_id": "eval_16",
+    "category": "governance",
+    "query": "What are the known limitations regarding synthetic training data and class imbalance ceiling on precision?",
+    "expected_chunk_ids": ["model_card_known_limitations_07_c01"],
+    "expected_doc_ids": ["model_card_known_limitations_07"],
+    "notes": "Model card limitations items 1 and 2"
+  },
+  {
+    "query_id": "eval_17",
+    "category": "governance",
+    "query": "Why do SHAP feature drivers indicate statistical associations rather than causal drivers?",
+    "expected_chunk_ids": ["model_card_known_limitations_07_c01"],
+    "expected_doc_ids": ["model_card_known_limitations_07"],
+    "notes": "Model card limitations item 5 on causal inference"
+  },
+  {
+    "query_id": "eval_18",
+    "category": "governance",
+    "query": "What algorithm solver and class weight parameters are used by logreg_balanced_threshold_0.40?",
+    "expected_chunk_ids": ["model_card_model_name_02_c01"],
+    "expected_doc_ids": ["model_card_model_name_02"],
+    "notes": "Model card specification of Logistic Regression solver and balanced class weight"
+  },
+  {
+    "query_id": "eval_19",
+    "category": "governance",
+    "query": "What are the prohibited non-intended uses for the attrition risk model?",
+    "expected_chunk_ids": ["model_card_intended_use_03_c01"],
+    "expected_doc_ids": ["model_card_intended_use_03"],
+    "notes": "Model card intended use section prohibiting automated employment decisions"
+  },
+  {
+    "query_id": "eval_20",
+    "category": "architecture",
+    "query": "What is the anchor key and table inventory for employee attrition modeling?",
+    "expected_chunk_ids": ["data_relationships_table_inventory_processed_02_c01"],
+    "expected_doc_ids": ["data_relationships_table_inventory_processed_02"],
+    "notes": "Data relationships table inventory specifying EmployeeNumber as anchor key"
+  },
+  {
+    "query_id": "eval_21",
+    "category": "architecture",
+    "query": "What is the match coverage percentage and join key between employee attrition and engagement processed?",
+    "expected_chunk_ids": ["data_relationships_relationship_1_employee_attrition_engagement_processed_03_c01"],
+    "expected_doc_ids": ["data_relationships_relationship_1_employee_attrition_engagement_processed_03"],
+    "notes": "Data relationships documentation on 49.7% engagement match coverage"
+  },
+  {
+    "query_id": "eval_22",
+    "category": "architecture",
+    "query": "Why does exact text match fail between employee attrition JobRole and occupation_master Title?",
+    "expected_chunk_ids": ["data_relationships_relationship_2_employee_attrition_occupation_master_04_c01"],
+    "expected_doc_ids": ["data_relationships_relationship_2_employee_attrition_occupation_master_04"],
+    "notes": "Data relationships gap note regarding IBM JobRole string differences"
+  },
+  {
+    "query_id": "eval_23",
+    "category": "architecture",
+    "query": "How does occupation_master join to essential skills and software skills?",
+    "expected_chunk_ids": [
+      "data_relationships_relationship_3_occupation_master_essential_skills_processed_05_c01",
+      "data_relationships_relationship_4_occupation_master_software_skills_processed_06_c01"
+    ],
+    "expected_doc_ids": [
+      "data_relationships_relationship_3_occupation_master_essential_skills_processed_05",
+      "data_relationships_relationship_4_occupation_master_software_skills_processed_06"
+    ],
+    "notes": "Data relationships join keys on O*NET-SOC Code"
+  },
+  {
+    "query_id": "eval_24",
+    "category": "architecture",
+    "query": "What are the open issues regarding Healthcare Representative and Sales Representative mapping to the same O*NET code?",
+    "expected_chunk_ids": ["data_relationships_open_issues_08_c01"],
+    "expected_doc_ids": ["data_relationships_open_issues_08"],
+    "notes": "Data relationships open issues section regarding duplicate 41-3091.00 mapping"
+  }
+]

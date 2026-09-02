@@ -1,0 +1,83 @@
+{
+  "timestamp": "2026-09-01T13:59:51Z",
+  "total_corpus_chunks": 1042,
+  "total_eval_queries": 24,
+  "device": "cpu",
+  "candidates": [
+    {
+      "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+      "short_name": "all-MiniLM-L6-v2",
+      "dimension": 384,
+      "metrics": {
+        "Hit@1": 0.75,
+        "Hit@3": 0.9167,
+        "Hit@5": 0.9167,
+        "Hit@10": 0.9583,
+        "MRR": 0.8387
+      },
+      "timings": {
+        "corpus_embedding_sec": 12.913,
+        "query_embedding_ms": 51.72,
+        "avg_query_latency_ms": 2.15,
+        "retrieval_scoring_ms": 112.62,
+        "model_load_sec": 3.91
+      },
+      "resources": {
+        "device": "cpu",
+        "process_ram_mb": 795.2,
+        "model_ram_delta_mb": 24.8
+      },
+      "notes": "Lightweight 6-layer MiniLM, current project baseline"
+    },
+    {
+      "model_name": "BAAI/bge-small-en-v1.5",
+      "short_name": "bge-small-en-v1.5",
+      "dimension": 384,
+      "metrics": {
+        "Hit@1": 0.7917,
+        "Hit@3": 0.9583,
+        "Hit@5": 1.0,
+        "Hit@10": 1.0,
+        "MRR": 0.8785
+      },
+      "timings": {
+        "corpus_embedding_sec": 25.697,
+        "query_embedding_ms": 108.72,
+        "avg_query_latency_ms": 4.53,
+        "retrieval_scoring_ms": 36.54,
+        "model_load_sec": 2.67
+      },
+      "resources": {
+        "device": "cpu",
+        "process_ram_mb": 1035.9,
+        "model_ram_delta_mb": 9.9
+      },
+      "notes": "BAAI English Small v1.5, optimized for passage retrieval with query prompt"
+    },
+    {
+      "model_name": "thenlper/gte-base",
+      "short_name": "gte-base",
+      "dimension": 768,
+      "metrics": {
+        "Hit@1": 0.75,
+        "Hit@3": 0.9167,
+        "Hit@5": 0.9583,
+        "Hit@10": 1.0,
+        "MRR": 0.8479
+      },
+      "timings": {
+        "corpus_embedding_sec": 832.274,
+        "query_embedding_ms": 3668.96,
+        "avg_query_latency_ms": 152.87,
+        "retrieval_scoring_ms": 10.96,
+        "model_load_sec": 3.46
+      },
+      "resources": {
+        "device": "cpu",
+        "process_ram_mb": 1030.1,
+        "model_ram_delta_mb": 9.0
+      },
+      "notes": "Alibaba General Text Embeddings base model, 768-dim"
+    }
+  ]
+}

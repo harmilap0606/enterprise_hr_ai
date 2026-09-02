@@ -1,0 +1,1762 @@
+[
+  {
+    "test_id": "A",
+    "type": "Exact Structured Identifier (O*NET Code)",
+    "query": "What does O*NET code 19-1042.00 represent?",
+    "expected_target": "occ_19-1042.00_c01",
+    "dense_top_20": [
+      {
+        "chunk_id": "occ_51-6063.00_c01",
+        "dense_score": 0.7003
+      },
+      {
+        "chunk_id": "occ_51-6064.00_c01",
+        "dense_score": 0.6925
+      },
+      {
+        "chunk_id": "occ_51-6099.00_c01",
+        "dense_score": 0.6895
+      },
+      {
+        "chunk_id": "occ_41-3091.00_c01",
+        "dense_score": 0.6893
+      },
+      {
+        "chunk_id": "occ_11-3031.01_c01",
+        "dense_score": 0.6864
+      },
+      {
+        "chunk_id": "occ_41-9099.00_c01",
+        "dense_score": 0.6855
+      },
+      {
+        "chunk_id": "occ_13-1023.00_c01",
+        "dense_score": 0.6841
+      },
+      {
+        "chunk_id": "occ_15-1232.00_c01",
+        "dense_score": 0.684
+      },
+      {
+        "chunk_id": "occ_41-9091.00_c01",
+        "dense_score": 0.6792
+      },
+      {
+        "chunk_id": "occ_51-8012.00_c01",
+        "dense_score": 0.6777
+      },
+      {
+        "chunk_id": "occ_13-1041.04_c01",
+        "dense_score": 0.6776
+      },
+      {
+        "chunk_id": "occ_43-3011.00_c01",
+        "dense_score": 0.6773
+      },
+      {
+        "chunk_id": "occ_13-1199.06_c01",
+        "dense_score": 0.6772
+      },
+      {
+        "chunk_id": "occ_45-2099.00_c01",
+        "dense_score": 0.6769
+      },
+      {
+        "chunk_id": "occ_43-4041.00_c01",
+        "dense_score": 0.6765
+      },
+      {
+        "chunk_id": "occ_43-2021.00_c01",
+        "dense_score": 0.6757
+      },
+      {
+        "chunk_id": "occ_53-1049.00_c01",
+        "dense_score": 0.6754
+      },
+      {
+        "chunk_id": "occ_33-3052.00_c01",
+        "dense_score": 0.6749
+      },
+      {
+        "chunk_id": "occ_43-5011.01_c01",
+        "dense_score": 0.6746
+      },
+      {
+        "chunk_id": "occ_43-4051.00_c01",
+        "dense_score": 0.6742
+      }
+    ],
+    "sparse_top_20": [
+      {
+        "chunk_id": "occ_19-1042.00_c01",
+        "sparse_score": 10.0466
+      },
+      {
+        "chunk_id": "occ_23-1011.00_c01",
+        "sparse_score": 9.4341
+      },
+      {
+        "chunk_id": "occ_13-1011.00_c01",
+        "sparse_score": 8.9016
+      },
+      {
+        "chunk_id": "occ_41-9022.00_c01",
+        "sparse_score": 8.4268
+      },
+      {
+        "chunk_id": "occ_13-1041.08_c01",
+        "sparse_score": 8.0007
+      },
+      {
+        "chunk_id": "map_research_scientist_c01",
+        "sparse_score": 6.7298
+      },
+      {
+        "chunk_id": "occ_27-1029.00_c01",
+        "sparse_score": 4.7096
+      },
+      {
+        "chunk_id": "occ_29-1129.00_c01",
+        "sparse_score": 4.7096
+      },
+      {
+        "chunk_id": "occ_29-1249.00_c01",
+        "sparse_score": 4.7096
+      },
+      {
+        "chunk_id": "occ_51-7099.00_c01",
+        "sparse_score": 4.7096
+      },
+      {
+        "chunk_id": "occ_35-2019.00_c01",
+        "sparse_score": 4.7096
+      },
+      {
+        "chunk_id": "occ_17-3019.00_c01",
+        "sparse_score": 4.7096
+      },
+      {
+        "chunk_id": "occ_21-1019.00_c01",
+        "sparse_score": 4.7096
+      },
+      {
+        "chunk_id": "occ_29-1229.00_c01",
+        "sparse_score": 4.7096
+      },
+      {
+        "chunk_id": "occ_17-2199.00_c01",
+        "sparse_score": 4.7096
+      },
+      {
+        "chunk_id": "occ_11-9199.00_c01",
+        "sparse_score": 4.7096
+      },
+      {
+        "chunk_id": "occ_19-3039.00_c01",
+        "sparse_score": 4.7096
+      },
+      {
+        "chunk_id": "occ_39-5093.00_c01",
+        "sparse_score": 4.6572
+      },
+      {
+        "chunk_id": "occ_33-3011.00_c01",
+        "sparse_score": 4.6572
+      },
+      {
+        "chunk_id": "occ_29-9099.01_c01",
+        "sparse_score": 4.6061
+      }
+    ],
+    "candidate_union_count": 40,
+    "hybrid_top_15": [
+      {
+        "rank": 1,
+        "chunk_id": "occ_19-1042.00_c01",
+        "hybrid_score": 0.2,
+        "dense_score": 0.0,
+        "sparse_score": 10.0466,
+        "is_exact_match": true,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Medical Scientists, Except Epidemiologists"
+      },
+      {
+        "rank": 2,
+        "chunk_id": "map_research_scientist_c01",
+        "hybrid_score": 0.134,
+        "dense_score": 0.0,
+        "sparse_score": 6.7298,
+        "is_exact_match": true,
+        "source": "data/external/jobrole_onet_mapping.csv",
+        "section": "Role Mapping: Research Scientist -> Computer and Information Research Scientists"
+      },
+      {
+        "rank": 3,
+        "chunk_id": "occ_51-6063.00_c01",
+        "hybrid_score": 0.8,
+        "dense_score": 0.7003,
+        "sparse_score": 0.0,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Textile Knitting and Weaving Machine Setters, Operators, and Tenders"
+      },
+      {
+        "rank": 4,
+        "chunk_id": "occ_51-6064.00_c01",
+        "hybrid_score": 0.791,
+        "dense_score": 0.6925,
+        "sparse_score": 0.0,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Textile Winding, Twisting, and Drawing Out Machine Setters, Operators, and Tenders"
+      },
+      {
+        "rank": 5,
+        "chunk_id": "occ_51-6099.00_c01",
+        "hybrid_score": 0.7877,
+        "dense_score": 0.6895,
+        "sparse_score": 0.0,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Textile, Apparel, and Furnishings Workers, All Other"
+      },
+      {
+        "rank": 6,
+        "chunk_id": "occ_41-3091.00_c01",
+        "hybrid_score": 0.7873,
+        "dense_score": 0.6893,
+        "sparse_score": 0.0,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Sales Representatives of Services, Except Advertising, Insurance, Financial Services, and Travel"
+      },
+      {
+        "rank": 7,
+        "chunk_id": "occ_11-3031.01_c01",
+        "hybrid_score": 0.7841,
+        "dense_score": 0.6864,
+        "sparse_score": 0.0,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Treasurers and Controllers"
+      },
+      {
+        "rank": 8,
+        "chunk_id": "occ_41-9099.00_c01",
+        "hybrid_score": 0.783,
+        "dense_score": 0.6855,
+        "sparse_score": 0.0,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Sales and Related Workers, All Other"
+      },
+      {
+        "rank": 9,
+        "chunk_id": "occ_13-1023.00_c01",
+        "hybrid_score": 0.7815,
+        "dense_score": 0.6841,
+        "sparse_score": 0.0,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Purchasing Agents, Except Wholesale, Retail, and Farm Products"
+      },
+      {
+        "rank": 10,
+        "chunk_id": "occ_15-1232.00_c01",
+        "hybrid_score": 0.7814,
+        "dense_score": 0.684,
+        "sparse_score": 0.0,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Computer User Support Specialists"
+      },
+      {
+        "rank": 11,
+        "chunk_id": "occ_41-9091.00_c01",
+        "hybrid_score": 0.7759,
+        "dense_score": 0.6792,
+        "sparse_score": 0.0,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Door-to-Door Sales Workers, News and Street Vendors, and Related Workers"
+      },
+      {
+        "rank": 12,
+        "chunk_id": "occ_51-8012.00_c01",
+        "hybrid_score": 0.7741,
+        "dense_score": 0.6777,
+        "sparse_score": 0.0,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Power Distributors and Dispatchers"
+      },
+      {
+        "rank": 13,
+        "chunk_id": "occ_23-1011.00_c01",
+        "hybrid_score": 0.1878,
+        "dense_score": 0.0,
+        "sparse_score": 9.4341,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Lawyers"
+      },
+      {
+        "rank": 14,
+        "chunk_id": "occ_13-1011.00_c01",
+        "hybrid_score": 0.1772,
+        "dense_score": 0.0,
+        "sparse_score": 8.9016,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Agents and Business Managers of Artists, Performers, and Athletes"
+      },
+      {
+        "rank": 15,
+        "chunk_id": "occ_41-9022.00_c01",
+        "hybrid_score": 0.1678,
+        "dense_score": 0.0,
+        "sparse_score": 8.4268,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Real Estate Sales Agents"
+      }
+    ],
+    "cross_encoder_top_3": [
+      {
+        "rerank_rank": 1,
+        "chunk_id": "occ_19-1042.00_c01",
+        "rerank_score": 5.8482,
+        "original_hybrid_rank": 1,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Medical Scientists, Except Epidemiologists"
+      },
+      {
+        "rerank_rank": 2,
+        "chunk_id": "occ_13-1011.00_c01",
+        "rerank_score": 4.0849,
+        "original_hybrid_rank": 14,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Agents and Business Managers of Artists, Performers, and Athletes"
+      },
+      {
+        "rerank_rank": 3,
+        "chunk_id": "map_research_scientist_c01",
+        "rerank_score": 4.0071,
+        "original_hybrid_rank": 2,
+        "source": "data/external/jobrole_onet_mapping.csv",
+        "section": "Role Mapping: Research Scientist -> Computer and Information Research Scientists"
+      }
+    ],
+    "target_in_hybrid_top_15": true,
+    "target_in_rerank_top_3": true,
+    "generated_answer": "Conduct research dealing with the understanding of human diseases and the improvement of human health."
+  },
+  {
+    "test_id": "B",
+    "type": "Role Mapping Semantic Query",
+    "query": "What occupation is associated with the Scientist role?",
+    "expected_target": "map_research_scientist_c01",
+    "dense_top_20": [
+      {
+        "chunk_id": "occ_19-2012.00_c01",
+        "dense_score": 0.6247
+      },
+      {
+        "chunk_id": "map_research_director_c01",
+        "dense_score": 0.615
+      },
+      {
+        "chunk_id": "map_research_scientist_c01",
+        "dense_score": 0.615
+      },
+      {
+        "chunk_id": "occ_19-2041.00_c01",
+        "dense_score": 0.6149
+      },
+      {
+        "chunk_id": "occ_19-2042.00_c01",
+        "dense_score": 0.6034
+      },
+      {
+        "chunk_id": "occ_19-2011.00_c01",
+        "dense_score": 0.6015
+      },
+      {
+        "chunk_id": "occ_19-3092.00_c01",
+        "dense_score": 0.5933
+      },
+      {
+        "chunk_id": "occ_19-1021.00_c01",
+        "dense_score": 0.5925
+      },
+      {
+        "chunk_id": "occ_19-1042.00_c01",
+        "dense_score": 0.5912
+      },
+      {
+        "chunk_id": "occ_19-1029.01_c01",
+        "dense_score": 0.5903
+      },
+      {
+        "chunk_id": "occ_19-2032.00_c01",
+        "dense_score": 0.5889
+      },
+      {
+        "chunk_id": "occ_19-2099.00_c01",
+        "dense_score": 0.5846
+      },
+      {
+        "chunk_id": "occ_19-1012.00_c01",
+        "dense_score": 0.583
+      },
+      {
+        "chunk_id": "occ_19-3099.00_c01",
+        "dense_score": 0.5801
+      },
+      {
+        "chunk_id": "occ_11-9121.00_c01",
+        "dense_score": 0.5741
+      },
+      {
+        "chunk_id": "occ_19-1013.00_c01",
+        "dense_score": 0.5728
+      },
+      {
+        "chunk_id": "occ_15-2099.00_c01",
+        "dense_score": 0.5706
+      },
+      {
+        "chunk_id": "occ_15-1221.00_c01",
+        "dense_score": 0.5702
+      },
+      {
+        "chunk_id": "occ_15-2021.00_c01",
+        "dense_score": 0.57
+      },
+      {
+        "chunk_id": "occ_19-2021.00_c01",
+        "dense_score": 0.5694
+      }
+    ],
+    "sparse_top_20": [
+      {
+        "chunk_id": "map_research_scientist_c01",
+        "sparse_score": 14.1354
+      },
+      {
+        "chunk_id": "map_manufacturing_director_c01",
+        "sparse_score": 7.7635
+      },
+      {
+        "chunk_id": "occ_21-2011.00_c01",
+        "sparse_score": 7.7305
+      },
+      {
+        "chunk_id": "map_human_resources_c01",
+        "sparse_score": 7.625
+      },
+      {
+        "chunk_id": "occ_29-1024.00_c01",
+        "sparse_score": 7.5715
+      },
+      {
+        "chunk_id": "occ_39-5091.00_c01",
+        "sparse_score": 7.37
+      },
+      {
+        "chunk_id": "data_relationships_relationship_2_employee_attrition_occupation_master_04_c01",
+        "sparse_score": 7.2371
+      },
+      {
+        "chunk_id": "map_sales_executive_c01",
+        "sparse_score": 7.1978
+      },
+      {
+        "chunk_id": "occ_19-4042.00_c01",
+        "sparse_score": 7.0833
+      },
+      {
+        "chunk_id": "occ_27-2011.00_c01",
+        "sparse_score": 6.7321
+      },
+      {
+        "chunk_id": "occ_27-4015.00_c01",
+        "sparse_score": 6.6815
+      },
+      {
+        "chunk_id": "map_research_director_c01",
+        "sparse_score": 6.5496
+      },
+      {
+        "chunk_id": "map_manager_c01",
+        "sparse_score": 6.5163
+      },
+      {
+        "chunk_id": "occ_21-1014.00_c01",
+        "sparse_score": 6.3934
+      },
+      {
+        "chunk_id": "occ_51-8013.04_c01",
+        "sparse_score": 6.2851
+      },
+      {
+        "chunk_id": "map_laboratory_technician_c01",
+        "sparse_score": 6.2012
+      },
+      {
+        "chunk_id": "map_healthcare_representative_c01",
+        "sparse_score": 6.0263
+      },
+      {
+        "chunk_id": "occ_15-1299.06_c01",
+        "sparse_score": 5.9816
+      },
+      {
+        "chunk_id": "map_sales_representative_c01",
+        "sparse_score": 5.9426
+      },
+      {
+        "chunk_id": "occ_55-3012.00_c01",
+        "sparse_score": 4.9827
+      }
+    ],
+    "candidate_union_count": 38,
+    "hybrid_top_15": [
+      {
+        "rank": 1,
+        "chunk_id": "map_research_scientist_c01",
+        "hybrid_score": 0.9876,
+        "dense_score": 0.615,
+        "sparse_score": 14.1354,
+        "is_exact_match": false,
+        "source": "data/external/jobrole_onet_mapping.csv",
+        "section": "Role Mapping: Research Scientist -> Computer and Information Research Scientists"
+      },
+      {
+        "rank": 2,
+        "chunk_id": "map_research_director_c01",
+        "hybrid_score": 0.8803,
+        "dense_score": 0.615,
+        "sparse_score": 6.5496,
+        "is_exact_match": false,
+        "source": "data/external/jobrole_onet_mapping.csv",
+        "section": "Role Mapping: Research Director -> Natural Sciences Managers"
+      },
+      {
+        "rank": 3,
+        "chunk_id": "occ_19-2012.00_c01",
+        "hybrid_score": 0.8,
+        "dense_score": 0.6247,
+        "sparse_score": 0.0,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Physicists"
+      },
+      {
+        "rank": 4,
+        "chunk_id": "occ_19-2041.00_c01",
+        "hybrid_score": 0.7875,
+        "dense_score": 0.6149,
+        "sparse_score": 0.0,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Environmental Scientists and Specialists, Including Health"
+      },
+      {
+        "rank": 5,
+        "chunk_id": "occ_19-2042.00_c01",
+        "hybrid_score": 0.7728,
+        "dense_score": 0.6034,
+        "sparse_score": 0.0,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Geoscientists, Except Hydrologists and Geographers"
+      },
+      {
+        "rank": 6,
+        "chunk_id": "occ_19-2011.00_c01",
+        "hybrid_score": 0.7704,
+        "dense_score": 0.6015,
+        "sparse_score": 0.0,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Astronomers"
+      },
+      {
+        "rank": 7,
+        "chunk_id": "occ_19-3092.00_c01",
+        "hybrid_score": 0.7598,
+        "dense_score": 0.5933,
+        "sparse_score": 0.0,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Geographers"
+      },
+      {
+        "rank": 8,
+        "chunk_id": "occ_19-1021.00_c01",
+        "hybrid_score": 0.7588,
+        "dense_score": 0.5925,
+        "sparse_score": 0.0,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Biochemists and Biophysicists"
+      },
+      {
+        "rank": 9,
+        "chunk_id": "occ_19-1042.00_c01",
+        "hybrid_score": 0.7572,
+        "dense_score": 0.5912,
+        "sparse_score": 0.0,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Medical Scientists, Except Epidemiologists"
+      },
+      {
+        "rank": 10,
+        "chunk_id": "occ_19-1029.01_c01",
+        "hybrid_score": 0.756,
+        "dense_score": 0.5903,
+        "sparse_score": 0.0,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Bioinformatics Scientists"
+      },
+      {
+        "rank": 11,
+        "chunk_id": "occ_19-2032.00_c01",
+        "hybrid_score": 0.7542,
+        "dense_score": 0.5889,
+        "sparse_score": 0.0,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Materials Scientists"
+      },
+      {
+        "rank": 12,
+        "chunk_id": "occ_19-2099.00_c01",
+        "hybrid_score": 0.7486,
+        "dense_score": 0.5846,
+        "sparse_score": 0.0,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Physical Scientists, All Other"
+      },
+      {
+        "rank": 13,
+        "chunk_id": "map_manufacturing_director_c01",
+        "hybrid_score": 0.1098,
+        "dense_score": 0.0,
+        "sparse_score": 7.7635,
+        "is_exact_match": false,
+        "source": "data/external/jobrole_onet_mapping.csv",
+        "section": "Role Mapping: Manufacturing Director -> Industrial Production Managers"
+      },
+      {
+        "rank": 14,
+        "chunk_id": "occ_21-2011.00_c01",
+        "hybrid_score": 0.1094,
+        "dense_score": 0.0,
+        "sparse_score": 7.7305,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Clergy"
+      },
+      {
+        "rank": 15,
+        "chunk_id": "map_human_resources_c01",
+        "hybrid_score": 0.1079,
+        "dense_score": 0.0,
+        "sparse_score": 7.625,
+        "is_exact_match": false,
+        "source": "data/external/jobrole_onet_mapping.csv",
+        "section": "Role Mapping: Human Resources -> Human Resources Specialists"
+      }
+    ],
+    "cross_encoder_top_3": [
+      {
+        "rerank_rank": 1,
+        "chunk_id": "occ_19-1042.00_c01",
+        "rerank_score": 2.2709,
+        "original_hybrid_rank": 9,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Medical Scientists, Except Epidemiologists"
+      },
+      {
+        "rerank_rank": 2,
+        "chunk_id": "map_research_scientist_c01",
+        "rerank_score": 2.061,
+        "original_hybrid_rank": 1,
+        "source": "data/external/jobrole_onet_mapping.csv",
+        "section": "Role Mapping: Research Scientist -> Computer and Information Research Scientists"
+      },
+      {
+        "rerank_rank": 3,
+        "chunk_id": "occ_19-2041.00_c01",
+        "rerank_score": 0.9962,
+        "original_hybrid_rank": 4,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Environmental Scientists and Specialists, Including Health"
+      }
+    ],
+    "target_in_hybrid_top_15": true,
+    "target_in_rerank_top_3": true,
+    "generated_answer": "Computer and Information Research Scientists."
+  },
+  {
+    "test_id": "C",
+    "type": "Documentation & Schema Relationship Query",
+    "query": "What is the purpose of jobrole_onet_mapping.csv and occupation_master.csv, and how are they related?",
+    "expected_target": "data_relationships_open_issues_08_c01",
+    "dense_top_20": [
+      {
+        "chunk_id": "map_manager_c01",
+        "dense_score": 0.7466
+      },
+      {
+        "chunk_id": "data_relationships_open_issues_08_c01",
+        "dense_score": 0.7402
+      },
+      {
+        "chunk_id": "map_research_scientist_c01",
+        "dense_score": 0.7109
+      },
+      {
+        "chunk_id": "map_sales_executive_c01",
+        "dense_score": 0.7083
+      },
+      {
+        "chunk_id": "data_relationships_relationship_3_occupation_master_essential_skills_processed_05_c01",
+        "dense_score": 0.7071
+      },
+      {
+        "chunk_id": "data_relationships_relationship_4_occupation_master_software_skills_processed_06_c01",
+        "dense_score": 0.7042
+      },
+      {
+        "chunk_id": "data_relationships_relationship_2_employee_attrition_occupation_master_04_c01",
+        "dense_score": 0.704
+      },
+      {
+        "chunk_id": "map_human_resources_c01",
+        "dense_score": 0.7008
+      },
+      {
+        "chunk_id": "map_research_director_c01",
+        "dense_score": 0.692
+      },
+      {
+        "chunk_id": "map_sales_representative_c01",
+        "dense_score": 0.6757
+      },
+      {
+        "chunk_id": "data_relationships_relationship_1_employee_attrition_engagement_processed_03_c01",
+        "dense_score": 0.6732
+      },
+      {
+        "chunk_id": "map_healthcare_representative_c01",
+        "dense_score": 0.6721
+      },
+      {
+        "chunk_id": "map_laboratory_technician_c01",
+        "dense_score": 0.6649
+      },
+      {
+        "chunk_id": "data_relationships_table_inventory_processed_02_c01",
+        "dense_score": 0.6541
+      },
+      {
+        "chunk_id": "map_manufacturing_director_c01",
+        "dense_score": 0.6492
+      },
+      {
+        "chunk_id": "data_relationships_cleaning_decisions_from_step_3_seeds_for_this_doc_07_c01",
+        "dense_score": 0.6462
+      },
+      {
+        "chunk_id": "model_card_known_limitations_07_c01",
+        "dense_score": 0.6428
+      },
+      {
+        "chunk_id": "occ_15-2051.02_c01",
+        "dense_score": 0.6377
+      },
+      {
+        "chunk_id": "model_card_artifact_locations_08_c01",
+        "dense_score": 0.6359
+      },
+      {
+        "chunk_id": "occ_15-1299.01_c01",
+        "dense_score": 0.6315
+      }
+    ],
+    "sparse_top_20": [
+      {
+        "chunk_id": "data_relationships_table_inventory_processed_02_c01",
+        "sparse_score": 16.0086
+      },
+      {
+        "chunk_id": "data_relationships_open_issues_08_c01",
+        "sparse_score": 11.252
+      },
+      {
+        "chunk_id": "map_research_director_c01",
+        "sparse_score": 10.6955
+      },
+      {
+        "chunk_id": "data_relationships_relationship_1_employee_attrition_engagement_processed_03_c01",
+        "sparse_score": 10.1771
+      },
+      {
+        "chunk_id": "map_manager_c01",
+        "sparse_score": 7.0403
+      },
+      {
+        "chunk_id": "map_manufacturing_director_c01",
+        "sparse_score": 6.9817
+      },
+      {
+        "chunk_id": "map_sales_executive_c01",
+        "sparse_score": 6.9242
+      },
+      {
+        "chunk_id": "map_human_resources_c01",
+        "sparse_score": 6.7031
+      },
+      {
+        "chunk_id": "map_laboratory_technician_c01",
+        "sparse_score": 6.4957
+      },
+      {
+        "chunk_id": "map_research_scientist_c01",
+        "sparse_score": 6.4459
+      },
+      {
+        "chunk_id": "map_healthcare_representative_c01",
+        "sparse_score": 6.2076
+      },
+      {
+        "chunk_id": "map_sales_representative_c01",
+        "sparse_score": 6.073
+      },
+      {
+        "chunk_id": "occ_27-1019.00_c01",
+        "sparse_score": 5.7052
+      },
+      {
+        "chunk_id": "occ_41-9099.00_c01",
+        "sparse_score": 5.7052
+      },
+      {
+        "chunk_id": "occ_47-4099.00_c01",
+        "sparse_score": 5.7052
+      },
+      {
+        "chunk_id": "occ_19-3099.00_c01",
+        "sparse_score": 5.5908
+      },
+      {
+        "chunk_id": "occ_39-3099.00_c01",
+        "sparse_score": 5.5908
+      },
+      {
+        "chunk_id": "occ_35-9099.00_c01",
+        "sparse_score": 5.481
+      },
+      {
+        "chunk_id": "occ_27-2099.00_c01",
+        "sparse_score": 5.481
+      },
+      {
+        "chunk_id": "occ_33-9011.00_c01",
+        "sparse_score": 5.2741
+      }
+    ],
+    "candidate_union_count": 28,
+    "hybrid_top_15": [
+      {
+        "rank": 1,
+        "chunk_id": "data_relationships_open_issues_08_c01",
+        "hybrid_score": 0.9337,
+        "dense_score": 0.7402,
+        "sparse_score": 11.252,
+        "is_exact_match": true,
+        "source": "docs/data_relationships.md",
+        "section": "Open Issues"
+      },
+      {
+        "rank": 2,
+        "chunk_id": "data_relationships_table_inventory_processed_02_c01",
+        "hybrid_score": 0.9009,
+        "dense_score": 0.6541,
+        "sparse_score": 16.0086,
+        "is_exact_match": true,
+        "source": "docs/data_relationships.md",
+        "section": "Table Inventory (processed)"
+      },
+      {
+        "rank": 3,
+        "chunk_id": "map_manager_c01",
+        "hybrid_score": 0.888,
+        "dense_score": 0.7466,
+        "sparse_score": 7.0403,
+        "is_exact_match": true,
+        "source": "data/external/jobrole_onet_mapping.csv",
+        "section": "Role Mapping: Manager -> Managers, All Other"
+      },
+      {
+        "rank": 4,
+        "chunk_id": "map_research_director_c01",
+        "hybrid_score": 0.8752,
+        "dense_score": 0.692,
+        "sparse_score": 10.6955,
+        "is_exact_match": true,
+        "source": "data/external/jobrole_onet_mapping.csv",
+        "section": "Role Mapping: Research Director -> Natural Sciences Managers"
+      },
+      {
+        "rank": 5,
+        "chunk_id": "map_sales_executive_c01",
+        "hybrid_score": 0.8454,
+        "dense_score": 0.7083,
+        "sparse_score": 6.9242,
+        "is_exact_match": true,
+        "source": "data/external/jobrole_onet_mapping.csv",
+        "section": "Role Mapping: Sales Executive -> Sales Managers"
+      },
+      {
+        "rank": 6,
+        "chunk_id": "map_research_scientist_c01",
+        "hybrid_score": 0.8423,
+        "dense_score": 0.7109,
+        "sparse_score": 6.4459,
+        "is_exact_match": true,
+        "source": "data/external/jobrole_onet_mapping.csv",
+        "section": "Role Mapping: Research Scientist -> Computer and Information Research Scientists"
+      },
+      {
+        "rank": 7,
+        "chunk_id": "map_human_resources_c01",
+        "hybrid_score": 0.8346,
+        "dense_score": 0.7008,
+        "sparse_score": 6.7031,
+        "is_exact_match": true,
+        "source": "data/external/jobrole_onet_mapping.csv",
+        "section": "Role Mapping: Human Resources -> Human Resources Specialists"
+      },
+      {
+        "rank": 8,
+        "chunk_id": "map_sales_representative_c01",
+        "hybrid_score": 0.7999,
+        "dense_score": 0.6757,
+        "sparse_score": 6.073,
+        "is_exact_match": true,
+        "source": "data/external/jobrole_onet_mapping.csv",
+        "section": "Role Mapping: Sales Representative -> Sales Representatives of Services, Except Advertising, Insurance, Financial Services, and Travel"
+      },
+      {
+        "rank": 9,
+        "chunk_id": "map_healthcare_representative_c01",
+        "hybrid_score": 0.7978,
+        "dense_score": 0.6721,
+        "sparse_score": 6.2076,
+        "is_exact_match": true,
+        "source": "data/external/jobrole_onet_mapping.csv",
+        "section": "Role Mapping: Healthcare Representative -> Sales Representatives of Services, Except Advertising, Insurance, Financial Services, and Travel"
+      },
+      {
+        "rank": 10,
+        "chunk_id": "map_laboratory_technician_c01",
+        "hybrid_score": 0.7936,
+        "dense_score": 0.6649,
+        "sparse_score": 6.4957,
+        "is_exact_match": true,
+        "source": "data/external/jobrole_onet_mapping.csv",
+        "section": "Role Mapping: Laboratory Technician -> Medical and Clinical Laboratory Technicians"
+      },
+      {
+        "rank": 11,
+        "chunk_id": "map_manufacturing_director_c01",
+        "hybrid_score": 0.7829,
+        "dense_score": 0.6492,
+        "sparse_score": 6.9817,
+        "is_exact_match": true,
+        "source": "data/external/jobrole_onet_mapping.csv",
+        "section": "Role Mapping: Manufacturing Director -> Industrial Production Managers"
+      },
+      {
+        "rank": 12,
+        "chunk_id": "model_card_known_limitations_07_c01",
+        "hybrid_score": 0.6888,
+        "dense_score": 0.6428,
+        "sparse_score": 0.0,
+        "is_exact_match": true,
+        "source": "docs/model_card.md",
+        "section": "Known Limitations"
+      },
+      {
+        "rank": 13,
+        "chunk_id": "data_relationships_relationship_1_employee_attrition_engagement_processed_03_c01",
+        "hybrid_score": 0.8485,
+        "dense_score": 0.6732,
+        "sparse_score": 10.1771,
+        "is_exact_match": false,
+        "source": "docs/data_relationships.md",
+        "section": "Relationship 1 \u2014 employee_attrition \u2194 engagement_processed"
+      },
+      {
+        "rank": 14,
+        "chunk_id": "occ_27-1019.00_c01",
+        "hybrid_score": 0.0713,
+        "dense_score": 0.0,
+        "sparse_score": 5.7052,
+        "is_exact_match": true,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Artists and Related Workers, All Other"
+      },
+      {
+        "rank": 15,
+        "chunk_id": "occ_41-9099.00_c01",
+        "hybrid_score": 0.0713,
+        "dense_score": 0.0,
+        "sparse_score": 5.7052,
+        "is_exact_match": true,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Sales and Related Workers, All Other"
+      }
+    ],
+    "cross_encoder_top_3": [
+      {
+        "rerank_rank": 1,
+        "chunk_id": "data_relationships_open_issues_08_c01",
+        "rerank_score": 2.4576,
+        "original_hybrid_rank": 1,
+        "source": "docs/data_relationships.md",
+        "section": "Open Issues"
+      },
+      {
+        "rerank_rank": 2,
+        "chunk_id": "map_manager_c01",
+        "rerank_score": 1.5819,
+        "original_hybrid_rank": 3,
+        "source": "data/external/jobrole_onet_mapping.csv",
+        "section": "Role Mapping: Manager -> Managers, All Other"
+      },
+      {
+        "rerank_rank": 3,
+        "chunk_id": "map_research_director_c01",
+        "rerank_score": 1.0314,
+        "original_hybrid_rank": 4,
+        "source": "data/external/jobrole_onet_mapping.csv",
+        "section": "Role Mapping: Research Director -> Natural Sciences Managers"
+      }
+    ],
+    "target_in_hybrid_top_15": true,
+    "target_in_rerank_top_3": true,
+    "generated_answer": "To map the roles."
+  },
+  {
+    "test_id": "D",
+    "type": "Normal Semantic NL Query",
+    "query": "What factors influence employee retention and job satisfaction?",
+    "expected_target": null,
+    "dense_top_20": [
+      {
+        "chunk_id": "model_card_top_5_shap_feature_drivers_06_c01",
+        "dense_score": 0.6276
+      },
+      {
+        "chunk_id": "model_card_performance_metrics_test_set_threshold_0_40_05_c01",
+        "dense_score": 0.6174
+      },
+      {
+        "chunk_id": "model_card_intended_use_03_c01",
+        "dense_score": 0.6114
+      },
+      {
+        "chunk_id": "model_card_training_data_04_c01",
+        "dense_score": 0.6093
+      },
+      {
+        "chunk_id": "model_card_known_limitations_07_c01",
+        "dense_score": 0.6041
+      },
+      {
+        "chunk_id": "data_relationships_relationship_1_employee_attrition_engagement_processed_03_c01",
+        "dense_score": 0.5793
+      },
+      {
+        "chunk_id": "data_relationships_relationship_2_employee_attrition_occupation_master_04_c01",
+        "dense_score": 0.5602
+      },
+      {
+        "chunk_id": "data_relationships_open_issues_08_c01",
+        "dense_score": 0.5565
+      },
+      {
+        "chunk_id": "occ_17-2112.01_c01",
+        "dense_score": 0.5548
+      },
+      {
+        "chunk_id": "occ_19-3032.00_c01",
+        "dense_score": 0.5429
+      },
+      {
+        "chunk_id": "model_card_version_history_09_c01",
+        "dense_score": 0.5401
+      },
+      {
+        "chunk_id": "data_relationships_cleaning_decisions_from_step_3_seeds_for_this_doc_07_c01",
+        "dense_score": 0.5386
+      },
+      {
+        "chunk_id": "model_card_artifact_locations_08_c01",
+        "dense_score": 0.5256
+      },
+      {
+        "chunk_id": "model_card_model_name_02_c01",
+        "dense_score": 0.524
+      },
+      {
+        "chunk_id": "data_relationships_table_inventory_processed_02_c01",
+        "dense_score": 0.5216
+      },
+      {
+        "chunk_id": "model_card_model_card_enterprise_hr_attrition_risk_model_01_c01",
+        "dense_score": 0.5192
+      },
+      {
+        "chunk_id": "occ_13-1141.00_c01",
+        "dense_score": 0.499
+      },
+      {
+        "chunk_id": "data_relationships_relationship_3_occupation_master_essential_skills_processed_05_c01",
+        "dense_score": 0.4952
+      },
+      {
+        "chunk_id": "occ_43-4161.00_c01",
+        "dense_score": 0.4907
+      },
+      {
+        "chunk_id": "map_human_resources_c01",
+        "dense_score": 0.4892
+      }
+    ],
+    "sparse_top_20": [
+      {
+        "chunk_id": "model_card_training_data_04_c01",
+        "sparse_score": 10.6134
+      },
+      {
+        "chunk_id": "model_card_intended_use_03_c01",
+        "sparse_score": 10.0027
+      },
+      {
+        "chunk_id": "occ_17-2112.01_c01",
+        "sparse_score": 8.6522
+      },
+      {
+        "chunk_id": "occ_13-1141.00_c01",
+        "sparse_score": 7.6831
+      },
+      {
+        "chunk_id": "map_manager_c01",
+        "sparse_score": 6.9898
+      },
+      {
+        "chunk_id": "occ_29-1129.02_c01",
+        "sparse_score": 6.6185
+      },
+      {
+        "chunk_id": "occ_53-6041.00_c01",
+        "sparse_score": 5.9044
+      },
+      {
+        "chunk_id": "occ_19-3041.00_c01",
+        "sparse_score": 5.8265
+      },
+      {
+        "chunk_id": "data_relationships_relationship_2_employee_attrition_occupation_master_04_c01",
+        "sparse_score": 5.7286
+      },
+      {
+        "chunk_id": "occ_29-1021.00_c01",
+        "sparse_score": 5.6125
+      },
+      {
+        "chunk_id": "occ_43-4161.00_c01",
+        "sparse_score": 5.4788
+      },
+      {
+        "chunk_id": "occ_17-2112.00_c01",
+        "sparse_score": 5.4752
+      },
+      {
+        "chunk_id": "map_human_resources_c01",
+        "sparse_score": 4.9541
+      },
+      {
+        "chunk_id": "occ_13-1075.00_c01",
+        "sparse_score": 4.8417
+      },
+      {
+        "chunk_id": "occ_19-5011.00_c01",
+        "sparse_score": 4.6536
+      },
+      {
+        "chunk_id": "data_relationships_open_issues_08_c01",
+        "sparse_score": 4.574
+      },
+      {
+        "chunk_id": "occ_43-3051.00_c01",
+        "sparse_score": 4.5336
+      },
+      {
+        "chunk_id": "occ_33-9099.02_c01",
+        "sparse_score": 4.4394
+      },
+      {
+        "chunk_id": "occ_19-3032.00_c01",
+        "sparse_score": 4.1385
+      },
+      {
+        "chunk_id": "model_card_known_limitations_07_c01",
+        "sparse_score": 4.0495
+      }
+    ],
+    "candidate_union_count": 30,
+    "hybrid_top_15": [
+      {
+        "rank": 1,
+        "chunk_id": "model_card_training_data_04_c01",
+        "hybrid_score": 0.9766,
+        "dense_score": 0.6093,
+        "sparse_score": 10.6134,
+        "is_exact_match": false,
+        "source": "docs/model_card.md",
+        "section": "Training Data"
+      },
+      {
+        "rank": 2,
+        "chunk_id": "model_card_intended_use_03_c01",
+        "hybrid_score": 0.9678,
+        "dense_score": 0.6114,
+        "sparse_score": 10.0027,
+        "is_exact_match": false,
+        "source": "docs/model_card.md",
+        "section": "Intended Use"
+      },
+      {
+        "rank": 3,
+        "chunk_id": "occ_17-2112.01_c01",
+        "hybrid_score": 0.8702,
+        "dense_score": 0.5548,
+        "sparse_score": 8.6522,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Human Factors Engineers and Ergonomists"
+      },
+      {
+        "rank": 4,
+        "chunk_id": "model_card_known_limitations_07_c01",
+        "hybrid_score": 0.8463,
+        "dense_score": 0.6041,
+        "sparse_score": 4.0495,
+        "is_exact_match": false,
+        "source": "docs/model_card.md",
+        "section": "Known Limitations"
+      },
+      {
+        "rank": 5,
+        "chunk_id": "data_relationships_relationship_2_employee_attrition_occupation_master_04_c01",
+        "hybrid_score": 0.8221,
+        "dense_score": 0.5602,
+        "sparse_score": 5.7286,
+        "is_exact_match": false,
+        "source": "docs/data_relationships.md",
+        "section": "Relationship 2 \u2014 employee_attrition \u2194 occupation_master"
+      },
+      {
+        "rank": 6,
+        "chunk_id": "model_card_top_5_shap_feature_drivers_06_c01",
+        "hybrid_score": 0.8,
+        "dense_score": 0.6276,
+        "sparse_score": 0.0,
+        "is_exact_match": false,
+        "source": "docs/model_card.md",
+        "section": "Top 5 SHAP Feature Drivers"
+      },
+      {
+        "rank": 7,
+        "chunk_id": "data_relationships_open_issues_08_c01",
+        "hybrid_score": 0.7955,
+        "dense_score": 0.5565,
+        "sparse_score": 4.574,
+        "is_exact_match": false,
+        "source": "docs/data_relationships.md",
+        "section": "Open Issues"
+      },
+      {
+        "rank": 8,
+        "chunk_id": "model_card_performance_metrics_test_set_threshold_0_40_05_c01",
+        "hybrid_score": 0.7869,
+        "dense_score": 0.6174,
+        "sparse_score": 0.0,
+        "is_exact_match": false,
+        "source": "docs/model_card.md",
+        "section": "Performance Metrics (Test Set, Threshold = 0.40)"
+      },
+      {
+        "rank": 9,
+        "chunk_id": "occ_13-1141.00_c01",
+        "hybrid_score": 0.7808,
+        "dense_score": 0.499,
+        "sparse_score": 7.6831,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Compensation, Benefits, and Job Analysis Specialists"
+      },
+      {
+        "rank": 10,
+        "chunk_id": "occ_19-3032.00_c01",
+        "hybrid_score": 0.77,
+        "dense_score": 0.5429,
+        "sparse_score": 4.1385,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Industrial-Organizational Psychologists"
+      },
+      {
+        "rank": 11,
+        "chunk_id": "data_relationships_relationship_1_employee_attrition_engagement_processed_03_c01",
+        "hybrid_score": 0.7384,
+        "dense_score": 0.5793,
+        "sparse_score": 0.0,
+        "is_exact_match": false,
+        "source": "docs/data_relationships.md",
+        "section": "Relationship 1 \u2014 employee_attrition \u2194 engagement_processed"
+      },
+      {
+        "rank": 12,
+        "chunk_id": "occ_43-4161.00_c01",
+        "hybrid_score": 0.7287,
+        "dense_score": 0.4907,
+        "sparse_score": 5.4788,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Human Resources Assistants, Except Payroll and Timekeeping"
+      },
+      {
+        "rank": 13,
+        "chunk_id": "map_manager_c01",
+        "hybrid_score": 0.1317,
+        "dense_score": 0.0,
+        "sparse_score": 6.9898,
+        "is_exact_match": false,
+        "source": "data/external/jobrole_onet_mapping.csv",
+        "section": "Role Mapping: Manager -> Managers, All Other"
+      },
+      {
+        "rank": 14,
+        "chunk_id": "occ_29-1129.02_c01",
+        "hybrid_score": 0.1247,
+        "dense_score": 0.0,
+        "sparse_score": 6.6185,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Music Therapists"
+      },
+      {
+        "rank": 15,
+        "chunk_id": "occ_53-6041.00_c01",
+        "hybrid_score": 0.1113,
+        "dense_score": 0.0,
+        "sparse_score": 5.9044,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Traffic Technicians"
+      }
+    ],
+    "cross_encoder_top_3": [
+      {
+        "rerank_rank": 1,
+        "chunk_id": "model_card_intended_use_03_c01",
+        "rerank_score": -4.0054,
+        "original_hybrid_rank": 2,
+        "source": "docs/model_card.md",
+        "section": "Intended Use"
+      },
+      {
+        "rerank_rank": 2,
+        "chunk_id": "model_card_top_5_shap_feature_drivers_06_c01",
+        "rerank_score": -7.178,
+        "original_hybrid_rank": 6,
+        "source": "docs/model_card.md",
+        "section": "Top 5 SHAP Feature Drivers"
+      },
+      {
+        "rerank_rank": 3,
+        "chunk_id": "model_card_known_limitations_07_c01",
+        "rerank_score": -7.8844,
+        "original_hybrid_rank": 4,
+        "source": "docs/model_card.md",
+        "section": "Known Limitations"
+      }
+    ],
+    "target_in_hybrid_top_15": null,
+    "target_in_rerank_top_3": null,
+    "generated_answer": "Employees who regularly work overtime are significantly more likely to leave."
+  },
+  {
+    "test_id": "E",
+    "type": "Exact Lexical Term (Preprocessing / Technical Keyword)",
+    "query": "Where is StandardScaler used in the model training data?",
+    "expected_target": "model_card_training_data_04_c01",
+    "dense_top_20": [
+      {
+        "chunk_id": "model_card_known_limitations_07_c01",
+        "dense_score": 0.6962
+      },
+      {
+        "chunk_id": "model_card_performance_metrics_test_set_threshold_0_40_05_c01",
+        "dense_score": 0.6458
+      },
+      {
+        "chunk_id": "model_card_model_name_02_c01",
+        "dense_score": 0.642
+      },
+      {
+        "chunk_id": "model_card_training_data_04_c01",
+        "dense_score": 0.6323
+      },
+      {
+        "chunk_id": "model_card_artifact_locations_08_c01",
+        "dense_score": 0.6244
+      },
+      {
+        "chunk_id": "model_card_version_history_09_c01",
+        "dense_score": 0.6176
+      },
+      {
+        "chunk_id": "occ_17-3028.00_c01",
+        "dense_score": 0.6084
+      },
+      {
+        "chunk_id": "occ_51-7031.00_c01",
+        "dense_score": 0.6035
+      },
+      {
+        "chunk_id": "map_research_scientist_c01",
+        "dense_score": 0.6004
+      },
+      {
+        "chunk_id": "data_relationships_open_issues_08_c01",
+        "dense_score": 0.5995
+      },
+      {
+        "chunk_id": "occ_15-2051.00_c01",
+        "dense_score": 0.5993
+      },
+      {
+        "chunk_id": "model_card_intended_use_03_c01",
+        "dense_score": 0.5985
+      },
+      {
+        "chunk_id": "data_relationships_cleaning_decisions_from_step_3_seeds_for_this_doc_07_c01",
+        "dense_score": 0.5958
+      },
+      {
+        "chunk_id": "occ_45-4023.00_c01",
+        "dense_score": 0.594
+      },
+      {
+        "chunk_id": "occ_43-9111.00_c01",
+        "dense_score": 0.5931
+      },
+      {
+        "chunk_id": "occ_51-9061.00_c01",
+        "dense_score": 0.5921
+      },
+      {
+        "chunk_id": "map_laboratory_technician_c01",
+        "dense_score": 0.5894
+      },
+      {
+        "chunk_id": "occ_15-2041.00_c01",
+        "dense_score": 0.5872
+      },
+      {
+        "chunk_id": "occ_51-4061.00_c01",
+        "dense_score": 0.5856
+      },
+      {
+        "chunk_id": "occ_43-5111.00_c01",
+        "dense_score": 0.5819
+      }
+    ],
+    "sparse_top_20": [
+      {
+        "chunk_id": "model_card_training_data_04_c01",
+        "sparse_score": 19.2503
+      },
+      {
+        "chunk_id": "model_card_known_limitations_07_c01",
+        "sparse_score": 10.9074
+      },
+      {
+        "chunk_id": "occ_15-1243.01_c01",
+        "sparse_score": 9.4685
+      },
+      {
+        "chunk_id": "model_card_model_card_enterprise_hr_attrition_risk_model_01_c01",
+        "sparse_score": 8.938
+      },
+      {
+        "chunk_id": "model_card_model_name_02_c01",
+        "sparse_score": 8.8111
+      },
+      {
+        "chunk_id": "model_card_version_history_09_c01",
+        "sparse_score": 8.1477
+      },
+      {
+        "chunk_id": "occ_13-1151.00_c01",
+        "sparse_score": 8.0204
+      },
+      {
+        "chunk_id": "model_card_artifact_locations_08_c01",
+        "sparse_score": 7.8705
+      },
+      {
+        "chunk_id": "occ_41-9012.00_c01",
+        "sparse_score": 7.8169
+      },
+      {
+        "chunk_id": "occ_11-3131.00_c01",
+        "sparse_score": 7.7305
+      },
+      {
+        "chunk_id": "occ_15-1243.00_c01",
+        "sparse_score": 7.6193
+      },
+      {
+        "chunk_id": "occ_51-7031.00_c01",
+        "sparse_score": 7.5165
+      },
+      {
+        "chunk_id": "occ_51-4061.00_c01",
+        "sparse_score": 7.1685
+      },
+      {
+        "chunk_id": "occ_17-3031.00_c01",
+        "sparse_score": 6.5709
+      },
+      {
+        "chunk_id": "occ_17-3021.00_c01",
+        "sparse_score": 6.381
+      },
+      {
+        "chunk_id": "model_card_intended_use_03_c01",
+        "sparse_score": 6.0484
+      },
+      {
+        "chunk_id": "occ_55-1017.00_c01",
+        "sparse_score": 5.8018
+      },
+      {
+        "chunk_id": "occ_55-3018.00_c01",
+        "sparse_score": 5.2374
+      },
+      {
+        "chunk_id": "occ_15-2051.00_c01",
+        "sparse_score": 5.2314
+      },
+      {
+        "chunk_id": "data_relationships_data_relationships_01_c01",
+        "sparse_score": 5.1708
+      }
+    ],
+    "candidate_union_count": 31,
+    "hybrid_top_15": [
+      {
+        "rank": 1,
+        "chunk_id": "model_card_training_data_04_c01",
+        "hybrid_score": 0.9266,
+        "dense_score": 0.6323,
+        "sparse_score": 19.2503,
+        "is_exact_match": false,
+        "source": "docs/model_card.md",
+        "section": "Training Data"
+      },
+      {
+        "rank": 2,
+        "chunk_id": "model_card_known_limitations_07_c01",
+        "hybrid_score": 0.9133,
+        "dense_score": 0.6962,
+        "sparse_score": 10.9074,
+        "is_exact_match": false,
+        "source": "docs/model_card.md",
+        "section": "Known Limitations"
+      },
+      {
+        "rank": 3,
+        "chunk_id": "model_card_model_name_02_c01",
+        "hybrid_score": 0.8292,
+        "dense_score": 0.642,
+        "sparse_score": 8.8111,
+        "is_exact_match": false,
+        "source": "docs/model_card.md",
+        "section": "Model Name"
+      },
+      {
+        "rank": 4,
+        "chunk_id": "model_card_artifact_locations_08_c01",
+        "hybrid_score": 0.7993,
+        "dense_score": 0.6244,
+        "sparse_score": 7.8705,
+        "is_exact_match": false,
+        "source": "docs/model_card.md",
+        "section": "Artifact Locations"
+      },
+      {
+        "rank": 5,
+        "chunk_id": "model_card_version_history_09_c01",
+        "hybrid_score": 0.7943,
+        "dense_score": 0.6176,
+        "sparse_score": 8.1477,
+        "is_exact_match": false,
+        "source": "docs/model_card.md",
+        "section": "Version History"
+      },
+      {
+        "rank": 6,
+        "chunk_id": "occ_51-7031.00_c01",
+        "hybrid_score": 0.7716,
+        "dense_score": 0.6035,
+        "sparse_score": 7.5165,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Model Makers, Wood"
+      },
+      {
+        "rank": 7,
+        "chunk_id": "model_card_intended_use_03_c01",
+        "hybrid_score": 0.7505,
+        "dense_score": 0.5985,
+        "sparse_score": 6.0484,
+        "is_exact_match": false,
+        "source": "docs/model_card.md",
+        "section": "Intended Use"
+      },
+      {
+        "rank": 8,
+        "chunk_id": "occ_51-4061.00_c01",
+        "hybrid_score": 0.7473,
+        "dense_score": 0.5856,
+        "sparse_score": 7.1685,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Model Makers, Metal and Plastic"
+      },
+      {
+        "rank": 9,
+        "chunk_id": "occ_15-2051.00_c01",
+        "hybrid_score": 0.743,
+        "dense_score": 0.5993,
+        "sparse_score": 5.2314,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Data Scientists"
+      },
+      {
+        "rank": 10,
+        "chunk_id": "model_card_performance_metrics_test_set_threshold_0_40_05_c01",
+        "hybrid_score": 0.7421,
+        "dense_score": 0.6458,
+        "sparse_score": 0.0,
+        "is_exact_match": false,
+        "source": "docs/model_card.md",
+        "section": "Performance Metrics (Test Set, Threshold = 0.40)"
+      },
+      {
+        "rank": 11,
+        "chunk_id": "occ_17-3028.00_c01",
+        "hybrid_score": 0.6991,
+        "dense_score": 0.6084,
+        "sparse_score": 0.0,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Calibration Technologists and Technicians"
+      },
+      {
+        "rank": 12,
+        "chunk_id": "map_research_scientist_c01",
+        "hybrid_score": 0.6899,
+        "dense_score": 0.6004,
+        "sparse_score": 0.0,
+        "is_exact_match": false,
+        "source": "data/external/jobrole_onet_mapping.csv",
+        "section": "Role Mapping: Research Scientist -> Computer and Information Research Scientists"
+      },
+      {
+        "rank": 13,
+        "chunk_id": "occ_15-1243.01_c01",
+        "hybrid_score": 0.0984,
+        "dense_score": 0.0,
+        "sparse_score": 9.4685,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Data Warehousing Specialists"
+      },
+      {
+        "rank": 14,
+        "chunk_id": "model_card_model_card_enterprise_hr_attrition_risk_model_01_c01",
+        "hybrid_score": 0.0929,
+        "dense_score": 0.0,
+        "sparse_score": 8.938,
+        "is_exact_match": false,
+        "source": "docs/model_card.md",
+        "section": "Model Card \u2014 Enterprise HR Attrition Risk Model"
+      },
+      {
+        "rank": 15,
+        "chunk_id": "occ_13-1151.00_c01",
+        "hybrid_score": 0.0833,
+        "dense_score": 0.0,
+        "sparse_score": 8.0204,
+        "is_exact_match": false,
+        "source": "data/processed/occupation_master.csv",
+        "section": "Training and Development Specialists"
+      }
+    ],
+    "cross_encoder_top_3": [
+      {
+        "rerank_rank": 1,
+        "chunk_id": "model_card_training_data_04_c01",
+        "rerank_score": 0.519,
+        "original_hybrid_rank": 1,
+        "source": "docs/model_card.md",
+        "section": "Training Data"
+      },
+      {
+        "rerank_rank": 2,
+        "chunk_id": "model_card_known_limitations_07_c01",
+        "rerank_score": -1.6024,
+        "original_hybrid_rank": 2,
+        "source": "docs/model_card.md",
+        "section": "Known Limitations"
+      },
+      {
+        "rerank_rank": 3,
+        "chunk_id": "model_card_version_history_09_c01",
+        "rerank_score": -8.4558,
+        "original_hybrid_rank": 5,
+        "source": "docs/model_card.md",
+        "section": "Version History"
+      }
+    ],
+    "target_in_hybrid_top_15": true,
+    "target_in_rerank_top_3": true,
+    "generated_answer": "training set only."
+  }
+]

@@ -1,0 +1,501 @@
+EmployeeID,Name,Gender,Age,Department,JobRole,EducationLevel,JoiningDate,CountryCode,Country,PhoneNumber,MonthlySalary,OvertimeHoursPerMonth,LeavesTaken,LastLeaveDate,LeaveDayName,ProjectsHandled,TrainingHours,CustomerSatisfaction,LastPromotionYear,YearsAtCompany,WorkLifeBalanceScore,PerformanceRating,AttritionRisk
+1,Steven Barnett,Other,57,Finance,Auditor,2,2016-05-05,+91,India,6222371166,93531,33,9,2024-07-03,Wednesday,13,16,,2020,9,1.9,4,No
+2,Christopher Benson,Female,26,Sales,Sales Executive,2,2014-08-20,+1,Canada,0466649099,53706,24,1,2024-01-05,Friday,15,44,8.0,2014,11,5.03,1,Yes
+3,Norman Lane,Other,59,Support,Helpdesk,1,2010-05-17,+1,Canada,8302098565,105756,20,7,2024-11-27,Wednesday,7,62,7.0,2012,15,4.83,4,No
+4,Rita Walker,Female,43,HR,HR Executive,3,2015-06-20,+49,Germany,5555799735,176377,22,6,2024-07-15,Monday,15,8,,2016,10,4.6,4,No
+5,Judith Ware,Male,52,Sales,Account Manager,3,2019-08-20,+49,Germany,4796634990,154782,18,16,2024-12-17,Tuesday,10,57,8.0,2022,6,3.73,4,No
+6,Peggy Mann,Other,33,Support,Helpdesk,2,2018-08-28,+1,Canada,7700893415,58647,34,5,2024-10-01,Tuesday,6,5,6.0,2020,7,2.37,3,No
+7,Brenda Bauer,Male,55,IT,Engineer,2,2018-09-13,+33,France,7686093398,70273,1,20,2024-06-01,Saturday,8,66,,2024,7,6.47,1,No
+8,Troy Ford,Female,51,HR,HR Executive,5,2016-04-18,+49,Germany,4913421702,178909,33,22,2024-10-26,Saturday,3,78,,2019,9,-0.27,3,No
+9,Joel Fuller,Male,32,HR,HR Executive,2,2010-05-26,+1,USA,6735814159,51014,40,11,2024-07-20,Saturday,6,10,,2023,15,0.17,3,No
+10,Cody Bright,Female,54,Finance,Accountant,3,2011-06-16,+1,Canada,4503448285,63726,21,19,2024-07-26,Friday,1,25,,2024,14,2.63,2,Yes
+11,Sara Snyder,Other,52,HR,HR Executive,4,2015-07-01,+1,USA,1917941056,64215,2,13,2024-04-23,Tuesday,6,21,,2021,10,7.43,3,No
+12,David Williams,Male,55,Support,Helpdesk,5,2011-07-08,+91,India,8514067043,76960,14,2,2024-05-10,Friday,11,56,6.0,2017,14,6.87,5,No
+13,Shannon Clark,Male,47,Finance,Accountant,3,2020-06-26,+1,USA,3916634866,151391,8,20,2024-10-09,Wednesday,12,7,,2022,5,5.07,4,No
+14,Jeffery Lopez,Female,50,HR,HR Manager,1,2012-12-28,+1,Canada,9076193823,170862,7,1,2024-08-10,Saturday,8,60,,2022,13,8.43,4,No
+15,Anna Dominguez,Male,26,IT,Developer,3,2018-04-03,+1,Canada,6811045165,161974,6,3,2024-06-28,Friday,15,76,,2024,7,8.3,3,No
+16,Peter Mckee,Female,43,Marketing,SEO Analyst,3,2020-05-07,+44,UK,1059843256,164012,1,19,2024-03-19,Tuesday,10,10,,2020,5,6.63,3,No
+17,Connie Bailey,Other,41,Support,Support Engineer,3,2014-10-16,+1,USA,8754243104,70403,10,14,2024-08-01,Thursday,6,42,9.0,2019,11,5.67,3,No
+18,Taylor Morris,Female,39,IT,Tester,4,2010-08-13,+1,USA,9897470350,173689,21,11,2024-04-14,Sunday,3,76,,2020,15,3.97,3,No
+19,Nicole Roberts,Male,47,Support,Helpdesk,2,2010-03-09,+91,India,3323124401,122403,9,17,2024-04-28,Sunday,4,20,9.0,2015,15,5.37,1,No
+20,Megan Williams,Other,23,Support,Support Engineer,1,2015-05-24,+1,Canada,5598758861,65010,2,29,2024-12-09,Monday,11,12,8.0,2015,10,4.77,3,No
+21,Clinton Scott,Female,54,Support,Support Engineer,2,2023-05-26,+91,India,6018284714,75646,20,7,2024-04-10,Wednesday,4,50,8.0,2024,2,4.83,3,No
+22,Erin Massey,Other,60,Sales,Sales Executive,1,2011-08-12,+49,Germany,7469986242,130906,18,28,2024-05-20,Monday,8,23,10.0,2013,14,1.73,4,No
+23,Ashley Marsh,Male,42,IT,Tester,5,2019-03-15,+1,USA,9273445107,176048,19,17,2024-09-22,Sunday,3,34,,2022,6,3.37,3,No
+24,Jasmine Gonzalez,Female,57,IT,Tester,2,2022-05-02,+33,France,7750072723,68060,31,30,2024-05-21,Tuesday,12,15,,2023,3,-1.2,2,Yes
+25,Sharon Lane,Other,59,Marketing,Content Lead,4,2020-07-07,+1,USA,1369768938,62282,35,5,2024-04-17,Wednesday,15,63,,2021,5,2.17,4,No
+26,David Maldonado,Other,28,Marketing,SEO Analyst,4,2023-12-16,+1,Canada,9674960322,89567,29,13,2024-02-17,Saturday,15,65,,2024,2,2.03,3,No
+27,Sheryl Lopez,Other,33,Sales,Sales Executive,4,2014-12-12,+44,UK,1300146507,82449,31,19,2024-10-15,Tuesday,9,36,1.0,2014,11,0.63,4,No
+28,Patricia Jones,Female,52,Marketing,Content Lead,4,2021-05-07,+91,India,2775889565,41883,20,11,2024-05-16,Thursday,1,28,,2022,4,4.17,2,No
+29,Samantha Conley,Male,46,Finance,Accountant,1,2010-11-06,+1,USA,1008830314,74577,37,11,2024-10-02,Wednesday,6,73,,2012,15,0.77,3,No
+30,Matthew Gutierrez,Male,23,Support,Support Engineer,2,2013-10-24,+44,UK,7654890591,104549,38,30,2024-06-07,Friday,6,80,4.0,2022,12,-2.6,4,No
+31,Nicholas Duncan,Other,60,IT,Developer,5,2021-12-21,+44,UK,1182033931,74638,39,4,2024-04-03,Wednesday,7,12,,2024,4,1.53,4,No
+32,Andrew Contreras,Male,50,Marketing,Content Lead,5,2020-10-19,+1,Canada,2060275944,103189,8,18,2024-11-02,Saturday,4,44,,2023,5,5.4,3,No
+33,Ashley Hall,Male,43,IT,Tester,2,2013-06-03,+91,India,0226641433,41254,9,23,2024-02-19,Monday,13,33,,2020,12,4.37,1,No
+34,Justin Lawrence,Male,33,IT,Engineer,4,2017-08-05,+49,Germany,7331004145,152027,24,2,2024-01-02,Tuesday,11,7,,2018,8,4.87,3,No
+35,Jessica Jones,Male,27,Marketing,SEO Analyst,5,2021-05-26,+1,Canada,1240068862,109614,21,0,2024-07-01,Monday,5,56,,2021,4,5.8,4,No
+36,Maria Smith,Male,32,Finance,Auditor,4,2018-08-15,+44,UK,6790929153,38475,25,24,2024-03-15,Friday,7,79,,2024,7,1.0,3,No
+37,Bryan Garcia,Male,43,Marketing,Content Lead,2,2019-02-12,+1,Canada,5345996573,72671,32,16,2024-12-09,Monday,5,80,,2023,6,0.93,3,No
+38,Breanna Chapman,Male,58,Finance,Accountant,4,2010-04-02,+1,Canada,6629492075,34306,28,14,2024-09-03,Tuesday,8,61,,2023,15,2.07,4,No
+39,William Meyer,Other,22,Finance,Auditor,1,2011-03-26,+44,UK,4135695910,73324,21,30,2024-05-08,Wednesday,10,36,,2023,14,0.8,3,No
+40,Matthew Maldonado,Male,39,Finance,Auditor,3,2012-05-22,+1,USA,9445734465,163576,12,10,2024-08-16,Friday,10,76,,2016,13,5.93,3,No
+41,Julia Cobb,Male,22,Sales,Account Manager,2,2016-10-03,+1,USA,3270385747,49953,14,0,2024-04-18,Thursday,10,78,9.0,2019,9,7.2,3,No
+42,Nicholas Oliver,Female,41,Marketing,Content Lead,2,2019-01-06,+49,Germany,5900267155,108906,8,7,2024-01-18,Thursday,7,56,,2024,6,7.23,3,No
+43,Whitney Crosby,Male,23,Marketing,Content Lead,5,2010-10-17,+1,Canada,0386542950,78457,7,24,2024-08-19,Monday,6,62,,2022,15,4.6,5,No
+44,Carlos Wall,Female,55,IT,Engineer,5,2011-08-05,+1,Canada,7390380839,37533,22,30,2024-02-28,Wednesday,4,61,,2015,14,0.6,4,No
+45,Jerry Walker,Female,33,Finance,Accountant,5,2018-02-28,+44,UK,9204861242,171225,23,29,2024-07-26,Friday,8,53,,2024,7,0.57,4,No
+46,Charles Le,Male,21,IT,Developer,3,2016-08-15,+91,India,5017239668,101051,34,15,2024-03-24,Sunday,7,49,,2019,9,0.7,1,Yes
+47,Amy Peterson PhD,Other,33,Sales,Account Manager,2,2018-07-24,+33,France,1561103832,50654,38,30,2024-05-11,Saturday,1,26,7.0,2018,7,-2.6,4,No
+48,Kimberly Campbell,Other,22,Sales,Sales Executive,5,2018-05-17,+44,UK,6058930288,71622,27,26,2024-10-28,Monday,12,20,8.0,2023,7,0.27,4,No
+49,Daniel Smith,Male,23,Support,Helpdesk,5,2021-04-07,+1,USA,8855702899,132390,14,16,2024-01-27,Saturday,14,45,2.0,2023,4,4.53,4,No
+50,Steve Henry,Female,54,IT,Tester,5,2023-07-12,+44,UK,9174443288,179351,40,23,2024-04-05,Friday,14,18,,2023,2,-1.83,3,No
+51,John Logan,Female,57,Sales,Sales Executive,3,2015-06-26,+1,Canada,4338863500,50691,27,13,2024-07-19,Friday,10,21,3.0,2022,10,2.43,4,No
+52,Thomas Ellis,Other,52,Support,Support Engineer,2,2011-04-19,+49,Germany,0314499755,163863,37,23,2024-08-12,Monday,3,50,1.0,2016,14,-1.23,4,No
+53,Amanda White,Male,36,Marketing,SEO Analyst,1,2021-06-08,+33,France,0856608915,134280,2,3,2024-02-24,Saturday,14,35,,2024,4,9.1,5,No
+54,Nicholas Anderson,Female,52,Finance,Auditor,2,2011-09-26,+44,UK,2947126467,38519,6,14,2024-04-14,Sunday,12,64,,2024,14,6.47,2,No
+55,Cassandra Knight,Female,35,Finance,Accountant,2,2021-02-11,+1,USA,0195741970,153394,34,12,2024-07-15,Monday,12,5,,2023,4,1.2,3,No
+56,Jessica Reeves,Male,48,IT,Developer,1,2018-10-11,+44,UK,6789507803,42964,1,13,2024-11-17,Sunday,5,22,,2018,7,7.63,2,No
+57,Mikayla Black,Other,30,IT,Developer,3,2019-07-27,+33,France,3299457293,52745,16,14,2024-10-23,Wednesday,7,41,,2023,6,4.47,1,No
+58,Justin Wang,Other,34,Support,Helpdesk,5,2012-07-09,+1,Canada,8177916875,37431,4,8,2024-07-27,Saturday,2,60,9.0,2021,13,7.87,3,No
+59,Kevin Moreno,Male,22,Marketing,SEO Analyst,1,2022-01-10,+44,UK,7188076264,124008,28,29,2024-11-06,Wednesday,6,51,,2022,3,-0.43,4,No
+60,John Lewis,Male,48,HR,HR Executive,2,2017-11-11,+91,India,8886046083,128442,18,1,2024-11-01,Friday,10,36,,2021,8,6.23,4,No
+61,Heather Sosa,Other,57,HR,HR Manager,3,2015-09-14,+1,USA,6140020793,137226,36,1,2024-10-03,Thursday,15,58,,2021,10,2.63,2,Yes
+62,Phillip Hunter,Female,48,IT,Tester,5,2020-02-05,+33,France,0485273657,150377,18,19,2024-03-12,Tuesday,8,19,,2022,5,3.23,4,No
+63,Courtney Ayala,Female,27,HR,HR Manager,2,2012-04-09,+1,Canada,5522793615,161874,2,7,2024-11-18,Monday,11,53,,2015,13,8.43,5,No
+64,Tammy Ramirez,Female,32,Support,Helpdesk,5,2019-02-13,+44,UK,3959946337,39558,19,19,2024-12-21,Saturday,15,50,3.0,2022,6,3.03,3,No
+65,James Morgan,Male,60,Sales,Account Manager,1,2013-03-22,+33,France,0823772322,49620,29,4,2024-07-25,Thursday,5,76,4.0,2013,12,3.53,3,No
+66,Cody Barker,Female,34,Marketing,Content Lead,3,2021-04-11,+1,Canada,6763147839,86861,30,0,2024-08-10,Saturday,1,25,,2024,4,4.0,3,No
+67,David Smith,Female,22,Sales,Sales Executive,3,2023-03-28,+91,India,0941640426,155851,1,30,2024-11-22,Friday,12,44,1.0,2024,2,4.8,4,No
+68,Amber Church,Female,21,Sales,Sales Executive,1,2011-01-08,+44,UK,4688879859,72637,31,27,2024-09-04,Wednesday,7,70,6.0,2021,14,-0.7,2,Yes
+69,Tammy Perry,Female,26,Sales,Account Manager,1,2012-12-13,+44,UK,9056058680,151643,1,1,2024-01-10,Wednesday,5,35,1.0,2024,13,9.63,4,No
+70,Sherry Cox,Female,37,Finance,Accountant,3,2015-06-26,+1,Canada,3583953106,155727,26,30,2024-08-25,Sunday,3,46,,2020,10,-0.2,2,Yes
+71,John Turner,Female,55,HR,HR Executive,1,2018-09-18,+1,Canada,9922658683,71487,9,12,2024-08-06,Tuesday,7,39,,2023,7,6.2,5,No
+72,Brian Boyle,Female,23,Marketing,Content Lead,3,2011-02-24,+1,Canada,9651175181,169631,0,9,2024-01-01,Monday,7,23,,2012,14,8.5,4,No
+73,Peggy Hawkins,Male,29,IT,Developer,5,2021-02-01,+91,India,9350714646,56935,36,29,2024-12-19,Thursday,6,50,,2024,4,-2.03,4,No
+74,Jared Montgomery,Female,32,Sales,Sales Executive,3,2023-01-23,+44,UK,2872431941,68664,21,9,2024-11-02,Saturday,14,79,4.0,2023,2,4.3,3,No
+75,Thomas Clark,Other,31,IT,Developer,2,2014-01-07,+49,Germany,7739325713,129732,29,2,2024-10-16,Wednesday,11,58,,2016,11,3.87,4,No
+76,Kyle Moyer,Female,21,HR,HR Manager,2,2014-05-05,+91,India,5987912952,36008,11,6,2024-11-23,Saturday,5,55,,2016,11,6.8,2,No
+77,Crystal Stevens,Other,25,Sales,Sales Executive,2,2013-04-17,+44,UK,6983113185,163071,15,7,2024-09-06,Friday,8,60,5.0,2016,12,5.83,4,No
+78,Austin Reynolds,Other,26,Sales,Sales Executive,1,2022-03-28,+49,Germany,2329303422,44713,21,27,2024-08-17,Saturday,2,48,5.0,2024,3,1.3,3,No
+79,Teresa Coleman,Male,46,Marketing,Content Lead,3,2021-01-14,+1,USA,7963243733,73718,10,4,2024-12-27,Friday,9,34,,2022,4,7.33,4,No
+80,Maria Tucker,Other,47,HR,HR Manager,4,2014-03-24,+91,India,9877000345,142815,21,13,2024-07-16,Tuesday,15,22,,2023,11,3.63,2,Yes
+81,Louis Mcknight,Male,43,Support,Helpdesk,4,2014-10-11,+1,Canada,6747697865,82938,18,17,2024-02-21,Wednesday,7,16,4.0,2015,11,3.57,4,No
+82,Jerry Jones,Female,22,IT,Engineer,3,2020-07-08,+44,UK,7845291186,32356,15,4,2024-08-09,Friday,12,74,,2020,5,6.33,2,No
+83,Erik Liu,Other,28,IT,Developer,5,2020-03-01,+49,Germany,5614254608,150136,31,14,2024-10-09,Wednesday,2,71,,2023,5,1.47,4,No
+84,Cynthia Fritz,Female,51,Finance,Auditor,5,2021-04-26,+1,Canada,1695816744,103550,13,23,2024-10-11,Friday,9,53,,2024,4,3.57,3,No
+85,Phillip Hayes,Other,31,Sales,Sales Executive,3,2020-07-19,+1,Canada,4238793415,145121,23,22,2024-09-02,Monday,13,34,4.0,2024,5,1.73,2,Yes
+86,Jenny Lee,Male,54,Sales,Sales Executive,4,2017-09-06,+49,Germany,1117359071,152976,8,19,2024-03-16,Saturday,9,45,4.0,2024,8,5.23,3,No
+87,Jonathan Oliver,Male,44,Support,Support Engineer,4,2020-04-26,+33,France,7176588291,43063,5,9,2024-08-08,Thursday,13,46,4.0,2022,5,7.5,3,No
+88,Cynthia Bradley,Male,30,Marketing,Content Lead,2,2013-03-26,+1,Canada,4318486225,33987,21,16,2024-07-14,Sunday,9,57,,2014,12,3.13,4,No
+89,David Johnson,Female,44,Marketing,SEO Analyst,3,2014-04-06,+91,India,4979289818,145588,26,22,2024-01-02,Tuesday,7,31,,2020,11,1.13,3,No
+90,Joan Smith,Other,32,Finance,Auditor,4,2023-02-10,+33,France,1820163736,43235,38,12,2024-04-15,Monday,6,23,,2023,2,0.4,3,No
+91,Richard Fuller,Other,60,IT,Tester,4,2021-10-16,+49,Germany,6486318394,56904,31,7,2024-10-14,Monday,15,37,,2021,4,2.63,3,No
+92,Spencer Kennedy,Female,26,Finance,Accountant,1,2023-03-12,+1,USA,9786956994,62833,10,3,2024-04-26,Friday,5,63,,2024,2,7.5,5,No
+93,Daniel Williams,Other,22,Sales,Account Manager,5,2021-12-06,+33,France,5040674588,133108,16,2,2024-01-05,Friday,11,47,5.0,2022,4,6.47,3,No
+94,Bonnie Robinson,Male,35,Support,Helpdesk,1,2020-12-07,+1,USA,1513881007,65954,17,22,2024-03-27,Wednesday,3,41,5.0,2024,5,2.93,3,No
+95,Amy Bowers,Female,58,Support,Support Engineer,4,2018-11-26,+91,India,5244147522,99805,6,23,2024-03-23,Saturday,15,6,10.0,2020,7,4.97,4,No
+96,Cody Jackson,Female,43,Marketing,Content Lead,1,2011-02-10,+1,Canada,1511401995,156104,2,0,2024-03-22,Friday,12,20,,2011,14,9.6,3,No
+97,Darlene Neal,Female,34,HR,HR Manager,4,2022-02-14,+33,France,6075902282,115105,29,12,2024-02-28,Wednesday,15,19,,2022,3,2.2,3,No
+98,Joshua Garcia,Female,52,Marketing,Content Lead,5,2015-01-11,+33,France,3221984399,77462,22,18,2024-04-12,Friday,14,65,,2021,10,2.6,3,No
+99,Peggy French,Female,58,HR,HR Executive,3,2013-10-22,+1,USA,1038317657,136059,1,18,2024-12-05,Thursday,12,69,,2024,12,6.8,4,No
+100,Sean Davis DDS,Male,29,Sales,Account Manager,5,2019-04-18,+91,India,3249070690,152981,14,9,2024-02-10,Saturday,15,9,7.0,2019,6,5.7,3,No
+101,Denise Rush,Other,43,HR,HR Manager,2,2014-12-07,+1,USA,7308120630,107081,31,29,2024-05-09,Thursday,15,80,,2014,11,-1.03,3,No
+102,Matthew Glenn,Female,30,HR,HR Executive,2,2011-05-18,+91,India,9224209451,172259,38,22,2024-06-18,Tuesday,2,62,,2012,14,-1.27,5,No
+103,Kathleen Reed,Female,51,Sales,Account Manager,2,2014-06-13,+1,USA,2520920357,50979,31,25,2024-02-06,Tuesday,13,52,2.0,2019,11,-0.37,4,No
+104,Samuel Fletcher,Female,27,Support,Support Engineer,5,2016-05-24,+1,Canada,4037042671,98130,12,20,2024-12-26,Thursday,10,19,7.0,2020,9,4.27,4,No
+105,Debra Holt,Other,59,Marketing,SEO Analyst,4,2018-11-13,+1,Canada,5147570630,117953,34,7,2024-06-11,Tuesday,15,8,,2019,7,2.03,3,No
+106,Jennifer Roberts,Female,31,Finance,Accountant,4,2018-01-20,+1,USA,0580368469,149459,23,24,2024-06-13,Thursday,3,66,,2020,7,1.4,2,Yes
+107,Kaitlyn Kramer,Other,33,IT,Developer,5,2012-09-06,+91,India,8068783545,68241,16,6,2024-04-25,Thursday,6,41,,2020,13,5.8,5,No
+108,Paul Kennedy,Female,51,HR,HR Executive,4,2018-05-23,+1,USA,0852413579,47360,13,17,2024-02-15,Thursday,4,69,,2023,7,4.57,4,No
+109,Joshua Eaton,Other,49,Support,Support Engineer,5,2018-10-17,+1,USA,8485840436,126122,5,20,2024-01-09,Tuesday,13,67,5.0,2018,7,5.67,4,No
+110,David Guerrero,Other,33,IT,Developer,2,2012-09-12,+33,France,0653451854,77857,7,13,2024-03-20,Wednesday,9,61,,2016,13,6.43,4,No
+111,Brian Wilson,Male,53,Support,Helpdesk,4,2021-07-06,+1,Canada,2814737348,50520,33,17,2024-04-13,Saturday,3,50,4.0,2021,4,0.57,3,No
+112,Alexis Petty,Male,49,IT,Engineer,2,2010-06-20,+49,Germany,1568901642,113247,34,9,2024-10-22,Tuesday,4,30,,2010,15,1.7,1,Yes
+113,David Matthews,Male,39,IT,Developer,5,2014-11-23,+1,Canada,2716612207,74074,17,30,2024-08-23,Friday,7,45,,2014,11,1.6,3,No
+114,Melissa Snyder,Male,59,Support,Helpdesk,2,2023-01-06,+49,Germany,9066591048,152599,27,5,2024-08-19,Monday,7,64,2.0,2023,2,3.77,4,No
+115,Dan Sullivan,Male,33,Sales,Account Manager,5,2022-03-05,+1,Canada,6758118761,156093,0,1,2024-08-15,Thursday,6,37,4.0,2022,3,9.83,3,No
+116,Christine Burton,Other,22,Support,Helpdesk,4,2010-05-10,+49,Germany,4239843752,153900,16,3,2024-11-05,Tuesday,2,8,7.0,2022,15,6.3,3,No
+117,Daniel Thomas,Other,43,Marketing,SEO Analyst,4,2012-03-27,+1,USA,8940789472,168316,29,1,2024-02-23,Friday,14,74,,2023,13,4.03,2,Yes
+118,Paige Ortiz,Female,52,HR,HR Executive,4,2013-11-19,+44,UK,4798311105,31840,29,30,2024-04-24,Wednesday,4,59,,2017,12,-0.8,2,Yes
+119,Brett Booth,Female,31,Finance,Auditor,3,2022-07-12,+33,France,5224570095,44728,6,7,2024-01-16,Tuesday,4,33,,2023,3,7.63,3,No
+120,Christopher Stone,Other,59,Sales,Sales Executive,1,2010-10-01,+33,France,0079680184,144337,30,28,2024-05-18,Saturday,2,6,1.0,2024,15,-0.67,3,No
+121,Larry Craig,Male,45,IT,Developer,3,2013-07-21,+1,USA,0153493196,78575,39,22,2024-08-19,Monday,10,60,,2022,12,-1.47,2,Yes
+122,William Lee,Male,59,Support,Support Engineer,4,2014-04-13,+44,UK,5034755729,121058,19,6,2024-05-04,Saturday,4,35,10.0,2019,11,5.2,3,No
+123,Vicki Young,Female,49,Finance,Auditor,4,2018-05-02,+91,India,0437696006,151344,12,22,2024-01-20,Saturday,15,51,,2021,7,3.93,4,No
+124,Tara Lloyd,Female,44,IT,Engineer,5,2022-11-17,+1,USA,8730000204,67225,15,3,2024-01-03,Wednesday,4,42,,2024,3,6.5,3,No
+125,Elizabeth Hunt,Female,22,Finance,Accountant,2,2015-08-27,+1,USA,6916151883,172135,0,13,2024-02-16,Friday,6,21,,2023,10,7.83,4,No
+126,Jennifer Perkins,Male,60,IT,Developer,2,2017-01-12,+1,Canada,6409879093,91931,18,1,2024-12-13,Friday,6,49,,2023,8,6.23,3,No
+127,Amanda Martin,Female,25,Sales,Sales Executive,1,2011-06-01,+49,Germany,9036907880,89066,4,5,2024-07-17,Wednesday,7,73,5.0,2015,14,8.37,3,No
+128,Michelle Christensen,Other,47,HR,HR Executive,2,2020-01-03,+49,Germany,8252273685,72561,22,19,2024-01-18,Thursday,14,66,,2024,5,2.43,3,No
+129,Christina Romero,Female,56,Support,Support Engineer,3,2017-07-09,+91,India,3664738504,68809,29,17,2024-06-28,Friday,13,12,1.0,2017,8,1.37,4,No
+130,Leah Smith,Female,35,IT,Tester,5,2018-03-22,+33,France,8370570897,93279,2,14,2024-09-28,Saturday,13,35,,2022,7,7.27,5,No
+131,Kenneth Jacobs,Female,27,Support,Helpdesk,3,2015-10-02,+1,USA,6255968515,55650,9,4,2024-07-14,Sunday,14,18,1.0,2019,10,7.53,3,No
+132,Robert Smith,Other,59,HR,HR Executive,1,2018-12-21,+1,USA,9202581526,74552,11,5,2024-06-06,Thursday,11,8,,2021,7,6.97,5,No
+133,Jamie Morgan,Other,55,Finance,Auditor,5,2019-09-09,+44,UK,5681556970,145869,22,5,2024-11-08,Friday,3,29,,2020,6,4.77,5,No
+134,Shaun Diaz,Male,45,HR,HR Manager,4,2014-04-11,+1,USA,0869155906,148129,9,19,2024-11-05,Tuesday,14,8,,2022,11,5.03,3,No
+135,Christy Sanders,Female,38,Marketing,Content Lead,3,2011-12-23,+1,USA,6484525060,44652,9,18,2024-12-26,Thursday,12,50,,2012,14,5.2,3,No
+136,Gerald Simmons,Male,39,Marketing,SEO Analyst,2,2023-06-27,+44,UK,1962093789,178756,27,12,2024-01-21,Sunday,13,76,,2024,2,2.6,5,No
+137,Nathaniel Bryant II,Female,56,Finance,Auditor,5,2016-12-28,+1,USA,3515157845,110538,32,3,2024-09-21,Saturday,4,38,,2018,9,3.1,3,No
+138,Krista Kennedy,Female,40,IT,Engineer,5,2013-03-22,+1,USA,9807774783,39286,12,25,2024-04-18,Thursday,11,52,,2019,12,3.43,4,No
+139,Amanda Smith,Male,30,IT,Developer,4,2021-11-18,+33,France,4865989878,55595,4,13,2024-05-11,Saturday,6,36,,2021,4,7.03,4,No
+140,Dawn Burnett,Other,56,Sales,Account Manager,5,2022-06-28,+91,India,1074758757,168010,32,17,2024-09-07,Saturday,14,65,1.0,2022,3,0.77,5,No
+141,Linda Hernandez,Other,50,IT,Tester,3,2015-11-12,+33,France,1661239513,71526,24,7,2024-06-21,Friday,3,10,,2022,10,4.03,2,Yes
+142,Joshua Shaw,Male,23,Sales,Account Manager,1,2018-02-12,+44,UK,3532368724,152981,3,8,2024-05-06,Monday,14,56,9.0,2020,7,8.07,4,No
+143,Timothy Andrade,Other,51,Support,Helpdesk,5,2019-12-03,+91,India,6086404161,60483,16,23,2024-12-06,Friday,8,38,6.0,2021,6,2.97,3,No
+144,Kelsey Nichols,Other,53,Sales,Account Manager,2,2021-08-15,+49,Germany,8279117589,37564,10,0,2024-02-12,Monday,2,41,10.0,2021,4,8.0,3,No
+145,Garrett Garcia,Male,52,Support,Support Engineer,2,2021-11-14,+1,USA,3615338133,103473,11,0,2024-01-11,Thursday,5,80,5.0,2023,4,7.8,3,No
+146,John Brown,Male,43,HR,HR Manager,5,2011-01-18,+44,UK,8342776059,98618,6,1,2024-12-20,Friday,8,42,,2021,14,8.63,3,No
+147,Brian Foster,Other,28,Sales,Account Manager,2,2015-07-01,+33,France,2635632250,69768,21,8,2024-11-10,Sunday,4,13,1.0,2019,10,4.47,4,No
+148,Daniel Lam,Other,32,Sales,Account Manager,4,2014-09-04,+1,USA,1672748888,124262,16,27,2024-07-05,Friday,1,76,8.0,2022,11,2.3,4,No
+149,Antonio Myers,Female,48,Support,Support Engineer,1,2014-05-04,+1,USA,4514876802,31181,32,1,2024-07-28,Sunday,10,15,10.0,2015,11,3.43,3,No
+150,Mary Fowler,Male,48,Marketing,Content Lead,2,2015-08-20,+44,UK,4005304328,139956,35,0,2024-08-17,Saturday,10,10,,2019,10,3.0,3,No
+151,David Wright,Other,34,HR,HR Executive,2,2019-04-17,+49,Germany,7224920410,53489,23,27,2024-10-07,Monday,3,51,,2019,6,0.9,3,No
+152,Nancy Jones,Other,34,Sales,Account Manager,1,2020-02-16,+1,Canada,8266149618,123313,12,21,2024-12-14,Saturday,5,25,7.0,2020,5,4.1,4,No
+153,Robert Stone,Other,52,IT,Tester,5,2021-01-08,+1,USA,4006855728,34410,3,8,2024-01-07,Sunday,3,26,,2022,4,8.07,4,No
+154,Kelli Ashley,Male,54,Marketing,SEO Analyst,2,2016-06-01,+33,France,0887821115,35504,30,20,2024-08-18,Sunday,9,8,,2018,9,0.67,4,No
+155,Austin Middleton,Other,41,HR,HR Executive,4,2017-10-21,+1,USA,1285235101,47809,37,20,2024-09-07,Saturday,2,71,,2023,8,-0.73,4,No
+156,Aaron Franklin,Male,33,IT,Developer,1,2023-01-26,+49,Germany,1147094489,152793,30,14,2024-09-16,Monday,11,51,,2023,2,1.67,3,No
+157,Robert Sweeney,Male,51,HR,HR Executive,2,2017-08-05,+44,UK,5061619629,144222,23,16,2024-09-07,Saturday,15,75,,2023,8,2.73,4,No
+158,James Scott,Female,55,Marketing,Content Lead,5,2018-07-16,+1,Canada,0313634861,122095,15,0,2024-08-02,Friday,13,32,,2020,7,7.0,4,No
+159,Stephen Harris,Other,60,Support,Support Engineer,3,2012-08-12,+44,UK,8885076357,176852,18,9,2024-06-18,Tuesday,2,62,3.0,2014,13,4.9,5,No
+160,Bryan Brown,Male,51,Sales,Sales Executive,4,2010-05-11,+1,USA,9471210972,138076,2,15,2024-04-04,Thursday,7,47,3.0,2022,15,7.1,3,No
+161,James Harrison,Male,53,Support,Helpdesk,1,2023-06-18,+49,Germany,6286762941,166057,33,17,2024-06-28,Friday,2,77,1.0,2024,2,0.57,3,No
+162,Tracy Peterson,Female,35,Finance,Accountant,3,2021-11-06,+33,France,3976761507,81547,37,9,2024-03-04,Monday,3,30,,2021,4,1.1,4,No
+163,Juan Garcia,Female,47,HR,HR Executive,4,2017-06-27,+1,Canada,0253325873,78148,5,10,2024-05-11,Saturday,4,22,,2024,8,7.33,5,No
+164,Carrie Huber,Female,25,HR,HR Manager,2,2020-02-12,+91,India,8387775499,57534,39,3,2024-10-26,Saturday,15,14,,2022,5,1.7,3,No
+165,Craig Rodgers,Other,60,IT,Tester,3,2010-10-28,+1,Canada,7031330758,77413,27,0,2024-01-20,Saturday,6,50,,2020,15,4.6,2,Yes
+166,Jonathan Jones,Female,31,IT,Tester,1,2023-08-06,+49,Germany,7261891066,143831,17,0,2024-12-12,Thursday,13,72,,2023,2,6.6,3,No
+167,Miss Erin Campbell,Female,28,HR,HR Manager,2,2022-01-02,+33,France,7354943816,126163,6,10,2024-04-20,Saturday,11,15,,2022,3,7.13,3,No
+168,Brian Thomas,Other,34,HR,HR Executive,1,2020-04-08,+49,Germany,9798359260,151729,35,0,2024-08-09,Friday,14,46,,2020,5,3.0,3,No
+169,Joshua Crawford,Other,33,Support,Support Engineer,1,2015-11-02,+91,India,5402809893,44773,6,7,2024-03-11,Monday,5,57,8.0,2020,10,7.63,3,No
+170,Rebecca Thomas,Female,60,Sales,Account Manager,1,2020-06-23,+1,Canada,6006961550,115425,40,25,2024-08-22,Thursday,5,78,1.0,2024,5,-2.17,1,Yes
+171,Olivia Villarreal,Other,60,Marketing,SEO Analyst,3,2012-10-06,+33,France,4202335425,52297,39,1,2024-03-16,Saturday,12,72,,2017,13,2.03,5,No
+172,Mr. Ricardo Compton DDS,Female,22,HR,HR Manager,3,2013-04-01,+44,UK,3398857852,166881,6,1,2024-06-23,Sunday,13,77,,2020,12,8.63,3,No
+173,Cory Preston,Female,39,Support,Support Engineer,2,2012-07-24,+44,UK,0313354419,38986,8,13,2024-08-14,Wednesday,12,53,10.0,2015,13,6.23,1,No
+174,Teresa Kirk,Other,43,Marketing,Content Lead,5,2012-08-17,+91,India,7050402667,172355,27,11,2024-10-25,Friday,13,43,,2024,13,2.77,4,No
+175,Rachel Long,Other,51,Marketing,SEO Analyst,1,2023-10-01,+91,India,0667583620,43852,39,14,2024-03-20,Wednesday,11,73,,2024,2,-0.13,4,No
+176,Michael Wallace,Male,24,Support,Helpdesk,2,2016-11-11,+49,Germany,5192109512,134669,28,24,2024-11-07,Thursday,11,45,4.0,2024,9,0.4,3,No
+177,Ian Malone,Male,59,Support,Helpdesk,4,2023-03-23,+49,Germany,7898200241,126177,10,15,2024-08-20,Tuesday,10,78,3.0,2023,2,5.5,1,No
+178,Mark Rodriguez,Male,49,Sales,Account Manager,5,2010-11-12,+44,UK,5818266387,47221,12,4,2024-07-17,Wednesday,3,56,6.0,2018,15,6.93,4,No
+179,Ashley Owen,Other,34,Marketing,SEO Analyst,5,2016-11-05,+44,UK,0820698383,88315,22,17,2024-08-18,Sunday,12,24,,2017,9,2.77,2,Yes
+180,Barbara Stokes,Male,49,Support,Helpdesk,1,2011-08-07,+33,France,5786905061,139006,23,26,2024-12-07,Saturday,3,79,8.0,2015,14,1.07,2,Yes
+181,Veronica Chapman,Other,30,Support,Helpdesk,3,2021-06-25,+44,UK,7878407730,124984,12,6,2024-09-11,Wednesday,5,75,3.0,2021,4,6.6,3,No
+182,Emily Gonzalez,Other,51,Support,Support Engineer,2,2014-09-28,+49,Germany,7248335764,48033,8,2,2024-03-16,Saturday,7,70,4.0,2022,11,8.07,3,No
+183,Colton Weaver,Female,28,Sales,Account Manager,4,2017-10-04,+1,USA,6874372178,176131,18,16,2024-11-26,Tuesday,1,27,4.0,2017,8,3.73,3,No
+184,Samuel Boyd,Other,58,Finance,Auditor,5,2014-02-25,+91,India,6522970404,83089,4,26,2024-03-10,Sunday,3,45,,2014,11,4.87,2,No
+185,Sarah Bennett,Female,33,Sales,Sales Executive,2,2022-06-06,+1,Canada,9012395019,65067,31,9,2024-07-09,Tuesday,7,25,1.0,2022,3,2.3,4,No
+186,Jane Carroll,Other,29,IT,Developer,3,2014-08-11,+49,Germany,5988948625,35093,37,13,2024-11-24,Sunday,5,35,,2024,11,0.43,4,No
+187,Zachary Guzman,Female,33,Support,Support Engineer,2,2021-07-07,+91,India,9813406304,161083,16,15,2024-02-14,Wednesday,12,58,6.0,2024,4,4.3,3,No
+188,Michael Martin,Male,26,Support,Support Engineer,2,2011-12-20,+91,India,3900173441,142521,23,5,2024-05-24,Friday,15,79,4.0,2012,14,4.57,4,No
+189,Julie Stafford,Other,55,Finance,Accountant,3,2021-12-25,+91,India,0880663235,98836,40,6,2024-12-28,Saturday,7,26,,2021,4,1.0,2,Yes
+190,Dylan Hansen MD,Other,23,Finance,Auditor,5,2016-04-28,+33,France,6866315776,36596,20,22,2024-11-22,Friday,8,7,,2020,9,2.33,5,No
+191,Michael Rangel,Male,25,HR,HR Executive,3,2022-08-16,+44,UK,5004649584,79311,9,20,2024-02-24,Saturday,1,7,,2023,3,4.87,4,No
+192,Bryan Brock,Other,51,IT,Engineer,3,2019-06-14,+91,India,1492662401,177547,39,16,2024-02-12,Monday,13,11,,2023,6,-0.47,3,No
+193,Alison Cunningham,Male,51,Support,Support Engineer,1,2019-02-26,+44,UK,7811912545,139711,39,28,2024-01-01,Monday,6,17,7.0,2020,6,-2.47,5,No
+194,Sarah Lawson,Female,23,Finance,Auditor,2,2011-07-21,+1,Canada,7262797768,133661,25,11,2024-01-12,Friday,13,36,,2021,14,3.17,4,No
+195,Patrick Daniels,Other,55,Support,Helpdesk,2,2017-11-11,+1,USA,3096763470,119959,26,4,2024-08-20,Tuesday,6,6,3.0,2023,8,4.13,3,No
+196,Kimberly Perkins,Male,29,HR,HR Manager,3,2012-01-14,+44,UK,4204062338,41236,37,17,2024-01-26,Friday,6,26,,2024,13,-0.23,4,No
+197,John Thomas,Male,36,HR,HR Executive,1,2020-08-24,+44,UK,5886186337,60667,4,11,2024-07-03,Wednesday,7,12,,2020,5,7.37,4,No
+198,Frank Smith,Male,57,Finance,Accountant,3,2014-12-01,+91,India,5273658507,85219,20,5,2024-11-28,Thursday,12,73,,2020,11,5.17,4,No
+199,Christopher Cooper,Male,22,IT,Tester,5,2017-05-14,+1,Canada,6720465680,113299,13,7,2024-09-01,Sunday,11,69,,2022,8,6.23,2,No
+200,Kelly Jackson,Other,35,IT,Engineer,4,2021-11-13,+49,Germany,7117811985,73218,39,2,2024-12-20,Friday,2,15,,2024,4,1.87,2,Yes
+201,Alexandra Johnson,Other,51,Finance,Accountant,4,2015-12-17,+1,USA,1306255311,166935,17,29,2024-08-28,Wednesday,2,13,,2020,10,1.77,5,No
+202,Leslie Zimmerman,Female,21,Finance,Accountant,1,2015-02-09,+33,France,2855730896,149268,25,4,2024-06-24,Monday,2,42,,2019,10,4.33,5,No
+203,Paul Murray,Female,24,Marketing,SEO Analyst,5,2023-06-11,+44,UK,3180398477,167109,22,15,2024-12-09,Monday,15,21,,2023,2,3.1,3,No
+204,Shannon Hall,Female,23,HR,HR Executive,3,2020-04-25,+91,India,2532690427,44615,10,20,2024-02-08,Thursday,1,67,,2024,5,4.67,5,No
+205,Eric Mitchell,Female,40,Marketing,Content Lead,2,2019-07-27,+44,UK,8974823350,174938,33,26,2024-09-16,Monday,3,7,,2021,6,-0.93,3,No
+206,Erica Murphy,Male,55,Sales,Sales Executive,2,2016-10-16,+1,Canada,5882535027,141609,8,22,2024-06-08,Saturday,7,14,8.0,2019,9,4.73,4,No
+207,David Bradford,Male,48,Support,Helpdesk,1,2023-10-06,+1,USA,6890676189,143395,26,30,2024-09-03,Tuesday,15,61,10.0,2023,2,-0.2,2,Yes
+208,William Lopez MD,Male,48,Support,Support Engineer,5,2019-05-24,+49,Germany,5260174442,91560,32,28,2024-10-20,Sunday,6,54,7.0,2024,6,-1.07,4,No
+209,David Salas,Female,42,Sales,Account Manager,4,2023-12-18,+44,UK,9474252730,178594,4,1,2024-10-04,Friday,10,8,3.0,2024,2,9.03,3,No
+210,Sean Wilcox,Other,49,Sales,Sales Executive,1,2013-07-05,+91,India,3597521242,136861,6,27,2024-10-04,Friday,11,34,2.0,2017,12,4.3,3,No
+211,Tommy Rios,Female,48,Finance,Auditor,3,2018-12-12,+49,Germany,4979789866,70640,13,16,2024-06-12,Wednesday,13,64,,2023,7,4.73,2,No
+212,Peter Wilson,Male,60,Sales,Account Manager,1,2010-12-14,+1,Canada,3163723548,86918,35,25,2024-07-26,Friday,10,14,7.0,2018,15,-1.17,5,No
+213,William Welch,Female,27,Sales,Sales Executive,3,2018-12-09,+1,Canada,1786923734,87099,9,24,2024-10-26,Saturday,3,30,4.0,2023,7,4.2,3,No
+214,Austin Bradford,Other,52,Sales,Account Manager,2,2017-06-09,+1,Canada,5385807959,33037,18,6,2024-07-23,Tuesday,7,46,8.0,2021,8,5.4,3,No
+215,Veronica White,Female,38,HR,HR Manager,4,2017-09-14,+1,USA,1643901394,143214,36,28,2024-10-21,Monday,11,30,,2021,8,-1.87,5,No
+216,Zachary Smith,Female,30,Marketing,SEO Analyst,2,2022-04-22,+91,India,9845162363,168202,17,14,2024-03-18,Monday,1,80,,2023,3,4.27,5,No
+217,David King,Other,25,IT,Engineer,3,2010-10-22,+44,UK,5754956404,151301,31,30,2024-03-08,Friday,12,46,,2018,15,-1.2,4,No
+218,Kathryn Pham,Male,35,IT,Developer,5,2022-07-17,+49,Germany,6205295709,32158,10,18,2024-01-08,Monday,6,48,,2024,3,5.0,4,No
+219,Kevin Flores,Other,42,Finance,Auditor,5,2023-03-09,+1,Canada,5582480105,122405,16,16,2024-01-22,Monday,12,21,,2023,2,4.13,3,No
+220,Mike Myers,Female,39,Support,Support Engineer,1,2023-01-02,+91,India,4919711196,33150,3,20,2024-11-20,Wednesday,14,28,3.0,2023,2,6.07,4,No
+221,Karen Newton,Other,55,Sales,Sales Executive,4,2012-06-26,+33,France,0843584911,70445,25,11,2024-06-28,Friday,14,33,5.0,2024,13,3.17,2,Yes
+222,Kimberly Richardson,Female,24,Marketing,Content Lead,4,2019-10-22,+91,India,6706798536,173731,28,25,2024-09-13,Friday,4,23,,2019,6,0.23,4,No
+223,Beth Rivera,Female,26,HR,HR Executive,3,2016-05-26,+91,India,1756877180,35989,16,6,2024-10-08,Tuesday,6,72,,2016,9,5.8,3,No
+224,Carlos Garrison,Other,26,Sales,Account Manager,1,2011-04-09,+91,India,9254797662,87882,32,6,2024-09-24,Tuesday,2,21,4.0,2015,14,2.6,3,No
+225,Michael Stevenson,Other,44,Sales,Sales Executive,3,2016-03-18,+44,UK,8827462589,125274,38,8,2024-04-28,Sunday,4,77,3.0,2021,9,1.07,1,Yes
+226,Christopher Vance,Female,32,Finance,Auditor,1,2019-12-27,+33,France,3109392257,69596,8,25,2024-02-06,Tuesday,1,51,,2019,6,4.23,3,No
+227,Michael Simon,Male,21,Support,Helpdesk,5,2021-10-16,+49,Germany,5959075620,150477,30,11,2024-09-02,Monday,7,37,2.0,2021,4,2.17,3,No
+228,Connie White,Other,39,Support,Support Engineer,2,2023-05-03,+1,USA,9790381812,147300,26,12,2024-05-26,Sunday,12,62,3.0,2024,2,2.8,3,No
+229,Eugene Hammond,Male,28,HR,HR Manager,2,2019-03-04,+1,USA,1500253426,137113,9,6,2024-05-02,Thursday,5,69,,2020,6,7.2,3,No
+230,Robert Hunter,Other,54,Finance,Auditor,3,2016-09-03,+1,Canada,1541675991,43249,4,20,2024-06-08,Saturday,2,62,,2022,9,5.87,4,No
+231,Lisa Hubbard,Female,27,Finance,Accountant,4,2014-05-12,+91,India,6517281206,35448,40,20,2024-11-02,Saturday,4,41,,2020,11,-1.33,4,No
+232,Deborah Stephens,Other,56,HR,HR Manager,1,2013-11-08,+33,France,4582143657,122891,14,25,2024-04-26,Friday,6,45,,2017,12,3.03,4,No
+233,Sandra Jordan,Female,24,IT,Developer,1,2019-06-03,+44,UK,5050736306,42837,34,5,2024-11-27,Wednesday,10,14,,2020,6,2.37,4,No
+234,Thomas Rogers,Female,29,Finance,Accountant,2,2012-06-08,+1,USA,2769734815,74702,15,11,2024-05-20,Monday,3,54,,2014,13,5.17,3,No
+235,William Schneider,Female,38,HR,HR Executive,2,2011-03-03,+1,Canada,7228124771,112040,37,3,2024-05-19,Sunday,9,54,,2012,14,2.1,3,No
+236,Alicia Colon PhD,Female,35,Finance,Accountant,3,2014-12-08,+1,Canada,5914110780,170493,17,6,2024-01-11,Thursday,15,57,,2020,11,5.6,3,No
+237,Justin Sanchez,Male,42,Sales,Account Manager,3,2023-12-23,+1,Canada,6586421751,44817,9,25,2024-09-17,Tuesday,14,60,6.0,2023,2,4.03,3,No
+238,Andrew Coleman,Female,56,Support,Support Engineer,1,2023-05-04,+49,Germany,9334054998,39070,7,20,2024-09-17,Tuesday,12,54,7.0,2023,2,5.27,3,No
+239,James Hall,Female,32,Finance,Auditor,5,2022-08-10,+33,France,6036297918,107827,15,29,2024-06-02,Sunday,2,35,,2024,3,2.17,3,No
+240,Daniel Walton,Female,44,IT,Developer,5,2020-03-04,+91,India,9958655708,170873,14,17,2024-12-02,Monday,3,72,,2022,5,4.37,2,No
+241,Noah Williams,Other,55,Support,Helpdesk,3,2015-11-06,+49,Germany,1338100089,162151,9,14,2024-08-21,Wednesday,15,69,9.0,2022,10,5.87,3,No
+242,Alicia Baker,Female,42,Marketing,Content Lead,4,2013-12-12,+49,Germany,7300713107,170095,2,2,2024-01-20,Saturday,11,42,,2015,12,9.27,5,No
+243,Mr. Walter Cardenas,Female,50,Support,Support Engineer,4,2012-09-17,+1,USA,3494070702,155425,8,13,2024-01-19,Friday,8,44,7.0,2015,13,6.23,3,No
+244,Robert Avila,Other,56,Support,Helpdesk,5,2023-01-01,+44,UK,5718407128,75142,5,24,2024-06-13,Thursday,1,14,3.0,2023,2,5.0,3,No
+245,John Lee,Other,25,Sales,Sales Executive,2,2017-10-10,+49,Germany,0282836249,156837,40,5,2024-09-12,Thursday,9,9,1.0,2019,8,1.17,2,Yes
+246,Sarah Shelton,Female,26,Finance,Accountant,4,2019-11-17,+49,Germany,4455201304,32981,40,25,2024-06-16,Sunday,14,16,,2019,6,-2.17,3,No
+247,Reginald Perez,Male,39,IT,Engineer,2,2012-08-14,+1,Canada,2317590391,171542,35,18,2024-08-16,Friday,10,45,,2016,13,0.0,3,No
+248,Tammy Anderson,Female,23,IT,Engineer,1,2013-03-16,+44,UK,6001498160,164893,21,13,2024-08-22,Thursday,3,44,,2021,12,3.63,2,Yes
+249,Daniel Medina,Other,49,HR,HR Executive,4,2012-07-24,+33,France,3419263965,123450,20,9,2024-01-14,Sunday,11,25,,2020,13,4.5,3,No
+250,Jessica Nunez,Male,24,IT,Developer,2,2019-10-10,+33,France,3562648055,99973,5,0,2024-06-19,Wednesday,5,21,,2021,6,9.0,5,No
+251,Matthew Rowe,Other,22,Finance,Accountant,2,2014-03-13,+1,Canada,5341586643,71184,29,17,2024-04-18,Thursday,1,41,,2016,11,1.37,3,No
+252,Patrick Armstrong,Male,56,Support,Helpdesk,5,2021-09-10,+33,France,8564205092,169664,33,24,2024-02-13,Tuesday,14,70,1.0,2024,4,-0.6,4,No
+253,Thomas Moore,Female,50,Marketing,SEO Analyst,3,2019-02-05,+91,India,1116649246,102015,8,11,2024-02-02,Friday,2,19,,2023,6,6.57,3,No
+254,Shannon Green,Female,42,IT,Engineer,2,2014-04-10,+1,USA,6616653692,83883,16,13,2024-04-25,Thursday,2,24,,2019,11,4.63,2,No
+255,Daniel Miller,Male,44,Sales,Sales Executive,5,2014-01-27,+1,USA,1311964088,59968,32,16,2024-10-10,Thursday,1,9,7.0,2024,11,0.93,4,No
+256,Megan Johnson,Male,56,HR,HR Manager,2,2010-02-21,+44,UK,5215676599,146542,39,6,2024-01-24,Wednesday,9,12,,2011,15,1.2,4,No
+257,Samantha Hill,Other,54,Finance,Accountant,1,2019-11-20,+91,India,2551341823,91897,39,29,2024-03-15,Friday,14,75,,2024,6,-2.63,1,Yes
+258,Laurie Martinez,Female,58,HR,HR Executive,5,2016-12-28,+1,Canada,6397971355,178781,22,23,2024-03-21,Thursday,2,11,,2022,9,1.77,4,No
+259,Jade Stephens,Female,26,Finance,Auditor,4,2020-12-20,+1,Canada,0969123397,109535,15,7,2024-02-10,Saturday,6,55,,2024,5,5.83,3,No
+260,Andrew Clark,Female,37,HR,HR Manager,3,2021-02-11,+1,Canada,6750160267,165808,24,9,2024-05-12,Sunday,5,17,,2023,4,3.7,4,No
+261,Alexis Flores,Male,32,Marketing,SEO Analyst,4,2022-09-23,+49,Germany,4039537852,84858,17,8,2024-03-14,Thursday,14,70,,2024,3,5.27,3,No
+262,Erin Gonzalez,Female,60,IT,Tester,3,2023-02-19,+44,UK,7642038700,77093,39,9,2024-08-18,Sunday,15,61,,2024,2,0.7,2,Yes
+263,Timothy Li,Female,55,IT,Engineer,5,2018-12-20,+91,India,9845135378,131743,26,3,2024-03-02,Saturday,9,79,,2018,7,4.3,2,Yes
+264,Mark Ford,Male,55,Finance,Auditor,5,2014-08-25,+33,France,3228021947,134434,28,11,2024-06-09,Sunday,13,54,,2017,11,2.57,3,No
+265,Christopher Mejia,Male,24,HR,HR Executive,1,2016-05-15,+1,USA,8882074060,136945,28,15,2024-11-21,Thursday,8,25,,2022,9,1.9,4,No
+266,Andrea Bolton,Female,43,Marketing,Content Lead,3,2018-02-20,+49,Germany,9327270553,135916,2,17,2024-03-21,Thursday,6,58,,2024,7,6.77,3,No
+267,Noah Gray,Male,57,Support,Support Engineer,2,2013-04-03,+1,Canada,0462892604,93082,12,30,2024-06-02,Sunday,13,42,8.0,2020,12,2.6,3,No
+268,Tommy Castillo,Male,29,Marketing,Content Lead,1,2023-08-21,+33,France,2426500068,65014,6,4,2024-10-14,Monday,5,33,,2024,2,8.13,3,No
+269,Carolyn Freeman,Other,30,HR,HR Executive,1,2021-09-10,+91,India,6076515191,112960,11,10,2024-01-27,Saturday,9,67,,2023,4,6.13,2,No
+270,Kaitlyn Wheeler,Other,52,HR,HR Executive,4,2017-04-10,+44,UK,8132523154,132414,15,19,2024-09-24,Tuesday,6,64,,2021,8,3.83,3,No
+271,Melissa Bryant,Other,35,Finance,Accountant,1,2020-02-13,+49,Germany,3504721941,143004,6,3,2024-09-09,Monday,11,50,,2020,5,8.3,3,No
+272,Dr. Kelly Porter DDS,Male,56,Marketing,Content Lead,3,2019-10-03,+91,India,5920887131,54712,10,28,2024-09-11,Wednesday,2,13,,2020,6,3.33,1,No
+273,Mark Reynolds,Male,30,Sales,Account Manager,1,2018-04-03,+44,UK,0085935705,153348,31,1,2024-01-22,Monday,13,74,3.0,2018,7,3.63,5,No
+274,Nicholas Garza,Male,55,IT,Tester,5,2015-10-19,+44,UK,6542429310,174508,20,4,2024-08-10,Saturday,1,49,,2021,10,5.33,3,No
+275,James Singh,Female,26,HR,HR Manager,2,2019-02-15,+33,France,9022741826,144116,31,2,2024-03-15,Friday,2,64,,2023,6,3.47,4,No
+276,Laura Russell,Male,56,IT,Engineer,2,2019-06-01,+49,Germany,0496718464,159885,3,16,2024-07-03,Wednesday,7,65,,2019,6,6.73,1,No
+277,Mr. Timothy Ray DDS,Female,27,Sales,Account Manager,1,2010-06-21,+49,Germany,9476121680,169508,17,3,2024-09-01,Sunday,1,48,8.0,2011,15,6.1,4,No
+278,Steven Moreno,Male,38,Sales,Sales Executive,2,2023-01-26,+49,Germany,3749796672,177664,39,3,2024-01-19,Friday,12,70,3.0,2023,2,1.7,2,Yes
+279,George Ingram,Male,21,Sales,Account Manager,5,2015-10-14,+91,India,9795823474,47481,15,12,2024-05-18,Saturday,2,69,8.0,2016,10,5.0,3,No
+280,Jason Leach,Other,46,Finance,Auditor,4,2022-10-05,+1,Canada,4361352409,30120,8,27,2024-08-11,Sunday,15,9,,2023,3,3.9,4,No
+281,Norma Gardner,Other,50,Sales,Account Manager,3,2018-03-10,+91,India,8711175710,142858,15,24,2024-10-17,Thursday,15,76,2.0,2019,7,3.0,4,No
+282,Theresa Morgan,Female,31,Finance,Accountant,1,2010-07-22,+44,UK,7244369804,105734,21,11,2024-07-03,Wednesday,9,64,,2016,15,3.97,3,No
+283,Nicholas Klein,Other,51,HR,HR Manager,4,2012-10-19,+91,India,5929050380,162145,33,22,2024-12-07,Saturday,2,58,,2013,13,-0.27,2,Yes
+284,Taylor West,Other,24,Support,Helpdesk,3,2012-01-26,+91,India,8721069584,46636,28,8,2024-08-04,Sunday,10,56,1.0,2020,13,3.07,2,Yes
+285,Alexandra Hill,Male,32,Support,Helpdesk,3,2010-08-05,+49,Germany,5948527959,170728,37,1,2024-08-20,Tuesday,10,8,1.0,2021,15,2.43,3,No
+286,Matthew Clark,Female,27,Sales,Sales Executive,1,2014-09-10,+33,France,5669982053,133923,13,30,2024-07-22,Monday,7,60,6.0,2022,11,2.4,4,No
+287,Gabriella Smith,Other,57,IT,Developer,3,2021-11-03,+44,UK,9922810392,79891,16,29,2024-09-06,Friday,11,44,,2024,4,1.97,5,No
+288,Valerie Turner,Female,21,Marketing,SEO Analyst,2,2012-04-24,+1,Canada,5129270012,58705,37,22,2024-05-12,Sunday,15,55,,2024,13,-1.07,3,No
+289,Ricky Morgan,Male,22,Marketing,Content Lead,3,2015-10-22,+49,Germany,7956699823,119161,12,13,2024-12-05,Thursday,8,48,,2021,10,5.43,4,No
+290,Amy Lynch,Female,38,Sales,Sales Executive,3,2022-10-21,+49,Germany,7180798783,122362,22,5,2024-10-14,Monday,14,33,10.0,2022,3,4.77,3,No
+291,Michael White,Other,57,IT,Developer,5,2017-01-15,+1,Canada,5724530972,122097,21,5,2024-12-24,Tuesday,12,16,,2021,8,4.97,3,No
+292,Stephanie Smith,Other,53,Sales,Sales Executive,4,2016-07-13,+49,Germany,6405860610,99804,21,9,2024-03-11,Monday,9,57,1.0,2017,9,4.3,3,No
+293,William Norman,Female,21,HR,HR Manager,4,2017-07-02,+49,Germany,9053134215,68709,33,21,2024-02-06,Tuesday,9,14,,2024,8,-0.1,4,No
+294,Ricky Clark,Female,29,HR,HR Manager,1,2017-08-21,+33,France,7253592697,73431,25,27,2024-03-16,Saturday,1,15,,2019,8,0.5,5,No
+295,Melvin Edwards,Male,45,Support,Helpdesk,3,2023-06-14,+33,France,1429393933,152937,27,0,2024-12-04,Wednesday,13,79,6.0,2024,2,4.6,5,No
+296,Michael Ramirez,Male,24,Support,Support Engineer,2,2017-03-09,+33,France,6560551060,50829,25,15,2024-06-11,Tuesday,9,52,4.0,2020,8,2.5,3,No
+297,Cheryl Crawford,Female,22,Support,Helpdesk,2,2011-10-04,+49,Germany,7131820486,91538,6,19,2024-09-27,Friday,4,52,1.0,2014,14,5.63,3,No
+298,Danielle Gonzalez,Other,53,Sales,Account Manager,4,2015-12-15,+91,India,9577946634,72612,15,8,2024-04-26,Friday,4,28,8.0,2021,10,5.67,4,No
+299,Brian Stein,Male,26,HR,HR Manager,4,2015-11-14,+49,Germany,9554194871,113808,7,5,2024-03-05,Tuesday,2,26,,2021,10,7.77,3,No
+300,Robert Dudley,Female,30,Finance,Accountant,1,2017-06-14,+1,Canada,2622697419,78248,39,16,2024-10-05,Saturday,6,51,,2017,8,-0.47,4,No
+301,Janice Griffin,Male,22,Marketing,Content Lead,1,2019-11-25,+33,France,7091535635,36366,20,0,2024-10-17,Thursday,14,37,,2022,6,6.0,4,No
+302,Vanessa Phillips,Other,34,Finance,Auditor,3,2021-08-13,+1,USA,2824352319,124118,5,30,2024-10-11,Friday,4,67,,2022,4,4.0,3,No
+303,Jared Walters,Other,42,Sales,Account Manager,4,2021-05-05,+44,UK,7580229355,173076,35,30,2024-06-28,Friday,12,51,3.0,2021,4,-2.0,4,No
+304,Richard Miller,Male,30,Sales,Sales Executive,5,2019-08-06,+44,UK,3082616790,60148,5,8,2024-02-04,Sunday,9,50,5.0,2020,6,7.67,3,No
+305,Brandi Lewis,Female,48,IT,Developer,3,2022-09-18,+91,India,1425157901,179876,17,0,2024-04-09,Tuesday,10,8,,2024,3,6.6,3,No
+306,Nancy Taylor DVM,Female,50,IT,Engineer,5,2013-10-28,+44,UK,1085026450,71648,11,12,2024-04-06,Saturday,2,49,,2016,12,5.8,3,No
+307,Michael Harris,Female,50,Finance,Auditor,4,2010-03-11,+91,India,2627942950,129341,40,7,2024-09-09,Monday,15,71,,2015,15,0.83,4,No
+308,Nicole Robles,Male,32,HR,HR Manager,1,2017-04-08,+33,France,4434581695,154022,11,14,2024-06-27,Thursday,2,14,,2017,8,5.47,3,No
+309,Samantha Miller,Male,49,IT,Developer,1,2015-11-15,+49,Germany,4012238884,38841,20,17,2024-11-14,Thursday,10,53,,2022,10,3.17,3,No
+310,Andrea Perez,Other,28,HR,HR Manager,4,2010-04-26,+1,USA,5461729423,54740,24,26,2024-08-01,Thursday,12,13,,2014,15,0.87,4,No
+311,Scott Flores,Female,59,HR,HR Executive,4,2011-09-10,+1,Canada,5045953503,53573,2,5,2024-02-08,Thursday,9,43,,2019,14,8.77,2,No
+312,Paul Jones,Male,37,Support,Helpdesk,3,2011-12-17,+44,UK,7273109248,176277,9,2,2024-07-22,Monday,6,10,1.0,2020,14,7.87,4,No
+313,John Johns,Other,27,Support,Support Engineer,5,2013-11-06,+33,France,8194386074,107565,23,7,2024-12-20,Friday,4,33,9.0,2023,12,4.23,2,Yes
+314,Lawrence Sellers,Other,47,HR,HR Manager,5,2022-07-19,+1,USA,4920448566,46944,31,15,2024-06-20,Thursday,9,45,,2023,3,1.3,2,Yes
+315,Joe Schultz,Male,35,Sales,Sales Executive,4,2010-08-22,+49,Germany,3295516506,45633,37,11,2024-01-20,Saturday,7,43,9.0,2023,15,0.77,3,No
+316,Sandra Snow,Male,35,Finance,Accountant,2,2011-09-21,+1,Canada,4737761872,167197,10,4,2024-11-02,Saturday,5,45,,2018,14,7.33,3,No
+317,Beverly Wheeler,Male,55,Sales,Account Manager,1,2018-09-11,+49,Germany,8054136555,112507,13,10,2024-12-22,Sunday,5,75,8.0,2019,7,5.73,5,No
+318,Ms. Amanda Wallace MD,Female,33,Sales,Account Manager,2,2023-05-02,+1,USA,1273870912,90509,36,14,2024-03-17,Sunday,9,16,5.0,2023,2,0.47,3,No
+319,Briana Hamilton,Female,45,HR,HR Executive,5,2013-05-05,+49,Germany,6776464254,150675,40,18,2024-07-19,Friday,14,76,,2017,12,-1.0,1,Yes
+320,Carla Smith,Female,46,Marketing,SEO Analyst,1,2015-09-08,+49,Germany,5589327984,71300,24,11,2024-02-18,Sunday,1,64,,2016,10,3.37,3,No
+321,Ashley Ortiz,Male,60,Marketing,SEO Analyst,4,2016-11-16,+1,Canada,3213023910,77783,5,5,2024-07-20,Saturday,8,39,,2022,9,8.17,3,No
+322,David Winters,Other,58,IT,Tester,2,2015-02-10,+1,Canada,9380195194,109972,24,13,2024-09-28,Saturday,5,32,,2017,10,3.03,4,No
+323,Derrick Villanueva,Male,37,Marketing,Content Lead,4,2020-05-02,+91,India,4101031007,148267,34,0,2024-09-26,Thursday,7,10,,2023,5,3.2,4,No
+324,Sarah Ponce,Other,56,IT,Tester,1,2018-06-17,+49,Germany,3734943782,131748,37,28,2024-07-17,Wednesday,8,61,,2019,7,-2.07,3,No
+325,Alan Thompson,Male,51,IT,Engineer,2,2013-06-15,+44,UK,8030279963,145326,6,24,2024-10-19,Saturday,9,75,,2018,12,4.8,3,No
+326,Vanessa Logan,Male,32,Marketing,Content Lead,4,2022-10-20,+49,Germany,1696875746,145172,24,19,2024-09-19,Thursday,8,28,,2022,3,2.03,5,No
+327,Joshua Stevens,Other,25,Sales,Sales Executive,5,2012-10-14,+1,USA,8542595138,140663,27,0,2024-04-06,Saturday,6,62,1.0,2019,13,4.6,3,No
+328,James West,Male,25,Finance,Accountant,5,2021-08-13,+44,UK,4189166926,122261,39,23,2024-10-24,Thursday,14,28,,2021,4,-1.63,1,Yes
+329,Donna Wolfe,Female,31,HR,HR Manager,4,2013-12-18,+1,USA,2421863498,35923,15,30,2024-12-03,Tuesday,7,25,,2021,12,2.0,4,No
+330,Alexander Murray,Female,47,IT,Developer,5,2011-04-12,+1,Canada,4775902111,121204,34,24,2024-12-02,Monday,13,22,,2013,14,-0.8,4,No
+331,Catherine Raymond,Other,56,Sales,Account Manager,2,2020-03-13,+49,Germany,1152619884,48764,7,14,2024-01-13,Saturday,9,53,9.0,2023,5,6.27,3,No
+332,Lisa White,Female,43,Sales,Sales Executive,5,2020-07-12,+44,UK,4365421044,111995,10,7,2024-06-23,Sunday,1,64,8.0,2022,5,6.83,4,No
+333,Marie Wilcox,Female,23,HR,HR Manager,1,2018-11-06,+33,France,8727570494,146939,16,13,2024-12-11,Wednesday,11,26,,2020,7,4.63,3,No
+334,Kevin George,Male,38,Sales,Account Manager,2,2022-02-07,+91,India,9137902072,131509,26,26,2024-10-11,Friday,12,28,9.0,2024,3,0.47,5,No
+335,Justin Howard,Other,36,Support,Support Engineer,5,2016-01-20,+1,USA,2260803796,49565,38,26,2024-06-02,Sunday,12,10,8.0,2022,9,-1.93,2,Yes
+336,Ryan Wood,Female,35,HR,HR Executive,5,2015-11-28,+33,France,0240349231,85186,33,12,2024-04-07,Sunday,5,79,,2022,10,1.4,3,No
+337,Jesse Cline,Female,37,Marketing,SEO Analyst,3,2014-09-04,+44,UK,0718429194,170101,12,26,2024-11-28,Thursday,11,56,,2024,11,3.27,3,No
+338,William Wright,Female,42,Marketing,SEO Analyst,1,2019-03-03,+91,India,7395608143,166547,29,25,2024-06-26,Wednesday,7,7,,2021,6,0.03,3,No
+339,Jeffery Anderson,Male,46,Marketing,Content Lead,5,2021-12-10,+1,USA,3633566962,136830,0,12,2024-02-14,Wednesday,4,30,,2021,4,8.0,3,No
+340,Denise Martinez,Other,36,Marketing,Content Lead,2,2012-06-13,+1,USA,4546010618,89473,15,20,2024-12-17,Tuesday,3,5,,2016,13,3.67,3,No
+341,Benjamin Robinson,Female,28,Finance,Auditor,3,2023-03-27,+44,UK,7992870504,80131,28,19,2024-06-20,Thursday,2,29,,2023,2,1.23,3,No
+342,Terry Hunt,Female,36,IT,Tester,4,2017-12-11,+91,India,1753483241,60436,27,29,2024-10-03,Thursday,15,57,,2023,8,-0.23,4,No
+343,Chelsey Smith,Female,42,HR,HR Executive,5,2021-11-02,+91,India,0271662559,167857,3,23,2024-02-22,Thursday,4,48,,2024,4,5.57,3,No
+344,Jeff Oconnor,Female,33,Finance,Auditor,2,2021-01-21,+1,Canada,2287280886,153228,30,13,2024-06-12,Wednesday,8,14,,2021,4,1.83,4,No
+345,Brendan Henson,Male,47,Finance,Accountant,5,2021-09-03,+91,India,9652750378,109066,22,1,2024-03-22,Friday,5,30,,2021,4,5.43,3,No
+346,Christina Sanders,Male,55,HR,HR Manager,1,2016-10-14,+33,France,5447657630,136921,33,13,2024-06-04,Tuesday,1,67,,2021,9,1.23,3,No
+347,Douglas Nelson,Male,32,HR,HR Executive,2,2021-03-13,+91,India,0244424385,99855,9,16,2024-06-13,Thursday,3,40,,2021,4,5.53,4,No
+348,Mary Turner,Male,36,IT,Developer,4,2010-12-08,+33,France,0046391310,40969,34,21,2024-11-22,Friday,15,53,,2013,15,-0.3,2,Yes
+349,Kevin Brown,Other,21,Sales,Sales Executive,1,2015-11-03,+49,Germany,5530911738,88812,7,19,2024-03-03,Sunday,3,40,9.0,2018,10,5.43,5,No
+350,Jonathan Bishop,Female,33,Marketing,Content Lead,2,2012-05-06,+33,France,2554142968,96146,10,11,2024-09-21,Saturday,6,38,,2023,13,6.17,3,No
+351,Maurice Lee,Male,33,HR,HR Manager,5,2015-03-08,+1,USA,4332872805,76013,11,3,2024-08-09,Friday,4,51,,2015,10,7.3,3,No
+352,Austin Jackson,Male,53,Support,Helpdesk,2,2018-07-23,+33,France,2709050167,86146,31,7,2024-07-07,Sunday,7,5,3.0,2024,7,2.63,2,Yes
+353,Mary Burgess,Female,36,IT,Tester,1,2020-07-14,+1,Canada,3098179111,133790,2,26,2024-11-09,Saturday,10,74,,2023,5,5.27,4,No
+354,Patricia Reed,Female,47,Support,Helpdesk,2,2020-01-21,+1,USA,6350530801,82116,17,15,2024-10-09,Wednesday,3,21,6.0,2020,5,4.1,4,No
+355,Nancy Simpson,Female,36,Sales,Account Manager,2,2020-12-18,+1,Canada,7962011443,174515,6,6,2024-12-20,Friday,2,55,1.0,2022,5,7.8,4,No
+356,Justin Huerta,Female,51,IT,Tester,2,2014-12-27,+1,USA,7167067069,32394,38,9,2024-05-18,Saturday,6,9,,2014,11,0.9,3,No
+357,Henry Davis,Other,28,HR,HR Executive,2,2015-03-23,+1,Canada,1154536628,167537,5,14,2024-12-23,Monday,12,43,,2021,10,6.67,3,No
+358,Nancy Allen,Male,55,IT,Engineer,3,2011-09-05,+1,USA,2158817355,172995,23,3,2024-08-09,Friday,2,55,,2018,14,4.9,3,No
+359,Jill Hill,Male,32,HR,HR Executive,1,2013-06-01,+33,France,0789079524,92794,4,22,2024-02-12,Monday,5,17,,2022,12,5.53,3,No
+360,Nicholas Barnes,Other,48,HR,HR Manager,2,2022-09-23,+33,France,9216394066,137935,35,17,2024-04-07,Sunday,8,66,,2024,3,0.17,3,No
+361,Emily Richardson,Female,44,Marketing,SEO Analyst,2,2018-05-15,+1,Canada,6999354621,115462,19,16,2024-02-21,Wednesday,13,78,,2021,7,3.53,4,No
+362,Chad Potter,Other,27,Support,Helpdesk,3,2017-11-18,+91,India,1651855851,87597,5,14,2024-04-19,Friday,1,30,6.0,2019,8,6.67,2,No
+363,Elizabeth Mcdonald,Female,58,Support,Helpdesk,3,2020-08-02,+44,UK,7612919236,55055,26,3,2024-12-21,Saturday,13,26,3.0,2024,5,4.3,4,No
+364,Mrs. Lisa Willis,Male,43,IT,Tester,1,2012-11-09,+33,France,4358178077,137797,9,6,2024-11-28,Thursday,10,17,,2018,13,7.2,2,No
+365,Kathryn Henry,Female,43,Sales,Sales Executive,1,2013-05-15,+33,France,4139853201,53127,30,18,2024-10-28,Monday,15,7,3.0,2024,12,1.0,3,No
+366,Joshua Meyer,Male,34,Support,Helpdesk,4,2017-01-10,+44,UK,3435559949,140036,27,16,2024-06-02,Sunday,5,80,3.0,2023,8,1.93,3,No
+367,Michelle Jackson,Other,40,Finance,Accountant,4,2011-12-20,+33,France,1500426893,124811,15,6,2024-02-19,Monday,9,75,,2018,14,6.0,3,No
+368,Jason Camacho,Other,39,IT,Developer,5,2020-04-06,+1,Canada,7468339519,155312,25,4,2024-08-06,Tuesday,12,10,,2024,5,4.33,2,Yes
+369,Zachary King,Male,49,Sales,Account Manager,3,2022-10-07,+1,Canada,0230414465,105484,32,30,2024-04-12,Friday,4,10,7.0,2023,3,-1.4,3,No
+370,Heather Hill,Female,25,HR,HR Executive,1,2023-03-06,+91,India,1638274903,104217,10,0,2024-09-15,Sunday,11,24,,2024,2,8.0,5,No
+371,Hannah Webb,Male,46,Finance,Accountant,1,2021-12-19,+33,France,8407071374,167454,15,5,2024-06-03,Monday,10,67,,2024,4,6.17,3,No
+372,Daniel Floyd,Other,33,IT,Developer,5,2016-02-17,+49,Germany,5777613520,68529,40,0,2024-06-21,Friday,10,69,,2021,9,2.0,2,Yes
+373,Kenneth Ford,Female,31,Finance,Auditor,4,2010-02-15,+1,USA,1656075541,53142,28,1,2024-07-23,Tuesday,5,48,,2018,15,4.23,3,No
+374,Joshua Green,Male,58,Finance,Accountant,5,2016-03-28,+1,Canada,0083206913,40979,18,25,2024-06-04,Tuesday,15,46,,2023,9,2.23,3,No
+375,Bryan Torres,Female,46,Marketing,SEO Analyst,4,2016-07-20,+91,India,5584253709,161498,23,3,2024-06-02,Sunday,11,65,,2018,9,4.9,4,No
+376,James Henderson,Female,21,IT,Engineer,4,2011-02-08,+1,USA,8841080525,147713,23,24,2024-07-22,Monday,13,43,,2020,14,1.4,3,No
+377,Timothy Morris,Other,22,Sales,Sales Executive,1,2023-07-18,+33,France,1496194293,93080,30,15,2024-02-15,Thursday,10,66,8.0,2024,2,1.5,3,No
+378,Dillon Daniel,Male,56,Sales,Sales Executive,1,2011-02-26,+1,Canada,1029344750,129210,39,8,2024-10-21,Monday,8,31,5.0,2015,14,0.87,1,Yes
+379,Shelley Anthony,Other,51,Support,Support Engineer,1,2012-10-21,+49,Germany,4351406211,37689,15,3,2024-04-05,Friday,4,19,8.0,2024,13,6.5,2,No
+380,Edward Jennings,Female,30,Marketing,SEO Analyst,5,2011-08-27,+33,France,7341632421,173685,20,23,2024-12-17,Tuesday,6,37,,2013,14,2.17,3,No
+381,Dana Steele,Female,46,IT,Tester,4,2014-09-26,+1,USA,3145189594,68482,3,0,2024-04-06,Saturday,1,24,,2020,11,9.4,2,No
+382,Caitlyn Hayes,Male,37,Support,Support Engineer,1,2018-06-08,+91,India,0141442204,51630,11,28,2024-01-05,Friday,2,6,3.0,2023,7,3.13,3,No
+383,Kathleen Rasmussen,Male,31,IT,Engineer,2,2023-04-01,+91,India,0306415511,41134,31,0,2024-12-08,Sunday,2,19,,2024,2,3.8,4,No
+384,Kyle Fuller,Male,22,Sales,Sales Executive,5,2021-08-14,+44,UK,4387641572,46137,29,25,2024-10-09,Wednesday,11,50,4.0,2021,4,0.03,3,No
+385,Jill Bass,Female,54,HR,HR Manager,5,2016-02-26,+91,India,4207713318,38595,12,1,2024-09-12,Thursday,14,8,,2017,9,7.43,3,No
+386,Lindsey Mcmillan,Male,52,Sales,Sales Executive,3,2011-01-05,+33,France,9961638351,175777,26,23,2024-01-02,Tuesday,6,80,4.0,2014,14,0.97,3,No
+387,Bryan Briggs,Other,32,Sales,Account Manager,4,2018-11-10,+91,India,5466504216,102650,3,2,2024-10-14,Monday,13,30,1.0,2020,7,9.07,5,No
+388,Ms. Amanda Campbell,Female,51,Marketing,Content Lead,1,2012-06-19,+1,Canada,8512300121,107276,13,0,2024-03-12,Tuesday,15,6,,2015,13,7.4,5,No
+389,Martha Henson,Other,22,Support,Support Engineer,3,2018-08-22,+91,India,4513093758,131037,19,9,2024-04-13,Saturday,10,35,9.0,2021,7,4.7,4,No
+390,Thomas Green,Female,21,Sales,Account Manager,1,2020-04-02,+91,India,4132722763,131917,20,16,2024-05-28,Tuesday,15,70,5.0,2024,5,3.33,2,No
+391,Melissa Parker,Other,60,Marketing,Content Lead,3,2013-04-20,+44,UK,1153746675,133093,37,8,2024-11-28,Thursday,13,50,,2019,12,1.27,4,No
+392,George Cooley,Female,48,IT,Tester,5,2023-04-04,+91,India,4014608187,72367,25,0,2024-04-02,Tuesday,10,60,,2023,2,5.0,4,No
+393,Anthony Dominguez,Male,25,Support,Helpdesk,2,2015-06-23,+49,Germany,7444903977,32438,18,29,2024-12-24,Tuesday,7,48,9.0,2021,10,1.57,3,No
+394,Katherine Webster,Male,49,Finance,Accountant,1,2023-02-24,+91,India,0394491955,59217,4,22,2024-05-20,Monday,13,63,,2023,2,5.53,3,No
+395,Heather Martinez,Other,59,Sales,Account Manager,1,2013-04-28,+49,Germany,5230756404,175726,35,16,2024-02-07,Wednesday,13,70,8.0,2024,12,0.33,4,No
+396,Gregory Adams,Female,41,Marketing,SEO Analyst,3,2013-11-16,+33,France,3009997655,32496,15,15,2024-06-27,Thursday,12,44,,2014,12,4.5,3,No
+397,Pamela Smith,Female,27,IT,Engineer,4,2016-12-18,+44,UK,0491983369,30860,15,29,2024-02-08,Thursday,6,16,,2021,9,2.17,3,No
+398,Steven Lewis,Female,48,Sales,Sales Executive,5,2018-12-25,+91,India,0105326248,84698,34,4,2024-02-25,Sunday,10,57,4.0,2024,7,2.53,4,No
+399,Veronica Washington,Male,39,Sales,Sales Executive,5,2022-01-19,+1,USA,2685162602,41440,6,7,2024-02-10,Saturday,6,55,2.0,2023,3,7.63,3,No
+400,John Smith,Other,41,Finance,Accountant,1,2019-11-27,+33,France,7600475761,69711,22,4,2024-09-27,Friday,9,41,,2019,6,4.93,3,No
+401,John Gonzalez,Other,60,IT,Developer,1,2013-02-10,+33,France,7573683319,112591,32,24,2024-03-13,Wednesday,2,57,,2021,12,-0.4,1,Yes
+402,Stacey Smith,Male,41,Marketing,SEO Analyst,5,2021-06-19,+1,Canada,3142028886,63692,38,21,2024-12-12,Thursday,15,60,,2021,4,-1.1,2,Yes
+403,Jonathan Armstrong,Female,47,Sales,Account Manager,5,2014-07-15,+44,UK,3134214593,34950,30,13,2024-07-23,Tuesday,13,73,1.0,2017,11,1.83,3,No
+404,Edwin Greene,Male,55,IT,Developer,1,2013-04-19,+91,India,1522139138,162717,10,30,2024-01-05,Friday,6,68,,2022,12,3.0,5,No
+405,Jessica Clark,Male,49,IT,Tester,4,2011-07-05,+1,Canada,3232962838,104563,20,24,2024-07-12,Friday,5,20,,2014,14,2.0,3,No
+406,Jody Johnson DDS,Male,29,Sales,Sales Executive,2,2023-06-13,+33,France,1727079379,83355,31,13,2024-03-17,Sunday,7,80,1.0,2024,2,1.63,2,Yes
+407,Amy Moore,Female,43,IT,Tester,2,2014-06-25,+1,USA,1807908724,98962,2,21,2024-11-01,Friday,7,16,,2024,11,6.1,4,No
+408,Noah Stewart,Male,37,Support,Support Engineer,3,2021-06-16,+33,France,5156606256,53289,22,11,2024-04-07,Sunday,2,17,4.0,2022,4,3.77,5,No
+409,Gabriel Hess,Male,29,HR,HR Manager,4,2017-02-12,+44,UK,0606208281,67267,38,2,2024-06-05,Wednesday,6,45,,2019,8,2.07,3,No
+410,Kimberly Larson,Male,23,Marketing,Content Lead,4,2015-05-19,+44,UK,6684298769,64955,8,5,2024-11-28,Thursday,3,35,,2021,10,7.57,2,No
+411,Mrs. Melissa Thompson DDS,Other,47,Marketing,SEO Analyst,3,2023-05-28,+1,USA,7192764186,32693,37,12,2024-08-09,Friday,3,52,,2024,2,0.6,4,No
+412,Dr. Steven Blair,Other,48,Support,Support Engineer,1,2010-11-09,+1,USA,2830782534,168715,9,10,2024-08-01,Thursday,11,9,2.0,2011,15,6.53,2,No
+413,Courtney Miller,Other,60,Finance,Auditor,5,2020-03-12,+1,Canada,7525794846,69898,37,29,2024-06-02,Sunday,6,41,,2022,5,-2.23,2,Yes
+414,Karen Mcknight,Female,44,Finance,Auditor,4,2012-04-22,+1,Canada,5074890850,76888,22,2,2024-12-06,Friday,15,72,,2022,13,5.27,4,No
+415,Sonya Martin,Female,23,IT,Engineer,4,2020-08-11,+1,Canada,5498892955,77513,11,22,2024-12-04,Wednesday,11,17,,2024,5,4.13,1,No
+416,Dr. Pamela Wilcox,Female,31,Finance,Auditor,2,2021-02-26,+1,Canada,3482104113,144517,40,29,2024-06-27,Thursday,13,73,,2022,4,-2.83,4,No
+417,Heather Hampton,Male,56,Finance,Auditor,3,2016-01-22,+44,UK,0900538360,125280,19,1,2024-06-05,Wednesday,15,62,,2020,9,6.03,3,No
+418,James Taylor Jr.,Other,42,Sales,Account Manager,5,2023-07-12,+1,Canada,6266571379,127848,26,25,2024-08-24,Saturday,10,7,1.0,2023,2,0.63,3,No
+419,Tamara Figueroa,Female,42,Marketing,Content Lead,5,2022-08-05,+33,France,6239644991,41729,7,7,2024-05-14,Tuesday,8,9,,2023,3,7.43,3,No
+420,Aaron Martin,Female,60,Sales,Account Manager,2,2020-04-04,+49,Germany,8123636760,115766,31,11,2024-04-19,Friday,13,76,6.0,2020,5,1.97,4,No
+421,Carlos Washington,Male,45,Finance,Auditor,5,2017-11-20,+1,Canada,6545743528,123401,22,17,2024-05-12,Sunday,5,44,,2022,8,2.77,4,No
+422,Brittany Callahan,Female,60,Marketing,Content Lead,1,2019-12-06,+91,India,1347304398,155850,0,13,2024-07-21,Sunday,13,72,,2023,6,7.83,3,No
+423,Andrew Gonzalez,Female,33,Sales,Account Manager,3,2021-05-17,+91,India,5044881310,127997,39,3,2024-11-17,Sunday,1,55,7.0,2022,4,1.7,4,No
+424,Mr. Ricky Nichols,Male,27,Marketing,Content Lead,5,2016-05-08,+44,UK,4734582365,156714,2,23,2024-08-27,Tuesday,10,64,,2018,9,5.77,4,No
+425,Sarah Ward,Other,58,Marketing,SEO Analyst,1,2010-03-04,+91,India,5424998365,149436,17,15,2024-03-05,Tuesday,12,6,,2016,15,4.1,3,No
+426,Cristina Martin,Male,30,Sales,Account Manager,3,2022-09-27,+91,India,1307714753,36058,26,6,2024-07-21,Sunday,13,76,5.0,2023,3,3.8,3,No
+427,Alexandra Dalton,Other,46,Finance,Accountant,4,2022-11-15,+44,UK,0139188574,159792,8,0,2024-01-04,Thursday,8,50,,2022,3,8.4,3,No
+428,Melissa Arias,Female,47,Sales,Account Manager,3,2020-07-05,+49,Germany,4916924939,74415,25,27,2024-04-07,Sunday,3,29,5.0,2020,5,0.5,3,No
+429,Richard Smith,Other,33,Finance,Auditor,2,2017-11-14,+1,Canada,7508925273,43491,2,10,2024-06-09,Sunday,8,79,,2024,8,7.93,4,No
+430,Lori Smith,Male,29,Sales,Sales Executive,4,2010-03-19,+49,Germany,5551599986,46600,29,7,2024-06-06,Thursday,4,53,10.0,2017,15,3.03,5,No
+431,Alex Taylor,Female,40,IT,Developer,3,2015-12-20,+91,India,2440297696,57166,4,4,2024-11-21,Thursday,15,72,,2016,10,8.53,3,No
+432,Rachael Johnson,Male,40,Support,Support Engineer,5,2022-03-17,+49,Germany,6123538417,159746,2,1,2024-10-26,Saturday,13,19,3.0,2022,3,9.43,4,No
+433,David Bryant,Female,53,Sales,Sales Executive,4,2021-02-24,+33,France,7882226520,175837,27,18,2024-10-01,Tuesday,8,31,3.0,2022,4,1.6,2,Yes
+434,James Flores,Female,52,Support,Support Engineer,1,2017-04-11,+33,France,2734155811,80388,19,23,2024-09-17,Tuesday,2,11,4.0,2023,8,2.37,1,No
+435,David Haynes,Other,52,Support,Support Engineer,5,2016-02-13,+44,UK,9831857619,171878,17,29,2024-06-10,Monday,7,26,4.0,2016,9,1.77,4,No
+436,Marco Chambers,Male,59,Marketing,SEO Analyst,4,2021-08-03,+1,USA,0977124484,85221,17,15,2024-05-01,Wednesday,8,61,,2022,4,4.1,4,No
+437,Todd Marsh,Other,48,HR,HR Executive,1,2020-08-24,+33,France,1691871702,59266,16,6,2024-06-06,Thursday,15,60,,2021,5,5.8,3,No
+438,Sydney Robinson,Other,37,Marketing,SEO Analyst,2,2023-01-09,+49,Germany,6834592641,169877,7,0,2024-08-28,Wednesday,2,5,,2023,2,8.6,3,No
+439,Kelly Watkins,Female,55,Marketing,SEO Analyst,3,2016-05-21,+33,France,0574316589,78917,28,20,2024-12-24,Tuesday,8,17,,2018,9,1.07,3,No
+440,Dr. Kathryn Meyer MD,Male,54,Sales,Sales Executive,1,2022-11-12,+33,France,4784145293,135185,36,2,2024-01-11,Thursday,3,24,5.0,2023,3,2.47,3,No
+441,Amy Guerrero,Female,25,Sales,Sales Executive,4,2011-06-11,+91,India,5197419882,110287,12,26,2024-05-23,Thursday,11,43,9.0,2017,14,3.27,3,No
+442,Lindsey Holmes,Other,27,Support,Helpdesk,2,2014-12-11,+49,Germany,3390526756,50125,27,1,2024-12-27,Friday,10,45,4.0,2017,11,4.43,4,No
+443,Donald Cummings,Female,25,HR,HR Manager,3,2016-01-19,+91,India,2451775813,110690,7,17,2024-12-11,Wednesday,11,43,,2017,9,5.77,5,No
+444,Brittney Booth,Other,49,IT,Tester,1,2021-10-02,+44,UK,2282588036,47150,5,18,2024-01-28,Sunday,15,66,,2021,4,6.0,3,No
+445,Ashley Hoffman,Female,34,Sales,Account Manager,5,2013-02-15,+1,Canada,3200159116,121514,22,2,2024-06-10,Monday,9,22,9.0,2019,12,5.27,4,No
+446,Oscar Reid,Female,30,Support,Helpdesk,5,2011-07-06,+33,France,6847429567,179581,24,13,2024-02-02,Friday,15,47,2.0,2024,14,3.03,4,No
+447,Sarah Smith,Female,29,Sales,Sales Executive,1,2016-11-16,+1,Canada,6348753028,161650,31,27,2024-05-10,Friday,7,70,10.0,2020,9,-0.7,3,No
+448,William Chavez,Male,58,IT,Tester,5,2020-03-13,+91,India,5847505847,94497,33,29,2024-04-23,Tuesday,15,42,,2022,5,-1.43,4,No
+449,Angela Rodriguez,Female,57,Finance,Accountant,3,2022-12-26,+33,France,3227692283,42163,5,1,2024-12-19,Thursday,9,48,,2022,3,8.83,3,No
+450,John White,Male,60,IT,Developer,4,2020-03-24,+1,USA,2831648252,46869,23,15,2024-09-05,Thursday,12,71,,2022,5,2.9,2,Yes
+451,Juan Hardy,Female,45,Support,Helpdesk,5,2016-04-13,+91,India,5232775635,77555,40,13,2024-11-17,Sunday,12,38,10.0,2020,9,-0.17,4,No
+452,Elizabeth Foley,Male,34,Support,Support Engineer,2,2023-10-02,+91,India,3843720757,33685,33,17,2024-09-10,Tuesday,7,20,6.0,2023,2,0.57,3,No
+453,Raven Williams,Male,53,IT,Engineer,4,2022-05-12,+49,Germany,9290596612,152409,3,25,2024-01-21,Sunday,4,57,,2023,3,5.23,4,No
+454,Miss Shannon Turner,Other,43,IT,Engineer,4,2021-03-11,+44,UK,3855223132,110233,4,19,2024-09-19,Thursday,10,30,,2022,4,6.03,4,No
+455,Grace Cruz,Female,43,IT,Developer,3,2021-07-03,+49,Germany,1666481419,111332,13,8,2024-07-10,Wednesday,8,75,,2021,4,6.07,3,No
+456,Robert Morrow,Male,46,Marketing,Content Lead,5,2022-06-27,+44,UK,9169959649,141468,24,26,2024-10-18,Friday,3,73,,2023,3,0.87,3,No
+457,Aaron Davis,Male,48,Support,Helpdesk,4,2018-05-08,+44,UK,7710988241,88349,32,15,2024-08-02,Friday,5,27,6.0,2019,7,1.1,3,No
+458,Trevor Williams,Female,47,HR,HR Executive,3,2014-01-06,+33,France,0513673012,119643,1,19,2024-09-14,Saturday,5,54,,2016,11,6.63,4,No
+459,Albert Chavez,Other,32,Sales,Account Manager,1,2022-04-11,+1,Canada,0651910674,161632,1,23,2024-12-05,Thursday,14,79,8.0,2023,3,5.97,1,No
+460,Nichole Fitzgerald,Male,34,Marketing,SEO Analyst,4,2023-06-20,+91,India,1864255792,53266,13,28,2024-06-14,Friday,3,19,,2024,2,2.73,4,No
+461,Chelsey Roberts,Other,60,Finance,Accountant,4,2010-10-12,+1,USA,7757093846,67827,23,29,2024-11-25,Monday,11,38,,2015,15,0.57,2,Yes
+462,Brian Rice,Female,27,Support,Support Engineer,2,2021-03-05,+33,France,6610194112,116235,17,10,2024-06-17,Monday,3,22,2.0,2021,4,4.93,3,No
+463,Jo Warren,Female,58,Finance,Accountant,2,2012-04-04,+1,Canada,0956763576,35093,5,17,2024-04-05,Friday,1,20,,2018,13,6.17,4,No
+464,Cynthia Clark,Female,60,Sales,Account Manager,3,2011-03-25,+44,UK,1420447116,155870,6,19,2024-03-23,Saturday,3,24,4.0,2016,14,5.63,3,No
+465,Mary Hudson,Other,32,Support,Helpdesk,3,2023-09-27,+44,UK,8326603229,140627,34,18,2024-01-15,Monday,12,23,10.0,2024,2,0.2,4,No
+466,Jacqueline Knight,Female,28,IT,Developer,5,2023-03-25,+33,France,8768711437,93057,15,3,2024-02-28,Wednesday,3,52,,2024,2,6.5,4,No
+467,Sydney Sweeney,Female,25,Finance,Auditor,2,2014-10-17,+91,India,8712974496,107898,8,14,2024-10-02,Wednesday,12,74,,2017,11,6.07,3,No
+468,Deborah Harris,Male,59,HR,HR Executive,3,2016-07-12,+1,USA,0457154765,169457,34,18,2024-05-02,Thursday,13,51,,2019,9,0.2,2,Yes
+469,Samantha Curtis,Female,40,Finance,Auditor,3,2020-03-21,+44,UK,4019652851,173633,38,3,2024-10-12,Saturday,6,37,,2021,5,1.9,3,No
+470,Brett Armstrong,Male,60,HR,HR Executive,4,2011-06-08,+44,UK,4074790495,92312,39,17,2024-12-27,Friday,1,20,,2013,14,-0.63,1,Yes
+471,David Zamora,Female,22,HR,HR Manager,2,2017-08-05,+1,Canada,8489134705,35152,11,0,2024-05-07,Tuesday,5,30,,2024,8,7.8,3,No
+472,Gregory Contreras,Male,37,Finance,Accountant,4,2020-07-14,+49,Germany,9767140625,162437,37,12,2024-09-23,Monday,10,20,,2023,5,0.6,2,Yes
+473,Brian Peterson,Other,44,IT,Engineer,4,2012-06-01,+49,Germany,0859399381,129971,38,17,2024-03-17,Sunday,7,43,,2019,13,-0.43,4,No
+474,Frank Ross,Male,54,Finance,Auditor,3,2016-11-16,+91,India,0182909249,175948,40,17,2024-07-12,Friday,13,39,,2023,9,-0.83,2,Yes
+475,Kelsey Moore,Male,35,Sales,Account Manager,4,2021-07-20,+33,France,0588321371,162702,12,14,2024-12-14,Saturday,2,25,4.0,2024,4,5.27,3,No
+476,Louis Davis,Male,24,HR,HR Manager,3,2020-04-02,+44,UK,5988527329,76735,12,25,2024-03-08,Friday,14,9,,2022,5,3.43,4,No
+477,Daniel Ruiz,Other,49,Sales,Sales Executive,3,2011-01-15,+1,USA,0530974469,64651,17,4,2024-07-04,Thursday,12,22,6.0,2022,14,5.93,4,No
+478,Lauren Preston,Other,55,Marketing,Content Lead,5,2010-01-21,+44,UK,2135663145,94382,2,3,2024-09-01,Sunday,5,67,,2011,15,9.1,4,No
+479,Shawn Grant,Other,56,IT,Tester,3,2020-05-17,+33,France,7495687201,140237,21,1,2024-09-04,Wednesday,3,61,,2021,5,5.63,3,No
+480,Pamela Castro,Other,51,Support,Helpdesk,4,2011-05-04,+33,France,2244272315,77476,9,6,2024-09-01,Sunday,3,14,3.0,2012,14,7.2,4,No
+481,Brian Thompson,Female,21,IT,Developer,4,2023-05-07,+49,Germany,8809327376,36213,5,25,2024-10-12,Saturday,8,79,,2023,2,4.83,3,No
+482,Anthony Jennings,Other,43,Support,Support Engineer,1,2017-04-22,+33,France,6879155165,60868,33,6,2024-06-12,Wednesday,9,26,6.0,2018,8,2.4,3,No
+483,Jennifer Fernandez,Other,52,IT,Tester,4,2019-10-13,+49,Germany,3798366312,42425,39,19,2024-12-16,Monday,8,52,,2024,6,-0.97,2,Yes
+484,Mary Patterson,Other,31,Sales,Sales Executive,1,2021-11-10,+49,Germany,1346268062,171672,7,14,2024-09-04,Wednesday,2,35,9.0,2022,4,6.27,3,No
+485,Antonio Johnson,Female,47,Sales,Sales Executive,5,2018-09-04,+49,Germany,3605750159,64927,37,15,2024-06-27,Thursday,4,73,3.0,2019,7,0.1,5,No
+486,Thomas Gomez,Female,59,Sales,Sales Executive,2,2018-11-03,+1,USA,6800382348,51461,19,20,2024-02-12,Monday,13,79,10.0,2023,7,2.87,3,No
+487,Stephanie Ryan,Male,33,IT,Developer,3,2014-04-11,+91,India,2120882686,31689,5,11,2024-12-24,Tuesday,9,45,,2023,11,7.17,4,No
+488,Lydia Thomas,Other,39,Finance,Auditor,4,2010-08-04,+44,UK,4033961587,151142,29,14,2024-10-05,Saturday,5,71,,2018,15,1.87,4,No
+489,Jonathan Green,Male,47,Finance,Accountant,1,2010-12-04,+33,France,4871064800,44069,22,7,2024-07-16,Tuesday,5,24,,2015,15,4.43,3,No
+490,Cheryl Jimenez,Other,57,HR,HR Manager,2,2018-09-26,+44,UK,1711661801,178046,30,2,2024-03-16,Saturday,6,70,,2021,7,3.67,4,No
+491,Kendra Grant,Female,51,Sales,Account Manager,4,2021-04-24,+1,Canada,0093417353,109973,1,18,2024-07-19,Friday,8,51,5.0,2023,4,6.8,3,No
+492,Crystal Conway,Male,34,Marketing,SEO Analyst,5,2022-08-08,+91,India,4400898494,56917,16,5,2024-06-15,Saturday,9,66,,2024,3,5.97,3,No
+493,Nancy Bell,Other,59,IT,Tester,5,2015-12-10,+33,France,7267373383,89449,14,0,2024-02-18,Sunday,6,57,,2021,10,7.2,5,No
+494,Katrina Thomas,Female,53,HR,HR Manager,2,2019-09-21,+44,UK,4678486515,152708,23,23,2024-10-18,Friday,12,16,,2021,6,1.57,3,No
+495,Sean Nash,Male,38,IT,Developer,4,2021-08-04,+1,Canada,7395334650,56333,20,10,2024-12-22,Sunday,6,25,,2023,4,4.33,4,No
+496,Mrs. Jessica Johnson,Other,25,IT,Developer,3,2013-10-11,+1,Canada,1230730508,127673,2,16,2024-03-11,Monday,8,53,,2014,12,6.93,3,No
+497,Rhonda Torres,Other,47,Finance,Auditor,5,2019-06-04,+1,Canada,5690814014,107623,6,9,2024-06-15,Saturday,1,37,,2019,6,7.3,3,No
+498,Patricia Fisher,Male,44,Finance,Accountant,1,2021-09-10,+91,India,7936859893,90850,23,14,2024-12-28,Saturday,1,64,,2024,4,3.07,2,Yes
+499,Dorothy Hartman,Other,52,Sales,Account Manager,5,2018-07-04,+91,India,7839016252,138568,25,3,2024-12-20,Friday,9,28,10.0,2023,7,4.5,3,No
+500,David Rhodes,Male,40,Marketing,Content Lead,1,2017-09-17,+91,India,2387189078,77261,7,27,2024-03-22,Friday,5,42,,2020,8,4.1,4,No

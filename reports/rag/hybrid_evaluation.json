@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-09-02 08:36:50",
+  "total_queries": 24,
+  "dense_corpus_size": 1042,
+  "sparse_corpus_size": 1042,
+  "weights": {
+    "dense_weight": 0.8,
+    "sparse_weight": 0.2
+  },
+  "methods": {
+    "dense_only": {
+      "Hit@1": 0.7917,
+      "Hit@3": 0.9583,
+      "Hit@5": 1.0,
+      "Hit@10": 1.0,
+      "MRR": 0.8785,
+      "avg_latency_ms": 16.0
+    },
+    "sparse_only": {
+      "Hit@1": 0.75,
+      "Hit@3": 0.9583,
+      "Hit@5": 0.9583,
+      "Hit@10": 1.0,
+      "MRR": 0.8375,
+      "avg_latency_ms": 1.79
+    },
+    "hybrid_0.8_0.2": {
+      "Hit@1": 0.875,
+      "Hit@3": 1.0,
+      "Hit@5": 1.0,
+      "Hit@10": 1.0,
+      "MRR": 0.9306,
+      "avg_latency_ms": 18.05
+    }
+  }
+}

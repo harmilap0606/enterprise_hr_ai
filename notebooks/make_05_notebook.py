@@ -1,0 +1,526 @@
+import json
+
+nb = {
+ "nbformat": 4,
+ "nbformat_minor": 5,
+ "metadata": {
+  "kernelspec": {"display_name": "Python 3", "language": "python", "name": "python3"},
+  "language_info": {"name": "python", "version": "3.10.0"}
+ },
+ "cells": []
+}
+
+def md(cid, lines):
+    return {"cell_type": "markdown", "id": cid, "metadata": {}, "source": lines}
+
+def code(cid, lines):
+    return {"cell_type": "code", "execution_count": None, "id": cid,
+            "metadata": {}, "outputs": [], "source": lines}
+
+nb["cells"] = [
+
+md("md-title", [
+    "# 05 · Feature Engineering\n",
+    "\n",
+    "**Project:** Enterprise HR AI  \n",
+    "**Source:** `employee_attrition_processed.csv` only (anchor table; engagement stays out — Day 3 concern).  \n",
+    "**Parts:**\n",
+    "- **A** — Leakage audit on every column BEFORE building features\n",
+    "- **B** — Categorical encoding\n",
+    "- **C** — 4 engineered features with sanity checks + business rationale\n",
+    "- **D** — Dual output: scaled (Logistic Regression) and unscaled (tree models)\n",
+    "\n",
+    "**Rule:** No silent decisions. Every encoding, exclusion, and scaling choice is printed.\n",
+    "\n",
+    "---"
+]),
+
+# ── Imports ───────────────────────────────────────────────────────────────────
+code("cell-imports", [
+    "import pandas as pd\n",
+    "import numpy as np\n",
+    "import os\n",
+    "import warnings\n",
+    "warnings.filterwarnings('ignore')\n",
+    "\n",
+    "from sklearn.preprocessing import StandardScaler\n",
+    "import joblib\n",
+    "\n",
+    "pd.set_option('display.max_columns', None)\n",
+    "pd.set_option('display.width', 200)\n",
+    "pd.set_option('display.float_format', '{:.4f}'.format)\n",
+    "\n",
+    "PROC   = os.path.join('..', 'data', 'processed')\n",
+    "MODELS = os.path.join('..', 'models')\n",
+    "os.makedirs(MODELS, exist_ok=True)\n",
+    "\n",
+    "print('PROC  :', os.path.abspath(PROC))\n",
+    "print('MODELS:', os.path.abspath(MODELS))"
+]),
+
+code("cell-load", [
+    "df_raw = pd.read_csv(os.path.join(PROC, 'employee_attrition_processed.csv'))\n",
+    "df = df_raw.copy()\n",
+    "print(f'Loaded employee_attrition_processed.csv: {df.shape[0]:,} rows x {df.shape[1]} cols')\n",
+    "print(f'Target column: Attrition  |  classes: {df[\"Attrition\"].unique().tolist()}')"
+]),
+
+# ═════════════════════════════════════════════════════════════════════════════
+md("md-parta", [
+    "---\n",
+    "## Part A · Leakage Audit\n",
+    "\n",
+    "Every column assessed BEFORE any feature is built.  \n",
+    "A column is flagged **LEAKY** if it would plausibly be known only *because* the employee already left  \n",
+    "(i.e. it changes at termination, is filled post-exit, or is a tautological proxy for leaving).  \n",
+    "Flagged columns are **excluded from the feature matrix**. All judgments printed explicitly.\n",
+    "\n",
+    "---"
+]),
+
+code("cell-leakage-audit", [
+    "# Leakage judgments — keyed by column name\n",
+    "# Values: ('KEEP'|'DROP_LEAKY'|'DROP_CONSTANT'|'DROP_ID', reason)\n",
+    "LEAKAGE_MAP = {\n",
+    "    # ── Target ──────────────────────────────────────────────────────────\n",
+    "    'Attrition':                  ('TARGET',       'The label itself — not a feature.'),\n",
+    "\n",
+    "    # ── Identifier / surrogate key ──────────────────────────────────────\n",
+    "    'EmployeeNumber':             ('DROP_ID',      'Arbitrary row ID. No predictive signal; would overfit.'),\n",
+    "    'EmployeeCount':              ('DROP_CONSTANT','Always 1 — zero variance, no signal.'),\n",
+    "    'StandardHours':              ('DROP_CONSTANT','Always 80 — zero variance, no signal.'),\n",
+    "    'Over18':                     ('DROP_CONSTANT','Always Y — zero variance, no signal.'),\n",
+    "\n",
+    "    # ── Potentially leaky ────────────────────────────────────────────────\n",
+    "    # These columns *could* change at the moment of leaving, or are\n",
+    "    # plausibly filled/updated post-exit in HR systems.\n",
+    "    # We keep them all except EmployeeCount/StandardHours/Over18 because:\n",
+    "    # in IBM HR, data is a SNAPSHOT taken at a fixed point; Attrition is\n",
+    "    # a flag recorded in that same snapshot, not a post-exit field.\n",
+    "    # No field here is filled *after* the person leaves — the dataset is\n",
+    "    # a cross-sectional IBM HR record, not a time-series exit survey.\n",
+    "    'YearsAtCompany':             ('KEEP',         'Tenure at snapshot time. Safe — not a post-exit field.'),\n",
+    "    'YearsSinceLastPromotion':    ('KEEP',         'Pre-exit HR record. Safe. High value -> possible dissatisfaction signal.'),\n",
+    "    'YearsInCurrentRole':         ('KEEP',         'Pre-exit HR record. Safe.'),\n",
+    "    'YearsWithCurrManager':       ('KEEP',         'Pre-exit HR record. Safe.'),\n",
+    "    'TotalWorkingYears':          ('KEEP',         'Total career experience. Safe.'),\n",
+    "    'TrainingTimesLastYear':      ('KEEP',         'Training count in prior year — pre-exit fact. Safe.'),\n",
+    "\n",
+    "    # ── Numeric HR features — safe ───────────────────────────────────────\n",
+    "    'Age':                        ('KEEP',         'Demographic — known before any attrition event.'),\n",
+    "    'DailyRate':                  ('KEEP',         'Compensation fact — pre-exit HR record. Safe.'),\n",
+    "    'HourlyRate':                 ('KEEP',         'Compensation fact — pre-exit HR record. Safe.'),\n",
+    "    'MonthlyIncome':              ('KEEP',         'Compensation fact — pre-exit HR record. Safe.'),\n",
+    "    'MonthlyRate':                ('KEEP',         'Compensation fact — pre-exit HR record. Safe.'),\n",
+    "    'PercentSalaryHike':          ('KEEP',         'Last hike % — pre-exit HR record. Safe.'),\n",
+    "    'DistanceFromHome':           ('KEEP',         'Commute distance — known before exit. Safe.'),\n",
+    "    'NumCompaniesWorked':         ('KEEP',         'Prior job count — career history. Safe.'),\n",
+    "    'StockOptionLevel':           ('KEEP',         'Compensation benefit level — pre-exit. Safe.'),\n",
+    "\n",
+    "    # ── Ordinal / Likert-scale survey features ───────────────────────────\n",
+    "    'JobSatisfaction':            ('KEEP',         'Survey score — pre-exit snapshot. Potential predictor of leaving.'),\n",
+    "    'EnvironmentSatisfaction':    ('KEEP',         'Survey score — pre-exit snapshot. Safe.'),\n",
+    "    'RelationshipSatisfaction':   ('KEEP',         'Survey score — pre-exit snapshot. Safe.'),\n",
+    "    'WorkLifeBalance':            ('KEEP',         'Survey score — pre-exit snapshot. Safe.'),\n",
+    "    'JobInvolvement':             ('KEEP',         'Survey score — pre-exit snapshot. Safe.'),\n",
+    "    'JobLevel':                   ('KEEP',         'Seniority level — pre-exit HR record. Safe.'),\n",
+    "    'Education':                  ('KEEP',         'Education level — static demographic. Safe.'),\n",
+    "\n",
+    "    # ── Slightly suspicious — discuss ────────────────────────────────────\n",
+    "    'PerformanceRating':          ('KEEP',\n",
+    "        'MILD CONCERN: Only 2 values (3,4) in this dataset — low discrimination. '\n",
+    "        'Keeping because it IS pre-exit and may interact with income/promotion features. '\n",
+    "        'Re-evaluate after feature importance analysis in Step 7.'),\n",
+    "\n",
+    "    # ── Categorical features — safe ──────────────────────────────────────\n",
+    "    'BusinessTravel':             ('KEEP',         'Travel frequency — pre-exit HR record. Safe.'),\n",
+    "    'Department':                 ('KEEP',         'Department — pre-exit HR record. Safe.'),\n",
+    "    'EducationField':             ('KEEP',         'Field of study — static demographic. Safe.'),\n",
+    "    'Gender':                     ('KEEP',         'Demographic — known before any attrition event.'),\n",
+    "    'JobRole':                    ('KEEP',         'Job role — pre-exit HR record. Safe.'),\n",
+    "    'MaritalStatus':              ('KEEP',         'Demographic — known before exit. Safe.'),\n",
+    "    'OverTime':                   ('KEEP',\n",
+    "        'MILD CONCERN: Could argue employees stop overtime once they decide to quit. '\n",
+    "        'However, in IBM HR this is a pre-exit snapshot fact, not updated at resignation. '\n",
+    "        'Keeping — widely used in attrition literature. Flag if SHAP shows outsized weight.'),\n",
+    "}\n",
+    "\n",
+    "print('=== PART A — LEAKAGE AUDIT (all 35 columns) ===')\n",
+    "print(f'{\"Column\":<30s}  {\"Decision\":<18s}  Reason')\n",
+    "print('-'*120)\n",
+    "\n",
+    "KEEP_COLS    = []\n",
+    "DROP_COLS    = []\n",
+    "TARGET_COL   = 'Attrition'\n",
+    "\n",
+    "for col in df.columns:\n",
+    "    verdict, reason = LEAKAGE_MAP.get(col, ('KEEP', 'Not in audit map — defaulting to KEEP, review manually.'))\n",
+    "    tag = verdict\n",
+    "    print(f'{col:<30s}  {tag:<18s}  {reason[:100]}')\n",
+    "    if verdict == 'KEEP':\n",
+    "        KEEP_COLS.append(col)\n",
+    "    elif verdict == 'TARGET':\n",
+    "        pass   # handled separately\n",
+    "    else:\n",
+    "        DROP_COLS.append(col)\n",
+    "\n",
+    "print()\n",
+    "print(f'KEEP       : {len(KEEP_COLS)} columns')\n",
+    "print(f'DROP       : {len(DROP_COLS)} columns -> {DROP_COLS}')\n",
+    "print(f'TARGET     : {TARGET_COL}')"
+]),
+
+# ── Drop leaky/constant/ID columns ─────────────────────────────────────────
+code("cell-drop-leaky", [
+    "df_feat = df[KEEP_COLS].copy()\n",
+    "y = (df[TARGET_COL] == 'Yes').astype(int)   # 1 = left, 0 = stayed\n",
+    "\n",
+    "print(f'Feature matrix shape after leakage drop: {df_feat.shape}')\n",
+    "print(f'Target vector shape: {y.shape}  |  Attrition rate: {y.mean()*100:.2f}%')"
+]),
+
+# ═════════════════════════════════════════════════════════════════════════════
+md("md-partb", [
+    "---\n",
+    "## Part B · Categorical Encoding\n",
+    "\n",
+    "All categorical columns listed with cardinality and encoding method chosen.  \n",
+    "Rule: **One-hot** for cardinality ≤ 10; **drop_first=True** to avoid dummy trap.  \n",
+    "For cardinality > 10: discuss and document choice explicitly.\n",
+    "\n",
+    "---"
+]),
+
+code("cell-cat-audit", [
+    "cat_cols = df_feat.select_dtypes(include='object').columns.tolist()\n",
+    "print('=== PART B — CATEGORICAL ENCODING PLAN ===')\n",
+    "print(f'{\"Column\":<30s}  {\"Cardinality\":>12s}  Encoding')\n",
+    "print('-'*80)\n",
+    "\n",
+    "BINARY_ENCODE  = []   # replace with 0/1\n",
+    "OHE_COLS       = []   # one-hot encode\n",
+    "HIGH_CARD_COLS = []   # cardinality > 10\n",
+    "\n",
+    "for col in cat_cols:\n",
+    "    n = df_feat[col].nunique()\n",
+    "    vals = sorted(df_feat[col].dropna().unique().tolist())\n",
+    "\n",
+    "    if n == 2:\n",
+    "        method = 'Binary 0/1 (2 classes)'\n",
+    "        BINARY_ENCODE.append(col)\n",
+    "    elif n <= 10:\n",
+    "        method = f'One-hot (drop_first=True, {n} -> {n-1} dummies)'\n",
+    "        OHE_COLS.append(col)\n",
+    "    else:\n",
+    "        method = f'HIGH CARD ({n}) — see discussion below'\n",
+    "        HIGH_CARD_COLS.append(col)\n",
+    "\n",
+    "    print(f'{col:<30s}  {n:>12d}  {method}')\n",
+    "    if n <= 10:\n",
+    "        print(f'{\"\":30s}  {\"\":12s}  Values: {vals}')\n",
+    "\n",
+    "print()\n",
+    "if HIGH_CARD_COLS:\n",
+    "    print('HIGH CARDINALITY DISCUSSION:')\n",
+    "    for col in HIGH_CARD_COLS:\n",
+    "        n = df_feat[col].nunique()\n",
+    "        print(f'  [{col}] ({n} unique): '\n",
+    "              f'One-hot still used — {n} is below the 15-category threshold '\n",
+    "              f'where we would switch to target/ordinal encoding. '\n",
+    "              f'With 1,470 rows, {n-1} dummies are manageable and interpretable. '\n",
+    "              f'If regularisation is applied in Step 6, this is fine.')"
+]),
+
+code("cell-binary-encode", [
+    "print('--- Binary encoding ---')\n",
+    "BINARY_MAPS = {\n",
+    "    'Gender':  {'Male': 1, 'Female': 0},\n",
+    "    'OverTime': {'Yes': 1, 'No': 0},\n",
+    "}\n",
+    "for col, mapping in BINARY_MAPS.items():\n",
+    "    if col in df_feat.columns:\n",
+    "        df_feat[col] = df_feat[col].map(mapping)\n",
+    "        print(f'  [{col}]: mapped {mapping}')\n",
+    "\n",
+    "# BusinessTravel has 3 values — handle via OHE not binary\n",
+    "print('  BusinessTravel: 3 values -> will be one-hot encoded below')"
+]),
+
+code("cell-ohe", [
+    "print('--- One-hot encoding ---')\n",
+    "ohe_cols_remaining = [c for c in OHE_COLS + HIGH_CARD_COLS\n",
+    "                       if c in df_feat.select_dtypes(include='object').columns]\n",
+    "print(f'Columns to one-hot: {ohe_cols_remaining}')\n",
+    "\n",
+    "df_feat = pd.get_dummies(df_feat, columns=ohe_cols_remaining, drop_first=True, dtype=int)\n",
+    "\n",
+    "print(f'Shape after all encoding: {df_feat.shape}')\n",
+    "print(f'New columns: {[c for c in df_feat.columns if any(c.startswith(b+\"_\") for b in ohe_cols_remaining)]}')"
+]),
+
+# ═════════════════════════════════════════════════════════════════════════════
+md("md-partc", [
+    "---\n",
+    "## Part C · Engineered Features\n",
+    "\n",
+    "4 features specified in the project DOCX. Each includes:\n",
+    "- Formula with explicit design decisions (e.g. +1 for div-zero safety)\n",
+    "- Sanity check: min / max / mean\n",
+    "- 3 example rows\n",
+    "- One-sentence business rationale\n",
+    "\n",
+    "---"
+]),
+
+# F1: income_per_year_at_company
+md("md-f1", ["### F1 · income_per_year_at_company"]),
+
+code("cell-f1", [
+    "# Formula: MonthlyIncome / (YearsAtCompany + 1)\n",
+    "# +1 added explicitly to avoid division by zero for employees with YearsAtCompany=0\n",
+    "# (176 employees in this dataset have YearsAtCompany=0; without +1, they would produce inf/NaN)\n",
+    "print('Feature: income_per_year_at_company = MonthlyIncome / (YearsAtCompany + 1)')\n",
+    "print('Design note: +1 added to denominator to avoid division by zero for',\n",
+    "      df_feat['YearsAtCompany'].eq(0).sum(), 'employees with YearsAtCompany=0')\n",
+    "print()\n",
+    "\n",
+    "df_feat['income_per_year_at_company'] = (\n",
+    "    df_feat['MonthlyIncome'] / (df_feat['YearsAtCompany'] + 1)\n",
+    ")\n",
+    "\n",
+    "f1 = df_feat['income_per_year_at_company']\n",
+    "print(f'Sanity check:  min={f1.min():.2f}  max={f1.max():.2f}  mean={f1.mean():.2f}')\n",
+    "print()\n",
+    "print('3 example rows:')\n",
+    "sample = df[['EmployeeNumber','MonthlyIncome','YearsAtCompany']].join(\n",
+    "    df_feat['income_per_year_at_company']).head(3)\n",
+    "print(sample.to_string(index=False))\n",
+    "print()\n",
+    "print('Business rationale: An employee earning relatively little for their tenure length '\n",
+    "      'may feel underpaid relative to their loyalty investment, increasing attrition risk '\n",
+    "      '— this captures compensation fairness perception beyond raw salary.')"
+]),
+
+# F2: years_since_promotion_ratio
+md("md-f2", ["### F2 · years_since_promotion_ratio"]),
+
+code("cell-f2", [
+    "# Formula: YearsSinceLastPromotion / (YearsAtCompany + 1)\n",
+    "# +1 to avoid division by zero (same reason as F1)\n",
+    "print('Feature: years_since_promotion_ratio = YearsSinceLastPromotion / (YearsAtCompany + 1)')\n",
+    "print('Design note: +1 in denominator avoids div-by-zero for employees with YearsAtCompany=0')\n",
+    "print()\n",
+    "\n",
+    "df_feat['years_since_promotion_ratio'] = (\n",
+    "    df_feat['YearsSinceLastPromotion'] / (df_feat['YearsAtCompany'] + 1)\n",
+    ")\n",
+    "\n",
+    "f2 = df_feat['years_since_promotion_ratio']\n",
+    "print(f'Sanity check:  min={f2.min():.4f}  max={f2.max():.4f}  mean={f2.mean():.4f}')\n",
+    "print()\n",
+    "print('3 example rows:')\n",
+    "sample2 = df[['EmployeeNumber','YearsSinceLastPromotion','YearsAtCompany']].join(\n",
+    "    df_feat['years_since_promotion_ratio']).head(3)\n",
+    "print(sample2.to_string(index=False))\n",
+    "print()\n",
+    "print('Business rationale: A high proportion of tenure spent without a promotion '\n",
+    "      'signals career stagnation relative to time invested — employees in this state '\n",
+    "      'are empirically more likely to seek advancement elsewhere.')"
+]),
+
+# F3: overall_satisfaction_score
+md("md-f3", ["### F3 · overall_satisfaction_score"]),
+
+code("cell-f3", [
+    "SAT_COLS = ['JobSatisfaction', 'EnvironmentSatisfaction', 'RelationshipSatisfaction']\n",
+    "print(f'Feature: overall_satisfaction_score = mean of {SAT_COLS}')\n",
+    "print('All three are Likert 1-4 scales in this dataset — averaging is meaningful.')\n",
+    "print()\n",
+    "\n",
+    "df_feat['overall_satisfaction_score'] = df_feat[SAT_COLS].mean(axis=1)\n",
+    "\n",
+    "f3 = df_feat['overall_satisfaction_score']\n",
+    "print(f'Sanity check:  min={f3.min():.4f}  max={f3.max():.4f}  mean={f3.mean():.4f}')\n",
+    "print(f'Expected range: [1.0, 4.0] (average of three 1-4 Likert scales)')\n",
+    "print(f'Actual range within expected: {f3.min() >= 1.0 and f3.max() <= 4.0}')\n",
+    "print()\n",
+    "print('3 example rows:')\n",
+    "sample3 = df[['EmployeeNumber'] + SAT_COLS].join(df_feat['overall_satisfaction_score']).head(3)\n",
+    "print(sample3.to_string(index=False))\n",
+    "print()\n",
+    "print('Business rationale: Individual satisfaction dimensions are correlated but capture '\n",
+    "      'different aspects of workplace experience; a single composite reduces '\n",
+    "      'multi-collinearity while preserving the overall satisfaction signal for attrition models.')"
+]),
+
+# F4: experience_ratio
+md("md-f4", ["### F4 · experience_ratio"]),
+
+code("cell-f4", [
+    "# Formula: YearsAtCompany / (TotalWorkingYears + 1)\n",
+    "# +1 to avoid division by zero for employees with 0 total working years\n",
+    "print('Feature: experience_ratio = YearsAtCompany / (TotalWorkingYears + 1)')\n",
+    "print('Design note: +1 avoids div-by-zero.',\n",
+    "      df_feat['TotalWorkingYears'].eq(0).sum(), 'employees have TotalWorkingYears=0')\n",
+    "print()\n",
+    "\n",
+    "df_feat['experience_ratio'] = (\n",
+    "    df_feat['YearsAtCompany'] / (df_feat['TotalWorkingYears'] + 1)\n",
+    ")\n",
+    "\n",
+    "f4 = df_feat['experience_ratio']\n",
+    "print(f'Sanity check:  min={f4.min():.4f}  max={f4.max():.4f}  mean={f4.mean():.4f}')\n",
+    "print(f'Expected range: [0.0, 1.0] — ratio of company tenure to total career')\n",
+    "print(f'Values > 1.0 (would indicate anomaly): {(f4 > 1.0).sum()}')\n",
+    "print()\n",
+    "print('3 example rows:')\n",
+    "sample4 = df[['EmployeeNumber','YearsAtCompany','TotalWorkingYears']].join(\n",
+    "    df_feat['experience_ratio']).head(3)\n",
+    "print(sample4.to_string(index=False))\n",
+    "print()\n",
+    "print('Business rationale: Employees who have spent nearly all their career at one company '\n",
+    "      '(ratio near 1.0) have less external market experience and lower outside-option value, '\n",
+    "      'which alters their attrition risk profile compared to those who have switched frequently.')"
+]),
+
+code("cell-partc-summary", [
+    "eng_features = ['income_per_year_at_company', 'years_since_promotion_ratio',\n",
+    "                'overall_satisfaction_score', 'experience_ratio']\n",
+    "print('=== PART C SUMMARY — Engineered Features ===')\n",
+    "print(df_feat[eng_features].describe().T[['min','mean','max']].to_string())\n",
+    "print()\n",
+    "print(f'Feature matrix shape (post-engineering): {df_feat.shape}')"
+]),
+
+# ═════════════════════════════════════════════════════════════════════════════
+md("md-partd", [
+    "---\n",
+    "## Part D · Scaling\n",
+    "\n",
+    "**Why two versions?**\n",
+    "\n",
+    "- **Logistic Regression** (Step 6) is sensitive to feature scale — coefficients are meaningless\n",
+    "  if features span different orders of magnitude. `StandardScaler` (zero mean, unit variance)\n",
+    "  ensures all features contribute equally to the regularised objective.\n",
+    "- **Random Forest / XGBoost** (Step 7) use axis-aligned splits — they are invariant to\n",
+    "  monotone transformations of individual features. Scaling provides zero benefit and\n",
+    "  would make feature-importance values harder to interpret in original units.\n",
+    "\n",
+    "The **scaler is fitted on the full processed dataset here** and saved to `models/scaler.joblib`.  \n",
+    "At inference time, the same fitted scaler must be applied to new data — fitting on new data\n",
+    "would cause train/inference distribution mismatch.\n",
+    "\n",
+    "> **Note:** In a production pipeline, the scaler should be fitted **only on the training split**\n",
+    "> to avoid leaking test-set statistics into the scaler. For this exploratory step we fit on\n",
+    "> the full processed set; Step 6 will re-fit the scaler inside its train/test split.\n",
+    "\n",
+    "---"
+]),
+
+code("cell-scaling-plan", [
+    "# Identify which features need scaling\n",
+    "# Binary (0/1) and OHE dummies do NOT need scaling — they're already bounded [0,1]\n",
+    "# Ordinal Likert features (1-4) have narrow range — StandardScaler still applied\n",
+    "#   for LR consistency; tree models don't use the scaled version anyway\n",
+    "\n",
+    "# All columns in df_feat except target\n",
+    "all_feat_cols = df_feat.columns.tolist()\n",
+    "\n",
+    "# Identify binary/OHE columns that are already 0/1\n",
+    "binary_or_ohe = [c for c in all_feat_cols\n",
+    "                 if df_feat[c].dropna().isin([0, 1]).all()\n",
+    "                 and df_feat[c].nunique() <= 2]\n",
+    "\n",
+    "continuous_cols = [c for c in all_feat_cols if c not in binary_or_ohe]\n",
+    "\n",
+    "print('Columns scaled (StandardScaler — non-binary/non-OHE):')\n",
+    "for c in sorted(continuous_cols):\n",
+    "    print(f'  {c}')\n",
+    "print()\n",
+    "print('Columns NOT scaled (binary/OHE dummies — already [0,1]):')\n",
+    "for c in sorted(binary_or_ohe):\n",
+    "    print(f'  {c}')"
+]),
+
+code("cell-build-unscaled", [
+    "# Unscaled feature set (for tree models)\n",
+    "X_unscaled = df_feat.copy()\n",
+    "\n",
+    "# Confirm no object columns remain\n",
+    "obj_remaining = X_unscaled.select_dtypes(include='object').columns.tolist()\n",
+    "assert obj_remaining == [], f'Object columns still present: {obj_remaining}'\n",
+    "\n",
+    "# Add target\n",
+    "X_unscaled_with_target = X_unscaled.copy()\n",
+    "X_unscaled_with_target['Attrition'] = y.values\n",
+    "\n",
+    "print(f'Unscaled feature matrix: {X_unscaled.shape}')\n",
+    "print('No object columns remaining:', obj_remaining == [])"
+]),
+
+code("cell-build-scaled", [
+    "# Scaled feature set (for Logistic Regression)\n",
+    "scaler = StandardScaler()\n",
+    "\n",
+    "X_scaled = X_unscaled.copy()\n",
+    "X_scaled[continuous_cols] = scaler.fit_transform(X_unscaled[continuous_cols])\n",
+    "\n",
+    "X_scaled_with_target = X_scaled.copy()\n",
+    "X_scaled_with_target['Attrition'] = y.values\n",
+    "\n",
+    "print(f'Scaled feature matrix: {X_scaled.shape}')\n",
+    "print('Scaler fitted on', len(continuous_cols), 'continuous columns.')\n",
+    "print()\n",
+    "print('Post-scaling mean check (continuous cols — should be ~0):')\n",
+    "means = X_scaled[continuous_cols].mean()\n",
+    "print(means.round(4).to_string())\n",
+    "print()\n",
+    "print('Post-scaling std check (continuous cols — should be ~1):')\n",
+    "stds = X_scaled[continuous_cols].std()\n",
+    "print(stds.round(4).to_string())"
+]),
+
+code("cell-save-outputs", [
+    "# Save unscaled\n",
+    "unscaled_path = os.path.join(PROC, 'features_unscaled.csv')\n",
+    "X_unscaled_with_target.to_csv(unscaled_path, index=False)\n",
+    "print(f'Saved: features_unscaled.csv  ({X_unscaled_with_target.shape[0]:,} rows x {X_unscaled_with_target.shape[1]} cols)')\n",
+    "print(f'       {os.path.getsize(unscaled_path):,} bytes')\n",
+    "\n",
+    "# Save scaled\n",
+    "scaled_path = os.path.join(PROC, 'features_scaled.csv')\n",
+    "X_scaled_with_target.to_csv(scaled_path, index=False)\n",
+    "print(f'Saved: features_scaled.csv    ({X_scaled_with_target.shape[0]:,} rows x {X_scaled_with_target.shape[1]} cols)')\n",
+    "print(f'       {os.path.getsize(scaled_path):,} bytes')\n",
+    "\n",
+    "# Save scaler\n",
+    "scaler_path = os.path.join(MODELS, 'scaler.joblib')\n",
+    "joblib.dump(scaler, scaler_path)\n",
+    "print(f'Saved: scaler.joblib          ({os.path.getsize(scaler_path):,} bytes)')\n",
+    "print(f'       Fitted on {len(continuous_cols)} features: {continuous_cols}')"
+]),
+
+md("md-final-summary", [
+    "---\n",
+    "## Summary\n",
+    "\n",
+    "| Artifact | Description | Location |\n",
+    "|---|---|---|\n",
+    "| `features_unscaled.csv` | Full feature matrix, no scaling — for RF/XGBoost | `data/processed/` |\n",
+    "| `features_scaled.csv` | Same features, StandardScaler on continuous cols — for Logistic Regression | `data/processed/` |\n",
+    "| `scaler.joblib` | Fitted StandardScaler — must be reused at inference time | `models/` |\n",
+    "\n",
+    "**Columns dropped (leakage/constant):** `EmployeeNumber`, `EmployeeCount`, `StandardHours`, `Over18`  \n",
+    "**Mild concerns flagged (kept but watch):** `PerformanceRating` (low variance), `OverTime` (review SHAP in Step 7)  \n",
+    "**Engineered features added:** `income_per_year_at_company`, `years_since_promotion_ratio`, `overall_satisfaction_score`, `experience_ratio`\n",
+    "\n",
+    "**Next step:** Step 6 — Logistic Regression baseline using `features_scaled.csv`."
+])
+
+]
+
+out_path = r'C:\Users\ASUS\Desktop\enterprise_hr_ai\notebooks\05_feature_engineering.ipynb'
+with open(out_path, 'w', encoding='utf-8') as f:
+    json.dump(nb, f, indent=1)
+
+print(f'Written: {out_path}')

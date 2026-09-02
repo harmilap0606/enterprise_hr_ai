@@ -1,0 +1,35 @@
+# SYNTHETIC DATA — employee current-skill possession was not present in any source file and has been simulated using a tenure/training-based heuristic for MVP demonstration purposes only. This must NOT be presented to stakeholders as real observed skill data. Real deployment requires an actual skills inventory (HRIS export, LMS completion records, or self-assessment survey).
+skill_name,total_missing_count,severity,top_affected_roles,is_role_concentrated
+Speaking,388,HIGH,"Research Scientist (102), Sales Executive (90), Laboratory Technician (83), Manufacturing Director (36), Healthcare Representative (33), Sales Representative (26), Human Resources (18)",False
+Reading Comprehension,378,HIGH,"Sales Executive (85), Research Scientist (84), Laboratory Technician (80), Healthcare Representative (32), Sales Representative (31), Manufacturing Director (29), Research Director (21), Human Resources (16)",False
+Active Listening,375,HIGH,"Research Scientist (91), Laboratory Technician (79), Sales Executive (71), Healthcare Representative (34), Manufacturing Director (33), Sales Representative (28), Research Director (22), Human Resources (17)",False
+Critical Thinking,307,HIGH,"Research Scientist (98), Sales Executive (75), Laboratory Technician (73), Manufacturing Director (34), Human Resources (17), Research Director (10)",False
+Microsoft Office software,153,HIGH,"Laboratory Technician (81), Sales Representative (42), Healthcare Representative (30)",False
+Active Learning,151,HIGH,"Research Scientist (89), Sales Representative (32), Healthcare Representative (30)",False
+Adobe Acrobat,151,HIGH,"Sales Executive (80), Manufacturing Director (36), Human Resources (20), Research Director (15)",False
+Microsoft Excel,144,HIGH,"Laboratory Technician (87), Sales Representative (31), Healthcare Representative (26)",False
+Monitoring,112,HIGH,"Sales Executive (71), Manufacturing Director (30), Research Director (11)",False
+Amazon Web Services AWS CloudFormation,109,HIGH,Research Scientist (109),True
+Science,106,HIGH,"Laboratory Technician (94), Research Director (12)",True
+Amazon Elastic Compute Cloud EC2,97,MEDIUM,Research Scientist (97),True
+Amazon Web Services AWS software,93,MEDIUM,Research Scientist (93),True
+Amazon DynamoDB,91,MEDIUM,Research Scientist (91),True
+IBM SPSS Statistics,90,MEDIUM,"Healthcare Representative (40), Sales Representative (35), Research Director (15)",False
+Amazon Redshift,90,MEDIUM,Research Scientist (90),True
+MEDITECH software,77,MEDIUM,Laboratory Technician (77),True
+Microsoft Outlook,77,MEDIUM,Laboratory Technician (77),True
+Writing,77,MEDIUM,"Sales Representative (35), Healthcare Representative (32), Human Resources (10)",False
+Adobe Creative Cloud software,76,MEDIUM,"Sales Executive (61), Human Resources (15)",True
+Apple macOS,74,MEDIUM,"Sales Representative (38), Healthcare Representative (36)",False
+Eclipse IDE,73,MEDIUM,Sales Executive (73),True
+Google Docs,71,MEDIUM,Laboratory Technician (71),True
+Bentley MicroStation,70,MEDIUM,Sales Executive (70),True
+HubSpot software,67,MEDIUM,"Sales Representative (37), Healthcare Representative (30)",False
+Facebook,65,MEDIUM,Sales Executive (65),True
+Adobe Photoshop,60,MEDIUM,"Manufacturing Director (28), Human Resources (16), Research Director (16)",False
+Adobe InDesign,48,LOW,"Manufacturing Director (33), Human Resources (15)",False
+Autodesk AutoCAD,35,LOW,Manufacturing Director (35),True
+Adobe After Effects,33,LOW,Manufacturing Director (33),True
+Adobe Illustrator,26,LOW,Human Resources (26),True
+Microsoft Access,12,LOW,Research Director (12),True
+ESRI ArcGIS software,9,LOW,Research Director (9),True

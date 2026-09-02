@@ -1,0 +1,5 @@
+content = open(r'C:\Users\ASUS\Desktop\enterprise_hr_ai\frontend\dashboard.py', encoding='utf-8').read()
+content = content.replace("use_container_width=True", "width='stretch'")
+content = content.replace("use_container_width=False", "width='content'")
+open(r'C:\Users\ASUS\Desktop\enterprise_hr_ai\frontend\dashboard.py', 'w', encoding='utf-8').write(content)
+print('Fixed use_container_width deprecations')

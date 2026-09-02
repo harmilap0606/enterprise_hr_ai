@@ -1,0 +1,248 @@
+[
+  {
+    "id": "POL_Q01",
+    "category": "exact_policy_id",
+    "query": "What does POL-MODEL-001 say about the attrition threshold?",
+    "expected_policy_ids": [
+      "POL-MODEL-001"
+    ],
+    "expected_relevant_topics": "Decision threshold 0.40, recall and precision trade-off, binary flight risk cutoff",
+    "is_answerable": true,
+    "expected_refusal": false
+  },
+  {
+    "id": "POL_Q02",
+    "category": "exact_policy_id",
+    "query": "What is the purpose of POL-JOB-001?",
+    "expected_policy_ids": [
+      "POL-JOB-001"
+    ],
+    "expected_relevant_topics": "Standardize internal job roles to O*NET SOC codes, crosswalk governance, dual mappings",
+    "is_answerable": true,
+    "expected_refusal": false
+  },
+  {
+    "id": "POL_Q03",
+    "category": "exact_policy_id",
+    "query": "Which policy defines human review requirements in POL-REVIEW-001?",
+    "expected_policy_ids": [
+      "POL-REVIEW-001"
+    ],
+    "expected_relevant_topics": "Mandatory human oversight gate, human-in-the-loop, absolute right of human override",
+    "is_answerable": true,
+    "expected_refusal": false
+  },
+  {
+    "id": "POL_Q04",
+    "category": "exact_policy_id",
+    "query": "What rules are established under POL-AI-001 regarding autonomous decisions?",
+    "expected_policy_ids": [
+      "POL-AI-001"
+    ],
+    "expected_relevant_topics": "Strict decision-support mandate, prohibition of autonomous employment actions",
+    "is_answerable": true,
+    "expected_refusal": false
+  },
+  {
+    "id": "POL_Q05",
+    "category": "exact_policy_id",
+    "query": "What does POL-SKILL-001 state regarding the classification of skill gap severity?",
+    "expected_policy_ids": [
+      "POL-SKILL-001"
+    ],
+    "expected_relevant_topics": "LOW (1-2), MEDIUM (3-5), HIGH (>5), and N/A - Manager exclusion",
+    "is_answerable": true,
+    "expected_refusal": false
+  },
+  {
+    "id": "POL_Q06",
+    "category": "policy_terminology",
+    "query": "What threshold is used for attrition risk scoring?",
+    "expected_policy_ids": [
+      "POL-MODEL-001",
+      "POL-RISK-001"
+    ],
+    "expected_relevant_topics": "Operational cutoff probability 0.40, High Risk vs Low Risk",
+    "is_answerable": true,
+    "expected_refusal": false
+  },
+  {
+    "id": "POL_Q07",
+    "category": "policy_terminology",
+    "query": "How should an AI-generated HR recommendation be treated?",
+    "expected_policy_ids": [
+      "POL-AI-001",
+      "POL-REVIEW-001"
+    ],
+    "expected_relevant_topics": "Advisory decision support only, non-autonomous, requires professional human review",
+    "is_answerable": true,
+    "expected_refusal": false
+  },
+  {
+    "id": "POL_Q08",
+    "category": "policy_terminology",
+    "query": "Who has the authority to override an AI-assisted HR recommendation?",
+    "expected_policy_ids": [
+      "POL-REVIEW-001",
+      "POL-AI-001"
+    ],
+    "expected_relevant_topics": "HR business partners, People Analytics analysts, departmental managers",
+    "is_answerable": true,
+    "expected_refusal": false
+  },
+  {
+    "id": "POL_Q09",
+    "category": "policy_terminology",
+    "query": "What constitutes a HIGH severity skill gap deficiency?",
+    "expected_policy_ids": [
+      "POL-SKILL-001"
+    ],
+    "expected_relevant_topics": "More than 5 missing competencies relative to O*NET occupational benchmark",
+    "is_answerable": true,
+    "expected_refusal": false
+  },
+  {
+    "id": "POL_Q10",
+    "category": "policy_terminology",
+    "query": "What are the minimum statistical performance floors for model recall and precision?",
+    "expected_policy_ids": [
+      "POL-MONITOR-001"
+    ],
+    "expected_relevant_topics": "Recall floor >= 0.6500, precision floor >= 0.2500, ROC-AUC floor >= 0.7500",
+    "is_answerable": true,
+    "expected_refusal": false
+  },
+  {
+    "id": "POL_Q11",
+    "category": "semantic",
+    "query": "What should HR do when an employee is identified as high flight risk?",
+    "expected_policy_ids": [
+      "POL-RISK-001",
+      "POL-MODEL-001"
+    ],
+    "expected_relevant_topics": "Quarterly stay interviews, multi-dimensional review, evaluate SHAP drivers",
+    "is_answerable": true,
+    "expected_refusal": false
+  },
+  {
+    "id": "POL_Q12",
+    "category": "semantic",
+    "query": "What safeguards prevent AI predictions from becoming autonomous employment decisions?",
+    "expected_policy_ids": [
+      "POL-AI-001",
+      "POL-REVIEW-001"
+    ],
+    "expected_relevant_topics": "Mandatory Human Oversight Gate, prohibition of autonomous termination or demotion",
+    "is_answerable": true,
+    "expected_refusal": false
+  },
+  {
+    "id": "POL_Q13",
+    "category": "semantic",
+    "query": "How should occupation mappings be used for internal career development?",
+    "expected_policy_ids": [
+      "POL-CAREER-001",
+      "POL-JOB-001"
+    ],
+    "expected_relevant_topics": "Canonical O*NET descriptions, JobLevel hierarchy 1-5, competency transferability",
+    "is_answerable": true,
+    "expected_refusal": false
+  },
+  {
+    "id": "POL_Q14",
+    "category": "semantic",
+    "query": "Why are general managers excluded from automated role-level skill gap calculation?",
+    "expected_policy_ids": [
+      "POL-SKILL-001",
+      "POL-JOB-001"
+    ],
+    "expected_relevant_topics": "Placeholder code 11-9199.00 Managers All Other, very low confidence, department-level analysis",
+    "is_answerable": true,
+    "expected_refusal": false
+  },
+  {
+    "id": "POL_Q15",
+    "category": "multi_policy",
+    "query": "How do the attrition model policy and human review policy work together?",
+    "expected_policy_ids": [
+      "POL-MODEL-001",
+      "POL-REVIEW-001"
+    ],
+    "expected_relevant_topics": "Model produces 0.40 risk score and SHAP drivers, review policy mandates human gate",
+    "is_answerable": true,
+    "expected_refusal": false
+  },
+  {
+    "id": "POL_Q16",
+    "category": "multi_policy",
+    "query": "Which policies govern the flow from skill-gap identification to upskilling recommendations?",
+    "expected_policy_ids": [
+      "POL-SKILL-001",
+      "POL-LEARN-001"
+    ],
+    "expected_relevant_topics": "POL-SKILL-001 identifies missing skills, POL-LEARN-001 maps to 33-course catalog",
+    "is_answerable": true,
+    "expected_refusal": false
+  },
+  {
+    "id": "POL_Q17",
+    "category": "multi_policy",
+    "query": "How are O*NET mapping, career development, and human review connected?",
+    "expected_policy_ids": [
+      "POL-JOB-001",
+      "POL-CAREER-001",
+      "POL-REVIEW-001"
+    ],
+    "expected_relevant_topics": "O*NET standardizes roles, career policy models progression along JobLevel, human review approves transfers",
+    "is_answerable": true,
+    "expected_refusal": false
+  },
+  {
+    "id": "POL_Q18",
+    "category": "multi_policy",
+    "query": "How does data provenance governance support model monitoring and limitations?",
+    "expected_policy_ids": [
+      "POL-DATA-001",
+      "POL-MONITOR-001"
+    ],
+    "expected_relevant_topics": "Anchor table integrity and source provenance support quarterly model drift auditing",
+    "is_answerable": true,
+    "expected_refusal": false
+  },
+  {
+    "id": "POL_Q19",
+    "category": "limitation_refusal",
+    "query": "What is the company's parental leave entitlement?",
+    "expected_policy_ids": [],
+    "expected_relevant_topics": "Unsupported question, parental leave",
+    "is_answerable": false,
+    "expected_refusal": true
+  },
+  {
+    "id": "POL_Q20",
+    "category": "limitation_refusal",
+    "query": "What is the annual vacation allowance?",
+    "expected_policy_ids": [],
+    "expected_relevant_topics": "Unsupported question, vacation allowance",
+    "is_answerable": false,
+    "expected_refusal": true
+  },
+  {
+    "id": "POL_Q21",
+    "category": "limitation_refusal",
+    "query": "What does Indian employment law require for termination?",
+    "expected_policy_ids": [],
+    "expected_relevant_topics": "Unsupported question, Indian employment law",
+    "is_answerable": false,
+    "expected_refusal": true
+  },
+  {
+    "id": "POL_Q22",
+    "category": "limitation_refusal",
+    "query": "What are the health insurance copay tiers for employees?",
+    "expected_policy_ids": [],
+    "expected_relevant_topics": "Unsupported question, health insurance copays",
+    "is_answerable": false,
+    "expected_refusal": true
+  }
+]

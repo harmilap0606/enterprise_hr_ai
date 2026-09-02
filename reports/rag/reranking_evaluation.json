@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-09-02 08:37:21",
+  "total_queries": 24,
+  "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "device": "cpu",
+  "candidate_count": 15,
+  "evaluation_top_k": 10,
+  "production_default_top_k": 3,
+  "hybrid_baseline": {
+    "Hit@1": 0.8333,
+    "Hit@3": 0.9583,
+    "Hit@5": 0.9583,
+    "Hit@10": 0.9583,
+    "MRR": 0.8921,
+    "avg_latency_ms": 19.86,
+    "p50_latency_ms": 18.47,
+    "p95_latency_ms": 22.08
+  },
+  "hybrid_with_reranking": {
+    "Hit@1": 0.9167,
+    "Hit@3": 1.0,
+    "Hit@5": 1.0,
+    "Hit@10": 1.0,
+    "MRR": 0.9514,
+    "avg_hybrid_latency_ms": 19.86,
+    "avg_rerank_latency_ms": 465.81,
+    "avg_total_latency_ms": 485.67,
+    "p50_total_latency_ms": 643.16,
+    "p95_total_latency_ms": 686.65
+  },
+  "deltas": {
+    "Hit@1": 0.0834,
+    "Hit@3": 0.0417,
+    "Hit@5": 0.0417,
+    "Hit@10": 0.0417,
+    "MRR": 0.0593
+  }
+}

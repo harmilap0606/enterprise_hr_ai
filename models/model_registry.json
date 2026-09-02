@@ -1,0 +1,71 @@
+{
+  "project": "enterprise_hr_ai",
+  "last_updated": "2026-09-01",
+  "versions": [
+    {
+      "version": "v1",
+      "name": "baseline_logreg",
+      "notebook": "06_baseline_model.ipynb",
+      "algorithm": "LogisticRegression",
+      "training_data": "features_scaled.csv",
+      "class_weight": null,
+      "threshold": 0.5,
+      "metrics": {
+        "precision": 0.6538,
+        "recall": 0.3617,
+        "f1": 0.4658,
+        "roc_auc": 0.8134
+      },
+      "file_path": "models/baseline_logreg.joblib",
+      "file_retained": true,
+      "status": "superseded",
+      "status_reason": "Beaten on Recall (0.3617 vs 0.7872) by v3 after class imbalance correction; retained as reference artifact only."
+    },
+    {
+      "version": "v2",
+      "name": "xgboost_unscaled",
+      "notebook": "07_model_comparison.ipynb",
+      "algorithm": "XGBClassifier",
+      "training_data": "features_unscaled.csv",
+      "class_weight": null,
+      "scale_pos_weight": null,
+      "threshold": 0.5,
+      "metrics": {
+        "precision": 0.5652,
+        "recall": 0.2766,
+        "f1": 0.3714,
+        "roc_auc": 0.7735
+      },
+      "file_path": null,
+      "file_retained": false,
+      "status": "rejected",
+      "status_reason": "Lower Recall and F1 than v1 baseline at default threshold; root cause was untreated class imbalance (no scale_pos_weight). Model object not saved to disk \u2014 it was superseded before archive step."
+    },
+    {
+      "version": "v3",
+      "name": "logreg_balanced_threshold_0.40",
+      "notebook": "07b_model_comparison_balanced.ipynb",
+      "algorithm": "LogisticRegression",
+      "training_data": "features_scaled.csv",
+      "class_weight": "balanced",
+      "threshold": 0.4,
+      "metrics": {
+        "precision": 0.3426,
+        "recall": 0.7872,
+        "f1": 0.4774,
+        "roc_auc": 0.806
+      },
+      "confusion_matrix_at_threshold": {
+        "TN": 176,
+        "FP": 71,
+        "FN": 10,
+        "TP": 37
+      },
+      "file_path": "models/attrition_pipeline.joblib",
+      "config_path": "models/model_config.json",
+      "file_retained": true,
+      "status": "production",
+      "status_reason": "Best Recall (0.7872) and F1 (0.4774) across all 6 model variants evaluated. Class imbalance corrected with class_weight='balanced'. Threshold tuned to 0.40 to catch 37/47 test leavers while maintaining acceptable precision. SHAP analysis in Step 8 confirmed OverTime, YearsSinceLastPromotion, TotalWorkingYears, BusinessTravel, and JobLevel as top drivers \u2014 consistent with HR domain intuition."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "model": "logistic_regression_balanced",
+  "threshold": 0.4,
+  "recall": 0.7872,
+  "precision": 0.3426,
+  "f1": 0.4774,
+  "trained_on": "features_scaled.csv",
+  "date": "2026-09-01"
+}

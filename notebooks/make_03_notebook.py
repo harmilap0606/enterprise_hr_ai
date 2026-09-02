@@ -1,0 +1,498 @@
+import json
+
+nb = {
+ "nbformat": 4,
+ "nbformat_minor": 5,
+ "metadata": {
+  "kernelspec": {"display_name": "Python 3", "language": "python", "name": "python3"},
+  "language_info": {"name": "python", "version": "3.10.0"}
+ },
+ "cells": []
+}
+
+def md(cell_id, lines):
+    return {"cell_type": "markdown", "id": cell_id, "metadata": {}, "source": lines}
+
+def code(cell_id, lines):
+    return {"cell_type": "code", "execution_count": None, "id": cell_id,
+            "metadata": {}, "outputs": [], "source": lines}
+
+nb["cells"] = [
+
+md("md-title", [
+    "# 03 · Data Cleaning\n",
+    "\n",
+    "**Project:** Enterprise HR AI  \n",
+    "**Rule:** Every cleaning decision is printed and logged. No silent changes.\n",
+    "\n",
+    "---"
+]),
+
+# ── Imports & setup ──────────────────────────────────────────────────────────
+code("cell-imports", [
+    "import pandas as pd\n",
+    "import numpy as np\n",
+    "import os\n",
+    "import warnings\n",
+    "warnings.filterwarnings('ignore')\n",
+    "\n",
+    "pd.set_option('display.max_columns', None)\n",
+    "pd.set_option('display.max_colwidth', 80)\n",
+    "pd.set_option('display.width', 200)\n",
+    "\n",
+    "RAW  = os.path.join('..', 'data', 'raw')\n",
+    "PROC = os.path.join('..', 'data', 'processed')\n",
+    "os.makedirs(PROC, exist_ok=True)\n",
+    "\n",
+    "print('RAW  :', os.path.abspath(RAW))\n",
+    "print('PROC :', os.path.abspath(PROC))"
+]),
+
+# ── Load raw files ────────────────────────────────────────────────────────────
+code("cell-load", [
+    "attrition_raw = pd.read_csv(os.path.join(RAW, 'employee_attrition.csv'))\n",
+    "hr_raw        = pd.read_csv(os.path.join(RAW, 'Cleaned_HR_Data_Analysis.csv'))\n",
+    "\n",
+    "print(f'employee_attrition.csv        : {attrition_raw.shape[0]:,} rows x {attrition_raw.shape[1]} cols')\n",
+    "print(f'Cleaned_HR_Data_Analysis.csv  : {hr_raw.shape[0]:,} rows x {hr_raw.shape[1]} cols')\n",
+    "\n",
+    "# Work on copies so raw is never mutated\n",
+    "attrition = attrition_raw.copy()\n",
+    "hr        = hr_raw.copy()"
+]),
+
+# ─────────────────────────────────────────────────────────────────────────────
+md("md-age-fix-header", [
+    "---\n",
+    "## Step 0 · Age=17 Investigation — Employee ID 1743 & 2038\n",
+    "\n",
+    "Before any cleaning, we surface the full rows for the two offending records from\n",
+    "`Cleaned_HR_Data_Analysis.csv` so we can assess whether a correction is unambiguous."
+]),
+
+# Print full rows
+code("cell-age-inspect", [
+    "FLAGGED_IDS = [1743, 2038]\n",
+    "\n",
+    "for emp_id in FLAGGED_IDS:\n",
+    "    row = hr[hr['Employee ID'] == emp_id]\n",
+    "    print(f'\\n{\"=\"*70}')\n",
+    "    print(f'FULL ROW — Employee ID {emp_id}')\n",
+    "    print(f'{\"=\"*70}')\n",
+    "    print(row.T.to_string())\n",
+    "    print()"
+]),
+
+# Decision logic based on DOB
+code("cell-age-decision", [
+    "import datetime\n",
+    "\n",
+    "SURVEY_DATE_COL  = 'Survey Date'\n",
+    "DOB_COL          = 'DOB'\n",
+    "AGE_COL          = 'Age'\n",
+    "EXCLUDED_ROWS    = []\n",
+    "CORRECTIONS_LOG  = []\n",
+    "\n",
+    "def parse_date(s):\n",
+    "    for fmt in ('%d-%m-%Y', '%Y-%m-%d', '%d/%m/%Y', '%m/%d/%Y',\n",
+    "                '%d-%b-%y', '%d-%b-%Y', '%b %d, %Y'):\n",
+    "        try:\n",
+    "            return datetime.datetime.strptime(str(s).strip(), fmt)\n",
+    "        except Exception:\n",
+    "            pass\n",
+    "    return None\n",
+    "\n",
+    "def compute_age_from_dob(dob_str, ref_date_str):\n",
+    "    dob = parse_date(dob_str)\n",
+    "    ref = parse_date(ref_date_str)\n",
+    "    if dob is None or ref is None:\n",
+    "        return None\n",
+    "    age = (ref - dob).days // 365\n",
+    "    return int(age)\n",
+    "\n",
+    "print('=== AGE=17 DECISION LOGIC ===')\n",
+    "print()\n",
+    "\n",
+    "for emp_id in FLAGGED_IDS:\n",
+    "    idx  = hr.index[hr['Employee ID'] == emp_id][0]\n",
+    "    row  = hr.loc[idx]\n",
+    "    recorded_age = row[AGE_COL]\n",
+    "\n",
+    "    dob_str    = row.get(DOB_COL, None)\n",
+    "    sdate_str  = row.get(SURVEY_DATE_COL, None)\n",
+    "\n",
+    "    print(f'--- Employee ID {emp_id} ---')\n",
+    "    print(f'  Recorded Age : {recorded_age}')\n",
+    "    print(f'  DOB          : {dob_str}')\n",
+    "    print(f'  Survey Date  : {sdate_str}')\n",
+    "\n",
+    "    computed_age = compute_age_from_dob(dob_str, sdate_str) if (dob_str and sdate_str) else None\n",
+    "    print(f'  Computed Age from DOB -> Survey Date: {computed_age}')\n",
+    "\n",
+    "    if computed_age is not None and computed_age >= 18 and computed_age != recorded_age:\n",
+    "        print(f'  DECISION: Correct Age {recorded_age} -> {computed_age} '\n",
+    "              f'(unambiguous: derived from DOB={dob_str} and Survey Date={sdate_str})')\n",
+    "        CORRECTIONS_LOG.append({\n",
+    "            'Employee ID': emp_id, 'Column': AGE_COL,\n",
+    "            'Before': recorded_age, 'After': computed_age,\n",
+    "            'Justification': f'Age computed from DOB ({dob_str}) to Survey Date ({sdate_str})'\n",
+    "        })\n",
+    "        hr.at[idx, AGE_COL] = computed_age\n",
+    "    else:\n",
+    "        reason = (\n",
+    "            'DOB not present or unparseable' if computed_age is None\n",
+    "            else f'Computed age {computed_age} is also < 18 or equals recorded age — ambiguous'\n",
+    "        )\n",
+    "        print(f'  DECISION: EXCLUDE row — reason: {reason}')\n",
+    "        exc_row = row.to_dict()\n",
+    "        exc_row['exclusion_reason'] = reason\n",
+    "        EXCLUDED_ROWS.append(exc_row)\n",
+    "    print()\n",
+    "\n",
+    "# Write exclusion log regardless of whether rows were excluded or corrected\n",
+    "if EXCLUDED_ROWS:\n",
+    "    exc_df = pd.DataFrame(EXCLUDED_ROWS)\n",
+    "    exc_path = os.path.join(PROC, 'excluded_rows_log.csv')\n",
+    "    exc_df.to_csv(exc_path, index=False)\n",
+    "    print(f'Excluded {len(EXCLUDED_ROWS)} row(s) -> logged to {exc_path}')\n",
+    "    # Drop excluded rows from hr\n",
+    "    excluded_ids = [r['Employee ID'] for r in EXCLUDED_ROWS]\n",
+    "    hr = hr[~hr['Employee ID'].isin(excluded_ids)].reset_index(drop=True)\n",
+    "    print(f'hr shape after exclusion: {hr.shape}')\n",
+    "\n",
+    "if CORRECTIONS_LOG:\n",
+    "    print('\\nCorrections applied:')\n",
+    "    for c in CORRECTIONS_LOG:\n",
+    "        print(f'  Employee ID {c[\"Employee ID\"]}: {c[\"Column\"]} {c[\"Before\"]} -> {c[\"After\"]}')\n",
+    "        print(f'  Justification: {c[\"Justification\"]}')"
+]),
+
+# Re-run Age assert from notebook 02
+code("cell-age-recheck", [
+    "print('=== RE-RUNNING V-HR-4 AGE ASSERT (from notebook 02) ===')\n",
+    "bad_age_after = hr[(hr['Age'] < 18) | (hr['Age'] > 100)]\n",
+    "if len(bad_age_after) > 0:\n",
+    "    print(f'Offending rows still present ({len(bad_age_after)}):')\n",
+    "    print(bad_age_after[['Employee ID', 'Age']].to_string())\n",
+    "assert len(bad_age_after) == 0, (\n",
+    "    f'V-HR-4 still FAILED — {len(bad_age_after)} rows have Age outside [18, 100]'\n",
+    ")\n",
+    "print('V-HR-4 PASSED: Age range now clean, no values outside [18, 100]')"
+]),
+
+# ─────────────────────────────────────────────────────────────────────────────
+md("md-section-attrition", [
+    "---\n",
+    "## Section 1 · Cleaning — employee_attrition.csv"
+]),
+
+# Attrition — whitespace strip on all object cols
+code("cell-att-strip", [
+    "print('--- 1.1  Strip whitespace from all object columns ---')\n",
+    "obj_cols_att = attrition.select_dtypes(include='object').columns.tolist()\n",
+    "for col in obj_cols_att:\n",
+    "    before_unique = attrition[col].dropna().unique()\n",
+    "    attrition[col] = attrition[col].str.strip()\n",
+    "    after_unique  = attrition[col].dropna().unique()\n",
+    "    changed = set(before_unique) - set(after_unique)\n",
+    "    if changed:\n",
+    "        print(f'  [{col}] stripped whitespace, removed variants: {changed}')\n",
+    "print(f'  Stripped {len(obj_cols_att)} object columns. No non-whitespace values changed.')"
+]),
+
+# Attrition — category consistency check
+code("cell-att-cats", [
+    "print('--- 1.2  Categorical unique-value audit (post-strip) ---')\n",
+    "CAT_THRESHOLD = 30\n",
+    "for col in attrition.select_dtypes(include='object').columns:\n",
+    "    uvals = sorted(attrition[col].dropna().unique().tolist())\n",
+    "    if len(uvals) <= CAT_THRESHOLD:\n",
+    "        print(f'  [{col}] ({len(uvals)} unique): {uvals}')"
+]),
+
+# Attrition — missing values
+code("cell-att-missing", [
+    "print('--- 1.3  Missing values ---')\n",
+    "null_counts = attrition.isnull().sum()\n",
+    "null_pct    = (null_counts / len(attrition) * 100).round(2)\n",
+    "missing_cols_att = null_counts[null_counts > 0]\n",
+    "\n",
+    "if missing_cols_att.empty:\n",
+    "    print('  No missing values — nothing to impute.')\n",
+    "else:\n",
+    "    for col in missing_cols_att.index:\n",
+    "        pct = null_pct[col]\n",
+    "        dtype = attrition[col].dtype\n",
+    "        print(f'  [{col}]: {missing_cols_att[col]} missing ({pct}%)')\n",
+    "        if pd.api.types.is_numeric_dtype(dtype):\n",
+    "            med = attrition[col].median()\n",
+    "            attrition[col].fillna(med, inplace=True)\n",
+    "            print(f'    Strategy: MEDIAN imputation -> {med}')\n",
+    "        else:\n",
+    "            mode_val = attrition[col].mode()\n",
+    "            if len(mode_val) > 0:\n",
+    "                attrition[col].fillna(mode_val[0], inplace=True)\n",
+    "                print(f'    Strategy: MODE imputation -> {mode_val[0]}')\n",
+    "            else:\n",
+    "                attrition[col].fillna('Unknown', inplace=True)\n",
+    "                print(f'    Strategy: UNKNOWN fill (no mode available)')"
+]),
+
+# Attrition — duplicates
+code("cell-att-dups", [
+    "print('--- 1.4  Duplicate rows ---')\n",
+    "n_before = len(attrition)\n",
+    "attrition.drop_duplicates(inplace=True)\n",
+    "attrition.reset_index(drop=True, inplace=True)\n",
+    "n_after  = len(attrition)\n",
+    "print(f'  Dropped {n_before - n_after} exact duplicate rows ({n_before} -> {n_after})')"
+]),
+
+# Attrition — dtype enforcement
+code("cell-att-dtypes", [
+    "print('--- 1.5  Dtype enforcement ---')\n",
+    "\n",
+    "INT_COLS_ATT = [\n",
+    "    'Age', 'DailyRate', 'DistanceFromHome', 'Education',\n",
+    "    'EmployeeCount', 'EmployeeNumber', 'EnvironmentSatisfaction',\n",
+    "    'HourlyRate', 'JobInvolvement', 'JobLevel', 'JobSatisfaction',\n",
+    "    'MonthlyIncome', 'MonthlyRate', 'NumCompaniesWorked',\n",
+    "    'PercentSalaryHike', 'PerformanceRating', 'RelationshipSatisfaction',\n",
+    "    'StandardHours', 'StockOptionLevel', 'TotalWorkingYears',\n",
+    "    'TrainingTimesLastYear', 'WorkLifeBalance', 'YearsAtCompany',\n",
+    "    'YearsInCurrentRole', 'YearsSinceLastPromotion', 'YearsWithCurrManager'\n",
+    "]\n",
+    "\n",
+    "for col in INT_COLS_ATT:\n",
+    "    if col in attrition.columns:\n",
+    "        old_dtype = attrition[col].dtype\n",
+    "        attrition[col] = pd.to_numeric(attrition[col], errors='coerce').astype('Int64')\n",
+    "        if str(old_dtype) != str(attrition[col].dtype):\n",
+    "            print(f'  [{col}]: {old_dtype} -> {attrition[col].dtype}')\n",
+    "\n",
+    "print('  Dtype enforcement complete.')"
+]),
+
+# Attrition — before/after summary
+code("cell-att-summary", [
+    "att_rows_before = attrition_raw.shape[0]\n",
+    "att_rows_after  = attrition.shape[0]\n",
+    "print(f'employee_attrition: {att_rows_before:,} rows -> {att_rows_after:,} rows  |  {attrition.shape[1]} cols')"
+]),
+
+# ─────────────────────────────────────────────────────────────────────────────
+md("md-section-hr", [
+    "---\n",
+    "## Section 2 · Cleaning — Cleaned_HR_Data_Analysis.csv  (-> engagement_processed.csv)"
+]),
+
+# HR — whitespace strip on all object cols
+code("cell-hr-strip", [
+    "print('--- 2.1  Strip whitespace from all object columns ---')\n",
+    "obj_cols_hr = hr.select_dtypes(include='object').columns.tolist()\n",
+    "whitespace_found = []\n",
+    "for col in obj_cols_hr:\n",
+    "    before = hr[col].dropna().tolist()\n",
+    "    hr[col] = hr[col].str.strip()\n",
+    "    after   = hr[col].dropna().tolist()\n",
+    "    changed_pairs = [(b, a) for b, a in zip(before, after) if b != a]\n",
+    "    if changed_pairs:\n",
+    "        whitespace_found.append((col, len(changed_pairs)))\n",
+    "        print(f'  [{col}]: stripped whitespace in {len(changed_pairs)} values')\n",
+    "        # Show unique dirty -> clean examples\n",
+    "        seen = set()\n",
+    "        for b, a in changed_pairs:\n",
+    "            key = (b, a)\n",
+    "            if key not in seen:\n",
+    "                print(f'    BEFORE: {repr(b)}')\n",
+    "                print(f'    AFTER : {repr(a)}')\n",
+    "                seen.add(key)\n",
+    "            if len(seen) >= 3:\n",
+    "                break\n",
+    "if not whitespace_found:\n",
+    "    print('  No whitespace variants found in any object column.')\n",
+    "print(f'  Stripped {len(obj_cols_hr)} object columns.')"
+]),
+
+# HR — category consistency check
+code("cell-hr-cats", [
+    "print('--- 2.2  Categorical unique-value audit (post-strip) ---')\n",
+    "CAT_THRESHOLD = 30\n",
+    "for col in hr.select_dtypes(include='object').columns:\n",
+    "    uvals = sorted(hr[col].dropna().unique().tolist())\n",
+    "    if len(uvals) <= CAT_THRESHOLD:\n",
+    "        print(f'  [{col}] ({len(uvals)} unique): {uvals}')"
+]),
+
+# HR — missing values
+code("cell-hr-missing", [
+    "print('--- 2.3  Missing values ---')\n",
+    "null_counts_hr = hr.isnull().sum()\n",
+    "null_pct_hr    = (null_counts_hr / len(hr) * 100).round(2)\n",
+    "missing_cols_hr = null_counts_hr[null_counts_hr > 0]\n",
+    "\n",
+    "if missing_cols_hr.empty:\n",
+    "    print('  No missing values — nothing to impute.')\n",
+    "else:\n",
+    "    for col in missing_cols_hr.index:\n",
+    "        pct   = null_pct_hr[col]\n",
+    "        dtype = hr[col].dtype\n",
+    "        print(f'  [{col}]: {missing_cols_hr[col]} missing ({pct}%)')\n",
+    "        if pd.api.types.is_numeric_dtype(dtype):\n",
+    "            med = hr[col].median()\n",
+    "            hr[col].fillna(med, inplace=True)\n",
+    "            print(f'    Strategy: MEDIAN imputation -> {med}')\n",
+    "        else:\n",
+    "            mode_val = hr[col].mode()\n",
+    "            if len(mode_val) > 0:\n",
+    "                hr[col].fillna(mode_val[0], inplace=True)\n",
+    "                print(f'    Strategy: MODE imputation -> {mode_val[0]}')\n",
+    "            else:\n",
+    "                hr[col].fillna('Unknown', inplace=True)\n",
+    "                print(f'    Strategy: UNKNOWN fill (no mode available)')"
+]),
+
+# HR — duplicates
+code("cell-hr-dups", [
+    "print('--- 2.4  Duplicate rows ---')\n",
+    "n_before_hr = len(hr)\n",
+    "hr.drop_duplicates(inplace=True)\n",
+    "hr.reset_index(drop=True, inplace=True)\n",
+    "n_after_hr  = len(hr)\n",
+    "print(f'  Dropped {n_before_hr - n_after_hr} exact duplicate rows ({n_before_hr} -> {n_after_hr})')"
+]),
+
+# HR — dtype enforcement
+code("cell-hr-dtypes", [
+    "print('--- 2.5  Dtype enforcement ---')\n",
+    "\n",
+    "INT_COLS_HR = ['Employee ID', 'Current Employee Rating',\n",
+    "               'Engagement Score', 'Satisfaction Score',\n",
+    "               'Work-Life Balance Score', 'Training Duration(Days)',\n",
+    "               'Age']\n",
+    "\n",
+    "FLOAT_COLS_HR = ['Training Cost']\n",
+    "\n",
+    "DATE_COLS_HR  = ['StartDate', 'DOB', 'Survey Date', 'Training Date']\n",
+    "\n",
+    "for col in INT_COLS_HR:\n",
+    "    if col in hr.columns:\n",
+    "        old_dtype = hr[col].dtype\n",
+    "        hr[col] = pd.to_numeric(hr[col], errors='coerce').astype('Int64')\n",
+    "        if str(old_dtype) != str(hr[col].dtype):\n",
+    "            print(f'  [{col}]: {old_dtype} -> {hr[col].dtype}')\n",
+    "\n",
+    "for col in FLOAT_COLS_HR:\n",
+    "    if col in hr.columns:\n",
+    "        old_dtype = hr[col].dtype\n",
+    "        hr[col] = pd.to_numeric(hr[col], errors='coerce')\n",
+    "        if str(old_dtype) != str(hr[col].dtype):\n",
+    "            print(f'  [{col}]: {old_dtype} -> {hr[col].dtype}')\n",
+    "\n",
+    "for col in DATE_COLS_HR:\n",
+    "    if col in hr.columns:\n",
+    "        old_dtype = hr[col].dtype\n",
+    "        hr[col] = pd.to_datetime(hr[col], dayfirst=True, errors='coerce')\n",
+    "        print(f'  [{col}]: {old_dtype} -> {hr[col].dtype}')\n",
+    "\n",
+    "print('  Dtype enforcement complete.')"
+]),
+
+# HR — before/after summary
+code("cell-hr-summary", [
+    "hr_rows_before = hr_raw.shape[0]\n",
+    "hr_rows_after  = hr.shape[0]\n",
+    "print(f'Cleaned_HR_Data_Analysis: {hr_rows_before:,} rows -> {hr_rows_after:,} rows  |  {hr.shape[1]} cols')"
+]),
+
+# ─────────────────────────────────────────────────────────────────────────────
+md("md-save-header", ["---\n", "## Step 3 · Save to data/processed/"]),
+
+code("cell-save", [
+    "att_out  = os.path.join(PROC, 'employee_attrition_processed.csv')\n",
+    "hr_out   = os.path.join(PROC, 'engagement_processed.csv')\n",
+    "\n",
+    "attrition.to_csv(att_out, index=False)\n",
+    "hr.to_csv(hr_out, index=False)\n",
+    "\n",
+    "print(f'Saved: {att_out}')\n",
+    "print(f'       {attrition.shape[0]:,} rows x {attrition.shape[1]} cols')\n",
+    "print()\n",
+    "print(f'Saved: {hr_out}')\n",
+    "print(f'       {hr.shape[0]:,} rows x {hr.shape[1]} cols')\n",
+    "print()\n",
+    "print('Files in data/processed/:')\n",
+    "for f in sorted(os.listdir(PROC)):\n",
+    "    fpath = os.path.join(PROC, f)\n",
+    "    print(f'  {f}  ({os.path.getsize(fpath):,} bytes)')"
+]),
+
+# ─────────────────────────────────────────────────────────────────────────────
+md("md-cleaning-log", [
+    "---\n",
+    "## Cleaning Decision Log\n",
+    "\n",
+    "*(Seed for `docs/data_relationships.md` — Step 4)*\n",
+    "\n",
+    "---\n",
+    "\n",
+    "### Before / After Row Counts\n",
+    "\n",
+    "| File | Rows Before | Rows After | Delta |\n",
+    "|---|---|---|---|\n",
+    "| `employee_attrition.csv` | 1,470 | see output | see output |\n",
+    "| `Cleaned_HR_Data_Analysis.csv` → `engagement_processed.csv` | 2,845 | see output | see output |\n",
+    "\n",
+    "---\n",
+    "\n",
+    "### Decisions Made\n",
+    "\n",
+    "#### Age=17 rows (Employee ID 1743, 2038 in Cleaned_HR_Data_Analysis.csv)\n",
+    "- Printed full rows and attempted to compute age from `DOB` and `Survey Date`.\n",
+    "- **If DOB-derived age was unambiguous (≥18 and ≠ recorded age):** corrected in-place with a printed before/after log.\n",
+    "- **If ambiguous or DOB unparseable:** excluded row; written to `data/processed/excluded_rows_log.csv` with `exclusion_reason` column.\n",
+    "- Re-ran V-HR-4 assert after treatment; it must pass before pipeline continues.\n",
+    "\n",
+    "#### Whitespace stripping — both files\n",
+    "- Applied `.str.strip()` to **all** `object`-dtype columns in both files.\n",
+    "- Justification: Step 1 revealed `'Production       '` trailing-whitespace variants in `DepartmentType`.\n",
+    "  Whitespace is invisible in CSVs and creates phantom categories in groupby/merge operations.\n",
+    "- No semantic content was altered.\n",
+    "\n",
+    "#### Missing values\n",
+    "- `employee_attrition.csv`: zero missing values — no imputation needed.\n",
+    "- `Cleaned_HR_Data_Analysis.csv`: zero missing values on required columns after Age=17 fix.\n",
+    "  Any missing values found were handled by: **MEDIAN** for numeric columns, **MODE** for categorical,\n",
+    "  **'Unknown'** if no mode exists. Each decision printed explicitly in Section 2.3.\n",
+    "\n",
+    "#### Duplicates\n",
+    "- Exact duplicate rows dropped from both files (entire row identical across all columns).\n",
+    "- No partial-duplicate logic applied here — deduplication by key is a merge/join concern (Step 4).\n",
+    "\n",
+    "#### Dtype enforcement\n",
+    "- `employee_attrition.csv`: 26 integer columns cast to `Int64` (nullable integer) to preserve NaN-safety.\n",
+    "- `Cleaned_HR_Data_Analysis.csv`: score/rating/age columns cast to `Int64`; `Training Cost` to `float64`;\n",
+    "  `StartDate`, `DOB`, `Survey Date`, `Training Date` parsed to `datetime64`.\n",
+    "\n",
+    "#### Out-of-scope decisions (deferred)\n",
+    "- Skill-name normalization (`AWS` vs `Amazon Web Services`) — belongs to `essential_skills`/`software_skills` cleaning.\n",
+    "- Row-level join integrity between `employee_attrition` and `engagement_processed` — Step 4.\n",
+    "- `Employee_Performance_Dataset.csv` and `employee_performance_pro.csv` — not processed here\n",
+    "  (Step 1 recommended only `Cleaned_HR_Data_Analysis.csv` for processing based on ID-overlap evidence).\n",
+    "\n",
+    "---\n",
+    "\n",
+    "### Overlap note (from Step 1)\n",
+    "\n",
+    "**Employee ID overlap between `employee_attrition.csv` (EmployeeNumber) and `engagement_processed.csv`\n",
+    "(Employee ID) is 49.7% (731/1,470). This validation confirms internal validity of each file only.\n",
+    "Row-level join validity is a Step 4 (data_relationships) concern.**"
+])
+
+]  # end cells
+
+out_path = r'C:\Users\ASUS\Desktop\enterprise_hr_ai\notebooks\03_data_cleaning.ipynb'
+with open(out_path, 'w', encoding='utf-8') as f:
+    json.dump(nb, f, indent=1)
+
+print(f'Written: {out_path}')

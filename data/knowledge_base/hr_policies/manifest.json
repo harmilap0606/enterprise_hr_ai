@@ -1,0 +1,166 @@
+{
+  "corpus_name": "Enterprise HR AI Synthetic Demo Policy Corpus",
+  "description": "Controlled synthetic demonstration policy corpus grounded in enterprise project data and governance architecture.",
+  "status": "Synthetic Demo Policy",
+  "policy_count": 10,
+  "total_words": 9728,
+  "policies": [
+    {
+      "policy_id": "POL-JOB-001",
+      "filename": "POL-JOB-001.md",
+      "title": "Job Role Classification and O*NET Mapping Policy",
+      "domain": "Occupational Architecture & Role Classification",
+      "version": "1.0",
+      "status": "Synthetic Demo Policy",
+      "word_count": 997,
+      "related_policies": [
+        "POL-CAREER-001",
+        "POL-DATA-001",
+        "POL-REVIEW-001",
+        "POL-SKILL-001"
+      ]
+    },
+    {
+      "policy_id": "POL-AI-001",
+      "filename": "POL-AI-001.md",
+      "title": "HR AI Decision-Support Governance Policy",
+      "domain": "AI Governance & Ethical Operations",
+      "version": "1.0",
+      "status": "Synthetic Demo Policy",
+      "word_count": 939,
+      "related_policies": [
+        "POL-DATA-001",
+        "POL-MODEL-001",
+        "POL-MONITOR-001",
+        "POL-REVIEW-001"
+      ]
+    },
+    {
+      "policy_id": "POL-MODEL-001",
+      "filename": "POL-MODEL-001.md",
+      "title": "Attrition Model Usage Policy",
+      "domain": "Predictive Analytics & Model Operations",
+      "version": "1.0",
+      "status": "Synthetic Demo Policy",
+      "word_count": 1019,
+      "related_policies": [
+        "POL-AI-001",
+        "POL-MONITOR-001",
+        "POL-REVIEW-001",
+        "POL-RISK-001"
+      ]
+    },
+    {
+      "policy_id": "POL-RISK-001",
+      "filename": "POL-RISK-001.md",
+      "title": "Workforce Risk Review Policy",
+      "domain": "Talent Retention & Risk Mitigation",
+      "version": "1.0",
+      "status": "Synthetic Demo Policy",
+      "word_count": 962,
+      "related_policies": [
+        "POL-AI-001",
+        "POL-CAREER-001",
+        "POL-JOB-001",
+        "POL-LEARN-001",
+        "POL-MODEL-001",
+        "POL-REVIEW-001",
+        "POL-SKILL-001"
+      ]
+    },
+    {
+      "policy_id": "POL-SKILL-001",
+      "filename": "POL-SKILL-001.md",
+      "title": "Skill Gap Identification Policy",
+      "domain": "Skills Architecture & Gap Analysis",
+      "version": "1.0",
+      "status": "Synthetic Demo Policy",
+      "word_count": 1003,
+      "related_policies": [
+        "POL-JOB-001",
+        "POL-LEARN-001",
+        "POL-REVIEW-001",
+        "POL-RISK-001"
+      ]
+    },
+    {
+      "policy_id": "POL-LEARN-001",
+      "filename": "POL-LEARN-001.md",
+      "title": "Employee Upskilling Recommendation Policy",
+      "domain": "Learning & Professional Development",
+      "version": "1.0",
+      "status": "Synthetic Demo Policy",
+      "word_count": 940,
+      "related_policies": [
+        "POL-CAREER-001",
+        "POL-JOB-001",
+        "POL-REVIEW-001",
+        "POL-SKILL-001"
+      ]
+    },
+    {
+      "policy_id": "POL-CAREER-001",
+      "filename": "POL-CAREER-001.md",
+      "title": "Career and Occupation Mapping Policy",
+      "domain": "Internal Mobility & Career Pathways",
+      "version": "1.0",
+      "status": "Synthetic Demo Policy",
+      "word_count": 909,
+      "related_policies": [
+        "POL-JOB-001",
+        "POL-LEARN-001",
+        "POL-REVIEW-001",
+        "POL-RISK-001",
+        "POL-SKILL-001"
+      ]
+    },
+    {
+      "policy_id": "POL-DATA-001",
+      "filename": "POL-DATA-001.md",
+      "title": "HR Data Usage and Source Provenance Policy",
+      "domain": "Data Governance & Source Verification",
+      "version": "1.0",
+      "status": "Synthetic Demo Policy",
+      "word_count": 1007,
+      "related_policies": [
+        "POL-JOB-001",
+        "POL-MODEL-001",
+        "POL-MONITOR-001",
+        "POL-REVIEW-001"
+      ]
+    },
+    {
+      "policy_id": "POL-REVIEW-001",
+      "filename": "POL-REVIEW-001.md",
+      "title": "Human Review of AI-Assisted HR Decisions Policy",
+      "domain": "Human Oversight & Operational Safeguards",
+      "version": "1.0",
+      "status": "Synthetic Demo Policy",
+      "word_count": 1005,
+      "related_policies": [
+        "POL-AI-001",
+        "POL-CAREER-001",
+        "POL-LEARN-001",
+        "POL-MODEL-001",
+        "POL-MONITOR-001",
+        "POL-RISK-001",
+        "POL-SKILL-001"
+      ]
+    },
+    {
+      "policy_id": "POL-MONITOR-001",
+      "filename": "POL-MONITOR-001.md",
+      "title": "HR AI Monitoring and Model Limitations Policy",
+      "domain": "Model Lifecycle & Limitation Management",
+      "version": "1.0",
+      "status": "Synthetic Demo Policy",
+      "word_count": 947,
+      "related_policies": [
+        "POL-AI-001",
+        "POL-DATA-001",
+        "POL-MODEL-001",
+        "POL-REVIEW-001"
+      ]
+    }
+  ]
+}

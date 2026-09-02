@@ -1,0 +1,715 @@
+{
+  "corpus_name": "Enterprise HR Synthetic Policy Corpus",
+  "fix_applied": "c.contextual_text input pairs in CrossEncoderReranker",
+  "policy_collection_name": "enterprise_hr_policies_bge",
+  "policy_sparse_index_dir": "C:\\Users\\ASUS\\Desktop\\enterprise_hr_ai\\data\\rag\\policy_sparse_index",
+  "total_eval_queries": 22,
+  "answerable_queries_count": 18,
+  "unsupported_queries_count": 4,
+  "metrics": {
+    "dense": {
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "mrr": 1.0
+    },
+    "sparse": {
+      "hit@1": 0.8333,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "mrr": 0.9167
+    },
+    "hybrid": {
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "mrr": 1.0
+    },
+    "hybrid_reranked": {
+      "hit@1": 0.8889,
+      "hit@3": 1.0,
+      "mrr": 0.9444
+    }
+  },
+  "exact_policy_id_accuracy": {
+    "hybrid_rank1": 1.0,
+    "reranked_rank1": 1.0
+  },
+  "semantic_query_accuracy": {
+    "hybrid_rank1": 1.0,
+    "reranked_rank1": 0.75
+  },
+  "multi_policy_accuracy": {
+    "reranked_rank1": 1.0,
+    "reranked_top3": 1.0
+  },
+  "unsupported_query_evaluation": {
+    "refusal_accuracy": 1.0,
+    "min_score": -11.2301,
+    "max_score": -6.9068,
+    "queries": [
+      {
+        "query_id": "POL_Q19",
+        "query": "What is the company's parental leave entitlement?",
+        "retrieved_top_chunk": "pol_model_001_rule_2_recognition_of_the_class_imbalance_precision_trade_off_08_c01",
+        "top_rerank_score": -11.0086,
+        "retrieval_confidence_gate_triggered": true,
+        "text_refused": true,
+        "generated_answer": "2.",
+        "correctly_refused": true
+      },
+      {
+        "query_id": "POL_Q20",
+        "query": "What is the annual vacation allowance?",
+        "retrieved_top_chunk": "pol_model_001_purpose_03_c01",
+        "top_rerank_score": -11.2301,
+        "retrieval_confidence_gate_triggered": true,
+        "text_refused": true,
+        "generated_answer": "2.",
+        "correctly_refused": true
+      },
+      {
+        "query_id": "POL_Q21",
+        "query": "What does Indian employment law require for termination?",
+        "retrieved_top_chunk": "pol_ai_001_rule_1_strict_decision_support_mandate_07_c01",
+        "top_rerank_score": -9.1603,
+        "retrieval_confidence_gate_triggered": true,
+        "text_refused": false,
+        "generated_answer": "Involuntary termination or contract separation.",
+        "correctly_refused": true
+      },
+      {
+        "query_id": "POL_Q22",
+        "query": "What are the health insurance copay tiers for employees?",
+        "retrieved_top_chunk": "pol_risk_001_definitions_05_c01",
+        "top_rerank_score": -6.9068,
+        "retrieval_confidence_gate_triggered": true,
+        "text_refused": false,
+        "generated_answer": "**HIGH Risk Tier:** The risk segmentation reflecting predicted attrition probability: - HIGH risk: Risk score $ge 0.40$ (585 employees / 39.80% in baseline). - **LOW risk; Risk score $0.40$ (885 employees (49.7%) possess engagement survey records (engagement_processed.csv), while 739 employees (50.3%) have null engagement data. -",
+        "correctly_refused": true
+      }
+    ]
+  },
+  "latency_ms": {
+    "dense_mean": 20.83,
+    "dense_p50": 16.29,
+    "sparse_mean": 0.42,
+    "sparse_p50": 0.4,
+    "hybrid_mean": 16.73,
+    "hybrid_p50": 16.47,
+    "rerank_mean": 334.85,
+    "rerank_p50": 335.31,
+    "rerank_p95": 390.75
+  },
+  "per_query_retrieval_records": [
+    {
+      "query_id": "POL_Q01",
+      "category": "exact_policy_id",
+      "query": "What does POL-MODEL-001 say about the attrition threshold?",
+      "expected_policy_ids": [
+        "POL-MODEL-001"
+      ],
+      "hybrid_rank1_policy": "POL-MODEL-001",
+      "reranked_rank1_policy": "POL-MODEL-001",
+      "hybrid_top_3": [
+        "POL-MODEL-001",
+        "POL-MODEL-001",
+        "POL-MODEL-001"
+      ],
+      "reranked_top_3": [
+        "POL-MODEL-001",
+        "POL-MODEL-001",
+        "POL-REVIEW-001"
+      ],
+      "reranked_top_3_chunks": [
+        "pol_model_001_purpose_03_c01",
+        "pol_model_001_rule_1_mandatory_decision_threshold_standard_0_40_07_c01",
+        "pol_review_001_data_and_source_references_14_c01"
+      ],
+      "reranked_top_3_scores": [
+        6.4465,
+        6.3438,
+        5.4199
+      ],
+      "hybrid_rank1_match": true,
+      "rerank_rank1_match": true,
+      "rerank_top3_match": true
+    },
+    {
+      "query_id": "POL_Q02",
+      "category": "exact_policy_id",
+      "query": "What is the purpose of POL-JOB-001?",
+      "expected_policy_ids": [
+        "POL-JOB-001"
+      ],
+      "hybrid_rank1_policy": "POL-JOB-001",
+      "reranked_rank1_policy": "POL-JOB-001",
+      "hybrid_top_3": [
+        "POL-JOB-001",
+        "POL-JOB-001",
+        "POL-JOB-001"
+      ],
+      "reranked_top_3": [
+        "POL-JOB-001",
+        "POL-SKILL-001",
+        "POL-RISK-001"
+      ],
+      "reranked_top_3_chunks": [
+        "pol_job_001_purpose_03_c01",
+        "pol_skill_001_purpose_03_c01",
+        "pol_risk_001_purpose_03_c01"
+      ],
+      "reranked_top_3_scores": [
+        9.7585,
+        7.2228,
+        6.9235
+      ],
+      "hybrid_rank1_match": true,
+      "rerank_rank1_match": true,
+      "rerank_top3_match": true
+    },
+    {
+      "query_id": "POL_Q03",
+      "category": "exact_policy_id",
+      "query": "Which policy defines human review requirements in POL-REVIEW-001?",
+      "expected_policy_ids": [
+        "POL-REVIEW-001"
+      ],
+      "hybrid_rank1_policy": "POL-REVIEW-001",
+      "reranked_rank1_policy": "POL-REVIEW-001",
+      "hybrid_top_3": [
+        "POL-REVIEW-001",
+        "POL-AI-001",
+        "POL-MODEL-001"
+      ],
+      "reranked_top_3": [
+        "POL-REVIEW-001",
+        "POL-REVIEW-001",
+        "POL-RISK-001"
+      ],
+      "reranked_top_3_chunks": [
+        "pol_review_001_human_review_requirements_13_c01",
+        "pol_review_001_purpose_03_c01",
+        "pol_risk_001_human_review_requirements_13_c01"
+      ],
+      "reranked_top_3_scores": [
+        8.7469,
+        8.2547,
+        8.1837
+      ],
+      "hybrid_rank1_match": true,
+      "rerank_rank1_match": true,
+      "rerank_top3_match": true
+    },
+    {
+      "query_id": "POL_Q04",
+      "category": "exact_policy_id",
+      "query": "What rules are established under POL-AI-001 regarding autonomous decisions?",
+      "expected_policy_ids": [
+        "POL-AI-001"
+      ],
+      "hybrid_rank1_policy": "POL-AI-001",
+      "reranked_rank1_policy": "POL-AI-001",
+      "hybrid_top_3": [
+        "POL-AI-001",
+        "POL-AI-001",
+        "POL-AI-001"
+      ],
+      "reranked_top_3": [
+        "POL-AI-001",
+        "POL-REVIEW-001",
+        "POL-AI-001"
+      ],
+      "reranked_top_3_chunks": [
+        "pol_ai_001_rule_1_strict_decision_support_mandate_07_c01",
+        "pol_review_001_data_and_source_references_14_c01",
+        "pol_ai_001_purpose_03_c01"
+      ],
+      "reranked_top_3_scores": [
+        4.7826,
+        4.3146,
+        4.3005
+      ],
+      "hybrid_rank1_match": true,
+      "rerank_rank1_match": true,
+      "rerank_top3_match": true
+    },
+    {
+      "query_id": "POL_Q05",
+      "category": "exact_policy_id",
+      "query": "What does POL-SKILL-001 state regarding the classification of skill gap severity?",
+      "expected_policy_ids": [
+        "POL-SKILL-001"
+      ],
+      "hybrid_rank1_policy": "POL-SKILL-001",
+      "reranked_rank1_policy": "POL-SKILL-001",
+      "hybrid_top_3": [
+        "POL-SKILL-001",
+        "POL-SKILL-001",
+        "POL-SKILL-001"
+      ],
+      "reranked_top_3": [
+        "POL-SKILL-001",
+        "POL-SKILL-001",
+        "POL-SKILL-001"
+      ],
+      "reranked_top_3_chunks": [
+        "pol_skill_001_rule_3_objective_gap_severity_classification_09_c01",
+        "pol_skill_001_definitions_05_c01",
+        "pol_skill_001_related_policies_15_c01"
+      ],
+      "reranked_top_3_scores": [
+        7.0431,
+        5.6811,
+        5.3703
+      ],
+      "hybrid_rank1_match": true,
+      "rerank_rank1_match": true,
+      "rerank_top3_match": true
+    },
+    {
+      "query_id": "POL_Q06",
+      "category": "policy_terminology",
+      "query": "What threshold is used for attrition risk scoring?",
+      "expected_policy_ids": [
+        "POL-MODEL-001",
+        "POL-RISK-001"
+      ],
+      "hybrid_rank1_policy": "POL-MODEL-001",
+      "reranked_rank1_policy": "POL-MODEL-001",
+      "hybrid_top_3": [
+        "POL-MODEL-001",
+        "POL-MODEL-001",
+        "POL-MODEL-001"
+      ],
+      "reranked_top_3": [
+        "POL-MODEL-001",
+        "POL-MODEL-001",
+        "POL-MODEL-001"
+      ],
+      "reranked_top_3_chunks": [
+        "pol_model_001_definitions_05_c01",
+        "pol_model_001_purpose_03_c01",
+        "pol_model_001_rule_1_mandatory_decision_threshold_standard_0_40_07_c01"
+      ],
+      "reranked_top_3_scores": [
+        5.4948,
+        4.8145,
+        3.9201
+      ],
+      "hybrid_rank1_match": true,
+      "rerank_rank1_match": true,
+      "rerank_top3_match": true
+    },
+    {
+      "query_id": "POL_Q07",
+      "category": "policy_terminology",
+      "query": "How should an AI-generated HR recommendation be treated?",
+      "expected_policy_ids": [
+        "POL-AI-001",
+        "POL-REVIEW-001"
+      ],
+      "hybrid_rank1_policy": "POL-AI-001",
+      "reranked_rank1_policy": "POL-LEARN-001",
+      "hybrid_top_3": [
+        "POL-AI-001",
+        "POL-LEARN-001",
+        "POL-REVIEW-001"
+      ],
+      "reranked_top_3": [
+        "POL-LEARN-001",
+        "POL-REVIEW-001",
+        "POL-LEARN-001"
+      ],
+      "reranked_top_3_chunks": [
+        "pol_learn_001_rule_4_voluntary_and_developmental_nature_of_recommendations_10_c01",
+        "pol_review_001_definitions_05_c01",
+        "pol_learn_001_purpose_03_c01"
+      ],
+      "reranked_top_3_scores": [
+        0.3417,
+        -0.3387,
+        -0.6147
+      ],
+      "hybrid_rank1_match": true,
+      "rerank_rank1_match": false,
+      "rerank_top3_match": true
+    },
+    {
+      "query_id": "POL_Q08",
+      "category": "policy_terminology",
+      "query": "Who has the authority to override an AI-assisted HR recommendation?",
+      "expected_policy_ids": [
+        "POL-REVIEW-001",
+        "POL-AI-001"
+      ],
+      "hybrid_rank1_policy": "POL-AI-001",
+      "reranked_rank1_policy": "POL-REVIEW-001",
+      "hybrid_top_3": [
+        "POL-AI-001",
+        "POL-REVIEW-001",
+        "POL-REVIEW-001"
+      ],
+      "reranked_top_3": [
+        "POL-REVIEW-001",
+        "POL-AI-001",
+        "POL-REVIEW-001"
+      ],
+      "reranked_top_3_chunks": [
+        "pol_review_001_rule_2_absolute_right_of_human_override_08_c01",
+        "pol_ai_001_rule_3_preserving_human_agency_and_override_09_c01",
+        "pol_review_001_definitions_05_c01"
+      ],
+      "reranked_top_3_scores": [
+        6.2376,
+        5.9135,
+        3.8868
+      ],
+      "hybrid_rank1_match": true,
+      "rerank_rank1_match": true,
+      "rerank_top3_match": true
+    },
+    {
+      "query_id": "POL_Q09",
+      "category": "policy_terminology",
+      "query": "What constitutes a HIGH severity skill gap deficiency?",
+      "expected_policy_ids": [
+        "POL-SKILL-001"
+      ],
+      "hybrid_rank1_policy": "POL-SKILL-001",
+      "reranked_rank1_policy": "POL-SKILL-001",
+      "hybrid_top_3": [
+        "POL-SKILL-001",
+        "POL-SKILL-001",
+        "POL-SKILL-001"
+      ],
+      "reranked_top_3": [
+        "POL-SKILL-001",
+        "POL-SKILL-001",
+        "POL-SKILL-001"
+      ],
+      "reranked_top_3_chunks": [
+        "pol_skill_001_rule_3_objective_gap_severity_classification_09_c01",
+        "pol_skill_001_definitions_05_c01",
+        "pol_skill_001_human_review_requirements_13_c01"
+      ],
+      "reranked_top_3_scores": [
+        3.4043,
+        3.1423,
+        2.4616
+      ],
+      "hybrid_rank1_match": true,
+      "rerank_rank1_match": true,
+      "rerank_top3_match": true
+    },
+    {
+      "query_id": "POL_Q10",
+      "category": "policy_terminology",
+      "query": "What are the minimum statistical performance floors for model recall and precision?",
+      "expected_policy_ids": [
+        "POL-MONITOR-001"
+      ],
+      "hybrid_rank1_policy": "POL-MONITOR-001",
+      "reranked_rank1_policy": "POL-MONITOR-001",
+      "hybrid_top_3": [
+        "POL-MONITOR-001",
+        "POL-MONITOR-001",
+        "POL-MODEL-001"
+      ],
+      "reranked_top_3": [
+        "POL-MONITOR-001",
+        "POL-MONITOR-001",
+        "POL-MODEL-001"
+      ],
+      "reranked_top_3_chunks": [
+        "pol_monitor_001_rule_2_minimum_acceptable_performance_floors_08_c01",
+        "pol_monitor_001_definitions_05_c01",
+        "pol_model_001_rule_2_recognition_of_the_class_imbalance_precision_trade_off_08_c01"
+      ],
+      "reranked_top_3_scores": [
+        6.841,
+        2.3048,
+        -3.3925
+      ],
+      "hybrid_rank1_match": true,
+      "rerank_rank1_match": true,
+      "rerank_top3_match": true
+    },
+    {
+      "query_id": "POL_Q11",
+      "category": "semantic",
+      "query": "What should HR do when an employee is identified as high flight risk?",
+      "expected_policy_ids": [
+        "POL-RISK-001",
+        "POL-MODEL-001"
+      ],
+      "hybrid_rank1_policy": "POL-RISK-001",
+      "reranked_rank1_policy": "POL-REVIEW-001",
+      "hybrid_top_3": [
+        "POL-RISK-001",
+        "POL-REVIEW-001",
+        "POL-RISK-001"
+      ],
+      "reranked_top_3": [
+        "POL-REVIEW-001",
+        "POL-MODEL-001",
+        "POL-REVIEW-001"
+      ],
+      "reranked_top_3_chunks": [
+        "pol_review_001_rule_3_protection_against_direct_algorithmic_confrontation_09_c01",
+        "pol_model_001_human_review_requirements_13_c01",
+        "pol_review_001_rule_2_absolute_right_of_human_override_08_c01"
+      ],
+      "reranked_top_3_scores": [
+        3.0616,
+        2.8439,
+        1.9419
+      ],
+      "hybrid_rank1_match": true,
+      "rerank_rank1_match": false,
+      "rerank_top3_match": true
+    },
+    {
+      "query_id": "POL_Q12",
+      "category": "semantic",
+      "query": "What safeguards prevent AI predictions from becoming autonomous employment decisions?",
+      "expected_policy_ids": [
+        "POL-AI-001",
+        "POL-REVIEW-001"
+      ],
+      "hybrid_rank1_policy": "POL-AI-001",
+      "reranked_rank1_policy": "POL-AI-001",
+      "hybrid_top_3": [
+        "POL-AI-001",
+        "POL-AI-001",
+        "POL-AI-001"
+      ],
+      "reranked_top_3": [
+        "POL-AI-001",
+        "POL-AI-001",
+        "POL-AI-001"
+      ],
+      "reranked_top_3_chunks": [
+        "pol_ai_001_purpose_03_c01",
+        "pol_ai_001_rule_1_strict_decision_support_mandate_07_c01",
+        "pol_ai_001_rule_2_transparency_and_provenance_guarantee_08_c01"
+      ],
+      "reranked_top_3_scores": [
+        0.2618,
+        -0.3963,
+        -1.6178
+      ],
+      "hybrid_rank1_match": true,
+      "rerank_rank1_match": true,
+      "rerank_top3_match": true
+    },
+    {
+      "query_id": "POL_Q13",
+      "category": "semantic",
+      "query": "How should occupation mappings be used for internal career development?",
+      "expected_policy_ids": [
+        "POL-CAREER-001",
+        "POL-JOB-001"
+      ],
+      "hybrid_rank1_policy": "POL-CAREER-001",
+      "reranked_rank1_policy": "POL-CAREER-001",
+      "hybrid_top_3": [
+        "POL-CAREER-001",
+        "POL-CAREER-001",
+        "POL-JOB-001"
+      ],
+      "reranked_top_3": [
+        "POL-CAREER-001",
+        "POL-CAREER-001",
+        "POL-CAREER-001"
+      ],
+      "reranked_top_3_chunks": [
+        "pol_career_001_scope_04_c01",
+        "pol_career_001_rule_1_canonical_description_authority_07_c01",
+        "pol_career_001_purpose_03_c01"
+      ],
+      "reranked_top_3_scores": [
+        4.3381,
+        4.0274,
+        2.8813
+      ],
+      "hybrid_rank1_match": true,
+      "rerank_rank1_match": true,
+      "rerank_top3_match": true
+    },
+    {
+      "query_id": "POL_Q14",
+      "category": "semantic",
+      "query": "Why are general managers excluded from automated role-level skill gap calculation?",
+      "expected_policy_ids": [
+        "POL-SKILL-001",
+        "POL-JOB-001"
+      ],
+      "hybrid_rank1_policy": "POL-SKILL-001",
+      "reranked_rank1_policy": "POL-SKILL-001",
+      "hybrid_top_3": [
+        "POL-SKILL-001",
+        "POL-JOB-001",
+        "POL-SKILL-001"
+      ],
+      "reranked_top_3": [
+        "POL-SKILL-001",
+        "POL-SKILL-001",
+        "POL-JOB-001"
+      ],
+      "reranked_top_3_chunks": [
+        "pol_skill_001_rule_2_mandatory_exclusion_of_generic_managers_08_c01",
+        "pol_skill_001_scope_04_c01",
+        "pol_job_001_rule_3_placeholder_classification_for_general_managers_09_c01"
+      ],
+      "reranked_top_3_scores": [
+        7.0889,
+        -0.9988,
+        -1.0256
+      ],
+      "hybrid_rank1_match": true,
+      "rerank_rank1_match": true,
+      "rerank_top3_match": true
+    },
+    {
+      "query_id": "POL_Q15",
+      "category": "multi_policy",
+      "query": "How do the attrition model policy and human review policy work together?",
+      "expected_policy_ids": [
+        "POL-MODEL-001",
+        "POL-REVIEW-001"
+      ],
+      "hybrid_rank1_policy": "POL-MODEL-001",
+      "reranked_rank1_policy": "POL-MODEL-001",
+      "hybrid_top_3": [
+        "POL-MODEL-001",
+        "POL-MODEL-001",
+        "POL-MODEL-001"
+      ],
+      "reranked_top_3": [
+        "POL-MODEL-001",
+        "POL-MODEL-001",
+        "POL-MODEL-001"
+      ],
+      "reranked_top_3_chunks": [
+        "pol_model_001_human_review_requirements_13_c01",
+        "pol_model_001_related_policies_15_c01",
+        "pol_model_001_scope_04_c01"
+      ],
+      "reranked_top_3_scores": [
+        3.4708,
+        2.8196,
+        1.9875
+      ],
+      "hybrid_rank1_match": true,
+      "rerank_rank1_match": true,
+      "rerank_top3_match": true
+    },
+    {
+      "query_id": "POL_Q16",
+      "category": "multi_policy",
+      "query": "Which policies govern the flow from skill-gap identification to upskilling recommendations?",
+      "expected_policy_ids": [
+        "POL-SKILL-001",
+        "POL-LEARN-001"
+      ],
+      "hybrid_rank1_policy": "POL-LEARN-001",
+      "reranked_rank1_policy": "POL-SKILL-001",
+      "hybrid_top_3": [
+        "POL-LEARN-001",
+        "POL-SKILL-001",
+        "POL-LEARN-001"
+      ],
+      "reranked_top_3": [
+        "POL-SKILL-001",
+        "POL-LEARN-001",
+        "POL-SKILL-001"
+      ],
+      "reranked_top_3_chunks": [
+        "pol_skill_001_related_policies_15_c01",
+        "pol_learn_001_related_policies_15_c01",
+        "pol_skill_001_rule_4_decoupling_skill_gaps_from_disciplinary_processes_10_c01"
+      ],
+      "reranked_top_3_scores": [
+        5.8376,
+        5.585,
+        4.9577
+      ],
+      "hybrid_rank1_match": true,
+      "rerank_rank1_match": true,
+      "rerank_top3_match": true
+    },
+    {
+      "query_id": "POL_Q17",
+      "category": "multi_policy",
+      "query": "How are O*NET mapping, career development, and human review connected?",
+      "expected_policy_ids": [
+        "POL-JOB-001",
+        "POL-CAREER-001",
+        "POL-REVIEW-001"
+      ],
+      "hybrid_rank1_policy": "POL-JOB-001",
+      "reranked_rank1_policy": "POL-JOB-001",
+      "hybrid_top_3": [
+        "POL-JOB-001",
+        "POL-JOB-001",
+        "POL-JOB-001"
+      ],
+      "reranked_top_3": [
+        "POL-JOB-001",
+        "POL-JOB-001",
+        "POL-LEARN-001"
+      ],
+      "reranked_top_3_chunks": [
+        "pol_job_001_human_review_requirements_13_c01",
+        "pol_job_001_related_policies_15_c01",
+        "pol_learn_001_related_policies_15_c01"
+      ],
+      "reranked_top_3_scores": [
+        2.7175,
+        2.2454,
+        0.535
+      ],
+      "hybrid_rank1_match": true,
+      "rerank_rank1_match": true,
+      "rerank_top3_match": true
+    },
+    {
+      "query_id": "POL_Q18",
+      "category": "multi_policy",
+      "query": "How does data provenance governance support model monitoring and limitations?",
+      "expected_policy_ids": [
+        "POL-DATA-001",
+        "POL-MONITOR-001"
+      ],
+      "hybrid_rank1_policy": "POL-DATA-001",
+      "reranked_rank1_policy": "POL-MONITOR-001",
+      "hybrid_top_3": [
+        "POL-DATA-001",
+        "POL-MONITOR-001",
+        "POL-DATA-001"
+      ],
+      "reranked_top_3": [
+        "POL-MONITOR-001",
+        "POL-AI-001",
+        "POL-AI-001"
+      ],
+      "reranked_top_3_chunks": [
+        "pol_monitor_001_related_policies_15_c01",
+        "pol_ai_001_related_policies_15_c01",
+        "pol_ai_001_exceptions_and_limitations_12_c01"
+      ],
+      "reranked_top_3_scores": [
+        4.4238,
+        3.3547,
+        1.8299
+      ],
+      "hybrid_rank1_match": true,
+      "rerank_rank1_match": true,
+      "rerank_top3_match": true
+    }
+  ]
+}
